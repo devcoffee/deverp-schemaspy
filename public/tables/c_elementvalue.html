@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>c_elementvalue - brerp-12.adempiere</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>brerp-12</b></a><span class="navbar-brand" style="padding-left: 0">.adempiere</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>c_elementvalue</h1><p><span id="recordNumber">1835</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="c_elementvalue_id">c_elementvalue_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_acctschema_element.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_caschemaelement"><a href='c_acctschema_element.html'>c_acctschema_element</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_caschemaelement</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_allocationline.cof_elementvalue_id references c_elementvalue.c_elementvalue_id via cofelementvalue_callocationlin"><a href='c_allocationline.html'>c_allocationline</a><span class='relatedKey'>.cof_elementvalue_id</span></td>
+                                                <td class="constraint detail">cofelementvalue_callocationlin</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_bankaccount.cof_user2_id references c_elementvalue.c_elementvalue_id via cofuser2_cbankaccount"><a href='c_bankaccount.html'>c_bankaccount</a><span class='relatedKey'>.cof_user2_id</span></td>
+                                                <td class="constraint detail">cofuser2_cbankaccount</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_bankaccount.user2_id references c_elementvalue.c_elementvalue_id via user2_cbankaccount"><a href='c_bankaccount.html'>c_bankaccount</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cbankaccount</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cash.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_ccash"><a href='c_cash.html'>c_cash</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_ccash</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cash.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_ccash"><a href='c_cash.html'>c_cash</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_ccash</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cashplan.user1_id references c_elementvalue.c_elementvalue_id via user1_ccashplan"><a href='c_cashplan.html'>c_cashplan</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_ccashplan</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cashplan.user2_id references c_elementvalue.c_elementvalue_id via user2_ccashplan"><a href='c_cashplan.html'>c_cashplan</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_ccashplan</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cashplanline.user1_id references c_elementvalue.c_elementvalue_id via user1_ccashplanline"><a href='c_cashplanline.html'>c_cashplanline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_ccashplanline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cashplanline.user2_id references c_elementvalue.c_elementvalue_id via user2_ccashplanline"><a href='c_cashplanline.html'>c_cashplanline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_ccashplanline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_doctype.user1_id references c_elementvalue.c_elementvalue_id via user1_cdoctype"><a href='c_doctype.html'>c_doctype</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cdoctype</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_doctype.user2_id references c_elementvalue.c_elementvalue_id via user2_cdoctype"><a href='c_doctype.html'>c_doctype</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cdoctype</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_elementvalue.cof_codagl_id references c_elementvalue.c_elementvalue_id via cofcodagl_celementvalue"><a href='c_elementvalue.html'>c_elementvalue</a><span class='relatedKey'>.cof_codagl_id</span></td>
+                                                <td class="constraint detail">cofcodagl_celementvalue</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_elementvalue_trl.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_cevaluetrl"><a href='c_elementvalue_trl.html'>c_elementvalue_trl</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_cevaluetrl</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoice.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_cinvoice"><a href='c_invoice.html'>c_invoice</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_cinvoice</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoice.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_cinvoice"><a href='c_invoice.html'>c_invoice</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_cinvoice</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoicebatchline.user1_id references c_elementvalue.c_elementvalue_id via celementvalueu1_cinvoicebline"><a href='c_invoicebatchline.html'>c_invoicebatchline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueu1_cinvoicebline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoicebatchline.user2_id references c_elementvalue.c_elementvalue_id via celementvalueu2_cinvoicebline"><a href='c_invoicebatchline.html'>c_invoicebatchline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueu2_cinvoicebline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoiceline.user1_id references c_elementvalue.c_elementvalue_id via celemenrvalueuser1_cinvline"><a href='c_invoiceline.html'>c_invoiceline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celemenrvalueuser1_cinvline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoiceline.user2_id references c_elementvalue.c_elementvalue_id via celemenrvalueuser2_cinvline"><a href='c_invoiceline.html'>c_invoiceline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celemenrvalueuser2_cinvline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_order.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_corder"><a href='c_order.html'>c_order</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_corder</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_order.user2_id references c_elementvalue.c_elementvalue_id via celemenrvalueuser2_corder"><a href='c_order.html'>c_order</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celemenrvalueuser2_corder</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_orderline.user1_id references c_elementvalue.c_elementvalue_id via celemenrvalueuser1_corderline"><a href='c_orderline.html'>c_orderline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celemenrvalueuser1_corderline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_orderline.user2_id references c_elementvalue.c_elementvalue_id via celemenrvalueuser2_corderline"><a href='c_orderline.html'>c_orderline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celemenrvalueuser2_corderline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_payment.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_cpayment"><a href='c_payment.html'>c_payment</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_cpayment</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_payment.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_cpayment"><a href='c_payment.html'>c_payment</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_cpayment</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_paymenttransaction.user1_id references c_elementvalue.c_elementvalue_id via user1_cpaymenttransaction"><a href='c_paymenttransaction.html'>c_paymenttransaction</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cpaymenttransaction</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_paymenttransaction.user2_id references c_elementvalue.c_elementvalue_id via user2_cpaymenttransaction"><a href='c_paymenttransaction.html'>c_paymenttransaction</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cpaymenttransaction</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_subacct.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_csubacct"><a href='c_subacct.html'>c_subacct</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_csubacct</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_validcombination.account_id references c_elementvalue.c_elementvalue_id via celementvalueaccount_vc"><a href='c_validcombination.html'>c_validcombination</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">celementvalueaccount_vc</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_validcombination.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_vc"><a href='c_validcombination.html'>c_validcombination</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_vc</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_validcombination.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_vc"><a href='c_validcombination.html'>c_validcombination</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_vc</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_apuracaooutra.account_id references c_elementvalue.c_elementvalue_id via account_cofapuracaooutra"><a href='cof_apuracaooutra.html'>cof_apuracaooutra</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">account_cofapuracaooutra</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_c_acct_ignoreelement.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_cofcacctignoreel"><a href='cof_c_acct_ignoreelement.html'>cof_c_acct_ignoreelement</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_cofcacctignoreel</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_c_bankintegration.user1_id references c_elementvalue.c_elementvalue_id via user1_cofcbankintegration"><a href='cof_c_bankintegration.html'>cof_c_bankintegration</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofcbankintegration</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_c_bankintegration.user2_id references c_elementvalue.c_elementvalue_id via user2_cofcbankintegration"><a href='cof_c_bankintegration.html'>cof_c_bankintegration</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofcbankintegration</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_c_controlcheck.user1_id references c_elementvalue.c_elementvalue_id via user1_cofccontrolcheck"><a href='cof_c_controlcheck.html'>cof_c_controlcheck</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofccontrolcheck</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_c_controlcheck.user2_id references c_elementvalue.c_elementvalue_id via user2_cofccontrolcheck"><a href='cof_c_controlcheck.html'>cof_c_controlcheck</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofccontrolcheck</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_c_sped_fiscal.cof_excludeuser2_id references c_elementvalue.c_elementvalue_id via cofexcludeuser2_cofcspedfiscal"><a href='cof_c_sped_fiscal.html'>cof_c_sped_fiscal</a><span class='relatedKey'>.cof_excludeuser2_id</span></td>
+                                                <td class="constraint detail">cofexcludeuser2_cofcspedfiscal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_c_sped_fiscal.user2_id references c_elementvalue.c_elementvalue_id via user2_cofcspedfiscal"><a href='cof_c_sped_fiscal.html'>cof_c_sped_fiscal</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofcspedfiscal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_calculociaplinha.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_cofcalculociaplinha"><a href='cof_calculociaplinha.html'>cof_calculociaplinha</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_cofcalculociaplinha</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_calculociaplinha.user1_id references c_elementvalue.c_elementvalue_id via user1_cofcalculociaplinha"><a href='cof_calculociaplinha.html'>cof_calculociaplinha</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofcalculociaplinha</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_cobranca_pix.user1_id references c_elementvalue.c_elementvalue_id via user1_cofcobrancapix"><a href='cof_cobranca_pix.html'>cof_cobranca_pix</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofcobrancapix</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_cobranca_pix.user2_id references c_elementvalue.c_elementvalue_id via user2_cofcobrancapix"><a href='cof_cobranca_pix.html'>cof_cobranca_pix</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofcobrancapix</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_conciliacaocartao.user1_id references c_elementvalue.c_elementvalue_id via user1_cofconciliacaocartao"><a href='cof_conciliacaocartao.html'>cof_conciliacaocartao</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofconciliacaocartao</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_conciliacaocartao.user2_id references c_elementvalue.c_elementvalue_id via user2_cofconciliacaocartao"><a href='cof_conciliacaocartao.html'>cof_conciliacaocartao</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofconciliacaocartao</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_configexportcontabcontas.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_cofconfigexportcontabcontas"><a href='cof_configexportcontabcontas.html'>cof_configexportcontabcontas</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_cofconfigexportcontabcontas</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_configexportcontabcustos.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_cofconfigexportcontabcustos"><a href='cof_configexportcontabcustos.html'>cof_configexportcontabcustos</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_cofconfigexportcontabcustos</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_configexportcontabexcecoes.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_cofconfigexportcontabexcecoes"><a href='cof_configexportcontabexcecoes.html'>cof_configexportcontabexcecoes</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_cofconfigexportcontabexcecoes</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_configrateiolinha.user1_id references c_elementvalue.c_elementvalue_id via user1_cofconfigrateiolinha"><a href='cof_configrateiolinha.html'>cof_configrateiolinha</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofconfigrateiolinha</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_configrateiolinha.user2_id references c_elementvalue.c_elementvalue_id via user2_cofconfigrateiolinha"><a href='cof_configrateiolinha.html'>cof_configrateiolinha</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofconfigrateiolinha</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_contract.user1_id references c_elementvalue.c_elementvalue_id via user1_cofcontract"><a href='cof_contract.html'>cof_contract</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofcontract</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_contract.user2_id references c_elementvalue.c_elementvalue_id via user2_cofcontract"><a href='cof_contract.html'>cof_contract</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofcontract</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_controleciap.user1_id references c_elementvalue.c_elementvalue_id via user1_cofcontroleciap"><a href='cof_controleciap.html'>cof_controleciap</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofcontroleciap</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_elementvaluereference.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_cofelementvaluer"><a href='cof_elementvaluereference.html'>cof_elementvaluereference</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_cofelementvaluer</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_orcamentoconfig.account_id references c_elementvalue.c_elementvalue_id via account_coforcamentoconfig"><a href='cof_orcamentoconfig.html'>cof_orcamentoconfig</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">account_coforcamentoconfig</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_orcamentoconfig.user1_id references c_elementvalue.c_elementvalue_id via user1_coforcamentoconfig"><a href='cof_orcamentoconfig.html'>cof_orcamentoconfig</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_coforcamentoconfig</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_orcamentoconfig.user2_id references c_elementvalue.c_elementvalue_id via user2_coforcamentoconfig"><a href='cof_orcamentoconfig.html'>cof_orcamentoconfig</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_coforcamentoconfig</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_ordemservico.user1_id references c_elementvalue.c_elementvalue_id via user1_cofordemservico"><a href='cof_ordemservico.html'>cof_ordemservico</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofordemservico</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_ordemservico.user2_id references c_elementvalue.c_elementvalue_id via user2_cofordemservico"><a href='cof_ordemservico.html'>cof_ordemservico</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofordemservico</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_pp_planomestreprod.user1_id references c_elementvalue.c_elementvalue_id via user1_cofppplanomestreprod"><a href='cof_pp_planomestreprod.html'>cof_pp_planomestreprod</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofppplanomestreprod</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_pp_recursos.user1_id references c_elementvalue.c_elementvalue_id via user1_cofpprecursos"><a href='cof_pp_recursos.html'>cof_pp_recursos</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofpprecursos</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_preferenciaxml.user1_id references c_elementvalue.c_elementvalue_id via user1_cofpreferenciaxml"><a href='cof_preferenciaxml.html'>cof_preferenciaxml</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_cofpreferenciaxml</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_preferenciaxml.user2_id references c_elementvalue.c_elementvalue_id via user2_cofpreferenciaxml"><a href='cof_preferenciaxml.html'>cof_preferenciaxml</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_cofpreferenciaxml</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="dd_order.user1_id references c_elementvalue.c_elementvalue_id via user1_ddorder"><a href='dd_order.html'>dd_order</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_ddorder</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="dd_order.user2_id references c_elementvalue.c_elementvalue_id via user2_ddorder"><a href='dd_order.html'>dd_order</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_ddorder</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="dd_orderline.user1_id references c_elementvalue.c_elementvalue_id via user1_ddorderline"><a href='dd_orderline.html'>dd_orderline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_ddorderline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="dd_orderline.user2_id references c_elementvalue.c_elementvalue_id via user2_ddorderline"><a href='dd_orderline.html'>dd_orderline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_ddorderline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fact_acct.account_id references c_elementvalue.c_elementvalue_id via celementvalue_factacct"><a href='fact_acct.html'>fact_acct</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">celementvalue_factacct</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fact_acct.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_factacct"><a href='fact_acct.html'>fact_acct</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_factacct</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fact_acct.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_factacct"><a href='fact_acct.html'>fact_acct</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_factacct</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fact_acct_summary.account_id references c_elementvalue.c_elementvalue_id via account_factacctsummary"><a href='fact_acct_summary.html'>fact_acct_summary</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">account_factacctsummary</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fact_acct_summary.user1_id references c_elementvalue.c_elementvalue_id via user1_factacctsummary"><a href='fact_acct_summary.html'>fact_acct_summary</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_factacctsummary</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fact_acct_summary.user2_id references c_elementvalue.c_elementvalue_id via user2_factacctsummary"><a href='fact_acct_summary.html'>fact_acct_summary</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_factacctsummary</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_distribution.account_id references c_elementvalue.c_elementvalue_id via cevalueacct_gldist"><a href='gl_distribution.html'>gl_distribution</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">cevalueacct_gldist</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_distribution.user1_id references c_elementvalue.c_elementvalue_id via cevalueuser1_gldist"><a href='gl_distribution.html'>gl_distribution</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">cevalueuser1_gldist</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_distribution.user2_id references c_elementvalue.c_elementvalue_id via cevalueuser2_gldist"><a href='gl_distribution.html'>gl_distribution</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">cevalueuser2_gldist</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_distributionline.account_id references c_elementvalue.c_elementvalue_id via cevalueacct_gldistline"><a href='gl_distributionline.html'>gl_distributionline</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">cevalueacct_gldistline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_distributionline.user1_id references c_elementvalue.c_elementvalue_id via cevalueuser1_gldistline"><a href='gl_distributionline.html'>gl_distributionline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">cevalueuser1_gldistline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_distributionline.user2_id references c_elementvalue.c_elementvalue_id via cevalueuser2_gldistline"><a href='gl_distributionline.html'>gl_distributionline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">cevalueuser2_gldistline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_fundrestriction.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_glfundrestr"><a href='gl_fundrestriction.html'>gl_fundrestriction</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_glfundrestr</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalgenerator.c_elementvalueadjustcr_id references c_elementvalue.c_elementvalue_id via celementvalueadjustcr_qssjourn"><a href='gl_journalgenerator.html'>gl_journalgenerator</a><span class='relatedKey'>.c_elementvalueadjustcr_id</span></td>
+                                                <td class="constraint detail">celementvalueadjustcr_qssjourn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalgenerator.c_elementvalueadjustdr_id references c_elementvalue.c_elementvalue_id via celementvalueadjustdr_qssjourn"><a href='gl_journalgenerator.html'>gl_journalgenerator</a><span class='relatedKey'>.c_elementvalueadjustdr_id</span></td>
+                                                <td class="constraint detail">celementvalueadjustdr_qssjourn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalgeneratorline.c_elementvaluecr_id references c_elementvalue.c_elementvalue_id via celementvaluecr_qssjournalgene"><a href='gl_journalgeneratorline.html'>gl_journalgeneratorline</a><span class='relatedKey'>.c_elementvaluecr_id</span></td>
+                                                <td class="constraint detail">celementvaluecr_qssjournalgene</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalgeneratorline.c_elementvaluedr_id references c_elementvalue.c_elementvalue_id via celementvaluedr_qssjournalgene"><a href='gl_journalgeneratorline.html'>gl_journalgeneratorline</a><span class='relatedKey'>.c_elementvaluedr_id</span></td>
+                                                <td class="constraint detail">celementvaluedr_qssjournalgene</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalgeneratorsource.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_qssjournalgenera"><a href='gl_journalgeneratorsource.html'>gl_journalgeneratorsource</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_qssjournalgenera</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalline.account_id references c_elementvalue.c_elementvalue_id via account_gljournalline"><a href='gl_journalline.html'>gl_journalline</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">account_gljournalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalline.user1_id references c_elementvalue.c_elementvalue_id via user1_gljournalline"><a href='gl_journalline.html'>gl_journalline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_gljournalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalline.user2_id references c_elementvalue.c_elementvalue_id via user2_gljournalline"><a href='gl_journalline.html'>gl_journalline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_gljournalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="hr_concept_acct.user1_id references c_elementvalue.c_elementvalue_id via user1_hrconceptacct"><a href='hr_concept_acct.html'>hr_concept_acct</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_hrconceptacct</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="hr_movement.user1_id references c_elementvalue.c_elementvalue_id via user1_hrmovement"><a href='hr_movement.html'>hr_movement</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_hrmovement</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="hr_movement.user2_id references c_elementvalue.c_elementvalue_id via user2_hrmovement"><a href='hr_movement.html'>hr_movement</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_hrmovement</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_elementvalue.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_ielementvalue"><a href='i_elementvalue.html'>i_elementvalue</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_ielementvalue</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_elementvalue.parentelementvalue_id references c_elementvalue.c_elementvalue_id via cevalueparent_ielementvalue"><a href='i_elementvalue.html'>i_elementvalue</a><span class='relatedKey'>.parentelementvalue_id</span></td>
+                                                <td class="constraint detail">cevalueparent_ielementvalue</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_fajournal.account_id references c_elementvalue.c_elementvalue_id via account_ifajournal"><a href='i_fajournal.html'>i_fajournal</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">account_ifajournal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_fajournal.user1_id references c_elementvalue.c_elementvalue_id via user1_ifajournal"><a href='i_fajournal.html'>i_fajournal</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_ifajournal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_fajournal.user2_id references c_elementvalue.c_elementvalue_id via user2_ifajournal"><a href='i_fajournal.html'>i_fajournal</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_ifajournal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_gljournal.account_id references c_elementvalue.c_elementvalue_id via celvalueaccount_igljournal"><a href='i_gljournal.html'>i_gljournal</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">celvalueaccount_igljournal</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_gljournal.user1_id references c_elementvalue.c_elementvalue_id via cevalueuser1_igljournal"><a href='i_gljournal.html'>i_gljournal</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">cevalueuser1_igljournal</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_gljournal.user2_id references c_elementvalue.c_elementvalue_id via celvalueuser2_igljournal"><a href='i_gljournal.html'>i_gljournal</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celvalueuser2_igljournal</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_reportline.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_ireportline"><a href='i_reportline.html'>i_reportline</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_ireportline</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inout.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_minout"><a href='m_inout.html'>m_inout</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_minout</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inout.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_minout"><a href='m_inout.html'>m_inout</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_minout</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inoutline.user1_id references c_elementvalue.c_elementvalue_id via celemenrvalueuser1_minoutline"><a href='m_inoutline.html'>m_inoutline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celemenrvalueuser1_minoutline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inoutline.user2_id references c_elementvalue.c_elementvalue_id via celemenrvalueuser2_minoutline"><a href='m_inoutline.html'>m_inoutline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celemenrvalueuser2_minoutline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inventory.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_minvent"><a href='m_inventory.html'>m_inventory</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_minvent</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inventory.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_minvent"><a href='m_inventory.html'>m_inventory</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_minvent</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_movement.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_mmove"><a href='m_movement.html'>m_movement</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_mmove</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_movement.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_mmove"><a href='m_movement.html'>m_movement</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_mmove</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_production.user1_id references c_elementvalue.c_elementvalue_id via celementvalueuser1_mprod"><a href='m_production.html'>m_production</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">celementvalueuser1_mprod</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_production.user2_id references c_elementvalue.c_elementvalue_id via celementvalueuser2_mprod"><a href='m_production.html'>m_production</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">celementvalueuser2_mprod</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_productionline.user1_id references c_elementvalue.c_elementvalue_id via user1_mproductionline"><a href='m_productionline.html'>m_productionline</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_mproductionline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_productionline.user2_id references c_elementvalue.c_elementvalue_id via user2_mproductionline"><a href='m_productionline.html'>m_productionline</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_mproductionline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pa_ratioelement.account_id references c_elementvalue.c_elementvalue_id via celementvalue_paratioelement"><a href='pa_ratioelement.html'>pa_ratioelement</a><span class='relatedKey'>.account_id</span></td>
+                                                <td class="constraint detail">celementvalue_paratioelement</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pa_reportcolumn.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_pareportcolumn"><a href='pa_reportcolumn.html'>pa_reportcolumn</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_pareportcolumn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pa_reportsource.c_elementvalue_id references c_elementvalue.c_elementvalue_id via celementvalue_pareportsource"><a href='pa_reportsource.html'>pa_reportsource</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">celementvalue_pareportsource</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pp_order.user1_id references c_elementvalue.c_elementvalue_id via user1_pporder"><a href='pp_order.html'>pp_order</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_pporder</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pp_order.user2_id references c_elementvalue.c_elementvalue_id via user2_pporder"><a href='pp_order.html'>pp_order</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_pporder</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="t_aging.user1_id references c_elementvalue.c_elementvalue_id via user1_taging"><a href='t_aging.html'>t_aging</a><span class='relatedKey'>.user1_id</span></td>
+                                                <td class="constraint detail">user1_taging</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="t_aging.user2_id references c_elementvalue.c_elementvalue_id via user2_taging"><a href='t_aging.html'>t_aging</a><span class='relatedKey'>.user2_id</span></td>
+                                                <td class="constraint detail">user2_taging</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="ad_client_id">ad_client_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_elementvalue.ad_client_id references ad_client.ad_client_id via adclient_celementvalue"><a href='ad_client.html'>ad_client</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_celementvalue</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="ad_org_id">ad_org_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_elementvalue.ad_org_id references ad_org.ad_org_id via adorg_celementvalue"><a href='ad_org.html'>ad_org</a><span class='relatedKey'>.ad_org_id</span></td>
+                                                <td class="constraint detail">adorg_celementvalue</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isactive">isactive</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;Y&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="created">created</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>now()</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="createdby">createdby</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="updated">updated</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>now()</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="updatedby">updatedby</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="value">value</span></td>
+                                    <td>varchar</td>
+                                    <td>40</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="name">name</span></td>
+                                    <td>varchar</td>
+                                    <td>120</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="description">description</span></td>
+                                    <td>varchar</td>
+                                    <td>255</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="accounttype">accounttype</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="accountsign">accountsign</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isdoccontrolled">isdoccontrolled</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="c_element_id">c_element_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_elementvalue.c_element_id references c_element.c_element_id via celement_celementvalue"><a href='c_element.html'>c_element</a><span class='relatedKey'>.c_element_id</span></td>
+                                                <td class="constraint detail">celement_celementvalue</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="issummary">issummary</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="validfrom">validfrom</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="validto">validto</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="postactual">postactual</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;Y&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="postbudget">postbudget</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;Y&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="postencumbrance">postencumbrance</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;Y&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="poststatistical">poststatistical</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;Y&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isbankaccount">isbankaccount</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="c_bankaccount_id">c_bankaccount_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_elementvalue.c_bankaccount_id references c_bankaccount.c_bankaccount_id via cbankaccount_celementvalue"><a href='c_bankaccount.html'>c_bankaccount</a><span class='relatedKey'>.c_bankaccount_id</span></td>
+                                                <td class="constraint detail">cbankaccount_celementvalue</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isforeigncurrency">isforeigncurrency</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="c_currency_id">c_currency_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_elementvalue.c_currency_id references c_currency.c_currency_id via ccurrency_celementvalue"><a href='c_currency.html'>c_currency</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_celementvalue</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="c_elementvalue_uu">c_elementvalue_uu</span></td>
+                                    <td>varchar</td>
+                                    <td>36</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_accountnature">cof_accountnature</span></td>
+                                    <td>varchar</td>
+                                    <td>2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_validto">cof_validto</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_validfrom">cof_validfrom</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_elementvaluetype">cof_elementvaluetype</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_isdetailed">cof_isdetailed</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isdetailbpartner">isdetailbpartner</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isdetailproduct">isdetailproduct</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="bpartnertype">bpartnertype</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="cof_codagl_id">cof_codagl_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_elementvalue.cof_codagl_id references c_elementvalue.c_elementvalue_id via cofcodagl_celementvalue"><a href='c_elementvalue.html'>c_elementvalue</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">cofcodagl_celementvalue</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_indcodagl">cof_indcodagl</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>&#39;D&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_cod_agl">cof_cod_agl</span></td>
+                                    <td>varchar</td>
+                                    <td>60</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_cod_agl_sup">cof_cod_agl_sup</span></td>
+                                    <td>varchar</td>
+                                    <td>60</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_nivel_agl">cof_nivel_agl</span></td>
+                                    <td>varchar</td>
+                                    <td>60</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_codigoresumido">cof_codigoresumido</span></td>
+                                    <td>varchar</td>
+                                    <td>40</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_outrasreceitasdespesas">cof_outrasreceitasdespesas</span></td>
+                                    <td>varchar</td>
+                                    <td>22</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> c_elementvalue_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>c_elementvalue_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>c_elementvalue_name</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>name</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> c_elementvalue_uu_idx</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>c_elementvalue_uu</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> c_elementvalue_value</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+                                    <td>c_element_id + value</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 class="box-title">Check Constraints</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="check_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Constraint</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>c_elementvalue_cof_isdetailed_check</td>
+                                    <td>((cof_isdetailed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_poststatistical_check</td>
+                                    <td>((poststatistical &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_isdoccontrolled_check</td>
+                                    <td>((isdoccontrolled &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_postactual_check</td>
+                                    <td>((postactual &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_isdetailproduct_check</td>
+                                    <td>((isdetailproduct &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_postbudget_check</td>
+                                    <td>((postbudget &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_isdetailbpartner_check</td>
+                                    <td>((isdetailbpartner &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_postencumbrance_check</td>
+                                    <td>((postencumbrance &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_isforeigncurrency_check</td>
+                                    <td>((isforeigncurrency &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_elementvalue_isbankaccount_check</td>
+                                    <td>((isbankaccount &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="oneDegreeImg" data="../diagrams/tables/c_elementvalue.1degree.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 7.0.2</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

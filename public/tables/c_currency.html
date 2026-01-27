@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>c_currency - brerp-12.adempiere</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>brerp-12</b></a><span class="navbar-brand" style="padding-left: 0">.adempiere</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>c_currency</h1><p><span id="recordNumber">175</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="c_currency_id">c_currency_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="a_asset_addition.c_currency_id references c_currency.c_currency_id via ccurrency_aassetaddition"><a href='a_asset_addition.html'>a_asset_addition</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_aassetaddition</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="a_asset_reval_entry.c_currency_id references c_currency.c_currency_id via ccurrency_aassetrevalentry"><a href='a_asset_reval_entry.html'>a_asset_reval_entry</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_aassetrevalentry</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="a_depreciation_entry.c_currency_id references c_currency.c_currency_id via ccurrency_adepreciationentry"><a href='a_depreciation_entry.html'>a_depreciation_entry</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_adepreciationentry</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_registration.c_currency_id references c_currency.c_currency_id via ccurrency_adregistration"><a href='ad_registration.html'>ad_registration</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_adregistration</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_role.c_currency_id references c_currency.c_currency_id via c_currency_ad_role"><a href='ad_role.html'>ad_role</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">c_currency_ad_role</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_acctschema.c_currency_id references c_currency.c_currency_id via c_currency_c_acctschema"><a href='c_acctschema.html'>c_acctschema</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">c_currency_c_acctschema</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_allocationhdr.c_currency_id references c_currency.c_currency_id via ccurrency_callocation"><a href='c_allocationhdr.html'>c_allocationhdr</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_callocation</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_bankaccount.c_currency_id references c_currency.c_currency_id via ccurrency_cbankaccount"><a href='c_bankaccount.html'>c_bankaccount</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cbankaccount</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_bankaccount_processor.c_currency_id references c_currency.c_currency_id via ccurrency_cbankaccountprocesso"><a href='c_bankaccount_processor.html'>c_bankaccount_processor</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cbankaccountprocesso</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_bankstatementline.c_currency_id references c_currency.c_currency_id via ccurrency_cbankstmtline"><a href='c_bankstatementline.html'>c_bankstatementline</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cbankstmtline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_banktransfer.from_c_currency_id references c_currency.c_currency_id via fromccurrency_cbanktransfer"><a href='c_banktransfer.html'>c_banktransfer</a><span class='relatedKey'>.from_c_currency_id</span></td>
+                                                <td class="constraint detail">fromccurrency_cbanktransfer</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_banktransfer.to_c_currency_id references c_currency.c_currency_id via toccurrency_cbanktransfer"><a href='c_banktransfer.html'>c_banktransfer</a><span class='relatedKey'>.to_c_currency_id</span></td>
+                                                <td class="constraint detail">toccurrency_cbanktransfer</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cashbook.c_currency_id references c_currency.c_currency_id via ccurrency_ccashbook"><a href='c_cashbook.html'>c_cashbook</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccashbook</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cashline.c_currency_id references c_currency.c_currency_id via ccurrency_ccashline"><a href='c_cashline.html'>c_cashline</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccashline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_commission.c_currency_id references c_currency.c_currency_id via ccurrency_ccommission"><a href='c_commission.html'>c_commission</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccommission</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_commissiondetail.c_currency_id references c_currency.c_currency_id via ccurrency_ccommissiondetail"><a href='c_commissiondetail.html'>c_commissiondetail</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccommissiondetail</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_conversion_rate.c_currency_id references c_currency.c_currency_id via ccurrency_cconversionrate"><a href='c_conversion_rate.html'>c_conversion_rate</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cconversionrate</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_conversion_rate.c_currency_id_to references c_currency.c_currency_id via c_currencyconvrateto"><a href='c_conversion_rate.html'>c_conversion_rate</a><span class='relatedKey'>.c_currency_id_to</span></td>
+                                                <td class="constraint detail">c_currencyconvrateto</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_country.c_currency_id references c_currency.c_currency_id via ccurrency_ccountry"><a href='c_country.html'>c_country</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccountry</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_currency_acct.c_currency_id references c_currency.c_currency_id via ccurrency_ccurrencyacct"><a href='c_currency_acct.html'>c_currency_acct</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccurrencyacct</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_currency_trl.c_currency_id references c_currency.c_currency_id via ccurrency_ccurrencytrl"><a href='c_currency_trl.html'>c_currency_trl</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccurrencytrl</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_cycle.c_currency_id references c_currency.c_currency_id via ccurrency_ccycle"><a href='c_cycle.html'>c_cycle</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ccycle</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_depositbatch.c_currency_id references c_currency.c_currency_id via ccurrency_cdepositbatch"><a href='c_depositbatch.html'>c_depositbatch</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cdepositbatch</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_dunningrunentry.c_currency_id references c_currency.c_currency_id via ccurrency_cdunningrunentry"><a href='c_dunningrunentry.html'>c_dunningrunentry</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cdunningrunentry</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_elementvalue.c_currency_id references c_currency.c_currency_id via ccurrency_celementvalue"><a href='c_elementvalue.html'>c_elementvalue</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_celementvalue</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoice.c_currency_id references c_currency.c_currency_id via ccurrency_cinvoice"><a href='c_invoice.html'>c_invoice</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cinvoice</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_invoicebatch.c_currency_id references c_currency.c_currency_id via ccurrency_cinvoicebatch"><a href='c_invoicebatch.html'>c_invoicebatch</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cinvoicebatch</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_opportunity.c_currency_id references c_currency.c_currency_id via ccurrency_copportunity"><a href='c_opportunity.html'>c_opportunity</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_copportunity</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_order.c_currency_id references c_currency.c_currency_id via ccurrency_corder"><a href='c_order.html'>c_order</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_corder</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_orderline.c_currency_id references c_currency.c_currency_id via ccurrency_corderline"><a href='c_orderline.html'>c_orderline</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_corderline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_payment.c_currency_id references c_currency.c_currency_id via ccurrency_cpayment"><a href='c_payment.html'>c_payment</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cpayment</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_paymentprocessor.c_currency_id references c_currency.c_currency_id via ccurrency_cpaymentprocessor"><a href='c_paymentprocessor.html'>c_paymentprocessor</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cpaymentprocessor</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_paymenttransaction.c_currency_id references c_currency.c_currency_id via ccurrency_cpaymenttransaction"><a href='c_paymenttransaction.html'>c_paymenttransaction</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cpaymenttransaction</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_project.c_currency_id references c_currency.c_currency_id via ccurrency_cproject"><a href='c_project.html'>c_project</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cproject</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_revenuerecognition_plan.c_currency_id references c_currency.c_currency_id via ccurrency_crevenuerecplan"><a href='c_revenuerecognition_plan.html'>c_revenuerecognition_plan</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_crevenuerecplan</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_rfq.c_currency_id references c_currency.c_currency_id via ccurrency_crfq"><a href='c_rfq.html'>c_rfq</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_crfq</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_rfqresponse.c_currency_id references c_currency.c_currency_id via ccurrency_crfqresponse"><a href='c_rfqresponse.html'>c_rfqresponse</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_crfqresponse</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_taxdeclarationline.c_currency_id references c_currency.c_currency_id via ccurrency_ctaxdeclline"><a href='c_taxdeclarationline.html'>c_taxdeclarationline</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ctaxdeclline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_conciliacaocartao.c_currency_id references c_currency.c_currency_id via ccurrency_cofconciliacaocartao"><a href='cof_conciliacaocartao.html'>cof_conciliacaocartao</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cofconciliacaocartao</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_metadevendas.c_currency_id references c_currency.c_currency_id via ccurrency_cofmetadevendas"><a href='cof_metadevendas.html'>cof_metadevendas</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cofmetadevendas</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_rps.c_currency_id references c_currency.c_currency_id via ccurrency_cofrps"><a href='cof_rps.html'>cof_rps</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_cofrps</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cte_cte.c_currency_id references c_currency.c_currency_id via ccurrency_ctecte"><a href='cte_cte.html'>cte_cte</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ctecte</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fact_acct.c_currency_id references c_currency.c_currency_id via c_currency_fact_acct"><a href='fact_acct.html'>fact_acct</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">c_currency_fact_acct</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journal.c_currency_id references c_currency.c_currency_id via ccurrency_gljournal"><a href='gl_journal.html'>gl_journal</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_gljournal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalbatch.c_currency_id references c_currency.c_currency_id via ccurrency_gljournalbatch"><a href='gl_journalbatch.html'>gl_journalbatch</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_gljournalbatch</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="gl_journalline.c_currency_id references c_currency.c_currency_id via ccurrency_gljournalline"><a href='gl_journalline.html'>gl_journalline</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_gljournalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_bankstatement.c_currency_id references c_currency.c_currency_id via ccurrency_ibankstatement"><a href='i_bankstatement.html'>i_bankstatement</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ibankstatement</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_conversion_rate.c_currency_id references c_currency.c_currency_id via ccurrency_iconvrate"><a href='i_conversion_rate.html'>i_conversion_rate</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_iconvrate</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_conversion_rate.c_currency_id_to references c_currency.c_currency_id via ccurrency_iconvrateto"><a href='i_conversion_rate.html'>i_conversion_rate</a><span class='relatedKey'>.c_currency_id_to</span></td>
+                                                <td class="constraint detail">ccurrency_iconvrateto</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_fajournal.c_currency_id references c_currency.c_currency_id via ccurrency_ifajournal"><a href='i_fajournal.html'>i_fajournal</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ifajournal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_fixedasset.c_currency_id references c_currency.c_currency_id via ccurrency_ifixedasset"><a href='i_fixedasset.html'>i_fixedasset</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ifixedasset</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_gljournal.c_currency_id references c_currency.c_currency_id via ccurrency_igljournal"><a href='i_gljournal.html'>i_gljournal</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_igljournal</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_invoice.c_currency_id references c_currency.c_currency_id via ccurrency_iinvoice"><a href='i_invoice.html'>i_invoice</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_iinvoice</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_order.c_currency_id references c_currency.c_currency_id via ccurrency_iorder"><a href='i_order.html'>i_order</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_iorder</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_payment.c_currency_id references c_currency.c_currency_id via ccurrency_ipayment"><a href='i_payment.html'>i_payment</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ipayment</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_pricelist.c_currency_id references c_currency.c_currency_id via ccurrency_ipricelist"><a href='i_pricelist.html'>i_pricelist</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_ipricelist</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="i_product.c_currency_id references c_currency.c_currency_id via ccurrency_iproduct"><a href='i_product.html'>i_product</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_iproduct</td>
+                                                <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="lbr_di.c_currency_id references c_currency.c_currency_id via ccurrency_lbrdi"><a href='lbr_di.html'>lbr_di</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_lbrdi</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="lbr_docfiscal.c_currency_id references c_currency.c_currency_id via ccurrency_lbrdocfiscal"><a href='lbr_docfiscal.html'>lbr_docfiscal</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_lbrdocfiscal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_bp_price.c_currency_id references c_currency.c_currency_id via ccurrency_mbpprice"><a href='m_bp_price.html'>m_bp_price</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_mbpprice</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_freight.c_currency_id references c_currency.c_currency_id via ccurrency_mfreight"><a href='m_freight.html'>m_freight</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_mfreight</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inventory.c_currency_id references c_currency.c_currency_id via ccurrency_minventory"><a href='m_inventory.html'>m_inventory</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_minventory</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_package.c_currency_id references c_currency.c_currency_id via ccurrency_mpackage"><a href='m_package.html'>m_package</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_mpackage</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_pricelist.c_currency_id references c_currency.c_currency_id via ccurrency_mpricelist"><a href='m_pricelist.html'>m_pricelist</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_mpricelist</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_product_po.c_currency_id references c_currency.c_currency_id via ccurrency_mproductpo"><a href='m_product_po.html'>m_product_po</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_mproductpo</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_rma.c_currency_id references c_currency.c_currency_id via ccurrency_mrma"><a href='m_rma.html'>m_rma</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_mrma</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_shippingtransaction.c_currency_id references c_currency.c_currency_id via ccurrency_mshippingtransaction"><a href='m_shippingtransaction.html'>m_shippingtransaction</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_mshippingtransaction</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pa_reportcolumn.c_currency_id references c_currency.c_currency_id via ccurrency_pareportcolumn"><a href='pa_reportcolumn.html'>pa_reportcolumn</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_pareportcolumn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="s_timeexpenseline.c_currency_id references c_currency.c_currency_id via ccurrency_stimeexpenseline"><a href='s_timeexpenseline.html'>s_timeexpenseline</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_stimeexpenseline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="t_aging.c_currency_id references c_currency.c_currency_id via ccurrency_taging"><a href='t_aging.html'>t_aging</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_taging</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="t_inventoryvalue.c_currency_id references c_currency.c_currency_id via ccurrency_tinventoryvalue"><a href='t_inventoryvalue.html'>t_inventoryvalue</a><span class='relatedKey'>.c_currency_id</span></td>
+                                                <td class="constraint detail">ccurrency_tinventoryvalue</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="ad_client_id">ad_client_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_currency.ad_client_id references ad_client.ad_client_id via c_currencyclient"><a href='ad_client.html'>ad_client</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">c_currencyclient</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="ad_org_id">ad_org_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_currency.ad_org_id references ad_org.ad_org_id via c_currencyorg"><a href='ad_org.html'>ad_org</a><span class='relatedKey'>.ad_org_id</span></td>
+                                                <td class="constraint detail">c_currencyorg</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isactive">isactive</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;Y&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="created">created</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>now()</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="createdby">createdby</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="updated">updated</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>now()</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="updatedby">updatedby</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="iso_code">iso_code</span></td>
+                                    <td>bpchar</td>
+                                    <td>3</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cursymbol">cursymbol</span></td>
+                                    <td>varchar</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="description">description</span></td>
+                                    <td>varchar</td>
+                                    <td>255</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="stdprecision">stdprecision</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="costingprecision">costingprecision</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="iseuro">iseuro</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isemumember">isemumember</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="emuentrydate">emuentrydate</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="emurate">emurate</span></td>
+                                    <td>numeric</td>
+                                    <td>0</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>0</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="roundofffactor">roundofffactor</span></td>
+                                    <td>numeric</td>
+                                    <td>0</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="c_currency_uu">c_currency_uu</span></td>
+                                    <td>varchar</td>
+                                    <td>36</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_bacemcompra">cof_bacemcompra</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_bacemvenda">cof_bacemvenda</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> c_currency_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>c_currency_id</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> c_currency_uu_idx</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>c_currency_uu</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> c_currencyisocode</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>iso_code</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 class="box-title">Check Constraints</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="check_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Constraint</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>c_currency_iseuro_check</td>
+                                    <td>((iseuro &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_currency_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_currency_isemumember_check</td>
+                                    <td>((isemumember &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="oneDegreeImg" data="../diagrams/tables/c_currency.1degree.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 7.0.2</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>
