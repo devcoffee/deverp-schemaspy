@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ad_entitytype - brerp-12.adempiere</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../index.html" class="navbar-brand"><b>brerp-12</b></a><span class="navbar-brand" style="padding-left: 0">.adempiere</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>ad_entitytype</h1><p><span id="recordNumber">35</span> rows</p><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="entitytype">entitytype</span></td>
+                                    <td>varchar</td>
+                                    <td>40</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;D&#39;::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="ad_chart.entitytype references ad_entitytype.entitytype via entityt_adchart"><a href='ad_chart.html'>ad_chart</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adchart</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_chartdatasource.entitytype references ad_entitytype.entitytype via entityt_adchartdatasource"><a href='ad_chartdatasource.html'>ad_chartdatasource</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adchartdatasource</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_column.entitytype references ad_entitytype.entitytype via entityt_adcolumn"><a href='ad_column.html'>ad_column</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adcolumn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_element.entitytype references ad_entitytype.entitytype via entityt_adelement"><a href='ad_element.html'>ad_element</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adelement</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_field.entitytype references ad_entitytype.entitytype via entityt_adfield"><a href='ad_field.html'>ad_field</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adfield</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_fieldgroup.entitytype references ad_entitytype.entitytype via entityt_adfieldgroup"><a href='ad_fieldgroup.html'>ad_fieldgroup</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adfieldgroup</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_form.entitytype references ad_entitytype.entitytype via entityt_adform"><a href='ad_form.html'>ad_form</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adform</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_image.entitytype references ad_entitytype.entitytype via entityt_adimage"><a href='ad_image.html'>ad_image</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adimage</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_indexcolumn.entitytype references ad_entitytype.entitytype via entityt_adindexcolumn"><a href='ad_indexcolumn.html'>ad_indexcolumn</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adindexcolumn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_infocolumn.entitytype references ad_entitytype.entitytype via entityt_adinfocolumn"><a href='ad_infocolumn.html'>ad_infocolumn</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adinfocolumn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_infoprocess.entitytype references ad_entitytype.entitytype via entitytype_adinfoprocess"><a href='ad_infoprocess.html'>ad_infoprocess</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adinfoprocess</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_inforelated.entitytype references ad_entitytype.entitytype via entitytype_adinforelated"><a href='ad_inforelated.html'>ad_inforelated</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adinforelated</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_infowindow.entitytype references ad_entitytype.entitytype via entityt_adinfowindow"><a href='ad_infowindow.html'>ad_infowindow</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adinfowindow</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_menu.entitytype references ad_entitytype.entitytype via entityt_admenu"><a href='ad_menu.html'>ad_menu</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_admenu</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_message.entitytype references ad_entitytype.entitytype via entityt_admessage"><a href='ad_message.html'>ad_message</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_admessage</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_modelvalidator.entitytype references ad_entitytype.entitytype via entityt_admodelvalidator"><a href='ad_modelvalidator.html'>ad_modelvalidator</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_admodelvalidator</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_modification.entitytype references ad_entitytype.entitytype via adenritytype_admodification"><a href='ad_modification.html'>ad_modification</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">adenritytype_admodification</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_process.entitytype references ad_entitytype.entitytype via entityt_adprocess"><a href='ad_process.html'>ad_process</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adprocess</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_process_para.entitytype references ad_entitytype.entitytype via entityt_adprocesspara"><a href='ad_process_para.html'>ad_process_para</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adprocesspara</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_ref_list.entitytype references ad_entitytype.entitytype via entityt_adreflist"><a href='ad_ref_list.html'>ad_ref_list</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adreflist</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_ref_table.entitytype references ad_entitytype.entitytype via entityt_adreftable"><a href='ad_ref_table.html'>ad_ref_table</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adreftable</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_reference.entitytype references ad_entitytype.entitytype via entityt_adreference"><a href='ad_reference.html'>ad_reference</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adreference</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_relationtype.entitytype references ad_entitytype.entitytype via entitytype_adrelationtype"><a href='ad_relationtype.html'>ad_relationtype</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adrelationtype</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_replicationstrategy.entitytype references ad_entitytype.entitytype via entityt_adreplicationstrategy"><a href='ad_replicationstrategy.html'>ad_replicationstrategy</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adreplicationstrategy</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_replicationtable.entitytype references ad_entitytype.entitytype via entityt_adreplicationtable"><a href='ad_replicationtable.html'>ad_replicationtable</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adreplicationtable</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_reportview.entitytype references ad_entitytype.entitytype via entityt_adreportview"><a href='ad_reportview.html'>ad_reportview</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adreportview</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_requiredplugin.entitytype references ad_entitytype.entitytype via entitytype_adrequiredplugin"><a href='ad_requiredplugin.html'>ad_requiredplugin</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adrequiredplugin</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_rule.entitytype references ad_entitytype.entitytype via entityt_adrule"><a href='ad_rule.html'>ad_rule</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adrule</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_searchdefinition.entitytype references ad_entitytype.entitytype via entitytype_adsearchdefinition"><a href='ad_searchdefinition.html'>ad_searchdefinition</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adsearchdefinition</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_statusline.entitytype references ad_entitytype.entitytype via entitytype_adstatusline"><a href='ad_statusline.html'>ad_statusline</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adstatusline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_statuslineusedin.entitytype references ad_entitytype.entitytype via entitytype_adstatuslineusedin"><a href='ad_statuslineusedin.html'>ad_statuslineusedin</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adstatuslineusedin</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_style.entitytype references ad_entitytype.entitytype via entitytype_adstyle"><a href='ad_style.html'>ad_style</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adstyle</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_styleline.entitytype references ad_entitytype.entitytype via entitytype_adstyleline"><a href='ad_styleline.html'>ad_styleline</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adstyleline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_sysconfig.entitytype references ad_entitytype.entitytype via entityt_adsysconfig"><a href='ad_sysconfig.html'>ad_sysconfig</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adsysconfig</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_tab.entitytype references ad_entitytype.entitytype via entityt_adtab"><a href='ad_tab.html'>ad_tab</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adtab</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_table.entitytype references ad_entitytype.entitytype via entityt_adtable"><a href='ad_table.html'>ad_table</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adtable</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_tableindex.entitytype references ad_entitytype.entitytype via entityt_adtableindex"><a href='ad_tableindex.html'>ad_tableindex</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adtableindex</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_task.entitytype references ad_entitytype.entitytype via entityt_adtask"><a href='ad_task.html'>ad_task</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adtask</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_toolbarbutton.entitytype references ad_entitytype.entitytype via entitytype_adtoolbarbutton"><a href='ad_toolbarbutton.html'>ad_toolbarbutton</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adtoolbarbutton</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_val_rule.entitytype references ad_entitytype.entitytype via entityt_advalrule"><a href='ad_val_rule.html'>ad_val_rule</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_advalrule</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_viewcolumn.entitytype references ad_entitytype.entitytype via entityt_adviewcolumn"><a href='ad_viewcolumn.html'>ad_viewcolumn</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adviewcolumn</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_viewcomponent.entitytype references ad_entitytype.entitytype via entityt_adviewcomponent"><a href='ad_viewcomponent.html'>ad_viewcomponent</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adviewcomponent</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_wf_nextcondition.entitytype references ad_entitytype.entitytype via entityt_adwfnextcondition"><a href='ad_wf_nextcondition.html'>ad_wf_nextcondition</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adwfnextcondition</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_wf_node.entitytype references ad_entitytype.entitytype via entityt_adwfnode"><a href='ad_wf_node.html'>ad_wf_node</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adwfnode</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_wf_node_para.entitytype references ad_entitytype.entitytype via entityt_adwfnodepara"><a href='ad_wf_node_para.html'>ad_wf_node_para</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adwfnodepara</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_wf_nodenext.entitytype references ad_entitytype.entitytype via entityt_adwfnodenext"><a href='ad_wf_nodenext.html'>ad_wf_nodenext</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adwfnodenext</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_wf_responsible.entitytype references ad_entitytype.entitytype via entityt_adwfresponsible"><a href='ad_wf_responsible.html'>ad_wf_responsible</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adwfresponsible</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_window.entitytype references ad_entitytype.entitytype via entityt_adwindow"><a href='ad_window.html'>ad_window</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adwindow</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_workbench.entitytype references ad_entitytype.entitytype via entityt_adworkbench"><a href='ad_workbench.html'>ad_workbench</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adworkbench</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_workbenchwindow.entitytype references ad_entitytype.entitytype via entityt_adworkbenchwindow"><a href='ad_workbenchwindow.html'>ad_workbenchwindow</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adworkbenchwindow</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_workflow.entitytype references ad_entitytype.entitytype via entityt_adworkflow"><a href='ad_workflow.html'>ad_workflow</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_adworkflow</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ad_zoomcondition.entitytype references ad_entitytype.entitytype via entitytype_adzoomcondition"><a href='ad_zoomcondition.html'>ad_zoomcondition</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_adzoomcondition</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pa_colorschema.entitytype references ad_entitytype.entitytype via entityt_pacolorschema"><a href='pa_colorschema.html'>pa_colorschema</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_pacolorschema</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pa_documentstatus.entitytype references ad_entitytype.entitytype via entitytype_padocumentstatus"><a href='pa_documentstatus.html'>pa_documentstatus</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entitytype_padocumentstatus</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pa_measurecalc.entitytype references ad_entitytype.entitytype via entityt_pameasurecalc"><a href='pa_measurecalc.html'>pa_measurecalc</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_pameasurecalc</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pp_order_node.entitytype references ad_entitytype.entitytype via entityt_ppordernode"><a href='pp_order_node.html'>pp_order_node</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_ppordernode</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pp_order_nodenext.entitytype references ad_entitytype.entitytype via entityt_ppordernodenext"><a href='pp_order_nodenext.html'>pp_order_nodenext</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_ppordernodenext</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pp_order_workflow.entitytype references ad_entitytype.entitytype via entityt_pporderworkflow"><a href='pp_order_workflow.html'>pp_order_workflow</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_pporderworkflow</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pp_wf_node_product.entitytype references ad_entitytype.entitytype via entityt_ppwfnodeproduct"><a href='pp_wf_node_product.html'>pp_wf_node_product</a><span class='relatedKey'>.entitytype</span></td>
+                                                <td class="constraint detail">entityt_ppwfnodeproduct</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ad_client_id">ad_client_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ad_org_id">ad_org_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="ad_entitytype_id">ad_entitytype_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="ad_package_exp_detail.ad_entitytype_id references ad_entitytype.ad_entitytype_id via adentitytype_adpackageexpdetai"><a href='ad_package_exp_detail.html'>ad_package_exp_detail</a><span class='relatedKey'>.ad_entitytype_id</span></td>
+                                                <td class="constraint detail">adentitytype_adpackageexpdetai</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="isactive">isactive</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;Y&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="created">created</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>now()</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="createdby">createdby</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="updated">updated</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>now()</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="updatedby">updatedby</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="name">name</span></td>
+                                    <td>varchar</td>
+                                    <td>60</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="description">description</span></td>
+                                    <td>varchar</td>
+                                    <td>255</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="help">help</span></td>
+                                    <td>varchar</td>
+                                    <td>2000</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="version">version</span></td>
+                                    <td>varchar</td>
+                                    <td>20</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="modelpackage">modelpackage</span></td>
+                                    <td>varchar</td>
+                                    <td>255</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="classpath">classpath</span></td>
+                                    <td>varchar</td>
+                                    <td>255</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="processing">processing</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="ad_entitytype_uu">ad_entitytype_uu</span></td>
+                                    <td>varchar</td>
+                                    <td>36</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> ad_entitytype_pkey</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>entitytype</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> ad_entitytype_id_unq</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>ad_entitytype_id</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> ad_entitytype_uu_idx</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>ad_entitytype_uu</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 class="box-title">Check Constraints</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="check_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Constraint</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>ad_entitytype_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="oneDegreeImg" data="../diagrams/tables/ad_entitytype.1degree.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 7.0.2</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>
