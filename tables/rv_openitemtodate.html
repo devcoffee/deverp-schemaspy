@@ -618,6 +618,40 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="c_doctypetarget_id">c_doctypetarget_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_c_planofinanceiro_id">cof_c_planofinanceiro_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -656,7 +690,7 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT i.ad_org_id,&#10;    i.ad_client_id,&#10;    i.documentno,&#10;    i.c_invoice_id,&#10;    i.c_order_id,&#10;    i.c_bpartner_id,&#10;    i.issotrx,&#10;    i.dateinvoiced,&#10;    i.dateacct,&#10;    p.netdays,&#10;    paymenttermduedate(i.c_paymentterm_id, (i.dateinvoiced)::timestamp with time zone) AS duedate,&#10;    paymenttermduedays(i.c_paymentterm_id, (i.dateinvoiced)::timestamp with time zone, statement_timestamp()) AS daysdue,&#10;    adddays((i.dateinvoiced)::timestamp with time zone, p.discountdays) AS discountdate,&#10;    currencyround(((i.grandtotal * p.discount) / (100)::numeric), i.c_currency_id, &#39;N&#39;::character varying) AS discountamt,&#10;    i.grandtotal,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.c_paymentterm_id,&#10;    i.ispayschedulevalid,&#10;    NULL::numeric AS c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.user1_id,&#10;    i.user2_id,&#10;    i.c_doctype_id,&#10;    i.cof_c_custody_id,&#10;    i.lbr_docfiscal_id,&#10;    i.created&#10;   FROM (rv_c_invoice i&#10;     JOIN c_paymentterm p ON ((i.c_paymentterm_id &#61; p.c_paymentterm_id)))&#10;  WHERE ((i.ispayschedulevalid &lt;&gt; &#39;Y&#39;::bpchar) AND (i.docstatus &#61; ANY (ARRAY[&#39;CO&#39;::bpchar, &#39;CL&#39;::bpchar])))&#10;UNION&#10; SELECT i.ad_org_id,&#10;    i.ad_client_id,&#10;    i.documentno,&#10;    i.c_invoice_id,&#10;    i.c_order_id,&#10;    i.c_bpartner_id,&#10;    i.issotrx,&#10;    i.dateinvoiced,&#10;    i.dateacct,&#10;    daysbetween((ips.duedate)::timestamp with time zone, (i.dateinvoiced)::timestamp with time zone) AS netdays,&#10;    ips.duedate,&#10;    daysbetween(statement_timestamp(), (ips.duedate)::timestamp with time zone) AS daysdue,&#10;    ips.discountdate,&#10;    ips.discountamt,&#10;    ips.dueamt AS grandtotal,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.c_paymentterm_id,&#10;    i.ispayschedulevalid,&#10;    ips.c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.user1_id,&#10;    i.user2_id,&#10;    i.c_doctype_id,&#10;    i.cof_c_custody_id,&#10;    i.lbr_docfiscal_id,&#10;    i.created&#10;   FROM (rv_c_invoice i&#10;     JOIN c_invoicepayschedule ips ON ((i.c_invoice_id &#61; ips.c_invoice_id)))&#10;  WHERE ((i.ispayschedulevalid &#61; &#39;Y&#39;::bpchar) AND (i.docstatus &#61; ANY (ARRAY[&#39;CO&#39;::bpchar, &#39;CL&#39;::bpchar])) AND (ips.isvalid &#61; &#39;Y&#39;::bpchar));</textarea>
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT i.ad_org_id,&#10;    i.ad_client_id,&#10;    i.documentno,&#10;    i.c_invoice_id,&#10;    i.c_order_id,&#10;    i.c_bpartner_id,&#10;    i.issotrx,&#10;    i.dateinvoiced,&#10;    i.dateacct,&#10;    p.netdays,&#10;    paymenttermduedate(i.c_paymentterm_id, (i.dateinvoiced)::timestamp with time zone) AS duedate,&#10;    paymenttermduedays(i.c_paymentterm_id, (i.dateinvoiced)::timestamp with time zone, statement_timestamp()) AS daysdue,&#10;    adddays((i.dateinvoiced)::timestamp with time zone, p.discountdays) AS discountdate,&#10;    currencyround(((i.grandtotal * p.discount) / (100)::numeric), i.c_currency_id, &#39;N&#39;::character varying) AS discountamt,&#10;    i.grandtotal,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.c_paymentterm_id,&#10;    i.ispayschedulevalid,&#10;    NULL::numeric AS c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.user1_id,&#10;    i.user2_id,&#10;    i.c_doctype_id,&#10;    i.cof_c_custody_id,&#10;    i.lbr_docfiscal_id,&#10;    i.created,&#10;    i.c_doctypetarget_id,&#10;    i.cof_c_planofinanceiro_id&#10;   FROM (rv_c_invoice i&#10;     JOIN c_paymentterm p ON ((i.c_paymentterm_id &#61; p.c_paymentterm_id)))&#10;  WHERE ((i.ispayschedulevalid &lt;&gt; &#39;Y&#39;::bpchar) AND (i.docstatus &#61; ANY (ARRAY[&#39;CO&#39;::bpchar, &#39;CL&#39;::bpchar])))&#10;UNION&#10; SELECT i.ad_org_id,&#10;    i.ad_client_id,&#10;    i.documentno,&#10;    i.c_invoice_id,&#10;    i.c_order_id,&#10;    i.c_bpartner_id,&#10;    i.issotrx,&#10;    i.dateinvoiced,&#10;    i.dateacct,&#10;    daysbetween((ips.duedate)::timestamp with time zone, (i.dateinvoiced)::timestamp with time zone) AS netdays,&#10;    ips.duedate,&#10;    daysbetween(statement_timestamp(), (ips.duedate)::timestamp with time zone) AS daysdue,&#10;    ips.discountdate,&#10;    ips.discountamt,&#10;    ips.dueamt AS grandtotal,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.c_paymentterm_id,&#10;    i.ispayschedulevalid,&#10;    ips.c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.user1_id,&#10;    i.user2_id,&#10;    i.c_doctype_id,&#10;    i.cof_c_custody_id,&#10;    i.lbr_docfiscal_id,&#10;    i.created,&#10;    i.c_doctypetarget_id,&#10;    i.cof_c_planofinanceiro_id&#10;   FROM (rv_c_invoice i&#10;     JOIN c_invoicepayschedule ips ON ((i.c_invoice_id &#61; ips.c_invoice_id)))&#10;  WHERE ((i.ispayschedulevalid &#61; &#39;Y&#39;::bpchar) AND (i.docstatus &#61; ANY (ARRAY[&#39;CO&#39;::bpchar, &#39;CL&#39;::bpchar])) AND (ips.isvalid &#61; &#39;Y&#39;::bpchar));</textarea>
                             <div style="padding-top: 5px;"><hr></div>
                             <div class="box box-solid">
                                 <div class="box-header with-border">

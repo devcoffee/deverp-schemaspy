@@ -102,6 +102,7 @@ c_acctschema_gl
 ad_userdef_field
 t_transaction
 m_transactionallocation
+lbr_taxline
 cof_dda
 cof_controleabastecimento
 c_taxdefinition
@@ -110,7 +111,6 @@ ad_package_exp_common
 mp_ot_resource
 m_storagereservationlog
 m_discountschemaline
-lbr_taxline
 i_product
 i_bpartner
 cof_mdfe_reboque
@@ -665,10 +665,10 @@ a_asset_reval
 a_asset_info_lic
 m_shippingtransaction
 a_asset_change
+cof_rps
 hr_movement
 gl_distribution
 m_costdetail
-cof_rps
 pa_reportsource
 ad_inforelated
 i_bankstatement
@@ -686,6 +686,7 @@ ad_importtemplate
 a_asset_disposed
 pp_product_bomline
 cof_controleciapoutroscred
+cof_codigooperacao
 c_revenuerecog_service
 c_orderpayschedule
 c_conversion_rate
@@ -808,7 +809,6 @@ ad_ref_list
 b_topic
 ad_impformat
 cte_info
-cof_codclasstrib
 ws_webservicetype
 k_entry
 cof_configexportcontab
@@ -859,6 +859,7 @@ ad_labelcategory
 cof_controleciap
 ad_infocolumn
 hr_concept
+cof_codclasstrib
 ad_process_para
 i_fixedasset
 mp_prognosis

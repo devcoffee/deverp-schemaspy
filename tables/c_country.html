@@ -168,6 +168,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_rps.cof_destinatariocountry_id references c_country.c_country_id via cofdestinatariocountry_cofrps"><a href='cof_rps.html'>cof_rps</a><span class='relatedKey'>.cof_destinatariocountry_id</span></td>
+                                                <td class="constraint detail">cofdestinatariocountry_cofrps</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_rps.dest_country_id references c_country.c_country_id via destcountry_cofrps"><a href='cof_rps.html'>cof_rps</a><span class='relatedKey'>.dest_country_id</span></td>
                                                 <td class="constraint detail">destcountry_cofrps</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1138,20 +1143,20 @@
                                     <td>((haspostal_add &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_country_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_country_ispostcodelookup_check</td>
-                                    <td>((ispostcodelookup &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_country_allowcitiesoutoflist_check</td>
+                                    <td>((allowcitiesoutoflist &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_country_hasregion_check</td>
                                     <td>((hasregion &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_country_allowcitiesoutoflist_check</td>
-                                    <td>((allowcitiesoutoflist &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_country_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_country_ispostcodelookup_check</td>
+                                    <td>((ispostcodelookup &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

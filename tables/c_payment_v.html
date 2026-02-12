@@ -1571,23 +1571,6 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="cof_creditdate">cof_creditdate</span></td>
-                                    <td>timestamp</td>
-                                    <td>29,6</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>null</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
                                     <td><span id="c_bp_group_id">c_bp_group_id</span></td>
                                     <td>numeric</td>
                                     <td>10</td>
@@ -1625,6 +1608,57 @@
                                     <td><span id="cof_classeparceiro_id">cof_classeparceiro_id</span></td>
                                     <td>numeric</td>
                                     <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_creditdate">cof_creditdate</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_creditdatefrom">cof_creditdatefrom</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_creditdateto">cof_creditdateto</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -1676,7 +1710,7 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT c_payment.c_payment_id,&#10;    c_payment.ad_client_id,&#10;    c_payment.ad_org_id,&#10;    c_payment.isactive,&#10;    c_payment.created,&#10;    c_payment.createdby,&#10;    c_payment.updated,&#10;    c_payment.updatedby,&#10;    c_payment.documentno,&#10;    c_payment.datetrx,&#10;    c_payment.isreceipt,&#10;    c_payment.c_doctype_id,&#10;    c_payment.trxtype,&#10;    c_payment.c_bankaccount_id,&#10;    c_payment.c_bpartner_id,&#10;    c_payment.c_invoice_id,&#10;    c_payment.c_bp_bankaccount_id,&#10;    c_payment.c_paymentbatch_id,&#10;    c_payment.tendertype,&#10;    c_payment.creditcardtype,&#10;    c_payment.creditcardnumber,&#10;    c_payment.creditcardvv,&#10;    c_payment.creditcardexpmm,&#10;    c_payment.creditcardexpyy,&#10;    c_payment.micr,&#10;    c_payment.routingno,&#10;    c_payment.accountno,&#10;    c_payment.checkno,&#10;    c_payment.a_name,&#10;    c_payment.a_street,&#10;    c_payment.a_city,&#10;    c_payment.a_state,&#10;    c_payment.a_zip,&#10;    c_payment.a_ident_dl,&#10;    c_payment.a_ident_ssn,&#10;    c_payment.a_email,&#10;    c_payment.voiceauthcode,&#10;    c_payment.orig_trxid,&#10;    c_payment.ponum,&#10;    c_payment.c_currency_id,&#10;    c_payment.c_conversiontype_id,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.payamt&#10;            ELSE (c_payment.payamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS payamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.discountamt&#10;            ELSE (c_payment.discountamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS discountamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.writeoffamt&#10;            ELSE (c_payment.writeoffamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS writeoffamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.taxamt&#10;            ELSE (c_payment.taxamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS taxamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.overunderamt&#10;            ELSE (c_payment.overunderamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS overunderamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN 1&#10;            ELSE &#39;-1&#39;::integer&#10;        END AS multiplierap,&#10;    c_payment.isoverunderpayment,&#10;    c_payment.isapproved,&#10;    c_payment.r_pnref,&#10;    c_payment.r_result,&#10;    c_payment.r_respmsg,&#10;    c_payment.r_authcode,&#10;    c_payment.r_avsaddr,&#10;    c_payment.r_avszip,&#10;    c_payment.r_info,&#10;    c_payment.processing,&#10;    c_payment.oprocessing,&#10;    c_payment.docstatus,&#10;    c_payment.docaction,&#10;    c_payment.isprepayment,&#10;    c_payment.c_charge_id,&#10;    c_payment.isreconciled,&#10;    c_payment.isallocated,&#10;    c_payment.isonline,&#10;    c_payment.processed,&#10;    c_payment.posted,&#10;    c_payment.c_campaign_id,&#10;    c_payment.c_project_id,&#10;    c_payment.c_activity_id,&#10;    c_payment.ad_orgtrx_id,&#10;    c_payment.chargeamt,&#10;    c_payment.c_order_id,&#10;    c_payment.dateacct,&#10;    c_payment.description,&#10;    c_payment.isselfservice,&#10;    c_payment.processedon,&#10;    c_payment.reversal_id,&#10;    c_payment.currencyrate,&#10;    c_payment.convertedamt,&#10;    c_payment.isoverridecurrencyrate,&#10;    c_payment.c_depositbatch_id,&#10;    paymentavailable(c_payment.c_payment_id) AS openamt,&#10;    c_payment.user1_id,&#10;    c_payment.user2_id,&#10;    c_payment.isreceipt AS issotrx,&#10;    c_payment.cof_creditdate,&#10;    c_bpartner.c_bp_group_id,&#10;    c_bpartner.cof_tipoparceiro_id,&#10;    c_bpartner.cof_classeparceiro_id&#10;   FROM (c_payment&#10;     LEFT JOIN c_bpartner ON ((c_bpartner.c_bpartner_id &#61; c_payment.c_bpartner_id)));</textarea>
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT c_payment.c_payment_id,&#10;    c_payment.ad_client_id,&#10;    c_payment.ad_org_id,&#10;    c_payment.isactive,&#10;    c_payment.created,&#10;    c_payment.createdby,&#10;    c_payment.updated,&#10;    c_payment.updatedby,&#10;    c_payment.documentno,&#10;    c_payment.datetrx,&#10;    c_payment.isreceipt,&#10;    c_payment.c_doctype_id,&#10;    c_payment.trxtype,&#10;    c_payment.c_bankaccount_id,&#10;    c_payment.c_bpartner_id,&#10;    c_payment.c_invoice_id,&#10;    c_payment.c_bp_bankaccount_id,&#10;    c_payment.c_paymentbatch_id,&#10;    c_payment.tendertype,&#10;    c_payment.creditcardtype,&#10;    c_payment.creditcardnumber,&#10;    c_payment.creditcardvv,&#10;    c_payment.creditcardexpmm,&#10;    c_payment.creditcardexpyy,&#10;    c_payment.micr,&#10;    c_payment.routingno,&#10;    c_payment.accountno,&#10;    c_payment.checkno,&#10;    c_payment.a_name,&#10;    c_payment.a_street,&#10;    c_payment.a_city,&#10;    c_payment.a_state,&#10;    c_payment.a_zip,&#10;    c_payment.a_ident_dl,&#10;    c_payment.a_ident_ssn,&#10;    c_payment.a_email,&#10;    c_payment.voiceauthcode,&#10;    c_payment.orig_trxid,&#10;    c_payment.ponum,&#10;    c_payment.c_currency_id,&#10;    c_payment.c_conversiontype_id,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.payamt&#10;            ELSE (c_payment.payamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS payamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.discountamt&#10;            ELSE (c_payment.discountamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS discountamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.writeoffamt&#10;            ELSE (c_payment.writeoffamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS writeoffamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.taxamt&#10;            ELSE (c_payment.taxamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS taxamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN c_payment.overunderamt&#10;            ELSE (c_payment.overunderamt * (&#39;-1&#39;::integer)::numeric)&#10;        END AS overunderamt,&#10;        CASE c_payment.isreceipt&#10;            WHEN &#39;Y&#39;::bpchar THEN 1&#10;            ELSE &#39;-1&#39;::integer&#10;        END AS multiplierap,&#10;    c_payment.isoverunderpayment,&#10;    c_payment.isapproved,&#10;    c_payment.r_pnref,&#10;    c_payment.r_result,&#10;    c_payment.r_respmsg,&#10;    c_payment.r_authcode,&#10;    c_payment.r_avsaddr,&#10;    c_payment.r_avszip,&#10;    c_payment.r_info,&#10;    c_payment.processing,&#10;    c_payment.oprocessing,&#10;    c_payment.docstatus,&#10;    c_payment.docaction,&#10;    c_payment.isprepayment,&#10;    c_payment.c_charge_id,&#10;    c_payment.isreconciled,&#10;    c_payment.isallocated,&#10;    c_payment.isonline,&#10;    c_payment.processed,&#10;    c_payment.posted,&#10;    c_payment.c_campaign_id,&#10;    c_payment.c_project_id,&#10;    c_payment.c_activity_id,&#10;    c_payment.ad_orgtrx_id,&#10;    c_payment.chargeamt,&#10;    c_payment.c_order_id,&#10;    c_payment.dateacct,&#10;    c_payment.description,&#10;    c_payment.isselfservice,&#10;    c_payment.processedon,&#10;    c_payment.reversal_id,&#10;    c_payment.currencyrate,&#10;    c_payment.convertedamt,&#10;    c_payment.isoverridecurrencyrate,&#10;    c_payment.c_depositbatch_id,&#10;    paymentavailable(c_payment.c_payment_id) AS openamt,&#10;    c_payment.user1_id,&#10;    c_payment.user2_id,&#10;    c_payment.isreceipt AS issotrx,&#10;    c_bpartner.c_bp_group_id,&#10;    c_bpartner.cof_tipoparceiro_id,&#10;    c_bpartner.cof_classeparceiro_id,&#10;    c_payment.cof_creditdate,&#10;    c_payment.cof_creditdate AS cof_creditdatefrom,&#10;    c_payment.cof_creditdate AS cof_creditdateto&#10;   FROM (c_payment&#10;     LEFT JOIN c_bpartner ON ((c_bpartner.c_bpartner_id &#61; c_payment.c_bpartner_id)));</textarea>
                             <div style="padding-top: 5px;"><hr></div>
                             <div class="box box-solid">
                                 <div class="box-header with-border">

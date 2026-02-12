@@ -394,6 +394,7 @@ cof_pneu_marca
 mp_prognosis
 i_fixedasset
 ad_process_para
+cof_codclasstrib
 hr_concept
 ad_infocolumn
 cof_controleciap
@@ -444,7 +445,6 @@ cm_media
 cof_configexportcontab
 k_entry
 ws_webservicetype
-cof_codclasstrib
 cte_info
 ad_impformat
 b_topic
@@ -567,6 +567,7 @@ ad_wf_nodenext
 c_conversion_rate
 c_orderpayschedule
 c_revenuerecog_service
+cof_codigooperacao
 cof_controleciapoutroscred
 pp_product_bomline
 a_asset_disposed
@@ -584,10 +585,10 @@ cof_c_sped_fiscal
 i_bankstatement
 ad_inforelated
 pa_reportsource
-cof_rps
 m_costdetail
 gl_distribution
 hr_movement
+cof_rps
 a_asset_change
 m_shippingtransaction
 a_asset_info_lic
@@ -1142,7 +1143,6 @@ cof_c_taxdetermination_line
 cof_mdfe_reboque
 i_bpartner
 i_product
-lbr_taxline
 m_discountschemaline
 m_storagereservationlog
 mp_ot_resource
@@ -1151,6 +1151,7 @@ ad_statuslineusedin
 c_taxdefinition
 cof_controleabastecimento
 cof_dda
+lbr_taxline
 m_transactionallocation
 t_transaction
 ad_userdef_field

@@ -148,7 +148,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="ad_client_id">ad_client_id</span></td>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="ad_client_id">ad_client_id</span></td>
                                     <td>numeric</td>
                                     <td>10</td>
                                     <td title=''></td>
@@ -165,7 +165,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="ad_org_id">ad_org_id</span></td>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="ad_org_id">ad_org_id</span></td>
                                     <td>numeric</td>
                                     <td>10</td>
                                     <td title=''></td>
@@ -267,7 +267,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="ide_nfref_refnfe">ide_nfref_refnfe</span></td>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="ide_nfref_refnfe">ide_nfref_refnfe</span></td>
                                     <td>varchar</td>
                                     <td>44</td>
                                     <td title='nullable'>√</td>
@@ -680,6 +680,12 @@
                                     <td>Primary key</td>
                                     <td><span title='Ascending'>Asc</span></td>
                                     <td>lbr_docfiscal_ref_id</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> lbr_docfiscal_ref_infnfe_docfiscal_id_unique</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
+                                    <td>ad_client_id + ide_nfref_refnfe + lbr_docfiscal_id + ad_org_id</td>
                                 </tr>
                                 <tr>
                                     <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> lbr_docfiscal_ref_uu_idx</td>

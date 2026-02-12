@@ -1397,8 +1397,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>i_product_processed_check</td>
-                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>i_product_ismanufactured_check</td>
+                                    <td>((ismanufactured &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>i_product_lbr_hassubstitution_check</td>
+                                    <td>((lbr_hassubstitution &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>i_product_isactive_check</td>
@@ -1409,12 +1413,8 @@
                                     <td>((discontinued &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>i_product_ismanufactured_check</td>
-                                    <td>((ismanufactured &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>i_product_lbr_hassubstitution_check</td>
-                                    <td>((lbr_hassubstitution &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>i_product_processed_check</td>
+                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

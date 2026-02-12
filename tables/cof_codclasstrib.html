@@ -162,6 +162,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="cof_codigooperacao.cof_codclasstrib_id references cof_codclasstrib.cof_codclasstrib_id via cofcodclasstrib_cofcodigooperacao"><a href='cof_codigooperacao.html'>cof_codigooperacao</a><span class='relatedKey'>.cof_codclasstrib_id</span></td>
+                                                <td class="constraint detail">cofcodclasstrib_cofcodigooperacao</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_configuracaofiscal.cof_codclasstrib_id references cof_codclasstrib.cof_codclasstrib_id via cofcodclasstrib_cofconfiguracaofiscal"><a href='cof_configuracaofiscal.html'>cof_configuracaofiscal</a><span class='relatedKey'>.cof_codclasstrib_id</span></td>
                                                 <td class="constraint detail">cofcodclasstrib_cofconfiguracaofiscal</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -517,12 +522,12 @@
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>cof_codclasstrib_cof_ind_gtribregular_check</td>
-                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_codclasstrib_cof_ind_gestornocred_check</td>
                                     <td>((cof_ind_gestornocred &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_codclasstrib_cof_ind_gtribregular_check</td>
+                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

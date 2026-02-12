@@ -1264,6 +1264,57 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="status">status</span></td>
+                                    <td>varchar</td>
+                                    <td>2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="salesrep_id">salesrep_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="cof_pedidovenda_id">cof_pedidovenda_id</span></td>
+                                    <td>numeric</td>
+                                    <td>0</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1302,7 +1353,7 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT cpl.cof_packinglist_line_id,&#10;    cpl.cof_packinglist_line_uu,&#10;    cpl.ad_client_id,&#10;    cpl.ad_org_id,&#10;    cpl.isactive,&#10;    cpl.created,&#10;    cpl.createdby,&#10;    cpl.updated,&#10;    cpl.updatedby,&#10;    cpl.cof_packinglist_id,&#10;    cpl.m_inout_id,&#10;    cpl.cof_grossweight,&#10;    cpl.cof_deliveryrestriction_id,&#10;    cpl.cof_deliverydate,&#10;    cpl.cof_deliveryoccurrence_id,&#10;    cpl.line,&#10;    cpl.c_bpartner_id,&#10;    cpl.c_bpartner_location_id,&#10;    cpl.c_order_id,&#10;    cpl.cof_localseparation_id,&#10;    cpl.description,&#10;    cpl.lbr_docfiscal_id,&#10;    cpl.name,&#10;    cpl.m_rma_id,&#10;    cpl.cof_sequenciaentrega,&#10;    cpl.cof_m_shipregion_id,&#10;    cpl.cof_observacoesembarque,&#10;    cpl.cof_dfe_id,&#10;    cpl.cof_permiteestorno,&#10;    cp.ad_client_id AS cof_empresacabecalho_id,&#10;    cp.ad_org_id AS cof_organizacaocabecalho_id,&#10;    cp.documentno,&#10;    cp.cof_packingtype,&#10;    cp.cof_packingdate,&#10;    cp.startdate,&#10;    cp.cof_m_shipregion_id AS cof_regentregacabecalho_id,&#10;    cp.cof_equipments_id,&#10;    cp.cof_driver_id,&#10;    cp.cof_situacaoembarque,&#10;    cp.cof_fase,&#10;    cp.cof_distanciatotal,&#10;    cp.cof_tempototal,&#10;    cp.cof_tempoalmoco,&#10;    cp.cof_datainicioplanejamento,&#10;    cp.cof_datafimplanejamento,&#10;    cp.cof_combustivel,&#10;    cp.cof_manutencao,&#10;    cp.cof_maoobra,&#10;    cp.cof_pedagio,&#10;    cp.cof_custototal,&#10;    cp.cof_custototalkm,&#10;    cpl.cof_distancia,&#10;    cpl.cof_peso,&#10;    cpl.cof_porcentagemcarga,&#10;    cpl.cof_tempotrajetomin,&#10;    cpl.cof_tempoesperamin,&#10;    cpl.cof_tempodescargamin,&#10;    cpl.cof_tempoadicional,&#10;    cpl.cof_tempototalclientemin,&#10;    cpl.cof_chegadacliente,&#10;    cpl.cof_saidacliente,&#10;    cpl.cof_combustivel AS cof_combustivelentrega,&#10;    cpl.cof_manutencaoveiculo,&#10;    cpl.cof_pedagio AS cof_pedagioentrega,&#10;    cpl.cof_maoobra AS cof_maoobraentrega,&#10;    cpl.cof_custototalentrega,&#10;    cpl.cof_isincluiralmoco,&#10;    cpl.cof_duracaoalmoco&#10;   FROM (cof_packinglist_line cpl&#10;     JOIN cof_packinglist cp ON ((cpl.cof_packinglist_id &#61; cp.cof_packinglist_id)));</textarea>
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT cpl.cof_packinglist_line_id,&#10;    cpl.cof_packinglist_line_uu,&#10;    cpl.ad_client_id,&#10;    cpl.ad_org_id,&#10;    cpl.isactive,&#10;    cpl.created,&#10;    cpl.createdby,&#10;    cpl.updated,&#10;    cpl.updatedby,&#10;    cpl.cof_packinglist_id,&#10;    cpl.m_inout_id,&#10;    cpl.cof_grossweight,&#10;    cpl.cof_deliveryrestriction_id,&#10;    cpl.cof_deliverydate,&#10;    cpl.cof_deliveryoccurrence_id,&#10;    cpl.line,&#10;    cpl.c_bpartner_id,&#10;    cpl.c_bpartner_location_id,&#10;    cpl.c_order_id,&#10;    cpl.cof_localseparation_id,&#10;    cpl.description,&#10;    cpl.lbr_docfiscal_id,&#10;    cpl.name,&#10;    cpl.m_rma_id,&#10;    cpl.cof_sequenciaentrega,&#10;    cpl.cof_m_shipregion_id,&#10;    cpl.cof_observacoesembarque,&#10;    cpl.cof_dfe_id,&#10;    cpl.cof_permiteestorno,&#10;    cp.ad_client_id AS cof_empresacabecalho_id,&#10;    cp.ad_org_id AS cof_organizacaocabecalho_id,&#10;    cp.documentno,&#10;    cp.cof_packingtype,&#10;    cp.cof_packingdate,&#10;    cp.startdate,&#10;    cp.cof_m_shipregion_id AS cof_regentregacabecalho_id,&#10;    cp.cof_equipments_id,&#10;    cp.cof_driver_id,&#10;    cp.cof_situacaoembarque,&#10;    cp.cof_fase,&#10;    cp.cof_distanciatotal,&#10;    cp.cof_tempototal,&#10;    cp.cof_tempoalmoco,&#10;    cp.cof_datainicioplanejamento,&#10;    cp.cof_datafimplanejamento,&#10;    cp.cof_combustivel,&#10;    cp.cof_manutencao,&#10;    cp.cof_maoobra,&#10;    cp.cof_pedagio,&#10;    cp.cof_custototal,&#10;    cp.cof_custototalkm,&#10;    cpl.cof_distancia,&#10;    cpl.cof_peso,&#10;    cpl.cof_porcentagemcarga,&#10;    cpl.cof_tempotrajetomin,&#10;    cpl.cof_tempoesperamin,&#10;    cpl.cof_tempodescargamin,&#10;    cpl.cof_tempoadicional,&#10;    cpl.cof_tempototalclientemin,&#10;    cpl.cof_chegadacliente,&#10;    cpl.cof_saidacliente,&#10;    cpl.cof_combustivel AS cof_combustivelentrega,&#10;    cpl.cof_manutencaoveiculo,&#10;    cpl.cof_pedagio AS cof_pedagioentrega,&#10;    cpl.cof_maoobra AS cof_maoobraentrega,&#10;    cpl.cof_custototalentrega,&#10;    cpl.cof_isincluiralmoco,&#10;    cpl.cof_duracaoalmoco,&#10;    cp.status,&#10;    COALESCE(co.salesrep_id, io.salesrep_id, rma.salesrep_id) AS salesrep_id,&#10;    COALESCE(io.c_order_id, NULL::numeric) AS cof_pedidovenda_id&#10;   FROM ((((cof_packinglist_line cpl&#10;     JOIN cof_packinglist cp ON ((cpl.cof_packinglist_id &#61; cp.cof_packinglist_id)))&#10;     LEFT JOIN m_inout io ON ((io.m_inout_id &#61; cpl.m_inout_id)))&#10;     LEFT JOIN c_order co ON ((co.c_order_id &#61; cpl.c_order_id)))&#10;     LEFT JOIN m_rma rma ON ((rma.c_order_id &#61; cpl.m_rma_id)));</textarea>
                             <div style="padding-top: 5px;"><hr></div>
                             <div class="box box-solid">
                                 <div class="box-header with-border">
@@ -1314,6 +1365,9 @@
                                     <ul class="list-unstyled">
                                         <li><a href="cof_packinglist_line.html">cof_packinglist_line</a></li>
                                         <li><a href="cof_packinglist.html">cof_packinglist</a></li>
+                                        <li><a href="m_inout.html">m_inout</a></li>
+                                        <li><a href="c_order.html">c_order</a></li>
+                                        <li><a href="m_rma.html">m_rma</a></li>
                                     </ul>
                                 </div><!-- /.box-body -->
                             </div>

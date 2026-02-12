@@ -2419,6 +2419,26 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>c_orderline_lbr_recalculatetax_check</td>
+                                    <td>((lbr_recalculatetax &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_orderline_cof_isgenericitem_check</td>
+                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_orderline_cof_excluidoprocesso_check</td>
+                                    <td>((cof_excluidoprocesso &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_orderline_cof_kitcomercial_check</td>
+                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_orderline_cof_entregaparcial_check</td>
+                                    <td>((cof_entregaparcial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>c_orderline_cof_isservicoatrelado_check</td>
                                     <td>((cof_isservicoatrelado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
@@ -2427,32 +2447,12 @@
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_orderline_cof_kitcomercial_check</td>
-                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>c_orderline_imposto_ibscbs_inddoacao_check</td>
                                     <td>((imposto_ibscbs_inddoacao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_orderline_cof_excluidoprocesso_check</td>
-                                    <td>((cof_excluidoprocesso &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_orderline_lbr_recalculatetax_check</td>
-                                    <td>((lbr_recalculatetax &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>c_orderline_a_createasset_check</td>
                                     <td>((a_createasset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_orderline_cof_entregaparcial_check</td>
-                                    <td>((cof_entregaparcial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_orderline_cof_isgenericitem_check</td>
-                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

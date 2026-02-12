@@ -1473,56 +1473,36 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>m_package_deliveryconfirmation_check</td>
-                                    <td>((deliveryconfirmation &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_package_isaccessible_check</td>
-                                    <td>((isaccessible &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_package_isaddedhandling_check</td>
-                                    <td>((isaddedhandling &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_package_isfuturedayshipment_check</td>
-                                    <td>((isfuturedayshipment &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_package_ishazmat_check</td>
-                                    <td>((ishazmat &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_package_isdutiable_check</td>
-                                    <td>((isdutiable &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_package_issaturdaypickup_check</td>
-                                    <td>((issaturdaypickup &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_package_issaturdaydelivery_check</td>
+                                    <td>((issaturdaydelivery &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_package_iscargoaircraftonly_check</td>
                                     <td>((iscargoaircraftonly &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_package_cashondelivery_check</td>
-                                    <td>((cashondelivery &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_package_processed_check</td>
-                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_package_isaddedhandling_check</td>
+                                    <td>((isaddedhandling &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_package_isignorezipnotfound_check</td>
                                     <td>((isignorezipnotfound &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_package_issaturdaydelivery_check</td>
-                                    <td>((issaturdaydelivery &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_package_cashondelivery_check</td>
+                                    <td>((cashondelivery &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_package_isdryice_check</td>
-                                    <td>((isdryice &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_package_isaccessible_check</td>
+                                    <td>((isaccessible &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_package_issaturdaypickup_check</td>
+                                    <td>((issaturdaypickup &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_package_ishazmat_check</td>
+                                    <td>((ishazmat &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_package_isignorezipstatenotmatch_check</td>
@@ -1537,8 +1517,28 @@
                                     <td>((isresidential &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
+                                    <td>m_package_isdutiable_check</td>
+                                    <td>((isdutiable &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>m_package_isverbalconfirmation_check</td>
                                     <td>((isverbalconfirmation &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_package_isfuturedayshipment_check</td>
+                                    <td>((isfuturedayshipment &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_package_isdryice_check</td>
+                                    <td>((isdryice &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_package_processed_check</td>
+                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_package_deliveryconfirmation_check</td>
+                                    <td>((deliveryconfirmation &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
