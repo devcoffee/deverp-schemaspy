@@ -721,10 +721,6 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>pa_reportcube_isuserelement1dim_check</td>
-                                    <td>((isuserelement1dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>pa_reportcube_isbpartnerdim_check</td>
                                     <td>((isbpartnerdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
@@ -733,24 +729,32 @@
                                     <td>((isprojecttaskdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportcube_isproductdim_check</td>
-                                    <td>((isproductdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>pa_reportcube_iscampaigndim_check</td>
                                     <td>((iscampaigndim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
+                                    <td>pa_reportcube_processing_check</td>
+                                    <td>((processing &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportcube_isprojectphasedim_check</td>
+                                    <td>((isprojectphasedim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportcube_isorgtrxdim_check</td>
+                                    <td>((isorgtrxdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportcube_isuserelement1dim_check</td>
+                                    <td>((isuserelement1dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportcube_isproductdim_check</td>
+                                    <td>((isproductdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>pa_reportcube_islocfromdim_check</td>
                                     <td>((islocfromdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportcube_isuser1dim_check</td>
-                                    <td>((isuser1dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportcube_isloctodim_check</td>
-                                    <td>((isloctodim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_reportcube_isactivitydim_check</td>
@@ -761,24 +765,16 @@
                                     <td>((isprojectdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportcube_isuserelement2dim_check</td>
-                                    <td>((isuserelement2dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportcube_isuser1dim_check</td>
+                                    <td>((isuser1dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_reportcube_isglbudgetdim_check</td>
                                     <td>((isglbudgetdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportcube_isuser2dim_check</td>
-                                    <td>((isuser2dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportcube_isorgtrxdim_check</td>
-                                    <td>((isorgtrxdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportcube_isprojectphasedim_check</td>
-                                    <td>((isprojectphasedim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportcube_isloctodim_check</td>
+                                    <td>((isloctodim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_reportcube_issalesregiondim_check</td>
@@ -789,8 +785,12 @@
                                     <td>((issubacctdim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportcube_processing_check</td>
-                                    <td>((processing &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportcube_isuser2dim_check</td>
+                                    <td>((isuser2dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportcube_isuserelement2dim_check</td>
+                                    <td>((isuserelement2dim &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_reportcube_isactive_check</td>

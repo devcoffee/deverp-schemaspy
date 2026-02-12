@@ -831,20 +831,16 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>c_paymentprocessor_acceptcorporate_check</td>
-                                    <td>((acceptcorporate &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_paymentprocessor_acceptvisa_check</td>
+                                    <td>((acceptvisa &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_paymentprocessor_acceptdiscover_check</td>
+                                    <td>((acceptdiscover &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_paymentprocessor_acceptamex_check</td>
                                     <td>((acceptamex &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_paymentprocessor_requirevv_check</td>
-                                    <td>((requirevv &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_paymentprocessor_acceptvisa_check</td>
-                                    <td>((acceptvisa &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_paymentprocessor_acceptmc_check</td>
@@ -855,8 +851,16 @@
                                     <td>((acceptatm &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_paymentprocessor_acceptdiscover_check</td>
-                                    <td>((acceptdiscover &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_paymentprocessor_requirevv_check</td>
+                                    <td>((requirevv &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_paymentprocessor_acceptdiners_check</td>
+                                    <td>((acceptdiners &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_paymentprocessor_acceptcorporate_check</td>
+                                    <td>((acceptcorporate &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_paymentprocessor_isactive_check</td>
@@ -865,10 +869,6 @@
                                 <tr>
                                     <td>c_paymentprocessor_acceptcheck_check</td>
                                     <td>((acceptcheck &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_paymentprocessor_acceptdiners_check</td>
-                                    <td>((acceptdiners &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

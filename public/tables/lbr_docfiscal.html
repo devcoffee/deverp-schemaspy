@@ -5477,8 +5477,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>lbr_docfiscal_cof_isremessaindustrializacaoprestador_check</td>
-                                    <td>((cof_isremessaindustrializacaoprestador &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>lbr_docfiscal_processing_check</td>
+                                    <td>((processing &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_docfiscal_cof_islabelprinted_check</td>
+                                    <td>((cof_islabelprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_docfiscal_isactive_check</td>
@@ -5489,36 +5493,32 @@
                                     <td>((iscancelled &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_docfiscal_issotrx_check</td>
-                                    <td>((issotrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>lbr_docfiscal_cof_islabelprinted_check</td>
-                                    <td>((cof_islabelprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>lbr_docfiscal_isprinted_check</td>
                                     <td>((isprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_docfiscal_lbr_isowndocument_check</td>
-                                    <td>((lbr_isowndocument &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>lbr_docfiscal_cof_isindustrialization_check</td>
-                                    <td>((cof_isindustrialization &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>lbr_docfiscal_issotrx_check</td>
+                                    <td>((issotrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_docfiscal_processed_check</td>
                                     <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
+                                    <td>lbr_docfiscal_cof_isindustrialization_check</td>
+                                    <td>((cof_isindustrialization &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>lbr_docfiscal_lbr_isimport_check</td>
                                     <td>((lbr_isimport &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_docfiscal_processing_check</td>
-                                    <td>((processing &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>lbr_docfiscal_lbr_isowndocument_check</td>
+                                    <td>((lbr_isowndocument &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_docfiscal_cof_isremessaindustrializacaoprestador_check</td>
+                                    <td>((cof_isremessaindustrializacaoprestador &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

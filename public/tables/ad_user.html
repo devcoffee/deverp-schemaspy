@@ -1198,6 +1198,16 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_codigooperacao.createdby references ad_user.ad_user_id via createdby_cofcodigooperacao"><a href='cof_codigooperacao.html'>cof_codigooperacao</a><span class='relatedKey'>.createdby</span></td>
+                                                <td class="constraint detail">createdby_cofcodigooperacao</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_codigooperacao.updatedby references ad_user.ad_user_id via updatedby_cofcodigooperacao"><a href='cof_codigooperacao.html'>cof_codigooperacao</a><span class='relatedKey'>.updatedby</span></td>
+                                                <td class="constraint detail">updatedby_cofcodigooperacao</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_combustivel.createdby references ad_user.ad_user_id via createdby_cofcombustivel"><a href='cof_combustivel.html'>cof_combustivel</a><span class='relatedKey'>.createdby</span></td>
                                                 <td class="constraint detail">createdby_cofcombustivel</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -4110,80 +4120,80 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>ad_user_isshipto_check</td>
-                                    <td>((isshipto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_cof_isxmlemail_check</td>
-                                    <td>((cof_isxmlemail &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isaddmailtextautomatically_check</td>
-                                    <td>((isaddmailtextautomatically &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_cof_notifypurchase_check</td>
-                                    <td>((cof_notifypurchase &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_cte_contato_check</td>
-                                    <td>((cte_contato &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_cof_internaluser_check</td>
-                                    <td>((cof_internaluser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isnoexpire_check</td>
-                                    <td>((isnoexpire &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_ismenuautoexpand_check</td>
-                                    <td>((ismenuautoexpand &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_issupportuser_check</td>
-                                    <td>((issupportuser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_user_issaleslead_check</td>
+                                    <td>((issaleslead &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_user_isvendorlead_check</td>
                                     <td>((isvendorlead &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_user_issaleslead_check</td>
-                                    <td>((issaleslead &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_user_cte_contato_check</td>
+                                    <td>((cte_contato &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_user_isexpired_check</td>
                                     <td>((isexpired &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_user_cof_wpp_iscontatowhatsapp_check</td>
-                                    <td>((cof_wpp_iscontatowhatsapp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isnopasswordreset_check</td>
-                                    <td>((isnopasswordreset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isbillto_check</td>
-                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_user_cof_isxmlemail_check</td>
+                                    <td>((cof_isxmlemail &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_user_isinpayroll_check</td>
                                     <td>((isinpayroll &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_user_lbr_isnfecontact_check</td>
-                                    <td>((lbr_isnfecontact &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_user_cof_internaluser_check</td>
+                                    <td>((cof_internaluser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isaddmailtextautomatically_check</td>
+                                    <td>((isaddmailtextautomatically &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isnoexpire_check</td>
+                                    <td>((isnoexpire &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isshipto_check</td>
+                                    <td>((isshipto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_user_islocked_check</td>
                                     <td>((islocked &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_lbr_isnfecontact_check</td>
+                                    <td>((lbr_isnfecontact &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_issupportuser_check</td>
+                                    <td>((issupportuser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_cof_wpp_iscontatowhatsapp_check</td>
+                                    <td>((cof_wpp_iscontatowhatsapp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_ismenuautoexpand_check</td>
+                                    <td>((ismenuautoexpand &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isbillto_check</td>
+                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isnopasswordreset_check</td>
+                                    <td>((isnopasswordreset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_cof_notifypurchase_check</td>
+                                    <td>((cof_notifypurchase &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

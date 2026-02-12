@@ -617,7 +617,7 @@
 <g id="node12" class="node">
 <title>lbr_taxline</title>
 <g id="a_node12"><a xlink:href="../../tables/lbr_taxline.html" xlink:title="lbr_taxline" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="652,-843 652,-1143 870,-1143 870,-843 652,-843"/>
+<polygon fill="#ffffff" stroke="transparent" points="652,-821 652,-1143 870,-1143 870,-821 652,-821"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="652,-1121 652,-1143 870,-1143 870,-1121 652,-1121"/>
 <polygon fill="none" stroke="black" points="652,-1121 652,-1143 870,-1143 870,-1121 652,-1121"/>
 <text text-anchor="start" x="657" y="-1130.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_taxline</text>
@@ -657,18 +657,21 @@
 <polygon fill="none" stroke="black" points="652,-879 652,-901 870,-901 870,-879 652,-879"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="657" y="-896"/>
 <text text-anchor="start" x="672" y="-887.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_codclasstribdelivery_id</text>
-<polygon fill="none" stroke="black" points="652,-861 652,-879 870,-879 870,-861 652,-861"/>
-<text text-anchor="start" x="655" y="-867.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="652,-843 652,-861 870,-861 870,-843 652,-843"/>
-<polygon fill="none" stroke="black" points="652,-843 652,-861 870,-861 870,-843 652,-843"/>
-<polygon fill="#ffffff" stroke="transparent" points="653,-844 653,-860 716,-860 716,-844 653,-844"/>
-<text text-anchor="start" x="655" y="-849.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 9</text>
-<polygon fill="#ffffff" stroke="transparent" points="716,-844 716,-860 816,-860 816,-844 716,-844"/>
-<text text-anchor="start" x="739" y="-849.2" font-family="Helvetica,sans-Serif" font-size="11.00">2.467 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="816,-844 816,-860 869,-860 869,-844 816,-844"/>
-<text text-anchor="start" x="860" y="-849.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="black" stroke="black" points="716,-844 716,-860 716,-860 716,-844 716,-844"/>
-<polygon fill="black" stroke="black" points="816,-844 816,-860 816,-860 816,-844 816,-844"/>
+<polygon fill="none" stroke="black" points="652,-857 652,-879 870,-879 870,-857 652,-857"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="657" y="-874"/>
+<text text-anchor="start" x="672" y="-865.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_codigooperacao_id</text>
+<polygon fill="none" stroke="black" points="652,-839 652,-857 870,-857 870,-839 652,-839"/>
+<text text-anchor="start" x="655" y="-845.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="652,-821 652,-839 870,-839 870,-821 652,-821"/>
+<polygon fill="none" stroke="black" points="652,-821 652,-839 870,-839 870,-821 652,-821"/>
+<polygon fill="#ffffff" stroke="transparent" points="653,-822 653,-838 720,-838 720,-822 653,-822"/>
+<text text-anchor="start" x="655" y="-827.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 10</text>
+<polygon fill="#ffffff" stroke="transparent" points="720,-822 720,-838 818,-838 818,-822 720,-822"/>
+<text text-anchor="start" x="742" y="-827.2" font-family="Helvetica,sans-Serif" font-size="11.00">2.467 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="818,-822 818,-838 869,-838 869,-822 818,-822"/>
+<text text-anchor="start" x="860" y="-827.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="black" stroke="black" points="720,-822 720,-838 720,-838 720,-822 720,-822"/>
+<polygon fill="black" stroke="black" points="818,-822 818,-838 818,-838 818,-822 818,-822"/>
 </a>
 </g>
 </g>
