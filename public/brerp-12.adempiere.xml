@@ -10276,7 +10276,7 @@
          <checkConstraint constraint="((isfailonbuilddiffer = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_system_isfailonbuilddiffer_check"/>
          <checkConstraint constraint="((isfailonmissingmodelvalidator = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_system_isfailonmissingmodelvalidator_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_tab" numRows="1508" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_tab" numRows="1574" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_tab_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_tab_id" foreignKey="ad_tab_field" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_field"/>
             <child catalog="brerp-12" column="included_tab_id" foreignKey="includedtab_adfield" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_field"/>
@@ -45667,6 +45667,7 @@
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="195" name="cof_destinatarioregion_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_region_id" foreignKey="cofdestinatarioregion_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="c_region"/>
          </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="196" name="cof_cintcontrib" nullable="true" remarks="" size="15" type="varchar" typeCode="12"/>
          <primaryKey column="cof_rps_id" sequenceNumberInPK="1"/>
          <index name="cof_rps_pkey" unique="true">
             <column ascending="true" name="cof_rps_id"/>
@@ -45761,6 +45762,7 @@
             <parent catalog="brerp-12" column="cof_rps_lote_id" foreignKey="cofrpsloteoriginal_cofrpslote" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_rps_lote"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="32" name="cof_processing3" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="33" name="cof_islotedesmembrado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="cof_rps_lote_id" sequenceNumberInPK="1"/>
          <index name="cof_rps_lote_pkey" unique="true">
             <column ascending="true" name="cof_rps_lote_id"/>
@@ -45768,6 +45770,7 @@
          <index name="cof_rps_lote_cof_rps_lote_uu_key" unique="true">
             <column ascending="true" name="cof_rps_lote_uu"/>
          </index>
+         <checkConstraint constraint="((cof_islotedesmembrado = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lote_cof_islotedesmembrado_check"/>
          <checkConstraint constraint="((lbr_lotreceived = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lote_lbr_lotreceived_check"/>
          <checkConstraint constraint="((lbr_lotsent = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lote_lbr_lotsent_check"/>
       </table>
@@ -62460,6 +62463,7 @@
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="134" name="cof_isrestringirlocalizador" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="135" name="det_prod_tpcredpresibszfm" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="136" name="det_prod_indbemmovelusado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="137" name="cof_cintcontrib" nullable="true" remarks="" size="15" type="varchar" typeCode="12"/>
          <primaryKey column="m_product_id" sequenceNumberInPK="1"/>
          <index name="m_product_pkey" unique="true">
             <column ascending="true" name="m_product_id"/>
