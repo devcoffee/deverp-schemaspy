@@ -130,8 +130,8 @@ asp_level
 hr_department
 ad_chart
 ad_element
-m_attributeset
 ad_fieldgroup
+m_attributeset
 ad_rule
 c_poskeylayout
 c_job
@@ -488,8 +488,8 @@ ad_process_drillrule
 ad_userdef_info
 m_requisitionline
 c_allocationline
-pa_documentstatus
 cof_calculociaplinha
+pa_documentstatus
 gl_journalline
 ad_modelvalidator
 ad_package_imp

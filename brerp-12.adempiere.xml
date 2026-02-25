@@ -4483,6 +4483,7 @@
             <child catalog="brerp-12" column="ad_fieldgroup_id" foreignKey="adfieldgroup_adprocesspara" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_process_para"/>
             <child catalog="brerp-12" column="ad_fieldgroup_id" foreignKey="adfieldgroup_aduserdeffield" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_userdef_field"/>
             <child catalog="brerp-12" column="ad_fieldgroup_id" foreignKey="adfieldgroup_aduserdefprocpara" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_userdef_proc_parameter"/>
+            <child catalog="brerp-12" column="ad_fieldgroup_id" foreignKey="adfieldgroup_padocumentstatus" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_documentstatus"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -5238,6 +5239,7 @@
             <child catalog="brerp-12" column="ad_infowindow_id" foreignKey="adinfowindow_adstatuslineusedi" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_statuslineusedin"/>
             <child catalog="brerp-12" column="ad_infowindow_id" foreignKey="adinfowindow_aduserdefinfo" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_userdef_info"/>
             <child catalog="brerp-12" column="ad_infowindow_id" foreignKey="adinfowindow_adwfnode" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_wf_node"/>
+            <child catalog="brerp-12" column="ad_infowindow_id" foreignKey="adinfowindow_padocumentstatus" implied="false" onDeleteCascade="true" schema="adempiere" table="pa_documentstatus"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -7458,6 +7460,7 @@
             <child catalog="brerp-12" column="ad_printcolor3_id" foreignKey="adprintcolor3_pacolorschema" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_colorschema"/>
             <child catalog="brerp-12" column="ad_printcolor4_id" foreignKey="adprintcolor4_pacolorschema" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_colorschema"/>
             <child catalog="brerp-12" column="name_printcolor_id" foreignKey="nameprintcolor_padocumentstatu" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_documentstatus"/>
+            <child catalog="brerp-12" column="name_printcolorzero_id" foreignKey="nameprintcolorzero_padocumentstatus" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_documentstatus"/>
             <child catalog="brerp-12" column="number_printcolor_id" foreignKey="numberprintcolor_padocumentsta" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_documentstatus"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -8245,6 +8248,7 @@
             <child catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_aspclientexception" implied="false" onDeleteCascade="false" schema="adempiere" table="asp_clientexception"/>
             <child catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_aspprocess" implied="false" onDeleteCascade="false" schema="adempiere" table="asp_process"/>
             <child catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_padashboardcontent" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_dashboardcontent"/>
+            <child catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_padocumentstatus" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_documentstatus"/>
             <child catalog="brerp-12" column="jasperprocess_id" foreignKey="jasperprocess_pareport" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_report"/>
             <child catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_ppordernode" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_order_node"/>
          </column>
@@ -47544,7 +47548,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="223" name="cof_estimatedweight" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="224" name="cof_precoquilo" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
       </table>
-      <table catalog="brerp-12" name="cof_rv_gencnab" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT co.c_order_id AS documentid,&#10;    co.c_bpartner_id,&#10;    co.documentno,&#10;    NULL::numeric AS ide_nnf,&#10;    NULL::numeric AS lbr_docfiscal_id,&#10;    NULL::character varying AS cof_payscheduleno,&#10;    NULL::numeric AS c_invoicepayschedule_id,&#10;    titulo.cof_titulo_nossonumero,&#10;    co.dateordered AS date1,&#10;    co.dateordered AS date2,&#10;    co.c_paymentterm_id,&#10;    bo.name AS cof_occurrencename,&#10;    titulo.cof_c_bankoccurrence_id,&#10;    titulo.cof_c_bankintegration_id,&#10;    co.grandtotal AS total,&#10;    co.c_doctypetarget_id,&#10;    co.cof_c_custody_id,&#10;    co.issotrx,&#10;    co.ad_client_id,&#10;    co.ad_org_id,&#10;    titulo.cof_processed2,&#10;    titulo.cof_borderoname,&#10;    titulo.cof_titulo_id,&#10;    NULL::character varying AS lbr_nfestatus,&#10;    co.docstatus,&#10;    NULL::bpchar AS ispaid,&#10;    'PEDIDO'::text AS document,&#10;    co.user1_id,&#10;    co.user2_id,&#10;    o.name AS orgname,&#10;    bp.name AS bpname,&#10;    pt.name AS paymenttermname,&#10;    ct.cof_isgeneratecnab&#10;   FROM ((((((c_order co&#10;     JOIN ad_org o ON ((co.ad_org_id = o.ad_org_id)))&#10;     JOIN c_bpartner bp ON ((co.c_bpartner_id = bp.c_bpartner_id)))&#10;     JOIN c_paymentterm pt ON ((co.c_paymentterm_id = pt.c_paymentterm_id)))&#10;     LEFT JOIN cof_c_custody ct ON ((ct.cof_c_custody_id = co.cof_c_custody_id)))&#10;     LEFT JOIN cof_titulo titulo ON ((titulo.c_order_id = co.c_order_id)))&#10;     LEFT JOIN cof_c_bankoccurrence bo ON ((bo.cof_c_bankoccurrence_id = titulo.cof_c_bankoccurrence_id)))&#10;  WHERE ((ct.cof_gerarboletopedido = 'Y'::bpchar) AND (co.issotrx = 'Y'::bpchar) AND (co.docstatus = ANY (ARRAY['CO'::bpchar, 'CL'::bpchar, 'WP'::bpchar])))&#10;UNION ALL&#10; SELECT opi.c_invoice_id AS documentid,&#10;    opi.c_bpartner_id,&#10;    opi.documentno,&#10;    opi.ide_nnf,&#10;    opi.lbr_docfiscal_id,&#10;    opi.cof_payscheduleno,&#10;    opi.c_invoicepayschedule_id,&#10;    opi.cof_titulo_nossonumero,&#10;    opi.dateinvoiced AS date1,&#10;    opi.duedate AS date2,&#10;    opi.c_paymentterm_id,&#10;    opi.cof_occurrencename,&#10;    opi.cof_c_bankoccurrence_id,&#10;    opi.cof_c_bankintegration_id,&#10;    opi.openamt AS total,&#10;    opi.c_doctypetarget_id,&#10;    opi.cof_c_custody_id,&#10;    opi.issotrx,&#10;    opi.ad_client_id,&#10;    opi.ad_org_id,&#10;    opi.cof_processed2,&#10;    opi.cof_borderoname,&#10;    opi.cof_titulo_id,&#10;    opi.lbr_nfestatus,&#10;    opi.docstatus,&#10;    opi.ispaid,&#10;    'FATURA'::text AS document,&#10;    opi.user1_id,&#10;    opi.user2_id,&#10;    o.name AS orgname,&#10;    bp.name AS bpname,&#10;    pt.name AS paymenttermname,&#10;    ct.cof_isgeneratecnab&#10;   FROM (((((rv_openitem opi&#10;     JOIN ad_org o ON ((opi.ad_org_id = o.ad_org_id)))&#10;     JOIN c_doctype dt ON ((opi.c_doctypetarget_id = dt.c_doctype_id)))&#10;     JOIN c_bpartner bp ON ((opi.c_bpartner_id = bp.c_bpartner_id)))&#10;     JOIN c_paymentterm pt ON ((opi.c_paymentterm_id = pt.c_paymentterm_id)))&#10;     LEFT JOIN cof_c_custody ct ON ((ct.cof_c_custody_id = opi.cof_c_custody_id)))&#10;  WHERE ((opi.paymentrule = 'P'::bpchar) AND (dt.docbasetype = 'ARI'::bpchar) AND (opi.issotrx = 'Y'::bpchar) AND (opi.ispaid = 'N'::bpchar));">
+      <table catalog="brerp-12" name="cof_rv_gencnab" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT co.c_order_id AS documentid,&#10;    co.c_bpartner_id,&#10;    co.documentno,&#10;    NULL::numeric AS ide_nnf,&#10;    NULL::numeric AS lbr_docfiscal_id,&#10;    NULL::character varying AS cof_payscheduleno,&#10;    NULL::numeric AS c_invoicepayschedule_id,&#10;    titulo.cof_titulo_nossonumero,&#10;    co.dateordered AS date1,&#10;    co.dateordered AS date2,&#10;    co.c_paymentterm_id,&#10;    bo.name AS cof_occurrencename,&#10;    titulo.cof_c_bankoccurrence_id,&#10;    titulo.cof_c_bankintegration_id,&#10;    co.grandtotal AS total,&#10;    co.c_doctypetarget_id,&#10;    co.cof_c_custody_id,&#10;    co.issotrx,&#10;    co.ad_client_id,&#10;    co.ad_org_id,&#10;    titulo.cof_processed2,&#10;    titulo.cof_borderoname,&#10;    titulo.cof_titulo_id,&#10;    NULL::character varying AS lbr_nfestatus,&#10;    co.docstatus,&#10;    NULL::bpchar AS ispaid,&#10;    'PEDIDO'::text AS document,&#10;    co.user1_id,&#10;    co.user2_id,&#10;    o.name AS orgname,&#10;    bp.name AS bpname,&#10;    pt.name AS paymenttermname,&#10;    ct.cof_isgeneratecnab&#10;   FROM ((((((c_order co&#10;     JOIN ad_org o ON ((co.ad_org_id = o.ad_org_id)))&#10;     JOIN c_bpartner bp ON ((co.c_bpartner_id = bp.c_bpartner_id)))&#10;     JOIN c_paymentterm pt ON ((co.c_paymentterm_id = pt.c_paymentterm_id)))&#10;     LEFT JOIN cof_c_custody ct ON ((ct.cof_c_custody_id = co.cof_c_custody_id)))&#10;     LEFT JOIN cof_titulo titulo ON ((titulo.c_order_id = co.c_order_id)))&#10;     LEFT JOIN cof_c_bankoccurrence bo ON ((bo.cof_c_bankoccurrence_id = titulo.cof_c_bankoccurrence_id)))&#10;  WHERE ((ct.cof_gerarboletopedido = 'Y'::bpchar) AND (co.issotrx = 'Y'::bpchar) AND (co.docstatus = ANY (ARRAY['CO'::bpchar, 'CL'::bpchar, 'WP'::bpchar])) AND (titulo.isvalid = 'Y'::bpchar))&#10;UNION ALL&#10; SELECT opi.c_invoice_id AS documentid,&#10;    opi.c_bpartner_id,&#10;    opi.documentno,&#10;    opi.ide_nnf,&#10;    opi.lbr_docfiscal_id,&#10;    opi.cof_payscheduleno,&#10;    opi.c_invoicepayschedule_id,&#10;    opi.cof_titulo_nossonumero,&#10;    opi.dateinvoiced AS date1,&#10;    opi.duedate AS date2,&#10;    opi.c_paymentterm_id,&#10;    opi.cof_occurrencename,&#10;    opi.cof_c_bankoccurrence_id,&#10;    opi.cof_c_bankintegration_id,&#10;    opi.openamt AS total,&#10;    opi.c_doctypetarget_id,&#10;    opi.cof_c_custody_id,&#10;    opi.issotrx,&#10;    opi.ad_client_id,&#10;    opi.ad_org_id,&#10;    opi.cof_processed2,&#10;    opi.cof_borderoname,&#10;    opi.cof_titulo_id,&#10;    opi.lbr_nfestatus,&#10;    opi.docstatus,&#10;    opi.ispaid,&#10;    'FATURA'::text AS document,&#10;    opi.user1_id,&#10;    opi.user2_id,&#10;    o.name AS orgname,&#10;    bp.name AS bpname,&#10;    pt.name AS paymenttermname,&#10;    ct.cof_isgeneratecnab&#10;   FROM (((((rv_openitem opi&#10;     JOIN ad_org o ON ((opi.ad_org_id = o.ad_org_id)))&#10;     JOIN c_doctype dt ON ((opi.c_doctypetarget_id = dt.c_doctype_id)))&#10;     JOIN c_bpartner bp ON ((opi.c_bpartner_id = bp.c_bpartner_id)))&#10;     JOIN c_paymentterm pt ON ((opi.c_paymentterm_id = pt.c_paymentterm_id)))&#10;     LEFT JOIN cof_c_custody ct ON ((ct.cof_c_custody_id = opi.cof_c_custody_id)))&#10;  WHERE ((opi.paymentrule = 'P'::bpchar) AND (dt.docbasetype = 'ARI'::bpchar) AND (opi.issotrx = 'Y'::bpchar) AND (opi.ispaid = 'N'::bpchar));">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="documentid" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="c_bpartner_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="documentno" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
@@ -62464,6 +62468,7 @@
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="135" name="det_prod_tpcredpresibszfm" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="136" name="det_prod_indbemmovelusado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="137" name="cof_cintcontrib" nullable="true" remarks="" size="15" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="138" name="isbompriceoverride" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="m_product_id" sequenceNumberInPK="1"/>
          <index name="m_product_pkey" unique="true">
             <column ascending="true" name="m_product_id"/>
@@ -62506,6 +62511,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_product_isactive_check"/>
          <checkConstraint constraint="((isautoproduce = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_product_isautoproduce_check"/>
          <checkConstraint constraint="((isbom = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_product_isbom_check"/>
+         <checkConstraint constraint="((isbompriceoverride = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_product_isbompriceoverride_check"/>
          <checkConstraint constraint="((isinvoiceprintdetails = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_product_isinvoiceprintdetails_check"/>
          <checkConstraint constraint="((iskanban = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_product_iskanban_check"/>
          <checkConstraint constraint="((ismanufactured = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_product_ismanufactured_check"/>
@@ -66347,6 +66353,20 @@
             <parent catalog="brerp-12" column="entitytype" foreignKey="entitytype_padocumentstatus" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_entitytype"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="22" name="isshowinlogin" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="23" name="ishidewhenzero" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="24" name="help" nullable="true" remarks="" size="4000" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="25" name="name_printcolorzero_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_printcolor_id" foreignKey="nameprintcolorzero_padocumentstatus" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_printcolor"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="26" name="ad_fieldgroup_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_fieldgroup_id" foreignKey="adfieldgroup_padocumentstatus" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_fieldgroup"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="27" name="ad_process_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_padocumentstatus" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_process"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="28" name="ad_infowindow_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_infowindow_id" foreignKey="adinfowindow_padocumentstatus" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_infowindow"/>
+         </column>
          <primaryKey column="pa_documentstatus_id" sequenceNumberInPK="1"/>
          <index name="pa_documentstatus_key" unique="true">
             <column ascending="true" name="pa_documentstatus_id"/>
@@ -66355,6 +66375,7 @@
             <column ascending="true" name="pa_documentstatus_uu"/>
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_docstatus_active_check"/>
+         <checkConstraint constraint="((ishidewhenzero = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_documentstatus_ishidewhenzero_check"/>
          <checkConstraint constraint="((isshowinlogin = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_documentstatus_isshowinlogin_check"/>
       </table>
       <table catalog="brerp-12" name="pa_documentstatus_trl" numRows="8" remarks="" schema="adempiere" type="TABLE">
@@ -66375,6 +66396,7 @@
          <column autoUpdated="false" defaultValue="statement_timestamp()" digits="6" id="10" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="12" name="description" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="13" name="help" nullable="true" remarks="" size="4000" type="varchar" typeCode="12"/>
          <primaryKey column="pa_documentstatus_id" sequenceNumberInPK="1"/>
          <primaryKey column="ad_language" sequenceNumberInPK="2"/>
          <index name="pa_documentstatus_trl_pkey" unique="true">

@@ -554,6 +554,128 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="ishidewhenzero">ishidewhenzero</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="help">help</span></td>
+                                    <td>varchar</td>
+                                    <td>4000</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="name_printcolorzero_id">name_printcolorzero_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="pa_documentstatus.name_printcolorzero_id references ad_printcolor.ad_printcolor_id via nameprintcolorzero_padocumentstatus"><a href='ad_printcolor.html'>ad_printcolor</a><span class='relatedKey'>.ad_printcolor_id</span></td>
+                                                <td class="constraint detail">nameprintcolorzero_padocumentstatus</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="ad_fieldgroup_id">ad_fieldgroup_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="pa_documentstatus.ad_fieldgroup_id references ad_fieldgroup.ad_fieldgroup_id via adfieldgroup_padocumentstatus"><a href='ad_fieldgroup.html'>ad_fieldgroup</a><span class='relatedKey'>.ad_fieldgroup_id</span></td>
+                                                <td class="constraint detail">adfieldgroup_padocumentstatus</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="ad_process_id">ad_process_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="pa_documentstatus.ad_process_id references ad_process.ad_process_id via adprocess_padocumentstatus"><a href='ad_process.html'>ad_process</a><span class='relatedKey'>.ad_process_id</span></td>
+                                                <td class="constraint detail">adprocess_padocumentstatus</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="ad_infowindow_id">ad_infowindow_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="pa_documentstatus.ad_infowindow_id references ad_infowindow.ad_infowindow_id via adinfowindow_padocumentstatus"><a href='ad_infowindow.html'>ad_infowindow</a><span class='relatedKey'>.ad_infowindow_id</span></td>
+                                                <td class="constraint detail">adinfowindow_padocumentstatus</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -627,6 +749,10 @@
                                 <tr>
                                     <td>pa_docstatus_active_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_documentstatus_ishidewhenzero_check</td>
+                                    <td>((ishidewhenzero &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_documentstatus_isshowinlogin_check</td>
