@@ -764,8 +764,8 @@ ad_replication_run
 ad_package_imp
 ad_modelvalidator
 gl_journalline
-cof_calculociaplinha
 pa_documentstatus
+cof_calculociaplinha
 c_allocationline
 m_requisitionline
 ad_userdef_info
@@ -1122,8 +1122,8 @@ m_shippercfg
 c_job
 c_poskeylayout
 ad_rule
-ad_fieldgroup
 m_attributeset
+ad_fieldgroup
 ad_element
 ad_chart
 hr_department

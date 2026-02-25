@@ -187,6 +187,11 @@
                                                 <td class="constraint detail">adinfowindow_adwfnode</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
+                                            <tr>
+                                                <td title="pa_documentstatus.ad_infowindow_id references ad_infowindow.ad_infowindow_id via adinfowindow_padocumentstatus"><a href='pa_documentstatus.html'>pa_documentstatus</a><span class='relatedKey'>.ad_infowindow_id</span></td>
+                                                <td class="constraint detail">adinfowindow_padocumentstatus</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td>
@@ -846,8 +851,20 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>ad_infowindow_isvalid_check</td>
+                                    <td>((isvalid &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_infowindow_isdefault_check</td>
+                                    <td>((isdefault &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>ad_infowindow_isdistinct_check</td>
                                     <td>((isdistinct &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_infowindow_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_infowindow_isloadpagenum_check</td>
@@ -856,18 +873,6 @@
                                 <tr>
                                     <td>ad_infowindow_isshowindashboard_check</td>
                                     <td>((isshowindashboard &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_infowindow_isvalid_check</td>
-                                    <td>((isvalid &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_infowindow_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_infowindow_isdefault_check</td>
-                                    <td>((isdefault &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
