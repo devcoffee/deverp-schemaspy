@@ -2498,8 +2498,16 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>c_payment_isvoided_check</td>
-                                    <td>((isvoided &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_payment_isonline_check</td>
+                                    <td>((isonline &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_payment_isreceipt_check</td>
+                                    <td>((isreceipt &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_payment_processed_check</td>
+                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_payment_cof_isexibirnaconciliacaoofx_check</td>
@@ -2514,8 +2522,12 @@
                                     <td>((isoverridecurrencyrate &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_payment_isreceipt_check</td>
-                                    <td>((isreceipt &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_payment_isreconciled_check</td>
+                                    <td>((isreconciled &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_payment_isvoided_check</td>
+                                    <td>((isvoided &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_payment_isactive_check</td>
@@ -2524,18 +2536,6 @@
                                 <tr>
                                     <td>c_payment_isapproved_check</td>
                                     <td>((isapproved &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_payment_isreconciled_check</td>
-                                    <td>((isreconciled &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_payment_isonline_check</td>
-                                    <td>((isonline &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_payment_processed_check</td>
-                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -7313,7 +7313,7 @@
             <column ascending="true" name="ad_pinstance_log_uu"/>
          </index>
       </table>
-      <table catalog="brerp-12" name="ad_pinstance_para" numRows="1562" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_pinstance_para" numRows="1672" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_pinstance_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_adpinstancepara" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance"/>
          </column>
