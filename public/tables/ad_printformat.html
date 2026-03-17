@@ -242,6 +242,11 @@
                                                 <td class="constraint detail">adprintformat_pareport</td>
                                                 <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
                                             </tr>
+                                            <tr>
+                                                <td title="pivot_configuration.ad_printformat_id references ad_printformat.ad_printformat_id via adprintformat_pivotconfiguration"><a href='pivot_configuration.html'>pivot_configuration</a><span class='relatedKey'>.ad_printformat_id</span></td>
+                                                <td class="constraint detail">adprintformat_pivotconfiguration</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td>
@@ -922,16 +927,16 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>ad_printformat_isstandardheaderfooter_check</td>
-                                    <td>((isstandardheaderfooter &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_printformat_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_printformat_isbreakpageperrecord_check</td>
                                     <td>((isbreakpageperrecord &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_printformat_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_printformat_isstandardheaderfooter_check</td>
+                                    <td>((isstandardheaderfooter &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_printformat_isform_check</td>

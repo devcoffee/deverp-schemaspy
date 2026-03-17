@@ -3171,6 +3171,8 @@
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_mpottask" implied="false" onDeleteCascade="false" schema="adempiere" table="mp_ot_task"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_mpprognosis" implied="false" onDeleteCascade="false" schema="adempiere" table="mp_prognosis"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_padashboardcontentacc" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_dashboardcontent_access"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_configuration"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_field"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_testuu" implied="false" onDeleteCascade="false" schema="adempiere" table="testuu"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_testuutrl" implied="false" onDeleteCascade="false" schema="adempiere" table="testuu_trl"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_testuudet" implied="false" onDeleteCascade="false" schema="adempiere" table="testuudet"/>
@@ -6554,6 +6556,8 @@
             <child catalog="brerp-12" column="org_id" foreignKey="adorg_pareportcolumn" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_reportcolumn"/>
             <child catalog="brerp-12" column="ad_orgtrx_id" foreignKey="adorgtrx_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_reportsource"/>
             <child catalog="brerp-12" column="org_id" foreignKey="adorg_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_reportsource"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_configuration"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_field"/>
             <child catalog="brerp-12" column="ad_orgtrx_id" foreignKey="adorgtrx_ppcostcollector" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_cost_collector"/>
             <child catalog="brerp-12" column="ad_orgtrx_id" foreignKey="adorgtrx_pporder" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_order"/>
             <child catalog="brerp-12" column="cof_organizacaocusto_id" foreignKey="coforganizacaocusto_tbomindent" implied="false" onDeleteCascade="false" schema="adempiere" table="t_bom_indented"/>
@@ -7655,6 +7659,7 @@
             <child catalog="brerp-12" column="ad_printformat_id" foreignKey="adprintformat_hrprocess" implied="false" onDeleteCascade="false" schema="adempiere" table="hr_process"/>
             <child catalog="brerp-12" column="ad_printformat_id" foreignKey="adprintformat_padashboardconte" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_dashboardcontent"/>
             <child catalog="brerp-12" column="ad_printformat_id" foreignKey="adprintformat_pareport" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_report"/>
+            <child catalog="brerp-12" column="ad_printformat_id" foreignKey="adprintformat_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_configuration"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -7767,6 +7772,7 @@
             <child catalog="brerp-12" column="data4_printformatitem_id" foreignKey="adprintformatitem_graphdata4" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_printgraph"/>
             <child catalog="brerp-12" column="data_printformatitem_id" foreignKey="adprintformatitem_graphdata" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_printgraph"/>
             <child catalog="brerp-12" column="description_printformatitem_id" foreignKey="adprintformatitem_graphdescr" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_printgraph"/>
+            <child catalog="brerp-12" column="ad_printformatitem_id" foreignKey="adprintformatitem_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_field"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -12054,6 +12060,10 @@
             <child catalog="brerp-12" column="ad_user_id" foreignKey="aduser_padashboardpreference" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_dashboardpreference"/>
             <child catalog="brerp-12" column="ad_user_id" foreignKey="aduser_padocumentstatusaccess" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_documentstatusaccess"/>
             <child catalog="brerp-12" column="ad_user_id" foreignKey="aduser_pagoal" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_goal"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_configuration"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_configuration"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_field"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_field"/>
             <child catalog="brerp-12" column="ad_user_id" foreignKey="aduser_ppcostcollector" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_cost_collector"/>
             <child catalog="brerp-12" column="user1_id" foreignKey="user1_ppcostcollector" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_cost_collector"/>
             <child catalog="brerp-12" column="user2_id" foreignKey="user2_ppcostcollector" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_cost_collector"/>
@@ -14942,8 +14952,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_sellerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -15002,8 +15012,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -41340,6 +41350,7 @@
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="22" name="cof_labelconfig_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_labelconfig_id" foreignKey="coflabelconfig_coflabelentry" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_labelconfig"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="qty" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="cof_labelentry_id" sequenceNumberInPK="1"/>
          <index name="cof_labelentry_key" unique="true">
             <column ascending="true" name="cof_labelentry_id"/>
@@ -67318,6 +67329,92 @@
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_sla_measure_isactive_check"/>
          <checkConstraint constraint="((processed = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_sla_measure_processed_check"/>
+      </table>
+      <table catalog="brerp-12" name="pivot_configuration" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="2" name="ad_printformat_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_printformat_id" foreignKey="adprintformat_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_printformat"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="3" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="5" name="datafieldorientation" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="6" name="description" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="7" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="8" name="isdefault" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="9" name="isenablegrandtotalforcolumns" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="10" name="isenablegrandtotalforrow" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="name" nullable="false" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="pivot_configuration_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="pivot_configuration_id" foreignKey="pivotconfiguration_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_field"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="13" name="pivot_configuration_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="14" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_pivotconfiguration" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <primaryKey column="pivot_configuration_id" sequenceNumberInPK="1"/>
+         <index name="pivot_configuration_key" unique="true">
+            <column ascending="true" name="pivot_configuration_id"/>
+         </index>
+         <index name="pivot_configuration_isdefault_idx" unique="true">
+            <column ascending="true" name="ad_printformat_id"/>
+            <column ascending="true" name="isdefault"/>
+         </index>
+         <index name="pivot_configuration_uu_idx" unique="true">
+            <column ascending="true" name="pivot_configuration_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pivot_configuration_isactive_check"/>
+         <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pivot_configuration_isdefault_check"/>
+         <checkConstraint constraint="((isenablegrandtotalforcolumns = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pivot_configuration_isenablegrandtotalforcolumns_check"/>
+         <checkConstraint constraint="((isenablegrandtotalforrow = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pivot_configuration_isenablegrandtotalforrow_check"/>
+      </table>
+      <table catalog="brerp-12" name="pivot_field" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="2" name="ad_printformatitem_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_printformatitem_id" foreignKey="adprintformatitem_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_printformatitem"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="3" name="calctype" nullable="true" remarks="" size="50" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="4" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="6" name="description" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="7" name="help" nullable="true" remarks="" size="2000" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="8" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="9" name="isusedforgrandtotal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="name" nullable="false" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="11" name="pivot_configuration_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="pivot_configuration_id" foreignKey="pivotconfiguration_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="pivot_configuration"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="pivot_field_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="13" name="pivot_field_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="seqno" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="type" nullable="false" remarks="" size="10" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="16" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_pivotfield" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <primaryKey column="pivot_field_id" sequenceNumberInPK="1"/>
+         <index name="pivot_field_key" unique="true">
+            <column ascending="true" name="pivot_field_id"/>
+         </index>
+         <index name="pivot_field_uu_idx" unique="true">
+            <column ascending="true" name="pivot_field_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pivot_field_isactive_check"/>
+         <checkConstraint constraint="((isusedforgrandtotal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pivot_field_isusedforgrandtotal_check"/>
       </table>
       <table catalog="brerp-12" name="pp_cost_collector" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="m_product_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">

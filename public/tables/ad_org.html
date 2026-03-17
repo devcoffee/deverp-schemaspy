@@ -1508,6 +1508,16 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="pivot_configuration.ad_org_id references ad_org.ad_org_id via adorg_pivotconfiguration"><a href='pivot_configuration.html'>pivot_configuration</a><span class='relatedKey'>.ad_org_id</span></td>
+                                                <td class="constraint detail">adorg_pivotconfiguration</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pivot_field.ad_org_id references ad_org.ad_org_id via adorg_pivotfield"><a href='pivot_field.html'>pivot_field</a><span class='relatedKey'>.ad_org_id</span></td>
+                                                <td class="constraint detail">adorg_pivotfield</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="pp_cost_collector.ad_orgtrx_id references ad_org.ad_org_id via adorgtrx_ppcostcollector"><a href='pp_cost_collector.html'>pp_cost_collector</a><span class='relatedKey'>.ad_orgtrx_id</span></td>
                                                 <td class="constraint detail">adorgtrx_ppcostcollector</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
