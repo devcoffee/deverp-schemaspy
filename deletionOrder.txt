@@ -167,6 +167,7 @@ testuudet
 testuu_trl
 t_cof_relatoriomrp
 pp_order_nodenext
+pivot_field
 m_promotionprecondition
 m_product_po
 m_product_category_trl
@@ -685,6 +686,7 @@ ad_userdef_theme
 ad_importtemplate
 a_asset_disposed
 pp_product_bomline
+pivot_configuration
 cof_controleciapoutroscred
 cof_codigooperacao
 c_revenuerecog_service

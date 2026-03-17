@@ -569,6 +569,7 @@ c_orderpayschedule
 c_revenuerecog_service
 cof_codigooperacao
 cof_controleciapoutroscred
+pivot_configuration
 pp_product_bomline
 a_asset_disposed
 ad_importtemplate
@@ -1087,6 +1088,7 @@ m_pricelist_version_trl
 m_product_category_trl
 m_product_po
 m_promotionprecondition
+pivot_field
 pp_order_nodenext
 t_cof_relatoriomrp
 testuu_trl
