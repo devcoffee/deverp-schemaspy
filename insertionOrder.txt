@@ -29,6 +29,7 @@ a_depreciation_method
 a_depreciation_table_header
 c_dunning
 c_greeting
+cof_nbs
 a_asset_class
 a_asset_type
 c_1099box
@@ -36,7 +37,6 @@ c_projecttype
 c_revenuerecognition
 cof_dfe
 cof_labelconfig
-cof_nbs
 lbr_fiscalgroup_product
 m_distributionlist
 m_freightcategory
@@ -64,6 +64,7 @@ cof_correcaoapontamentoblocok
 cof_encerramentoblocoh
 cof_fechamentoestoqueblocok
 cof_pneu_status
+cof_pp_ocorrenciaprod
 cof_statusinternoos
 k_category
 lbr_productcategory
@@ -98,7 +99,6 @@ cof_nfsecancelamento
 cof_orcamentogrupo
 cof_pneu_dimensao
 cof_pneu_tipo
-cof_pp_ocorrenciaprod
 cof_r_survey
 cof_reason_closing_order
 cof_taxdefinition_group
@@ -967,6 +967,7 @@ c_payselectionline
 c_pospayment
 c_project_acct
 cm_webaccesslog
+cof_apontamentotempoordemproducao
 cof_c_comexinfo
 cof_c_markup
 cof_c_taxclassificationline
