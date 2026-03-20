@@ -289,6 +289,7 @@ cof_configexportcontabexcecoes
 cof_c_taxclassificationline
 cof_c_markup
 cof_c_comexinfo
+cof_apontamentotempoordemproducao
 cm_webaccesslog
 c_project_acct
 c_pospayment
@@ -1157,7 +1158,6 @@ cof_tipometarepresentante
 cof_taxdefinition_group
 cof_reason_closing_order
 cof_r_survey
-cof_pp_ocorrenciaprod
 cof_pneu_tipo
 cof_pneu_dimensao
 cof_orcamentogrupo
@@ -1192,6 +1192,7 @@ m_promotiongroup
 lbr_productcategory
 k_category
 cof_statusinternoos
+cof_pp_ocorrenciaprod
 cof_pneu_status
 cof_fechamentoestoqueblocok
 cof_encerramentoblocoh
@@ -1219,7 +1220,6 @@ m_lotctl
 m_freightcategory
 m_distributionlist
 lbr_fiscalgroup_product
-cof_nbs
 cof_labelconfig
 cof_dfe
 c_revenuerecognition
@@ -1227,6 +1227,7 @@ c_projecttype
 c_1099box
 a_asset_type
 a_asset_class
+cof_nbs
 c_greeting
 c_dunning
 a_depreciation_table_header

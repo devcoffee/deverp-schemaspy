@@ -118,6 +118,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="cof_apontamentotempoordemproducao.cof_pp_ocorrenciaprod_id references cof_pp_ocorrenciaprod.cof_pp_ocorrenciaprod_id via cofppocorrenciaprod_cofapontamentotempoordemproducao"><a href='cof_apontamentotempoordemproducao.html'>cof_apontamentotempoordemproducao</a><span class='relatedKey'>.cof_pp_ocorrenciaprod_id</span></td>
+                                                <td class="constraint detail">cofppocorrenciaprod_cofapontamentotempoordemproducao</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_pp_planomestreprodline.cof_pp_ocorrenciaprod_id references cof_pp_ocorrenciaprod.cof_pp_ocorrenciaprod_id via cofppocorrenciaprod_cofppplano"><a href='cof_pp_planomestreprodline.html'>cof_pp_planomestreprodline</a><span class='relatedKey'>.cof_pp_ocorrenciaprod_id</span></td>
                                                 <td class="constraint detail">cofppocorrenciaprod_cofppplano</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -405,12 +410,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>cof_pp_ocorrenciaprod_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_pp_ocorrenciaprod_cof_pp_acrescerhoras_check</td>
                                     <td>((cof_pp_acrescerhoras &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_pp_ocorrenciaprod_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -123,7 +123,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="669,-772 669,-788 758,-788 758,-772 669,-772"/>
 <text text-anchor="start" x="697" y="-777.2" font-family="Helvetica,sans-Serif" font-size="11.00">4 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="758,-772 758,-788 842,-788 842,-772 758,-772"/>
-<text text-anchor="start" x="812" y="-777.2" font-family="Helvetica,sans-Serif" font-size="11.00">187 &gt;</text>
+<text text-anchor="start" x="812" y="-777.2" font-family="Helvetica,sans-Serif" font-size="11.00">188 &gt;</text>
 <polygon fill="black" stroke="black" points="669,-772 669,-788 669,-788 669,-772 669,-772"/>
 <polygon fill="black" stroke="black" points="758,-772 758,-788 758,-788 758,-772 758,-772"/>
 </a>
@@ -1527,7 +1527,7 @@
 <g id="node14" class="node">
 <title>cof_rps</title>
 <g id="a_node14"><a xlink:href="../../tables/cof_rps.html" xlink:title="cof_rps" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="2169,-433 2169,-953 2455,-953 2455,-433 2169,-433"/>
+<polygon fill="#ffffff" stroke="transparent" points="2169,-411 2169,-953 2455,-953 2455,-411 2169,-411"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="2169,-931 2169,-953 2455,-953 2455,-931 2169,-931"/>
 <polygon fill="none" stroke="black" points="2169,-931 2169,-953 2455,-953 2455,-931 2169,-931"/>
 <text text-anchor="start" x="2174" y="-940.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_rps</text>
@@ -1597,18 +1597,21 @@
 <polygon fill="none" stroke="black" points="2169,-469 2169,-491 2455,-491 2455,-469 2169,-469"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2174" y="-486"/>
 <text text-anchor="start" x="2189" y="-477.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_destinatarioregion_id</text>
-<polygon fill="none" stroke="black" points="2169,-451 2169,-469 2455,-469 2455,-451 2169,-451"/>
-<text text-anchor="start" x="2172" y="-457.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="2169,-433 2169,-451 2455,-451 2455,-433 2169,-433"/>
-<polygon fill="none" stroke="black" points="2169,-433 2169,-451 2455,-451 2455,-433 2169,-433"/>
-<polygon fill="#ffffff" stroke="transparent" points="2170,-434 2170,-450 2272,-450 2272,-434 2170,-434"/>
-<text text-anchor="start" x="2172" y="-439.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 19</text>
-<polygon fill="#ffffff" stroke="transparent" points="2272,-434 2272,-450 2359,-450 2359,-434 2272,-434"/>
-<text text-anchor="start" x="2312" y="-439.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="2359,-434 2359,-450 2454,-450 2454,-434 2359,-434"/>
-<text text-anchor="start" x="2436" y="-439.2" font-family="Helvetica,sans-Serif" font-size="11.00">1 &gt;</text>
-<polygon fill="black" stroke="black" points="2272,-434 2272,-450 2272,-450 2272,-434 2272,-434"/>
-<polygon fill="black" stroke="black" points="2359,-434 2359,-450 2359,-450 2359,-434 2359,-434"/>
+<polygon fill="none" stroke="black" points="2169,-447 2169,-469 2455,-469 2455,-447 2169,-447"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2174" y="-464"/>
+<text text-anchor="start" x="2189" y="-455.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nbs_id</text>
+<polygon fill="none" stroke="black" points="2169,-429 2169,-447 2455,-447 2455,-429 2169,-429"/>
+<text text-anchor="start" x="2172" y="-435.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="2169,-411 2169,-429 2455,-429 2455,-411 2169,-411"/>
+<polygon fill="none" stroke="black" points="2169,-411 2169,-429 2455,-429 2455,-411 2169,-411"/>
+<polygon fill="#ffffff" stroke="transparent" points="2170,-412 2170,-428 2272,-428 2272,-412 2170,-412"/>
+<text text-anchor="start" x="2172" y="-417.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 20</text>
+<polygon fill="#ffffff" stroke="transparent" points="2272,-412 2272,-428 2359,-428 2359,-412 2272,-412"/>
+<text text-anchor="start" x="2312" y="-417.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="2359,-412 2359,-428 2454,-428 2454,-412 2359,-412"/>
+<text text-anchor="start" x="2436" y="-417.2" font-family="Helvetica,sans-Serif" font-size="11.00">1 &gt;</text>
+<polygon fill="black" stroke="black" points="2272,-412 2272,-428 2272,-428 2272,-412 2272,-412"/>
+<polygon fill="black" stroke="black" points="2359,-412 2359,-428 2359,-428 2359,-412 2359,-412"/>
 </a>
 </g>
 </g>
