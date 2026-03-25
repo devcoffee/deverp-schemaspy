@@ -4173,40 +4173,6 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="imposto_ibscbs_cst">imposto_ibscbs_cst</span></td>
-                                    <td>varchar</td>
-                                    <td>3</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>NULL::character varying</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td><span id="imposto_ibscbs_cclasstrib">imposto_ibscbs_cclasstrib</span></td>
-                                    <td>varchar</td>
-                                    <td>6</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>null</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
                                     <td><span id="imposto_ibscbs_inddoacao">imposto_ibscbs_inddoacao</span></td>
                                     <td>bpchar</td>
                                     <td>1</td>
@@ -5073,6 +5039,50 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="imposto_ibscbs_cst_id">imposto_ibscbs_cst_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="lbr_docfiscal_line.imposto_ibscbs_cst_id references lbr_taxstatus.lbr_taxstatus_id via impostoibscbscst_lbrdocfiscalline"><a href='lbr_taxstatus.html'>lbr_taxstatus</a><span class='relatedKey'>.lbr_taxstatus_id</span></td>
+                                                <td class="constraint detail">impostoibscbscst_lbrdocfiscalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="imposto_ibscbs_cct_id">imposto_ibscbs_cct_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="lbr_docfiscal_line.imposto_ibscbs_cct_id references cof_codclasstrib.cof_codclasstrib_id via impostoibscbscct_lbrdocfiscalline"><a href='cof_codclasstrib.html'>cof_codclasstrib</a><span class='relatedKey'>.cof_codclasstrib_id</span></td>
+                                                <td class="constraint detail">impostoibscbscct_lbrdocfiscalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -5156,14 +5166,6 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>lbr_docfiscal_line_cof_ind_gajustecompet_check</td>
-                                    <td>((cof_ind_gajustecompet &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>lbr_docfiscal_line_cof_ind_gtribregular_check</td>
-                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>lbr_docfiscal_line_cof_ind_gestornocred_check</td>
                                     <td>((cof_ind_gestornocred &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
@@ -5174,6 +5176,14 @@
                                 <tr>
                                     <td>lbr_docfiscal_line_cof_ind_gisencao_check</td>
                                     <td>((cof_ind_gisencao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_docfiscal_line_cof_ind_gtribregular_check</td>
+                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_docfiscal_line_cof_ind_gajustecompet_check</td>
+                                    <td>((cof_ind_gajustecompet &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_docfiscal_line_imposto_ibscbs_inddoacao_check</td>

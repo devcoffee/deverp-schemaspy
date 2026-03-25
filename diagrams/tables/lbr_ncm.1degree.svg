@@ -586,7 +586,7 @@
 <g id="node11" class="node">
 <title>lbr_docfiscal_line</title>
 <g id="a_node11"><a xlink:href="../../tables/lbr_docfiscal_line.html" xlink:title="lbr_docfiscal_line" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="560,-1482 560,-1870 876,-1870 876,-1482 560,-1482"/>
+<polygon fill="#ffffff" stroke="transparent" points="560,-1438 560,-1870 876,-1870 876,-1438 560,-1438"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="560,-1848 560,-1870 876,-1870 876,-1848 560,-1848"/>
 <polygon fill="none" stroke="black" points="560,-1848 560,-1870 876,-1870 876,-1848 560,-1848"/>
 <text text-anchor="start" x="565" y="-1857.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_docfiscal_line</text>
@@ -638,18 +638,24 @@
 <polygon fill="none" stroke="black" points="560,-1518 560,-1540 876,-1540 876,-1518 560,-1518"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="565" y="-1535"/>
 <text text-anchor="start" x="580" y="-1526.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cbenef_config_rdbc_id</text>
-<polygon fill="none" stroke="black" points="560,-1500 560,-1518 876,-1518 876,-1500 560,-1500"/>
-<text text-anchor="start" x="563" y="-1506.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="560,-1482 560,-1500 876,-1500 876,-1482 560,-1482"/>
-<polygon fill="none" stroke="black" points="560,-1482 560,-1500 876,-1500 876,-1482 560,-1482"/>
-<polygon fill="#ffffff" stroke="transparent" points="561,-1483 561,-1499 671,-1499 671,-1483 561,-1483"/>
-<text text-anchor="start" x="563" y="-1488.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 13</text>
-<polygon fill="#ffffff" stroke="transparent" points="671,-1483 671,-1499 766,-1499 766,-1483 671,-1483"/>
-<text text-anchor="start" x="715" y="-1488.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="766,-1483 766,-1499 875,-1499 875,-1483 766,-1483"/>
-<text text-anchor="start" x="851" y="-1488.2" font-family="Helvetica,sans-Serif" font-size="11.00">11 &gt;</text>
-<polygon fill="black" stroke="black" points="671,-1483 671,-1499 671,-1499 671,-1483 671,-1483"/>
-<polygon fill="black" stroke="black" points="766,-1483 766,-1499 766,-1499 766,-1483 766,-1483"/>
+<polygon fill="none" stroke="black" points="560,-1496 560,-1518 876,-1518 876,-1496 560,-1496"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="565" y="-1513"/>
+<text text-anchor="start" x="580" y="-1504.2" font-family="Helvetica,sans-Serif" font-size="11.00">imposto_ibscbs_cst_id</text>
+<polygon fill="none" stroke="black" points="560,-1474 560,-1496 876,-1496 876,-1474 560,-1474"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="565" y="-1491"/>
+<text text-anchor="start" x="580" y="-1482.2" font-family="Helvetica,sans-Serif" font-size="11.00">imposto_ibscbs_cct_id</text>
+<polygon fill="none" stroke="black" points="560,-1456 560,-1474 876,-1474 876,-1456 560,-1456"/>
+<text text-anchor="start" x="563" y="-1462.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="560,-1438 560,-1456 876,-1456 876,-1438 560,-1438"/>
+<polygon fill="none" stroke="black" points="560,-1438 560,-1456 876,-1456 876,-1438 560,-1438"/>
+<polygon fill="#ffffff" stroke="transparent" points="561,-1439 561,-1455 671,-1455 671,-1439 561,-1439"/>
+<text text-anchor="start" x="563" y="-1444.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 15</text>
+<polygon fill="#ffffff" stroke="transparent" points="671,-1439 671,-1455 766,-1455 766,-1439 671,-1439"/>
+<text text-anchor="start" x="715" y="-1444.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="766,-1439 766,-1455 875,-1455 875,-1439 766,-1439"/>
+<text text-anchor="start" x="851" y="-1444.2" font-family="Helvetica,sans-Serif" font-size="11.00">11 &gt;</text>
+<polygon fill="black" stroke="black" points="671,-1439 671,-1455 671,-1455 671,-1439 671,-1439"/>
+<polygon fill="black" stroke="black" points="766,-1439 766,-1455 766,-1455 766,-1439 766,-1439"/>
 </a>
 </g>
 </g>

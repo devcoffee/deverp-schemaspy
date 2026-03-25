@@ -2522,7 +2522,7 @@
 <g id="node12" class="node">
 <title>lbr_docfiscal_line</title>
 <g id="a_node12"><a xlink:href="../../tables/lbr_docfiscal_line.html" xlink:title="lbr_docfiscal_line" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="1521,-4409 1521,-4797 1837,-4797 1837,-4409 1521,-4409"/>
+<polygon fill="#ffffff" stroke="transparent" points="1521,-4365 1521,-4797 1837,-4797 1837,-4365 1521,-4365"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="1521,-4775 1521,-4797 1837,-4797 1837,-4775 1521,-4775"/>
 <polygon fill="none" stroke="black" points="1521,-4775 1521,-4797 1837,-4797 1837,-4775 1521,-4775"/>
 <text text-anchor="start" x="1526" y="-4784.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_docfiscal_line</text>
@@ -2574,18 +2574,24 @@
 <polygon fill="none" stroke="black" points="1521,-4445 1521,-4467 1837,-4467 1837,-4445 1521,-4445"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1526" y="-4462"/>
 <text text-anchor="start" x="1541" y="-4453.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cbenef_config_rdbc_id</text>
-<polygon fill="none" stroke="black" points="1521,-4427 1521,-4445 1837,-4445 1837,-4427 1521,-4427"/>
-<text text-anchor="start" x="1524" y="-4433.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="1521,-4409 1521,-4427 1837,-4427 1837,-4409 1521,-4409"/>
-<polygon fill="none" stroke="black" points="1521,-4409 1521,-4427 1837,-4427 1837,-4409 1521,-4409"/>
-<polygon fill="#ffffff" stroke="transparent" points="1522,-4410 1522,-4426 1632,-4426 1632,-4410 1522,-4410"/>
-<text text-anchor="start" x="1524" y="-4415.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 13</text>
-<polygon fill="#ffffff" stroke="transparent" points="1632,-4410 1632,-4426 1727,-4426 1727,-4410 1632,-4410"/>
-<text text-anchor="start" x="1676" y="-4415.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1727,-4410 1727,-4426 1836,-4426 1836,-4410 1727,-4410"/>
-<text text-anchor="start" x="1812" y="-4415.2" font-family="Helvetica,sans-Serif" font-size="11.00">11 &gt;</text>
-<polygon fill="black" stroke="black" points="1632,-4410 1632,-4426 1632,-4426 1632,-4410 1632,-4410"/>
-<polygon fill="black" stroke="black" points="1727,-4410 1727,-4426 1727,-4426 1727,-4410 1727,-4410"/>
+<polygon fill="none" stroke="black" points="1521,-4423 1521,-4445 1837,-4445 1837,-4423 1521,-4423"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1526" y="-4440"/>
+<text text-anchor="start" x="1541" y="-4431.2" font-family="Helvetica,sans-Serif" font-size="11.00">imposto_ibscbs_cst_id</text>
+<polygon fill="none" stroke="black" points="1521,-4401 1521,-4423 1837,-4423 1837,-4401 1521,-4401"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1526" y="-4418"/>
+<text text-anchor="start" x="1541" y="-4409.2" font-family="Helvetica,sans-Serif" font-size="11.00">imposto_ibscbs_cct_id</text>
+<polygon fill="none" stroke="black" points="1521,-4383 1521,-4401 1837,-4401 1837,-4383 1521,-4383"/>
+<text text-anchor="start" x="1524" y="-4389.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="1521,-4365 1521,-4383 1837,-4383 1837,-4365 1521,-4365"/>
+<polygon fill="none" stroke="black" points="1521,-4365 1521,-4383 1837,-4383 1837,-4365 1521,-4365"/>
+<polygon fill="#ffffff" stroke="transparent" points="1522,-4366 1522,-4382 1632,-4382 1632,-4366 1522,-4366"/>
+<text text-anchor="start" x="1524" y="-4371.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 15</text>
+<polygon fill="#ffffff" stroke="transparent" points="1632,-4366 1632,-4382 1727,-4382 1727,-4366 1632,-4366"/>
+<text text-anchor="start" x="1676" y="-4371.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1727,-4366 1727,-4382 1836,-4382 1836,-4366 1727,-4366"/>
+<text text-anchor="start" x="1812" y="-4371.2" font-family="Helvetica,sans-Serif" font-size="11.00">11 &gt;</text>
+<polygon fill="black" stroke="black" points="1632,-4366 1632,-4382 1632,-4382 1632,-4366 1632,-4366"/>
+<polygon fill="black" stroke="black" points="1727,-4366 1727,-4382 1727,-4382 1727,-4366 1727,-4366"/>
 </a>
 </g>
 </g>
@@ -2745,9 +2751,9 @@
 <!-- cof_controleciap&#45;&gt;lbr_docfiscal -->
 <g id="edge24" class="edge">
 <title>cof_controleciap:w&#45;&gt;lbr_docfiscal:e</title>
-<path fill="none" stroke="black" d="M1870.46,-4240.02C1700.32,-4240.59 1610.45,-4252.99 1513,-4398 1467.35,-4465.93 1552.84,-7344 1471,-7344"/>
-<polygon fill="black" stroke="black" points="1877,-4240.01 1885.01,-4243.6 1881,-4240.01 1885,-4240 1885,-4240 1885,-4240 1881,-4240.01 1884.99,-4236.4 1877,-4240.01 1877,-4240.01"/>
-<ellipse fill="none" stroke="black" cx="1873.8" cy="-4240.02" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1870.49,-4239.95C1706.67,-4238.75 1613.85,-4219.6 1513,-4354 1463.15,-4420.44 1554.06,-7344 1471,-7344"/>
+<polygon fill="black" stroke="black" points="1877,-4239.97 1884.99,-4243.6 1881,-4239.99 1885,-4240 1885,-4240 1885,-4240 1881,-4239.99 1885.01,-4236.4 1877,-4239.97 1877,-4239.97"/>
+<ellipse fill="none" stroke="black" cx="1873.8" cy="-4239.96" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_controleciap&#45;&gt;lbr_docfiscal_line -->
 <g id="edge25" class="edge">
@@ -2832,20 +2838,23 @@
 <g id="node16" class="node">
 <title>cof_controleremessasind</title>
 <g id="a_node16"><a xlink:href="../../tables/cof_controleremessasind.html" xlink:title="cof_controleremessasind" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="2605.5,-1164 2605.5,-1464 2833.5,-1464 2833.5,-1164 2605.5,-1164"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="2605.5,-1442 2605.5,-1464 2833.5,-1464 2833.5,-1442 2605.5,-1442"/>
+<polygon fill="#ffffff" stroke="transparent" points="2605.5,-1164 2605.5,-1486 2833.5,-1486 2833.5,-1164 2605.5,-1164"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="2605.5,-1464 2605.5,-1486 2833.5,-1486 2833.5,-1464 2605.5,-1464"/>
+<polygon fill="none" stroke="black" points="2605.5,-1464 2605.5,-1486 2833.5,-1486 2833.5,-1464 2605.5,-1464"/>
+<text text-anchor="start" x="2610.5" y="-1473.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_controleremessasind</text>
+<text text-anchor="start" x="2798.5" y="-1472.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
 <polygon fill="none" stroke="black" points="2605.5,-1442 2605.5,-1464 2833.5,-1464 2833.5,-1442 2605.5,-1442"/>
-<text text-anchor="start" x="2610.5" y="-1451.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_controleremessasind</text>
-<text text-anchor="start" x="2798.5" y="-1450.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2610.5" y="-1459"/>
+<text text-anchor="start" x="2625.5" y="-1450.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_controleremessasind_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="2605.5,-1420 2605.5,-1442 2833.5,-1442 2833.5,-1420 2605.5,-1420"/>
 <polygon fill="none" stroke="black" points="2605.5,-1420 2605.5,-1442 2833.5,-1442 2833.5,-1420 2605.5,-1420"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2610.5" y="-1437"/>
-<text text-anchor="start" x="2625.5" y="-1428.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_controleremessasind_id</text>
+<text text-anchor="start" x="2625.5" y="-1428.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_controleremessasind_uu</text>
 <polygon fill="#ffffff" stroke="transparent" points="2605.5,-1398 2605.5,-1420 2833.5,-1420 2833.5,-1398 2605.5,-1398"/>
 <polygon fill="none" stroke="black" points="2605.5,-1398 2605.5,-1420 2833.5,-1420 2833.5,-1398 2605.5,-1398"/>
-<text text-anchor="start" x="2625.5" y="-1406.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_controleremessasind_uu</text>
+<text text-anchor="start" x="2625.5" y="-1406.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
 <polygon fill="#ffffff" stroke="transparent" points="2605.5,-1376 2605.5,-1398 2833.5,-1398 2833.5,-1376 2605.5,-1376"/>
 <polygon fill="none" stroke="black" points="2605.5,-1376 2605.5,-1398 2833.5,-1398 2833.5,-1376 2605.5,-1376"/>
-<text text-anchor="start" x="2625.5" y="-1384.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
+<text text-anchor="start" x="2625.5" y="-1384.2" font-family="Helvetica,sans-Serif" font-size="11.00">value</text>
 <polygon fill="none" stroke="black" points="2605.5,-1354 2605.5,-1376 2833.5,-1376 2833.5,-1354 2605.5,-1354"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2610.5" y="-1371"/>
 <text text-anchor="start" x="2625.5" y="-1362.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_doctypetarget_id</text>
@@ -2905,7 +2914,7 @@
 <!-- cof_controleremessasind&#45;&gt;lbr_docfiscal -->
 <g id="edge31" class="edge">
 <title>cof_controleremessasind:w&#45;&gt;lbr_docfiscal:e</title>
-<path fill="none" stroke="black" d="M2590,-1233.06C1187.56,-1243.98 1767.86,-2845.05 1513,-4238 1505.24,-4280.44 1514.14,-7344 1471,-7344"/>
+<path fill="none" stroke="black" d="M2590.01,-1233.06C1188.39,-1243.98 1767.86,-2843.9 1513,-4236 1505.23,-4278.46 1514.17,-7344 1471,-7344"/>
 <polygon fill="black" stroke="black" points="2596.5,-1233.03 2604.51,-1236.6 2600.5,-1233.02 2604.5,-1233 2604.5,-1233 2604.5,-1233 2600.5,-1233.02 2604.49,-1229.4 2596.5,-1233.03 2596.5,-1233.03"/>
 <ellipse fill="none" stroke="black" cx="2593.3" cy="-1233.04" rx="3.2" ry="3.2"/>
 </g>

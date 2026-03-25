@@ -47,7 +47,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="362,-4618 362,-4634 437,-4634 437,-4618 362,-4618"/>
 <text text-anchor="start" x="383" y="-4623.2" font-family="Helvetica,sans-Serif" font-size="11.00">3 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="437,-4618 437,-4634 507,-4634 507,-4618 437,-4618"/>
-<text text-anchor="start" x="477" y="-4623.2" font-family="Helvetica,sans-Serif" font-size="11.00">288 &gt;</text>
+<text text-anchor="start" x="477" y="-4623.2" font-family="Helvetica,sans-Serif" font-size="11.00">290 &gt;</text>
 <polygon fill="black" stroke="black" points="362,-4618 362,-4634 362,-4634 362,-4618 362,-4618"/>
 <polygon fill="black" stroke="black" points="437,-4618 437,-4634 437,-4634 437,-4618 437,-4618"/>
 </a>
@@ -92,7 +92,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="81.5,-4574 81.5,-4590 169.5,-4590 169.5,-4574 81.5,-4574"/>
 <text text-anchor="start" x="109" y="-4579.2" font-family="Helvetica,sans-Serif" font-size="11.00">2 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="169.5,-4574 169.5,-4590 252.5,-4590 252.5,-4574 169.5,-4574"/>
-<text text-anchor="start" x="222.5" y="-4579.2" font-family="Helvetica,sans-Serif" font-size="11.00">208 &gt;</text>
+<text text-anchor="start" x="222.5" y="-4579.2" font-family="Helvetica,sans-Serif" font-size="11.00">210 &gt;</text>
 <polygon fill="black" stroke="black" points="81.5,-4574 81.5,-4590 81.5,-4590 81.5,-4574 81.5,-4574"/>
 <polygon fill="black" stroke="black" points="169.5,-4574 169.5,-4590 169.5,-4590 169.5,-4574 169.5,-4574"/>
 </a>
@@ -1712,9 +1712,9 @@
 <!-- cof_mdfe&#45;&gt;c_city -->
 <g id="edge49" class="edge">
 <title>cof_mdfe:w&#45;&gt;c_city:e</title>
-<path fill="none" stroke="black" d="M2085.95,-2781.06C1927.71,-2782.45 1851.37,-2808.06 1758,-2942 1709.27,-3011.9 1787.79,-3266.4 1725,-3324 1698.14,-3348.64 1425.21,-3347.07 1397,-3324 1339.78,-3277.21 1409.48,-3219.26 1364,-3161 1337.94,-3127.62 1320.34,-3120 1278,-3120"/>
-<polygon fill="black" stroke="black" points="2092.5,-2781.03 2100.52,-2784.6 2096.5,-2781.02 2100.5,-2781 2100.5,-2781 2100.5,-2781 2096.5,-2781.02 2100.48,-2777.4 2092.5,-2781.03 2092.5,-2781.03"/>
-<ellipse fill="none" stroke="black" cx="2089.3" cy="-2781.05" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M2085.81,-2781.02C1931.3,-2781.51 1852.29,-2791.59 1758,-2920 1704.69,-2992.6 1791.24,-3262.95 1725,-3324 1698.2,-3348.7 1425.21,-3347.07 1397,-3324 1339.78,-3277.21 1409.48,-3219.26 1364,-3161 1337.94,-3127.62 1320.34,-3120 1278,-3120"/>
+<polygon fill="black" stroke="black" points="2092.5,-2781.01 2100.51,-2784.6 2096.5,-2781.01 2100.5,-2781 2100.5,-2781 2100.5,-2781 2096.5,-2781.01 2100.49,-2777.4 2092.5,-2781.01 2092.5,-2781.01"/>
+<ellipse fill="none" stroke="black" cx="2089.3" cy="-2781.02" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_mdfe&#45;&gt;c_region -->
 <g id="edge50" class="edge">
@@ -1907,7 +1907,7 @@
 <!-- cof_mdfe_percurso&#45;&gt;c_region -->
 <g id="edge57" class="edge">
 <title>cof_mdfe_percurso:w&#45;&gt;c_region:e</title>
-<path fill="none" stroke="black" d="M2478.4,-4599.87C1740.71,-4586.99 2452.09,-3589.17 2060,-2942 1966.09,-2787 1850.69,-2823.74 1758,-2668 1726.41,-2614.92 1773.59,-2571.14 1725,-2533 1696.33,-2510.5 1426.95,-2512.24 1397,-2533 1362.67,-2556.79 1398.33,-2597.21 1364,-2621 1337.88,-2639.1 1102.14,-2641.66 1078,-2621 1032.04,-2581.66 1096.5,-2352 1036,-2352"/>
+<path fill="none" stroke="black" d="M2478.5,-4599.88C1731.41,-4586.96 2469.46,-3567.58 2060,-2920 1966.58,-2772.25 1850.5,-2816.34 1758,-2668 1725.32,-2615.59 1773.59,-2571.14 1725,-2533 1696.33,-2510.5 1426.95,-2512.24 1397,-2533 1362.67,-2556.79 1398.33,-2597.21 1364,-2621 1337.88,-2639.1 1102.14,-2641.66 1078,-2621 1032.04,-2581.66 1096.5,-2352 1036,-2352"/>
 <polygon fill="black" stroke="black" points="2485,-4599.93 2492.97,-4603.6 2489,-4599.97 2493,-4600 2493,-4600 2493,-4600 2489,-4599.97 2493.03,-4596.4 2485,-4599.93 2485,-4599.93"/>
 <ellipse fill="none" stroke="black" cx="2481.8" cy="-4599.9" rx="3.2" ry="3.2"/>
 </g>
@@ -2205,7 +2205,7 @@
 <g id="node28" class="node">
 <title>cof_rps</title>
 <g id="a_node28"><a xlink:href="../../tables/cof_rps.html" xlink:title="cof_rps" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="1766,-2953 1766,-3495 2052,-3495 2052,-2953 1766,-2953"/>
+<polygon fill="#ffffff" stroke="transparent" points="1766,-2931 1766,-3495 2052,-3495 2052,-2931 1766,-2931"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="1766,-3473 1766,-3495 2052,-3495 2052,-3473 1766,-3473"/>
 <polygon fill="none" stroke="black" points="1766,-3473 1766,-3495 2052,-3495 2052,-3473 1766,-3473"/>
 <text text-anchor="start" x="1771" y="-3482.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_rps</text>
@@ -2278,18 +2278,21 @@
 <polygon fill="none" stroke="black" points="1766,-2989 1766,-3011 2052,-3011 2052,-2989 1766,-2989"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1771" y="-3006"/>
 <text text-anchor="start" x="1786" y="-2997.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nbs_id</text>
-<polygon fill="none" stroke="black" points="1766,-2971 1766,-2989 2052,-2989 2052,-2971 1766,-2971"/>
-<text text-anchor="start" x="1769" y="-2977.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="1766,-2953 1766,-2971 2052,-2971 2052,-2953 1766,-2953"/>
-<polygon fill="none" stroke="black" points="1766,-2953 1766,-2971 2052,-2971 2052,-2953 1766,-2953"/>
-<polygon fill="#ffffff" stroke="transparent" points="1767,-2954 1767,-2970 1869,-2970 1869,-2954 1767,-2954"/>
-<text text-anchor="start" x="1769" y="-2959.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 20</text>
-<polygon fill="#ffffff" stroke="transparent" points="1869,-2954 1869,-2970 1956,-2970 1956,-2954 1869,-2954"/>
-<text text-anchor="start" x="1909" y="-2959.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1956,-2954 1956,-2970 2051,-2970 2051,-2954 1956,-2954"/>
-<text text-anchor="start" x="2033" y="-2959.2" font-family="Helvetica,sans-Serif" font-size="11.00">1 &gt;</text>
-<polygon fill="black" stroke="black" points="1869,-2954 1869,-2970 1869,-2970 1869,-2954 1869,-2954"/>
-<polygon fill="black" stroke="black" points="1956,-2954 1956,-2970 1956,-2970 1956,-2954 1956,-2954"/>
+<polygon fill="none" stroke="black" points="1766,-2967 1766,-2989 2052,-2989 2052,-2967 1766,-2967"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1771" y="-2984"/>
+<text text-anchor="start" x="1786" y="-2975.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_codigooperacao_id</text>
+<polygon fill="none" stroke="black" points="1766,-2949 1766,-2967 2052,-2967 2052,-2949 1766,-2949"/>
+<text text-anchor="start" x="1769" y="-2955.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="1766,-2931 1766,-2949 2052,-2949 2052,-2931 1766,-2931"/>
+<polygon fill="none" stroke="black" points="1766,-2931 1766,-2949 2052,-2949 2052,-2931 1766,-2931"/>
+<polygon fill="#ffffff" stroke="transparent" points="1767,-2932 1767,-2948 1869,-2948 1869,-2932 1767,-2932"/>
+<text text-anchor="start" x="1769" y="-2937.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 21</text>
+<polygon fill="#ffffff" stroke="transparent" points="1869,-2932 1869,-2948 1956,-2948 1956,-2932 1869,-2932"/>
+<text text-anchor="start" x="1909" y="-2937.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1956,-2932 1956,-2948 2051,-2948 2051,-2932 1956,-2932"/>
+<text text-anchor="start" x="2033" y="-2937.2" font-family="Helvetica,sans-Serif" font-size="11.00">1 &gt;</text>
+<polygon fill="black" stroke="black" points="1869,-2932 1869,-2948 1869,-2948 1869,-2932 1869,-2932"/>
+<polygon fill="black" stroke="black" points="1956,-2932 1956,-2948 1956,-2948 1956,-2932 1956,-2932"/>
 </a>
 </g>
 </g>

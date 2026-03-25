@@ -175,6 +175,7 @@ ad_message
 ad_task
 c_calendar
 cof_pontoremessa
+cof_codclasstrib
 c_countrygroup
 cof_c_cnabconfig
 c_ordersource
@@ -394,7 +395,6 @@ cof_pneu_marca
 mp_prognosis
 i_fixedasset
 ad_process_para
-cof_codclasstrib
 hr_concept
 ad_infocolumn
 cof_controleciap
@@ -410,6 +410,7 @@ m_distributionrun
 c_rfqline
 hr_list
 m_requisition
+cof_codigooperacao
 w_store
 c_revenuerecognition_plan
 c_bankstatementline
@@ -567,7 +568,6 @@ ad_wf_nodenext
 c_conversion_rate
 c_orderpayschedule
 c_revenuerecog_service
-cof_codigooperacao
 cof_controleciapoutroscred
 pivot_configuration
 pp_product_bomline
@@ -589,8 +589,8 @@ pa_reportsource
 m_costdetail
 gl_distribution
 hr_movement
-cof_rps
 a_asset_change
+cof_rps
 m_shippingtransaction
 a_asset_info_lic
 a_asset_reval
@@ -1027,6 +1027,7 @@ cof_configuracaociap
 cof_formacaoprecolista
 cof_gruponcmlinha
 cof_labelfield
+cof_orderdeducaomateriais
 cof_parametroavancadobusca
 cof_pneu_manutencao
 cte_infctecomp
@@ -1109,6 +1110,7 @@ cof_controleciap_saida
 cof_formacaopreco
 cof_historicoconsultas
 cof_imagenslinhaov
+cof_invoicededucaomateriais
 cof_mdfe_documentofiscal
 cof_produtolocalizadorconfig
 cof_projecaoestoquefiscal

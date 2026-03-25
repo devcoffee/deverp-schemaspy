@@ -3108,6 +3108,7 @@
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofgruposeparacao" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_gruposeparacao"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofhistoricoconsultas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_historicoconsultas"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofimagenslinhaov" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_imagenslinhaov"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_invoicededucaomateriais"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coflinhacalculo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhacalculo"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coflinharecuperacaoimposto" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linharecuperacaoimposto"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coflinhareposicao" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhareposicao"/>
@@ -3119,6 +3120,7 @@
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfepercurso" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_percurso"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfereboque" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_reboque"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmetadevendas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_metadevendas"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofparametroavancadobusca" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_parametroavancadobusca"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofparamformacaopreco" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_paramformacaopreco"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofpontoremessa" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_pontoremessa"/>
@@ -4985,7 +4987,7 @@
          <checkConstraint constraint="((isallowmerge = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_importtemplateaccess_isallowmerge_check"/>
          <checkConstraint constraint="((isallowupdate = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_importtemplateaccess_isallowupdate_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_indexcolumn" numRows="1590" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_indexcolumn" numRows="1786" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_column_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_column_id" foreignKey="adcolumn_adindexcolumn" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_column"/>
@@ -6447,6 +6449,7 @@
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofgruposeparacao" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_gruposeparacao"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofhistoricoconsultas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_historicoconsultas"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofimagenslinhaov" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_imagenslinhaov"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_invoicededucaomateriais"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coflinhacalculo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhacalculo"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coflinharecuperacaoimposto" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linharecuperacaoimposto"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coflinhareposicao" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhareposicao"/>
@@ -6459,6 +6462,7 @@
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfereboque" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_reboque"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmetadevendas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_metadevendas"/>
             <child catalog="brerp-12" column="cof_orgorcamento_id" foreignKey="coforgorcamento_coforcamentoor" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_orcamentoorgs"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coforgst" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orgst"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofparametroavancadobusca" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_parametroavancadobusca"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofparamformacaopreco" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_paramformacaopreco"/>
@@ -7209,7 +7213,7 @@
          <checkConstraint constraint="((isusingdictionary = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_passwordrule_usingdictionary_check"/>
          <checkConstraint constraint="((iswhitespace = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_passwordrule_whitespace_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_pinstance" numRows="1652" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_pinstance" numRows="1729" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_pinstance_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_pilog" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance_log"/>
             <child catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_adpinstancepara" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance_para"/>
@@ -9775,7 +9779,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isactive_check"/>
          <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isdefault_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_sequence" numRows="2119" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_sequence" numRows="2120" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_sequence_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceaudit" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_audit"/>
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceno" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_no"/>
@@ -11913,6 +11917,8 @@
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofhistoricoconsultas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_historicoconsultas"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofimagenslinhaov" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_imagenslinhaov"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofimagenslinhaov" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_imagenslinhaov"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_invoicededucaomateriais"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_invoicededucaomateriais"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_coflinhacalculo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhacalculo"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_coflinhacalculo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhacalculo"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_coflinharecuperacaoimposto" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linharecuperacaoimposto"/>
@@ -11937,6 +11943,8 @@
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmetadevendas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_metadevendas"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmetadevendas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_metadevendas"/>
             <child catalog="brerp-12" column="cof_solucionadopor_id" foreignKey="cofsolucionadopor_cofocorrenci" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_ocorrenciaembdes"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
             <child catalog="brerp-12" column="cof_porteiroentrada_id" foreignKey="cofporteiroentrada_cofpackingl" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packinglist"/>
             <child catalog="brerp-12" column="cof_porteirosaida_id" foreignKey="cofporteirosaida_cofpackinglis" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packinglist"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofparametroavancadobusca" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_parametroavancadobusca"/>
@@ -23000,7 +23008,7 @@
          <column autoUpdated="false" defaultValue="null" digits="6" id="242" name="m_asi_updated" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="243" name="m_asi_updatedby" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
       </table>
-      <table catalog="brerp-12" name="c_invoice_v" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT i.c_invoice_id,&#10;    i.ad_client_id,&#10;    i.ad_org_id,&#10;    i.isactive,&#10;    i.created,&#10;    i.createdby,&#10;    i.updated,&#10;    i.updatedby,&#10;    i.issotrx,&#10;    i.documentno,&#10;    i.docstatus,&#10;    i.docaction,&#10;    i.processing,&#10;    i.processed,&#10;    i.c_doctype_id,&#10;    i.c_doctypetarget_id,&#10;    i.c_order_id,&#10;    i.description,&#10;    i.isapproved,&#10;    i.istransferred,&#10;    i.salesrep_id,&#10;    i.dateinvoiced,&#10;    i.dateprinted,&#10;    i.dateacct,&#10;    i.c_bpartner_id,&#10;    i.c_bpartner_location_id,&#10;    i.ad_user_id,&#10;    i.poreference,&#10;    i.dateordered,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.paymentrule,&#10;    i.c_paymentterm_id,&#10;    i.c_charge_id,&#10;    i.m_pricelist_id,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.isprinted,&#10;    i.isdiscountprinted,&#10;    i.ispaid,&#10;    i.isindispute,&#10;    i.ispayschedulevalid,&#10;    NULL::numeric AS c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.dunninggrace,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.chargeamt * '-1'::numeric)&#10;            ELSE i.chargeamt&#10;        END AS chargeamt,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.totallines * '-1'::numeric)&#10;            ELSE i.totallines&#10;        END AS totallines,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.grandtotal * '-1'::numeric)&#10;            ELSE i.grandtotal&#10;        END AS grandtotal,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN '-1.0'::numeric&#10;            ELSE 1.0&#10;        END AS multiplier,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 2))::text = 'P'::text) THEN '-1.0'::numeric&#10;            ELSE 1.0&#10;        END AS multiplierap,&#10;    d.docbasetype,&#10;    paymenttermduedate(i.c_paymentterm_id, (i.dateinvoiced)::timestamp with time zone) AS duedate,&#10;    i.ad_orgtrx_id,&#10;    i.c_payment_id,&#10;    i.isselfservice,&#10;    i.posted,&#10;    i.processedon,&#10;    i.reversal_id,&#10;    i.cof_c_custody_id,&#10;    i.cof_datescheduled,&#10;    (((''::text || 2) || i.c_invoice_id))::numeric AS c_invoice_v_id,&#10;    i.cof_isentradampprestador,&#10;    i.user2_id&#10;   FROM (c_invoice i&#10;     JOIN c_doctype d ON ((i.c_doctype_id = d.c_doctype_id)))&#10;  WHERE (i.ispayschedulevalid &lt;&gt; 'Y'::bpchar)&#10;UNION&#10; SELECT i.c_invoice_id,&#10;    i.ad_client_id,&#10;    i.ad_org_id,&#10;    i.isactive,&#10;    i.created,&#10;    i.createdby,&#10;    i.updated,&#10;    i.updatedby,&#10;    i.issotrx,&#10;    i.documentno,&#10;    i.docstatus,&#10;    i.docaction,&#10;    i.processing,&#10;    i.processed,&#10;    i.c_doctype_id,&#10;    i.c_doctypetarget_id,&#10;    i.c_order_id,&#10;    i.description,&#10;    i.isapproved,&#10;    i.istransferred,&#10;    i.salesrep_id,&#10;    i.dateinvoiced,&#10;    i.dateprinted,&#10;    i.dateacct,&#10;    i.c_bpartner_id,&#10;    i.c_bpartner_location_id,&#10;    i.ad_user_id,&#10;    i.poreference,&#10;    i.dateordered,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.paymentrule,&#10;    i.c_paymentterm_id,&#10;    i.c_charge_id,&#10;    i.m_pricelist_id,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.isprinted,&#10;    i.isdiscountprinted,&#10;    i.ispaid,&#10;    i.isindispute,&#10;    i.ispayschedulevalid,&#10;    ips.c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.dunninggrace,&#10;    NULL::numeric AS chargeamt,&#10;    NULL::numeric AS totallines,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (ips.dueamt * '-1'::numeric)&#10;            ELSE ips.dueamt&#10;        END AS grandtotal,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN '-1'::integer&#10;            ELSE 1&#10;        END AS multiplier,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 2))::text = 'P'::text) THEN '-1'::integer&#10;            ELSE 1&#10;        END AS multiplierap,&#10;    d.docbasetype,&#10;    ips.duedate,&#10;    i.ad_orgtrx_id,&#10;    i.c_payment_id,&#10;    i.isselfservice,&#10;    i.posted,&#10;    i.processedon,&#10;    i.reversal_id,&#10;    i.cof_c_custody_id,&#10;    ips.cof_datescheduled,&#10;    (((''::text || 1) || ips.c_invoicepayschedule_id))::numeric AS c_invoice_v_id,&#10;    i.cof_isentradampprestador,&#10;    i.user2_id&#10;   FROM ((c_invoice i&#10;     JOIN c_doctype d ON ((i.c_doctype_id = d.c_doctype_id)))&#10;     JOIN c_invoicepayschedule ips ON ((i.c_invoice_id = ips.c_invoice_id)))&#10;  WHERE ((i.ispayschedulevalid = 'Y'::bpchar) AND (ips.isvalid = 'Y'::bpchar));">
+      <table catalog="brerp-12" name="c_invoice_v" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT i.c_invoice_id,&#10;    i.ad_client_id,&#10;    i.ad_org_id,&#10;    i.isactive,&#10;    i.created,&#10;    i.createdby,&#10;    i.updated,&#10;    i.updatedby,&#10;    i.issotrx,&#10;    i.documentno,&#10;    i.docstatus,&#10;    i.docaction,&#10;    i.processing,&#10;    i.processed,&#10;    i.c_doctype_id,&#10;    i.c_doctypetarget_id,&#10;    i.c_order_id,&#10;    i.description,&#10;    i.isapproved,&#10;    i.istransferred,&#10;    i.salesrep_id,&#10;    i.dateinvoiced,&#10;    i.dateprinted,&#10;    i.dateacct,&#10;    i.c_bpartner_id,&#10;    i.c_bpartner_location_id,&#10;    i.ad_user_id,&#10;    i.poreference,&#10;    i.dateordered,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.paymentrule,&#10;    i.c_paymentterm_id,&#10;    i.c_charge_id,&#10;    i.m_pricelist_id,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.isprinted,&#10;    i.isdiscountprinted,&#10;    i.ispaid,&#10;    i.isindispute,&#10;    i.ispayschedulevalid,&#10;    NULL::numeric AS c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.dunninggrace,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.chargeamt * '-1'::numeric)&#10;            ELSE i.chargeamt&#10;        END AS chargeamt,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.totallines * '-1'::numeric)&#10;            ELSE i.totallines&#10;        END AS totallines,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.grandtotal * '-1'::numeric)&#10;            ELSE i.grandtotal&#10;        END AS grandtotal,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN '-1.0'::numeric&#10;            ELSE 1.0&#10;        END AS multiplier,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 2))::text = 'P'::text) THEN '-1.0'::numeric&#10;            ELSE 1.0&#10;        END AS multiplierap,&#10;    d.docbasetype,&#10;    paymenttermduedate(i.c_paymentterm_id, (i.dateinvoiced)::timestamp with time zone) AS duedate,&#10;    i.ad_orgtrx_id,&#10;    i.c_payment_id,&#10;    i.isselfservice,&#10;    i.posted,&#10;    i.processedon,&#10;    i.reversal_id,&#10;    i.cof_c_custody_id,&#10;    i.cof_datescheduled,&#10;    (((''::text || 2) || i.c_invoice_id))::numeric AS c_invoice_v_id,&#10;    i.cof_isentradampprestador,&#10;    i.user2_id,&#10;    i.lbr_docfiscal_id&#10;   FROM (c_invoice i&#10;     JOIN c_doctype d ON ((i.c_doctype_id = d.c_doctype_id)))&#10;  WHERE (i.ispayschedulevalid &lt;&gt; 'Y'::bpchar)&#10;UNION&#10; SELECT i.c_invoice_id,&#10;    i.ad_client_id,&#10;    i.ad_org_id,&#10;    i.isactive,&#10;    i.created,&#10;    i.createdby,&#10;    i.updated,&#10;    i.updatedby,&#10;    i.issotrx,&#10;    i.documentno,&#10;    i.docstatus,&#10;    i.docaction,&#10;    i.processing,&#10;    i.processed,&#10;    i.c_doctype_id,&#10;    i.c_doctypetarget_id,&#10;    i.c_order_id,&#10;    i.description,&#10;    i.isapproved,&#10;    i.istransferred,&#10;    i.salesrep_id,&#10;    i.dateinvoiced,&#10;    i.dateprinted,&#10;    i.dateacct,&#10;    i.c_bpartner_id,&#10;    i.c_bpartner_location_id,&#10;    i.ad_user_id,&#10;    i.poreference,&#10;    i.dateordered,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.paymentrule,&#10;    i.c_paymentterm_id,&#10;    i.c_charge_id,&#10;    i.m_pricelist_id,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.isprinted,&#10;    i.isdiscountprinted,&#10;    i.ispaid,&#10;    i.isindispute,&#10;    i.ispayschedulevalid,&#10;    ips.c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;    i.dunninggrace,&#10;    NULL::numeric AS chargeamt,&#10;    NULL::numeric AS totallines,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (ips.dueamt * '-1'::numeric)&#10;            ELSE ips.dueamt&#10;        END AS grandtotal,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN '-1'::integer&#10;            ELSE 1&#10;        END AS multiplier,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 2))::text = 'P'::text) THEN '-1'::integer&#10;            ELSE 1&#10;        END AS multiplierap,&#10;    d.docbasetype,&#10;    ips.duedate,&#10;    i.ad_orgtrx_id,&#10;    i.c_payment_id,&#10;    i.isselfservice,&#10;    i.posted,&#10;    i.processedon,&#10;    i.reversal_id,&#10;    COALESCE(ips.cof_c_custody_id, i.cof_c_custody_id) AS cof_c_custody_id,&#10;    ips.cof_datescheduled,&#10;    (((''::text || 1) || ips.c_invoicepayschedule_id))::numeric AS c_invoice_v_id,&#10;    i.cof_isentradampprestador,&#10;    i.user2_id,&#10;    i.lbr_docfiscal_id&#10;   FROM ((c_invoice i&#10;     JOIN c_doctype d ON ((i.c_doctype_id = d.c_doctype_id)))&#10;     JOIN c_invoicepayschedule ips ON ((i.c_invoice_id = ips.c_invoice_id)))&#10;  WHERE ((i.ispayschedulevalid = 'Y'::bpchar) AND (ips.isvalid = 'Y'::bpchar));">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="c_invoice_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_client_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ad_org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -23065,6 +23073,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="c_invoice_v_id" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="cof_isentradampprestador" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="user2_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="lbr_docfiscal_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
       </table>
       <table catalog="brerp-12" name="c_invoice_v1" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT i.c_invoice_id,&#10;    i.ad_client_id,&#10;    i.ad_org_id,&#10;    i.isactive,&#10;    i.created,&#10;    i.createdby,&#10;    i.updated,&#10;    i.updatedby,&#10;    i.issotrx,&#10;    i.documentno,&#10;    i.docstatus,&#10;    i.docaction,&#10;    i.processing,&#10;    i.processed,&#10;    i.c_doctype_id,&#10;    i.c_doctypetarget_id,&#10;    i.c_order_id,&#10;    i.description,&#10;    i.isapproved,&#10;    i.istransferred,&#10;    i.salesrep_id,&#10;    i.dateinvoiced,&#10;    i.dateprinted,&#10;    i.dateacct,&#10;    i.c_bpartner_id,&#10;    i.c_bpartner_location_id,&#10;    i.ad_user_id,&#10;    i.poreference,&#10;    i.dateordered,&#10;    i.c_currency_id,&#10;    i.c_conversiontype_id,&#10;    i.paymentrule,&#10;    i.c_paymentterm_id,&#10;    i.c_charge_id,&#10;    i.m_pricelist_id,&#10;    i.c_campaign_id,&#10;    i.c_project_id,&#10;    i.c_activity_id,&#10;    i.isprinted,&#10;    i.isdiscountprinted,&#10;    i.ispaid,&#10;    i.isindispute,&#10;    i.ispayschedulevalid,&#10;    NULL::numeric AS c_invoicepayschedule_id,&#10;    i.invoicecollectiontype,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.chargeamt * ('-1'::integer)::numeric)&#10;            ELSE i.chargeamt&#10;        END AS chargeamt,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.totallines * ('-1'::integer)::numeric)&#10;            ELSE i.totallines&#10;        END AS totallines,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN (i.grandtotal * ('-1'::integer)::numeric)&#10;            ELSE i.grandtotal&#10;        END AS grandtotal,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 3))::text = 'C'::text) THEN '-1'::integer&#10;            ELSE 1&#10;        END AS multiplier,&#10;        CASE&#10;            WHEN ((charat((d.docbasetype)::character varying, 2))::text = 'P'::text) THEN '-1'::integer&#10;            ELSE 1&#10;        END AS multiplierap,&#10;    d.docbasetype&#10;   FROM (c_invoice i&#10;     JOIN c_doctype d ON ((i.c_doctype_id = d.c_doctype_id)));">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="c_invoice_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -23257,6 +23266,8 @@
             <child catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvoiceline_ctaxdeclline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_taxdeclarationline"/>
             <child catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvoiceline_cofccomexinfo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_c_comexinfo"/>
             <child catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvoiceline_cofcdiadi" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_c_diadi"/>
+            <child catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvoiceline_cofinvoicededucaomateriais" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_invoicededucaomateriais"/>
+            <child catalog="brerp-12" column="cof_linhafaturaorigem_id" foreignKey="coflinhafaturaorigem_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_invoicededucaomateriais"/>
             <child catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvoiceline_cofmprecebida" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mprecebida"/>
             <child catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvoiceline_ctevprestcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cte_vprest_comp"/>
             <child catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvliceline_iinvoice" implied="false" onDeleteCascade="false" schema="adempiere" table="i_invoice"/>
@@ -26299,6 +26310,7 @@
             <child catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_cofimagenslinhaov" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_imagenslinhaov"/>
             <child catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_cofitemsubstituto" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_itemsubstituto"/>
             <child catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_coflinhareposicao" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhareposicao"/>
+            <child catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_coforderdeducaomateriais" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_orderdeducaomateriais"/>
             <child catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_iorder" implied="false" onDeleteCascade="false" schema="adempiere" table="i_order"/>
             <child catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
             <child catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_mcostdetail" implied="false" onDeleteCascade="false" schema="adempiere" table="m_costdetail"/>
@@ -27222,6 +27234,9 @@
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="33" name="cof_juros" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="34" name="cof_jurosmensal" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="35" name="cof_paymentminvalue" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="36" name="cof_isdiafixo" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="37" name="cof_qtdesemanas" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="38" name="cof_diasdasemana" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="c_paymentterm_id" sequenceNumberInPK="1"/>
          <index name="c_paymentterm_pkey" unique="true">
             <column ascending="true" name="c_paymentterm_id"/>
@@ -27238,6 +27253,7 @@
             <column ascending="true" name="value"/>
          </index>
          <checkConstraint constraint="((afterdelivery = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_paymentterm_afterdelivery_check"/>
+         <checkConstraint constraint="((cof_isdiafixo = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_paymentterm_cof_isdiafixo_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_paymentterm_isactive_check"/>
          <checkConstraint constraint="((isduefixed = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_paymentterm_isduefixed_check"/>
          <checkConstraint constraint="((isnextbusinessday = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_paymentterm_isnextbusinessday_check"/>
@@ -37655,6 +37671,7 @@
             <child catalog="brerp-12" column="cof_codclasstrib_id" foreignKey="cofcodclasstrib_cofcodigooperacao" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codigooperacao"/>
             <child catalog="brerp-12" column="cof_codclasstrib_id" foreignKey="cofcodclasstrib_cofconfiguracaofiscal" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_configuracaofiscal"/>
             <child catalog="brerp-12" column="cof_codclasstrib_id" foreignKey="cofcodclasstrib_cofpreferenciaxml" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_preferenciaxml"/>
+            <child catalog="brerp-12" column="imposto_ibscbs_cct_id" foreignKey="impostoibscbscct_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
             <child catalog="brerp-12" column="cof_codclasstrib_id" foreignKey="cofcodclasstrib_lbrtaxline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_taxline"/>
             <child catalog="brerp-12" column="cof_codclasstribdelivery_id" foreignKey="cofcodclasstribdelivery_lbrtaxline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_taxline"/>
          </column>
@@ -37697,6 +37714,7 @@
             <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcodigooperacao" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_codigooperacao_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_rps"/>
             <child catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_lbrtaxline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_taxline"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="3" name="cof_codigooperacao_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
@@ -37714,6 +37732,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="cof_codclasstrib_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_codclasstrib_id" foreignKey="cofcodclasstrib_cofcodigooperacao" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codclasstrib"/>
          </column>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="12" name="cof_isexigedadosdestinatario" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="cof_codigooperacao_id" sequenceNumberInPK="1"/>
          <index name="cof_codigooperacao_key" unique="true">
             <column ascending="true" name="cof_codigooperacao_id"/>
@@ -37721,6 +37740,7 @@
          <index name="cof_codigooperacao_uu_idx" unique="true">
             <column ascending="true" name="cof_codigooperacao_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isexigedadosdestinatario = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_codigooperacao_cof_isexigedadosdestinatario_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_codigooperacao_isactive_check"/>
       </table>
       <table catalog="brerp-12" name="cof_combustivel" remarks="" schema="adempiere" type="TABLE">
@@ -38346,6 +38366,8 @@
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="51" name="cof_iszerarvalorbaseibscbs" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="52" name="cof_iszeraraliquotaibsuf" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="53" name="cof_issobrescrevercctibscbs" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="54" name="cof_isforcaripi" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="cof_aliquotaipi" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="cof_configuracaofiscal_id" sequenceNumberInPK="1"/>
          <index name="cof_configuracaofiscal_key" unique="true">
             <column ascending="true" name="cof_configuracaofiscal_id"/>
@@ -38373,6 +38395,7 @@
          <checkConstraint constraint="((cof_isdeduziricmsbccofins = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_configuracaofiscal_cof_isdeduziricmsbccofins_check"/>
          <checkConstraint constraint="((cof_isdeduziricmsbcpis = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_configuracaofiscal_cof_isdeduziricmsbcpis_check"/>
          <checkConstraint constraint="((cof_isforcarcofins = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_configuracaofiscal_cof_isforcarcofins_check"/>
+         <checkConstraint constraint="((cof_isforcaripi = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_configuracaofiscal_cof_isforcaripi_check"/>
          <checkConstraint constraint="((cof_isforcarpis = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_configuracaofiscal_cof_isforcarpis_check"/>
          <checkConstraint constraint="((cof_issobrescreveraliquotacofins = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_configuracaofiscal_cof_issobrescreveraliquotacofins_check"/>
          <checkConstraint constraint="((cof_issobrescreveraliquotapis = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_configuracaofiscal_cof_issobrescreveraliquotapis_check"/>
@@ -39071,6 +39094,10 @@
             <column ascending="true" name="c_bpartner_id"/>
             <column ascending="true" name="c_invoice_id"/>
             <column ascending="true" name="cof_datacontafatura"/>
+         </index>
+         <index name="cof_valuexorg" unique="true">
+            <column ascending="true" name="value"/>
+            <column ascending="true" name="ad_org_id"/>
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_controleremessasind_isactive_check"/>
       </table>
@@ -41199,6 +41226,40 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="cof_liberarentregafutura" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="cof_isgeneratenftransp" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
       </table>
+      <table catalog="brerp-12" name="cof_invoicededucaomateriais" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_invoicededucaomateriais_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="3" name="cof_invoicededucaomateriais_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="c_invoiceline_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_invoiceline_id" foreignKey="cinvoiceline_cofinvoicededucaomateriais" implied="false" onDeleteCascade="true" schema="adempiere" table="c_invoiceline"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="cof_linhafaturaorigem_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_invoiceline_id" foreignKey="coflinhafaturaorigem_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="c_invoiceline"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="6" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="8" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="9" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofinvoicededucaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="linenetamt" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <primaryKey column="cof_invoicededucaomateriais_id" sequenceNumberInPK="1"/>
+         <index name="cof_invoicededucaomateriais_key" unique="true">
+            <column ascending="true" name="cof_invoicededucaomateriais_id"/>
+         </index>
+         <index name="cof_invoicededucaomateriais_uu_idx" unique="true">
+            <column ascending="true" name="cof_invoicededucaomateriais_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_invoicededucaomateriais_isactive_check"/>
+      </table>
       <table catalog="brerp-12" name="cof_itemsubstituto" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="cof_itemsubstituto_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="1" name="cof_itemsubstituto_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
@@ -42996,6 +43057,38 @@
          <checkConstraint constraint="((cof_gerarapontamentos = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_ordemservico_cof_gerarapontamentos_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_ordemservico_isactive_check"/>
          <checkConstraint constraint="((processed = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_ordemservico_processed_check"/>
+      </table>
+      <table catalog="brerp-12" name="cof_orderdeducaomateriais" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_linhaordemorigem_id" nullable="false" remarks="" size="10" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_orderdeducaomateriais_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_orderdeducaomateriais_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="5" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="7" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="8" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="c_orderline_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_orderline_id" foreignKey="corderline_coforderdeducaomateriais" implied="false" onDeleteCascade="true" schema="adempiere" table="c_orderline"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="11" name="linenetamt" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
+         <primaryKey column="cof_orderdeducaomateriais_id" sequenceNumberInPK="1"/>
+         <index name="cof_orderdeducaomateriais_key" unique="true">
+            <column ascending="true" name="cof_orderdeducaomateriais_id"/>
+         </index>
+         <index name="cof_orderdeducaomateriais_uu_idx" unique="true">
+            <column ascending="true" name="cof_orderdeducaomateriais_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_orderdeducaomateriais_isactive_check"/>
       </table>
       <table catalog="brerp-12" name="cof_orgst" numRows="1" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="cof_orgst_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -45721,6 +45814,9 @@
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="196" name="cof_cintcontrib" nullable="true" remarks="" size="15" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="197" name="cof_nbs_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_nbs_id" foreignKey="cofnbs_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_nbs"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="198" name="cof_codigooperacao_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codigooperacao"/>
          </column>
          <primaryKey column="cof_rps_id" sequenceNumberInPK="1"/>
          <index name="cof_rps_pkey" unique="true">
@@ -56215,59 +56311,63 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="229" name="imposto_is_pis" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="230" name="imposto_is_pisespec" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="231" name="imposto_is_vis" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="232" name="imposto_ibscbs_cst" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="233" name="imposto_ibscbs_cclasstrib" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="234" name="imposto_ibscbs_inddoacao" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="235" name="imposto_ibscbs_vbc" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="236" name="imposto_ibsuf_pdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="237" name="imposto_ibsuf_vdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="238" name="imposto_ibsuf_vdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="239" name="imposto_ibsuf_predaliq" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="240" name="imposto_ibsuf_paliqefet" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="241" name="imposto_ibsuf_vibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="242" name="imposto_ibsmun_pibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="243" name="imposto_ibsmun_pdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="244" name="imposto_ibsmun_vdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="245" name="imposto_ibsmun_vdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="246" name="imposto_ibsmun_predaliq" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="247" name="imposto_ibsmun_paliqefet" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="248" name="imposto_ibsmun_vibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="249" name="imposto_ibscbs_vibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="250" name="imposto_cbs_pcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="251" name="imposto_cbs_pdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="252" name="imposto_cbs_vdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="253" name="imposto_cbs_vdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="254" name="imposto_cbs_predaliq" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="255" name="imposto_cbs_paliqefet" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="256" name="imposto_cbs_vcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="257" name="imposto_tribregular_cstreg" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="258" name="imposto_tribregular_cclasstribreg" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="259" name="imposto_tribregular_paliqefetregibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="260" name="imposto_tribregular_vtribregibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="261" name="imposto_tribregular_paliqefetregcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="262" name="imposto_tribregular_vtribregcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="263" name="imposto_tribcompragov_paliqibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="264" name="imposto_tribcompragov_vtribibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="265" name="imposto_tribcompragov_paliqibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="266" name="imposto_tribcompragov_vtribibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="267" name="imposto_tribcompragov_paliqcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="268" name="imposto_tribcompragov_vtribcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="269" name="imposto_ibsuf_pibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="270" name="imposto_is_utrib" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="271" name="imposto_is_qtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="272" name="imposto_tribregular_paliqefetregibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="273" name="imposto_tribregular_vtribregibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="274" name="cof_ind_gtribregular" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="275" name="cof_ind_gestornocred" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="276" name="cof_ind_gajustecompet" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="277" name="imposto_ajustecompet_vibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="278" name="imposto_ajustecompet_vcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="279" name="imposto_estornocred_vcbsestcred" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="280" name="imposto_estornocred_vibsestcred" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="281" name="imposto_transfcred_vibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="282" name="imposto_transfcred_vcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="283" name="det_prod_indbemmovelusado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="284" name="cof_ind_gisencao" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="232" name="imposto_ibscbs_inddoacao" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="233" name="imposto_ibscbs_vbc" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="234" name="imposto_ibsuf_pdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="235" name="imposto_ibsuf_vdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="236" name="imposto_ibsuf_vdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="237" name="imposto_ibsuf_predaliq" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="238" name="imposto_ibsuf_paliqefet" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="239" name="imposto_ibsuf_vibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="240" name="imposto_ibsmun_pibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="241" name="imposto_ibsmun_pdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="242" name="imposto_ibsmun_vdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="243" name="imposto_ibsmun_vdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="244" name="imposto_ibsmun_predaliq" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="245" name="imposto_ibsmun_paliqefet" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="246" name="imposto_ibsmun_vibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="247" name="imposto_ibscbs_vibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="248" name="imposto_cbs_pcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="249" name="imposto_cbs_pdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="250" name="imposto_cbs_vdif" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="251" name="imposto_cbs_vdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="252" name="imposto_cbs_predaliq" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="253" name="imposto_cbs_paliqefet" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="254" name="imposto_cbs_vcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="255" name="imposto_tribregular_cstreg" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="256" name="imposto_tribregular_cclasstribreg" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="257" name="imposto_tribregular_paliqefetregibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="258" name="imposto_tribregular_vtribregibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="259" name="imposto_tribregular_paliqefetregcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="260" name="imposto_tribregular_vtribregcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="261" name="imposto_tribcompragov_paliqibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="262" name="imposto_tribcompragov_vtribibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="263" name="imposto_tribcompragov_paliqibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="264" name="imposto_tribcompragov_vtribibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="265" name="imposto_tribcompragov_paliqcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="266" name="imposto_tribcompragov_vtribcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="267" name="imposto_ibsuf_pibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="268" name="imposto_is_utrib" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="269" name="imposto_is_qtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="270" name="imposto_tribregular_paliqefetregibsmun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="271" name="imposto_tribregular_vtribregibsuf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="272" name="cof_ind_gtribregular" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="273" name="cof_ind_gestornocred" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="274" name="cof_ind_gajustecompet" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="275" name="imposto_ajustecompet_vibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="276" name="imposto_ajustecompet_vcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="277" name="imposto_estornocred_vcbsestcred" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="278" name="imposto_estornocred_vibsestcred" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="279" name="imposto_transfcred_vibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="280" name="imposto_transfcred_vcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="281" name="det_prod_indbemmovelusado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="282" name="cof_ind_gisencao" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="283" name="imposto_ibscbs_cst_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_taxstatus_id" foreignKey="impostoibscbscst_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_taxstatus"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="284" name="imposto_ibscbs_cct_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_codclasstrib_id" foreignKey="impostoibscbscct_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codclasstrib"/>
+         </column>
          <primaryKey column="lbr_docfiscal_line_id" sequenceNumberInPK="1"/>
          <index name="lbr_docfiscal_line_key" unique="true">
             <column ascending="true" name="lbr_docfiscal_line_id"/>
@@ -57497,6 +57597,7 @@
             <child catalog="brerp-12" column="cof_csticms_id" foreignKey="cofcsticms_cofpreferenciaxml" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_preferenciaxml"/>
             <child catalog="brerp-12" column="cof_cstipi_id" foreignKey="cofcstipi_cofpreferenciaxml" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_preferenciaxml"/>
             <child catalog="brerp-12" column="cof_cstpis_id" foreignKey="cofcstpis_cofpreferenciaxml" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_preferenciaxml"/>
+            <child catalog="brerp-12" column="imposto_ibscbs_cst_id" foreignKey="impostoibscbscst_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
             <child catalog="brerp-12" column="cof_taxstatusdelivery_id" foreignKey="coftaxstatusdelivery_lbrtaxlin" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_taxline"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="name" nullable="false" remarks="" size="60" type="varchar" typeCode="12"/>
@@ -58390,6 +58491,13 @@
             <column ascending="true" name="m_attributesetinstance_id"/>
             <column ascending="false" name="dateacct"/>
          </index>
+         <index name="idx_cof_mcosthistory_speed_lateral" unique="false">
+            <column ascending="true" name="m_product_id"/>
+            <column ascending="true" name="ad_org_id"/>
+            <column ascending="true" name="m_costtype_id"/>
+            <column ascending="true" name="m_costelement_id"/>
+            <column ascending="false" name="created"/>
+         </index>
          <index name="m_costhistory_costmovement_idx" unique="false">
             <column ascending="true" name="ad_client_id"/>
             <column ascending="true" name="m_product_id"/>
@@ -58403,7 +58511,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_costhistory_isactive_check"/>
          <checkConstraint constraint="((isbackdate = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_costhistory_isbackdate_check"/>
       </table>
-      <table catalog="brerp-12" name="m_costmovement_v" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT a.ad_client_id,&#10;    a.ad_org_id,&#10;    b.c_acctschema_id,&#10;    a.m_costhistory_id,&#10;    a.m_costtype_id,&#10;    a.m_costelement_id,&#10;    a.m_attributesetinstance_id,&#10;    a.m_product_id,&#10;    a.oldqty,&#10;    a.newqty,&#10;    a.oldcostprice,&#10;    (a.newcostprice * ('-1'::integer)::numeric) AS newcostprice,&#10;    a.oldcqty,&#10;    a.newcqty,&#10;    a.oldcamt,&#10;    a.newcamt,&#10;    b.qty,&#10;    b.amt,&#10;    b.deltaqty,&#10;    b.deltaamt,&#10;    b.c_orderline_id,&#10;    b.m_inoutline_id,&#10;    b.c_invoiceline_id,&#10;    b.m_movementline_id,&#10;    b.m_inventoryline_id,&#10;    b.m_productionline_id,&#10;    b.c_projectissue_id,&#10;    b.m_matchinv_id,&#10;    a.m_costdetail_id,&#10;    b.description,&#10;    a.created,&#10;    a.createdby,&#10;    a.updated,&#10;    a.updatedby,&#10;    a.isactive,&#10;    a.dateacct,&#10;    a.isbackdate,&#10;    a.backdateprocessedon&#10;   FROM (m_costhistory a&#10;     JOIN m_costdetail b ON ((a.m_costdetail_id = b.m_costdetail_id)))&#10;  ORDER BY a.m_costhistory_id;">
+      <table catalog="brerp-12" name="m_costmovement_v" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT a.ad_client_id,&#10;    a.ad_org_id,&#10;    b.c_acctschema_id,&#10;    a.m_costhistory_id,&#10;    a.m_costtype_id,&#10;    a.m_costelement_id,&#10;    a.m_attributesetinstance_id,&#10;    a.m_product_id,&#10;    a.oldqty,&#10;    a.newqty,&#10;    a.oldcostprice,&#10;    (a.newcostprice * ('-1'::integer)::numeric) AS newcostprice,&#10;    a.oldcqty,&#10;    a.newcqty,&#10;    a.oldcamt,&#10;    a.newcamt,&#10;    b.qty,&#10;    b.amt,&#10;    b.deltaqty,&#10;    b.deltaamt,&#10;    b.c_orderline_id,&#10;    b.m_inoutline_id,&#10;    b.c_invoiceline_id,&#10;    b.m_movementline_id,&#10;    b.m_inventoryline_id,&#10;    b.m_productionline_id,&#10;    b.c_projectissue_id,&#10;    b.m_matchinv_id,&#10;    a.m_costdetail_id,&#10;    b.description,&#10;    a.created,&#10;    a.createdby,&#10;    a.updated,&#10;    a.updatedby,&#10;    a.isactive,&#10;    a.dateacct,&#10;    a.isbackdate,&#10;    a.backdateprocessedon&#10;   FROM (m_costhistory a&#10;     JOIN m_costdetail b ON ((a.m_costdetail_id = b.m_costdetail_id)));">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="c_acctschema_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
