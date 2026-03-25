@@ -162,6 +162,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="cof_rps.cof_codigooperacao_id references cof_codigooperacao.cof_codigooperacao_id via cofcodigooperacao_cofrps"><a href='cof_rps.html'>cof_rps</a><span class='relatedKey'>.cof_codigooperacao_id</span></td>
+                                                <td class="constraint detail">cofcodigooperacao_cofrps</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="lbr_taxline.cof_codigooperacao_id references cof_codigooperacao.cof_codigooperacao_id via cofcodigooperacao_lbrtaxline"><a href='lbr_taxline.html'>lbr_taxline</a><span class='relatedKey'>.cof_codigooperacao_id</span></td>
                                                 <td class="constraint detail">cofcodigooperacao_lbrtaxline</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -342,6 +347,23 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="cof_isexigedadosdestinatario">cof_isexigedadosdestinatario</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -412,6 +434,10 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <tr>
+                                    <td>cof_codigooperacao_cof_isexigedadosdestinatario_check</td>
+                                    <td>((cof_isexigedadosdestinatario &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
                                 <tr>
                                     <td>cof_codigooperacao_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>

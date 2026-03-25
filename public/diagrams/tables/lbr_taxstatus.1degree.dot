@@ -16,6 +16,8 @@ digraph "oneDegreeRelationshipsDiagram" {
   "cof_preferenciaxml":"cof_csticms_id":w -> "lbr_taxstatus":"lbr_taxstatus_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_preferenciaxml":"cof_cstipi_id":w -> "lbr_taxstatus":"lbr_taxstatus_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_preferenciaxml":"cof_cstpis_id":w -> "lbr_taxstatus":"lbr_taxstatus_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "lbr_docfiscal_line":"imposto_ibscbs_cct_id":w -> "cof_codclasstrib":"cof_codclasstrib_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "lbr_docfiscal_line":"imposto_ibscbs_cst_id":w -> "lbr_taxstatus":"lbr_taxstatus_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_taxline":"cof_codclasstrib_id":w -> "cof_codclasstrib":"cof_codclasstrib_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_taxline":"cof_codclasstribdelivery_id":w -> "cof_codclasstrib":"cof_codclasstrib_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_taxline":"cof_taxstatusdelivery_id":w -> "lbr_taxstatus":"lbr_taxstatus_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -90,7 +92,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="updatedby" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="167" HEIGHT="16">updatedby</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="lbr_taxstatus_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="167" HEIGHT="16">lbr_taxstatus_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">438 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">438 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/cof_codclasstrib.html"
     target="_top"
@@ -152,6 +154,34 @@ digraph "oneDegreeRelationshipsDiagram" {
     URL="../../tables/cof_preferenciaxml.html"
     target="_top"
     tooltip="cof_preferenciaxml"
+  ];
+  "lbr_docfiscal_line" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="124" HEIGHT="16"><B>lbr_docfiscal_line</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="lbr_docfiscal_line_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">lbr_docfiscal_line_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="lbr_docfiscal_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">lbr_docfiscal_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="lbr_docfiscal_line_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">lbr_docfiscal_line_uu</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_inoutline_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">m_inoutline_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_movementline_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">m_movementline_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="lbr_ncm_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">lbr_ncm_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_invoiceline_id" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_invoiceline_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_orderline_id" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">c_orderline_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_cbenef_config_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_cbenef_config_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_linhaopindusprestador_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_linhaopindusprestador_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_linhaopmataplicadoprest_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_linhaopmataplicadoprest_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_mprecebida_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_mprecebida_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_uomcomercial_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_uomcomercial_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_cbenef_config_credpre_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_cbenef_config_credpre_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_cbenef_config_rdbc_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">cof_cbenef_config_rdbc_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="imposto_ibscbs_cst_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">imposto_ibscbs_cst_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="imposto_ibscbs_cct_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">imposto_ibscbs_cct_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 15</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">11 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/lbr_docfiscal_line.html"
+    target="_top"
+    tooltip="lbr_docfiscal_line"
   ];
   "lbr_taxline" [
    label=<
@@ -217,7 +247,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_grupocst" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="167" HEIGHT="16">cof_grupocst</TD></TR></TABLE></TD><TD PORT="cof_grupocst.type" ALIGN="LEFT">varchar[2]</TD></TR>
       <TR><TD PORT="cof_ind_gajustecompet" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="167" HEIGHT="16">cof_ind_gajustecompet</TD></TR></TABLE></TD><TD PORT="cof_ind_gajustecompet.type" ALIGN="LEFT">bpchar[1]</TD></TR>
       <TR><TD PORT="cof_ind_gisencao" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="167" HEIGHT="16">cof_ind_gisencao</TD></TR></TABLE></TD><TD PORT="cof_ind_gisencao.type" ALIGN="LEFT">bpchar[1]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">160 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">15 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">160 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">16 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/lbr_taxstatus.html"
     target="_top"

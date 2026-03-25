@@ -3579,6 +3579,28 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="cof_codigooperacao_id">cof_codigooperacao_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="cof_rps.cof_codigooperacao_id references cof_codigooperacao.cof_codigooperacao_id via cofcodigooperacao_cofrps"><a href='cof_codigooperacao.html'>cof_codigooperacao</a><span class='relatedKey'>.cof_codigooperacao_id</span></td>
+                                                <td class="constraint detail">cofcodigooperacao_cofrps</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -3662,12 +3684,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>cof_rps_cof_operacaopessoal_check</td>
-                                    <td>((cof_operacaopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_rps_isprinted_check</td>
                                     <td>((isprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_rps_cof_operacaopessoal_check</td>
+                                    <td>((cof_operacaopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_rps_issotrx_check</td>

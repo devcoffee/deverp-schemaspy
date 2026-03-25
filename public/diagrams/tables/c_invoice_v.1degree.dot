@@ -68,6 +68,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="c_invoice_v_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="193" HEIGHT="16">c_invoice_v_id</TD></TR></TABLE></TD><TD PORT="c_invoice_v_id.type" ALIGN="LEFT">numeric[0]</TD></TR>
       <TR><TD PORT="cof_isentradampprestador" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="193" HEIGHT="16">cof_isentradampprestador</TD></TR></TABLE></TD><TD PORT="cof_isentradampprestador.type" ALIGN="LEFT">bpchar[1]</TD></TR>
       <TR><TD PORT="user2_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="193" HEIGHT="16">user2_id</TD></TR></TABLE></TD><TD PORT="user2_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
+      <TR><TD PORT="lbr_docfiscal_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="193" HEIGHT="16">lbr_docfiscal_id</TD></TR></TABLE></TD><TD PORT="lbr_docfiscal_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
     </TABLE>>
     URL="../../tables/c_invoice_v.html"
     target="_top"

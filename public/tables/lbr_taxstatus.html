@@ -312,6 +312,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="lbr_docfiscal_line.imposto_ibscbs_cst_id references lbr_taxstatus.lbr_taxstatus_id via impostoibscbscst_lbrdocfiscalline"><a href='lbr_docfiscal_line.html'>lbr_docfiscal_line</a><span class='relatedKey'>.imposto_ibscbs_cst_id</span></td>
+                                                <td class="constraint detail">impostoibscbscst_lbrdocfiscalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="lbr_taxline.cof_taxstatusdelivery_id references lbr_taxstatus.lbr_taxstatus_id via coftaxstatusdelivery_lbrtaxlin"><a href='lbr_taxline.html'>lbr_taxline</a><span class='relatedKey'>.cof_taxstatusdelivery_id</span></td>
                                                 <td class="constraint detail">coftaxstatusdelivery_lbrtaxlin</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -620,20 +625,20 @@
                                     <td>((cof_ind_gisencao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_taxstatus_cof_simpleused_check</td>
-                                    <td>((cof_simpleused &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>lbr_taxstatus_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>lbr_taxstatus_cof_ind_gajustecompet_check</td>
                                     <td>((cof_ind_gajustecompet &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_taxstatus_issotrx_check</td>
                                     <td>((issotrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_taxstatus_cof_simpleused_check</td>
+                                    <td>((cof_simpleused &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_taxstatus_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -183,6 +183,16 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_invoicededucaomateriais.c_invoiceline_id references c_invoiceline.c_invoiceline_id via cinvoiceline_cofinvoicededucaomateriais"><a href='cof_invoicededucaomateriais.html'>cof_invoicededucaomateriais</a><span class='relatedKey'>.c_invoiceline_id</span></td>
+                                                <td class="constraint detail">cinvoiceline_cofinvoicededucaomateriais</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_invoicededucaomateriais.cof_linhafaturaorigem_id references c_invoiceline.c_invoiceline_id via coflinhafaturaorigem_cofinvoicededucaomateriais"><a href='cof_invoicededucaomateriais.html'>cof_invoicededucaomateriais</a><span class='relatedKey'>.cof_linhafaturaorigem_id</span></td>
+                                                <td class="constraint detail">coflinhafaturaorigem_cofinvoicededucaomateriais</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_mprecebida.c_invoiceline_id references c_invoiceline.c_invoiceline_id via cinvoiceline_cofmprecebida"><a href='cof_mprecebida.html'>cof_mprecebida</a><span class='relatedKey'>.c_invoiceline_id</span></td>
                                                 <td class="constraint detail">cinvoiceline_cofmprecebida</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1895,24 +1905,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>c_invoiceline_imposto_ibscbs_inddoacao_check</td>
-                                    <td>((imposto_ibscbs_inddoacao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_invoiceline_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_invoiceline_a_processed_check</td>
+                                    <td>((a_processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_invoiceline_isfixedassetinvoice_check</td>
                                     <td>((isfixedassetinvoice &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_invoiceline_cof_isgenericitem_check</td>
-                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_invoiceline_cof_kitcomercial_check</td>
-                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_invoiceline_lbr_recalculatetax_check</td>
@@ -1923,8 +1921,20 @@
                                     <td>((a_createasset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_invoiceline_a_processed_check</td>
-                                    <td>((a_processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_invoiceline_cof_isgenericitem_check</td>
+                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_invoiceline_cof_kitcomercial_check</td>
+                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_invoiceline_imposto_ibscbs_inddoacao_check</td>
+                                    <td>((imposto_ibscbs_inddoacao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_invoiceline_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -148,6 +148,7 @@ hr_concept_acct
 cof_projecaoestoquefiscal
 cof_produtolocalizadorconfig
 cof_mdfe_documentofiscal
+cof_invoicededucaomateriais
 cof_imagenslinhaov
 cof_historicoconsultas
 cof_formacaopreco
@@ -230,6 +231,7 @@ lbr_docfiscal_cana_deduc
 cte_infctecomp
 cof_pneu_manutencao
 cof_parametroavancadobusca
+cof_orderdeducaomateriais
 cof_labelfield
 cof_gruponcmlinha
 cof_formacaoprecolista
@@ -666,8 +668,8 @@ a_asset_use
 a_asset_reval
 a_asset_info_lic
 m_shippingtransaction
-a_asset_change
 cof_rps
+a_asset_change
 hr_movement
 gl_distribution
 m_costdetail
@@ -689,7 +691,6 @@ a_asset_disposed
 pp_product_bomline
 pivot_configuration
 cof_controleciapoutroscred
-cof_codigooperacao
 c_revenuerecog_service
 c_orderpayschedule
 c_conversion_rate
@@ -847,6 +848,7 @@ cof_pneu
 c_bankstatementline
 c_revenuerecognition_plan
 w_store
+cof_codigooperacao
 m_requisition
 hr_list
 c_rfqline
@@ -862,7 +864,6 @@ ad_labelcategory
 cof_controleciap
 ad_infocolumn
 hr_concept
-cof_codclasstrib
 ad_process_para
 i_fixedasset
 mp_prognosis
@@ -1082,6 +1083,7 @@ cof_c_alinea
 c_ordersource
 cof_c_cnabconfig
 c_countrygroup
+cof_codclasstrib
 cof_pontoremessa
 c_calendar
 ad_task
