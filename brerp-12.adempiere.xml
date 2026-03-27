@@ -9779,7 +9779,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isactive_check"/>
          <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isdefault_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_sequence" numRows="2120" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_sequence" numRows="2122" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_sequence_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceaudit" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_audit"/>
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceno" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_no"/>
@@ -45818,6 +45818,7 @@
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="198" name="cof_codigooperacao_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codigooperacao"/>
          </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="199" name="cof_codigotributacaonacional" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
          <primaryKey column="cof_rps_id" sequenceNumberInPK="1"/>
          <index name="cof_rps_pkey" unique="true">
             <column ascending="true" name="cof_rps_id"/>
@@ -57070,6 +57071,7 @@
             <parent catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_lbrissmatrix" implied="false" onDeleteCascade="false" schema="adempiere" table="c_bpartner"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="24" name="cof_codigoitemlistaservico" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="25" name="cof_codigotributacaonacional" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
          <primaryKey column="lbr_issmatrix_id" sequenceNumberInPK="1"/>
          <index name="lbr_issmatrix_key" unique="true">
             <column ascending="true" name="lbr_issmatrix_id"/>
@@ -62630,6 +62632,7 @@
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="137" name="cof_cintcontrib" nullable="true" remarks="" size="15" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="138" name="isbompriceoverride" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="139" name="cof_codigoitemlistaservico" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="140" name="cof_codigotributacaonacional" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
          <primaryKey column="m_product_id" sequenceNumberInPK="1"/>
          <index name="m_product_pkey" unique="true">
             <column ascending="true" name="m_product_id"/>
