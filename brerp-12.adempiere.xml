@@ -14838,8 +14838,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -14924,8 +14924,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -14962,8 +14962,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_sellerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -15022,8 +15022,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -58493,13 +58493,6 @@
             <column ascending="true" name="m_attributesetinstance_id"/>
             <column ascending="false" name="dateacct"/>
          </index>
-         <index name="idx_cof_mcosthistory_speed_lateral" unique="false">
-            <column ascending="true" name="m_product_id"/>
-            <column ascending="true" name="ad_org_id"/>
-            <column ascending="true" name="m_costtype_id"/>
-            <column ascending="true" name="m_costelement_id"/>
-            <column ascending="false" name="created"/>
-         </index>
          <index name="m_costhistory_costmovement_idx" unique="false">
             <column ascending="true" name="ad_client_id"/>
             <column ascending="true" name="m_product_id"/>
@@ -58513,7 +58506,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_costhistory_isactive_check"/>
          <checkConstraint constraint="((isbackdate = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_costhistory_isbackdate_check"/>
       </table>
-      <table catalog="brerp-12" name="m_costmovement_v" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT a.ad_client_id,&#10;    a.ad_org_id,&#10;    b.c_acctschema_id,&#10;    a.m_costhistory_id,&#10;    a.m_costtype_id,&#10;    a.m_costelement_id,&#10;    a.m_attributesetinstance_id,&#10;    a.m_product_id,&#10;    a.oldqty,&#10;    a.newqty,&#10;    a.oldcostprice,&#10;    (a.newcostprice * ('-1'::integer)::numeric) AS newcostprice,&#10;    a.oldcqty,&#10;    a.newcqty,&#10;    a.oldcamt,&#10;    a.newcamt,&#10;    b.qty,&#10;    b.amt,&#10;    b.deltaqty,&#10;    b.deltaamt,&#10;    b.c_orderline_id,&#10;    b.m_inoutline_id,&#10;    b.c_invoiceline_id,&#10;    b.m_movementline_id,&#10;    b.m_inventoryline_id,&#10;    b.m_productionline_id,&#10;    b.c_projectissue_id,&#10;    b.m_matchinv_id,&#10;    a.m_costdetail_id,&#10;    b.description,&#10;    a.created,&#10;    a.createdby,&#10;    a.updated,&#10;    a.updatedby,&#10;    a.isactive,&#10;    a.dateacct,&#10;    a.isbackdate,&#10;    a.backdateprocessedon&#10;   FROM (m_costhistory a&#10;     JOIN m_costdetail b ON ((a.m_costdetail_id = b.m_costdetail_id)));">
+      <table catalog="brerp-12" name="m_costmovement_v" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT a.ad_client_id,&#10;    a.ad_org_id,&#10;    b.c_acctschema_id,&#10;    a.m_costhistory_id,&#10;    a.m_costtype_id,&#10;    a.m_costelement_id,&#10;    a.m_attributesetinstance_id,&#10;    a.m_product_id,&#10;    a.oldqty,&#10;    a.newqty,&#10;    a.oldcostprice,&#10;    (a.newcostprice * ('-1'::integer)::numeric) AS newcostprice,&#10;    a.oldcqty,&#10;    a.newcqty,&#10;    a.oldcamt,&#10;    a.newcamt,&#10;    b.qty,&#10;    b.amt,&#10;    b.deltaqty,&#10;    b.deltaamt,&#10;    b.c_orderline_id,&#10;    b.m_inoutline_id,&#10;    b.c_invoiceline_id,&#10;    b.m_movementline_id,&#10;    b.m_inventoryline_id,&#10;    b.m_productionline_id,&#10;    b.c_projectissue_id,&#10;    b.m_matchinv_id,&#10;    a.m_costdetail_id,&#10;    b.description,&#10;    a.created,&#10;    a.createdby,&#10;    a.updated,&#10;    a.updatedby,&#10;    a.isactive,&#10;    a.dateacct,&#10;    a.isbackdate,&#10;    a.backdateprocessedon&#10;   FROM (m_costhistory a&#10;     JOIN m_costdetail b ON ((a.m_costdetail_id = b.m_costdetail_id)))&#10;  ORDER BY a.m_costhistory_id;">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="c_acctschema_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>

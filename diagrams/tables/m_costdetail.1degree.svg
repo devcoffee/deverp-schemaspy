@@ -1760,20 +1760,17 @@
 <g id="node17" class="node">
 <title>m_costhistory</title>
 <g id="a_node17"><a xlink:href="../../tables/m_costhistory.html" xlink:title="m_costhistory" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="2629,-2395 2629,-2695 2840,-2695 2840,-2395 2629,-2395"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="2629.5,-2673 2629.5,-2695 2840.5,-2695 2840.5,-2673 2629.5,-2673"/>
-<polygon fill="none" stroke="black" points="2629.5,-2673 2629.5,-2695 2840.5,-2695 2840.5,-2673 2629.5,-2673"/>
-<text text-anchor="start" x="2634.5" y="-2682.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">m_costhistory</text>
-<text text-anchor="start" x="2805.5" y="-2681.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="#ffffff" stroke="transparent" points="2629.5,-2651 2629.5,-2673 2840.5,-2673 2840.5,-2651 2629.5,-2651"/>
+<polygon fill="#ffffff" stroke="transparent" points="2629,-2395 2629,-2673 2840,-2673 2840,-2395 2629,-2395"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="2629.5,-2651 2629.5,-2673 2840.5,-2673 2840.5,-2651 2629.5,-2651"/>
 <polygon fill="none" stroke="black" points="2629.5,-2651 2629.5,-2673 2840.5,-2673 2840.5,-2651 2629.5,-2651"/>
-<text text-anchor="start" x="2649.5" y="-2659.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
+<text text-anchor="start" x="2634.5" y="-2660.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">m_costhistory</text>
+<text text-anchor="start" x="2805.5" y="-2659.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
 <polygon fill="#ffffff" stroke="transparent" points="2629.5,-2629 2629.5,-2651 2840.5,-2651 2840.5,-2629 2629.5,-2629"/>
 <polygon fill="none" stroke="black" points="2629.5,-2629 2629.5,-2651 2840.5,-2651 2840.5,-2629 2629.5,-2629"/>
-<text text-anchor="start" x="2649.5" y="-2637.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
+<text text-anchor="start" x="2649.5" y="-2637.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
 <polygon fill="#ffffff" stroke="transparent" points="2629.5,-2607 2629.5,-2629 2840.5,-2629 2840.5,-2607 2629.5,-2607"/>
 <polygon fill="none" stroke="black" points="2629.5,-2607 2629.5,-2629 2840.5,-2629 2840.5,-2607 2629.5,-2607"/>
-<text text-anchor="start" x="2649.5" y="-2615.2" font-family="Helvetica,sans-Serif" font-size="11.00">created</text>
+<text text-anchor="start" x="2649.5" y="-2615.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
 <polygon fill="#ffffff" stroke="transparent" points="2629.5,-2585 2629.5,-2607 2840.5,-2607 2840.5,-2585 2629.5,-2585"/>
 <polygon fill="none" stroke="black" points="2629.5,-2585 2629.5,-2607 2840.5,-2607 2840.5,-2585 2629.5,-2585"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2634.5" y="-2602"/>
