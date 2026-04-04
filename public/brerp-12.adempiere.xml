@@ -15217,7 +15217,7 @@
             <column ascending="true" name="c_acctprocessor_uu"/>
          </index>
       </table>
-      <table catalog="brerp-12" name="c_acctprocessorlog" numRows="1008" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="c_acctprocessorlog" numRows="1007" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="c_acctprocessor_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_acctprocessor_id" foreignKey="cacctprocessor_log" implied="false" onDeleteCascade="true" schema="adempiere" table="c_acctprocessor"/>
          </column>
@@ -43065,7 +43065,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_linhaordemorigem_id" nullable="false" remarks="" size="10" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_linhaordemorigem_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_orderdeducaomateriais_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_orderdeducaomateriais_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="5" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
