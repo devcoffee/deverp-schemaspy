@@ -83990,24 +83990,6 @@
                                         <td><span title='Cascade on delete:&#10;Deletion of parent deletes child'>Cascade on delete</span></td>
                                     </tr>
                                     <tr>
-                                        <td>clocation_cbank</td>
-                                        <td>
-                                            <table border='0' cellspacing='0' cellpadding='0'>
-                                                <tr>
-                                                    <td><a href='tables/c_bank.html'>c_bank</a><span>.c_location_id</span></td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table border='0' cellspacing='0' cellpadding='0'>
-                                                <tr>
-                                                    <td><a href='tables/c_location.html'>c_location</a><span>.c_location_id</span></td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
-                                    </tr>
-                                    <tr>
                                         <td>user2_cbankaccount</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -84078,6 +84060,24 @@
                                             </table>
                                         </td>
                                         <td><span title='Cascade on delete:&#10;Deletion of parent deletes child'>Cascade on delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>clocation_cbank</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bank.html'>c_bank</a><span>.c_location_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_location.html'>c_location</a><span>.c_location_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
                                         <td>adclient_coflinharecuperacaoimposto</td>
@@ -96171,6 +96171,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/cof_rps_lote.html'>cof_rps_lote</a></td>
+                                        <td>cof_rps_lote_cof_isambientenacional_check</td>
+                                        <td>((cof_isambientenacional &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_rps_lote.html'>cof_rps_lote</a></td>
                                         <td>cof_rps_lote_cof_islotedesmembrado_check</td>
                                         <td>((cof_islotedesmembrado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -99506,6 +99511,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/ad_orginfo.html'>ad_orginfo</a></td>
+                                        <td>ad_orginfo_cof_isinformarimprestadornfse_check</td>
+                                        <td>((cof_isinformarimprestadornfse &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/ad_orginfo.html'>ad_orginfo</a></td>
                                         <td>ad_orginfo_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -101635,13 +101645,13 @@
                                         <td>((istranslated &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/c_rfqline.html'>c_rfqline</a></td>
-                                        <td>c_rfqline_isactive_check</td>
+                                        <td><a href='tables/c_revenuerecognition.html'>c_revenuerecognition</a></td>
+                                        <td>c_revenuerecognition_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/c_revenuerecognition.html'>c_revenuerecognition</a></td>
-                                        <td>c_revenuerecognition_isactive_check</td>
+                                        <td><a href='tables/c_rfqline.html'>c_rfqline</a></td>
+                                        <td>c_rfqline_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
@@ -108726,6 +108736,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/cof_rps.html'>cof_rps</a></td>
+                                        <td>cof_rps_cof_isambientenacional_check</td>
+                                        <td>((cof_isambientenacional &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_rps.html'>cof_rps</a></td>
                                         <td>cof_rps_cof_operacaopessoal_check</td>
                                         <td>((cof_operacaopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -110285,16 +110300,6 @@
                                         <td>((istranslated &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/c_bank.html'>c_bank</a></td>
-                                        <td>c_bank_isactive_check</td>
-                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href='tables/c_bank.html'>c_bank</a></td>
-                                        <td>c_bank_isownbank_check</td>
-                                        <td>((isownbank &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                    </tr>
-                                    <tr>
                                         <td><a href='tables/c_bankaccount.html'>c_bankaccount</a></td>
                                         <td>c_bankaccount_cof_composescashflow_check</td>
                                         <td>((cof_composescashflow &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -110308,6 +110313,16 @@
                                         <td><a href='tables/c_bankaccount.html'>c_bankaccount</a></td>
                                         <td>c_bankaccount_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/c_bank.html'>c_bank</a></td>
+                                        <td>c_bank_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/c_bank.html'>c_bank</a></td>
+                                        <td>c_bank_isownbank_check</td>
+                                        <td>((isownbank &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/cof_linharecuperacaoimposto.html'>cof_linharecuperacaoimposto</a></td>
