@@ -6722,6 +6722,7 @@
             <parent catalog="brerp-12" column="c_bpartner_id" foreignKey="cofbpartnercashtrx_adorginfo" implied="false" onDeleteCascade="false" schema="adempiere" table="c_bpartner"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="66" name="cte_rntrc" nullable="true" remarks="" size="8" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="67" name="cof_isinformarimprestadornfse" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="ad_org_id" sequenceNumberInPK="1"/>
          <index name="ad_orginfo_pkey" unique="true">
             <column ascending="true" name="ad_org_id"/>
@@ -6729,6 +6730,7 @@
          <index name="ad_orginfo_uu_idx" unique="true">
             <column ascending="true" name="ad_orginfo_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isinformarimprestadornfse = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_orginfo_cof_isinformarimprestadornfse_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_orginfo_isactive_check"/>
       </table>
       <table catalog="brerp-12" name="ad_orgtype" numRows="2" remarks="" schema="adempiere" type="TABLE">
@@ -14838,8 +14840,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -14924,8 +14926,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -14962,8 +14964,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_sellerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -15022,8 +15024,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -45824,6 +45826,9 @@
             <parent catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codigooperacao"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="199" name="cof_codigotributacaonacional" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="200" name="cof_chnfse" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="201" name="cof_iddps" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="202" name="cof_isambientenacional" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="cof_rps_id" sequenceNumberInPK="1"/>
          <index name="cof_rps_pkey" unique="true">
             <column ascending="true" name="cof_rps_id"/>
@@ -45838,6 +45843,7 @@
             <column ascending="true" name="cof_rps_uu"/>
          </index>
          <checkConstraint constraint="((cof_ind_gtribregular = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_cof_ind_gtribregular_check"/>
+         <checkConstraint constraint="((cof_isambientenacional = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_cof_isambientenacional_check"/>
          <checkConstraint constraint="((cof_operacaopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_cof_operacaopessoal_check"/>
          <checkConstraint constraint="((isprinted = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_isprinted_check"/>
          <checkConstraint constraint="((issotrx = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_issotrx_check"/>
@@ -45919,6 +45925,7 @@
          </column>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="32" name="cof_processing3" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="33" name="cof_islotedesmembrado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="34" name="cof_isambientenacional" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="cof_rps_lote_id" sequenceNumberInPK="1"/>
          <index name="cof_rps_lote_pkey" unique="true">
             <column ascending="true" name="cof_rps_lote_id"/>
@@ -45926,6 +45933,7 @@
          <index name="cof_rps_lote_cof_rps_lote_uu_key" unique="true">
             <column ascending="true" name="cof_rps_lote_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isambientenacional = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lote_cof_isambientenacional_check"/>
          <checkConstraint constraint="((cof_islotedesmembrado = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lote_cof_islotedesmembrado_check"/>
          <checkConstraint constraint="((lbr_lotreceived = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lote_lbr_lotreceived_check"/>
          <checkConstraint constraint="((lbr_lotsent = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lote_lbr_lotsent_check"/>

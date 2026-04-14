@@ -297,13 +297,13 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="b_offer.ad_user_id references ad_user.ad_user_id via aduser_boffer"><a href='ad_user.html'>ad_user</a><span class='relatedKey'>.ad_user_id</span></td>
-                                                <td class="constraint detail">aduser_boffer</td>
+                                                <td title="b_offer.ad_user_id references b_seller.ad_user_id via bseller_boffer"><a href='b_seller.html'>b_seller</a><span class='relatedKey'>.ad_user_id</span></td>
+                                                <td class="constraint detail">bseller_boffer</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
-                                                <td title="b_offer.ad_user_id references b_seller.ad_user_id via bseller_boffer"><a href='b_seller.html'>b_seller</a><span class='relatedKey'>.ad_user_id</span></td>
-                                                <td class="constraint detail">bseller_boffer</td>
+                                                <td title="b_offer.ad_user_id references ad_user.ad_user_id via aduser_boffer"><a href='ad_user.html'>ad_user</a><span class='relatedKey'>.ad_user_id</span></td>
+                                                <td class="constraint detail">aduser_boffer</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
@@ -471,12 +471,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>b_offer_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>b_offer_iswillingtocommit_check</td>
                                     <td>((iswillingtocommit &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>b_offer_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
