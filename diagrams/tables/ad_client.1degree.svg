@@ -11044,117 +11044,117 @@
 <g id="node128" class="node">
 <title>cof_configuracaofiscal</title>
 <g id="a_node128"><a xlink:href="../../tables/cof_configuracaofiscal.html" xlink:title="cof_configuracaofiscal" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="3607,-13397.28 3607,-13785.28 3868,-13785.28 3868,-13397.28 3607,-13397.28"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="3607.5,-13763.28 3607.5,-13785.28 3868.5,-13785.28 3868.5,-13763.28 3607.5,-13763.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13763.28 3607.5,-13785.28 3868.5,-13785.28 3868.5,-13763.28 3607.5,-13763.28"/>
-<text text-anchor="start" x="3612.5" y="-13772.48" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_configuracaofiscal</text>
-<text text-anchor="start" x="3833.5" y="-13771.48" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="#ffffff" stroke="transparent" points="3607.5,-13741.28 3607.5,-13763.28 3868.5,-13763.28 3868.5,-13741.28 3607.5,-13741.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13741.28 3607.5,-13763.28 3868.5,-13763.28 3868.5,-13741.28 3607.5,-13741.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13758.3"/>
-<text text-anchor="start" x="3627.5" y="-13749.48" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="3607.5,-13719.28 3607.5,-13741.28 3868.5,-13741.28 3868.5,-13719.28 3607.5,-13719.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13719.28 3607.5,-13741.28 3868.5,-13741.28 3868.5,-13719.28 3607.5,-13719.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13736.3"/>
-<text text-anchor="start" x="3627.5" y="-13727.48" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13697.28 3607.5,-13719.28 3868.5,-13719.28 3868.5,-13697.28 3607.5,-13697.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13714.3"/>
-<text text-anchor="start" x="3627.5" y="-13705.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstcofins_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13675.28 3607.5,-13697.28 3868.5,-13697.28 3868.5,-13675.28 3607.5,-13675.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13692.3"/>
-<text text-anchor="start" x="3627.5" y="-13683.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_csticms_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13653.28 3607.5,-13675.28 3868.5,-13675.28 3868.5,-13653.28 3607.5,-13653.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13670.3"/>
-<text text-anchor="start" x="3627.5" y="-13661.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstipi_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13631.28 3607.5,-13653.28 3868.5,-13653.28 3868.5,-13631.28 3607.5,-13631.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13648.3"/>
-<text text-anchor="start" x="3627.5" y="-13639.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstpis_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13609.28 3607.5,-13631.28 3868.5,-13631.28 3868.5,-13609.28 3607.5,-13609.28"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13626.3"/>
-<text text-anchor="start" x="3627.5" y="-13617.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_configuracaofiscal_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="3607.5,-13587.28 3607.5,-13609.28 3868.5,-13609.28 3868.5,-13587.28 3607.5,-13587.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13587.28 3607.5,-13609.28 3868.5,-13609.28 3868.5,-13587.28 3607.5,-13587.28"/>
-<text text-anchor="start" x="3627.5" y="-13595.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_configuracaofiscal_uu</text>
-<polygon fill="#ffffff" stroke="transparent" points="3607.5,-13565.28 3607.5,-13587.28 3868.5,-13587.28 3868.5,-13565.28 3607.5,-13565.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13565.28 3607.5,-13587.28 3868.5,-13587.28 3868.5,-13565.28 3607.5,-13565.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13582.3"/>
-<text text-anchor="start" x="3627.5" y="-13573.48" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13543.28 3607.5,-13565.28 3868.5,-13565.28 3868.5,-13543.28 3607.5,-13543.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13560.3"/>
-<text text-anchor="start" x="3627.5" y="-13551.48" font-family="Helvetica,sans-Serif" font-size="11.00">createdby</text>
-<polygon fill="#ffffff" stroke="transparent" points="3607.5,-13521.28 3607.5,-13543.28 3868.5,-13543.28 3868.5,-13521.28 3607.5,-13521.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13521.28 3607.5,-13543.28 3868.5,-13543.28 3868.5,-13521.28 3607.5,-13521.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13538.3"/>
-<text text-anchor="start" x="3627.5" y="-13529.48" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_cfop_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="3607.5,-13499.28 3607.5,-13521.28 3868.5,-13521.28 3868.5,-13499.28 3607.5,-13499.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13499.28 3607.5,-13521.28 3868.5,-13521.28 3868.5,-13499.28 3607.5,-13499.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13516.3"/>
-<text text-anchor="start" x="3627.5" y="-13507.48" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_ncm_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13477.28 3607.5,-13499.28 3868.5,-13499.28 3868.5,-13477.28 3607.5,-13477.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13494.3"/>
-<text text-anchor="start" x="3627.5" y="-13485.48" font-family="Helvetica,sans-Serif" font-size="11.00">updatedby</text>
-<polygon fill="none" stroke="black" points="3607.5,-13455.28 3607.5,-13477.28 3868.5,-13477.28 3868.5,-13455.28 3607.5,-13455.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13472.3"/>
-<text text-anchor="start" x="3627.5" y="-13463.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstibscbs_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13433.28 3607.5,-13455.28 3868.5,-13455.28 3868.5,-13433.28 3607.5,-13433.28"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3612.5" y="-13450.3"/>
-<text text-anchor="start" x="3627.5" y="-13441.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_codclasstrib_id</text>
-<polygon fill="none" stroke="black" points="3607.5,-13415.28 3607.5,-13433.28 3868.5,-13433.28 3868.5,-13415.28 3607.5,-13415.28"/>
-<text text-anchor="start" x="3610.5" y="-13421.48" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="3607.5,-13397.28 3607.5,-13415.28 3868.5,-13415.28 3868.5,-13397.28 3607.5,-13397.28"/>
-<polygon fill="none" stroke="black" points="3607.5,-13397.28 3607.5,-13415.28 3868.5,-13415.28 3868.5,-13397.28 3607.5,-13397.28"/>
-<polygon fill="#ffffff" stroke="transparent" points="3608.5,-13398.28 3608.5,-13414.28 3705.5,-13414.28 3705.5,-13398.28 3608.5,-13398.28"/>
-<text text-anchor="start" x="3610.5" y="-13403.48" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 13</text>
-<polygon fill="#ffffff" stroke="transparent" points="3705.5,-13398.28 3705.5,-13414.28 3786.5,-13414.28 3786.5,-13398.28 3705.5,-13398.28"/>
+<polygon fill="#ffffff" stroke="transparent" points="3595,-13397.28 3595,-13785.28 3880,-13785.28 3880,-13397.28 3595,-13397.28"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="3595.5,-13763.28 3595.5,-13785.28 3880.5,-13785.28 3880.5,-13763.28 3595.5,-13763.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13763.28 3595.5,-13785.28 3880.5,-13785.28 3880.5,-13763.28 3595.5,-13763.28"/>
+<text text-anchor="start" x="3600.5" y="-13772.48" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_configuracaofiscal</text>
+<text text-anchor="start" x="3845.5" y="-13771.48" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="#ffffff" stroke="transparent" points="3595.5,-13741.28 3595.5,-13763.28 3880.5,-13763.28 3880.5,-13741.28 3595.5,-13741.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13741.28 3595.5,-13763.28 3880.5,-13763.28 3880.5,-13741.28 3595.5,-13741.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13758.3"/>
+<text text-anchor="start" x="3615.5" y="-13749.48" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="3595.5,-13719.28 3595.5,-13741.28 3880.5,-13741.28 3880.5,-13719.28 3595.5,-13719.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13719.28 3595.5,-13741.28 3880.5,-13741.28 3880.5,-13719.28 3595.5,-13719.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13736.3"/>
+<text text-anchor="start" x="3615.5" y="-13727.48" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13697.28 3595.5,-13719.28 3880.5,-13719.28 3880.5,-13697.28 3595.5,-13697.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13714.3"/>
+<text text-anchor="start" x="3615.5" y="-13705.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstcofins_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13675.28 3595.5,-13697.28 3880.5,-13697.28 3880.5,-13675.28 3595.5,-13675.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13692.3"/>
+<text text-anchor="start" x="3615.5" y="-13683.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_csticms_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13653.28 3595.5,-13675.28 3880.5,-13675.28 3880.5,-13653.28 3595.5,-13653.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13670.3"/>
+<text text-anchor="start" x="3615.5" y="-13661.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstipi_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13631.28 3595.5,-13653.28 3880.5,-13653.28 3880.5,-13631.28 3595.5,-13631.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13648.3"/>
+<text text-anchor="start" x="3615.5" y="-13639.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstpis_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13609.28 3595.5,-13631.28 3880.5,-13631.28 3880.5,-13609.28 3595.5,-13609.28"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13626.3"/>
+<text text-anchor="start" x="3615.5" y="-13617.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_configuracaofiscal_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="3595.5,-13587.28 3595.5,-13609.28 3880.5,-13609.28 3880.5,-13587.28 3595.5,-13587.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13587.28 3595.5,-13609.28 3880.5,-13609.28 3880.5,-13587.28 3595.5,-13587.28"/>
+<text text-anchor="start" x="3615.5" y="-13595.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_configuracaofiscal_uu</text>
+<polygon fill="#ffffff" stroke="transparent" points="3595.5,-13565.28 3595.5,-13587.28 3880.5,-13587.28 3880.5,-13565.28 3595.5,-13565.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13565.28 3595.5,-13587.28 3880.5,-13587.28 3880.5,-13565.28 3595.5,-13565.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13582.3"/>
+<text text-anchor="start" x="3615.5" y="-13573.48" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13543.28 3595.5,-13565.28 3880.5,-13565.28 3880.5,-13543.28 3595.5,-13543.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13560.3"/>
+<text text-anchor="start" x="3615.5" y="-13551.48" font-family="Helvetica,sans-Serif" font-size="11.00">createdby</text>
+<polygon fill="#ffffff" stroke="transparent" points="3595.5,-13521.28 3595.5,-13543.28 3880.5,-13543.28 3880.5,-13521.28 3595.5,-13521.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13521.28 3595.5,-13543.28 3880.5,-13543.28 3880.5,-13521.28 3595.5,-13521.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13538.3"/>
+<text text-anchor="start" x="3615.5" y="-13529.48" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_cfop_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="3595.5,-13499.28 3595.5,-13521.28 3880.5,-13521.28 3880.5,-13499.28 3595.5,-13499.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13499.28 3595.5,-13521.28 3880.5,-13521.28 3880.5,-13499.28 3595.5,-13499.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13516.3"/>
+<text text-anchor="start" x="3615.5" y="-13507.48" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_ncm_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13477.28 3595.5,-13499.28 3880.5,-13499.28 3880.5,-13477.28 3595.5,-13477.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13494.3"/>
+<text text-anchor="start" x="3615.5" y="-13485.48" font-family="Helvetica,sans-Serif" font-size="11.00">updatedby</text>
+<polygon fill="none" stroke="black" points="3595.5,-13455.28 3595.5,-13477.28 3880.5,-13477.28 3880.5,-13455.28 3595.5,-13455.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13472.3"/>
+<text text-anchor="start" x="3615.5" y="-13463.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cstibscbs_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13433.28 3595.5,-13455.28 3880.5,-13455.28 3880.5,-13433.28 3595.5,-13433.28"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3600.5" y="-13450.3"/>
+<text text-anchor="start" x="3615.5" y="-13441.48" font-family="Helvetica,sans-Serif" font-size="11.00">cof_codclasstrib_id</text>
+<polygon fill="none" stroke="black" points="3595.5,-13415.28 3595.5,-13433.28 3880.5,-13433.28 3880.5,-13415.28 3595.5,-13415.28"/>
+<text text-anchor="start" x="3598.5" y="-13421.48" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="3595.5,-13397.28 3595.5,-13415.28 3880.5,-13415.28 3880.5,-13397.28 3595.5,-13397.28"/>
+<polygon fill="none" stroke="black" points="3595.5,-13397.28 3595.5,-13415.28 3880.5,-13415.28 3880.5,-13397.28 3595.5,-13397.28"/>
+<polygon fill="#ffffff" stroke="transparent" points="3596.5,-13398.28 3596.5,-13414.28 3701.5,-13414.28 3701.5,-13398.28 3596.5,-13398.28"/>
+<text text-anchor="start" x="3598.5" y="-13403.48" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 13</text>
+<polygon fill="#ffffff" stroke="transparent" points="3701.5,-13398.28 3701.5,-13414.28 3790.5,-13414.28 3790.5,-13398.28 3701.5,-13398.28"/>
 <text text-anchor="start" x="3742.5" y="-13403.48" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="3786.5,-13398.28 3786.5,-13414.28 3867.5,-13414.28 3867.5,-13398.28 3786.5,-13398.28"/>
-<text text-anchor="start" x="3858.5" y="-13403.48" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="black" stroke="black" points="3705.5,-13398.28 3705.5,-13414.28 3705.5,-13414.28 3705.5,-13398.28 3705.5,-13398.28"/>
-<polygon fill="black" stroke="black" points="3786.5,-13398.28 3786.5,-13414.28 3786.5,-13414.28 3786.5,-13398.28 3786.5,-13398.28"/>
+<polygon fill="#ffffff" stroke="transparent" points="3790.5,-13398.28 3790.5,-13414.28 3879.5,-13414.28 3879.5,-13398.28 3790.5,-13398.28"/>
+<text text-anchor="start" x="3870.5" y="-13403.48" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="black" stroke="black" points="3701.5,-13398.28 3701.5,-13414.28 3701.5,-13414.28 3701.5,-13398.28 3701.5,-13398.28"/>
+<polygon fill="black" stroke="black" points="3790.5,-13398.28 3790.5,-13414.28 3790.5,-13414.28 3790.5,-13398.28 3790.5,-13398.28"/>
 </a>
 </g>
 </g>
 <!-- cof_configuracaofiscal&#45;&gt;ad_client -->
 <g id="edge588" class="edge">
 <title>cof_configuracaofiscal:w&#45;&gt;ad_client:e</title>
-<path fill="none" stroke="black" d="M3592.13,-13755.05C3578.91,-13761.16 3575.12,-13776.76 3568,-13795.28 3545.14,-13854.76 3580.14,-22926.3 3535,-22971.28 3427.64,-23078.25 3303.74,-23075.8 3194,-22971.28 3139.47,-22919.34 3192.26,-22362.8 3161,-22294.28 3095.63,-22151 2970.17,-22192.65 2905,-22049.28 2838.82,-21903.67 2939.32,-21475.37 2872,-21330.28 2783.98,-21140.57 2635.54,-21189.04 2527,-21010.28 2498.29,-20963 2530.14,-20932.15 2494,-20890.28 2408.32,-20791 2303.11,-20875.87 2224,-20771.28 2160.37,-20687.16 2264.37,-20612.04 2191,-20536.28 2120.4,-20463.37 2064.7,-20520.93 1966,-20497.28 1710.07,-20435.95 1562.43,-20459.71 1439,-20227.28 1406.97,-20166.95 1454.94,-19045.92 1406,-18998.28 1367.31,-18960.61 1201.69,-18960.61 1163,-18998.28 1100.48,-19059.15 1208.25,-20568.28 1121,-20568.28"/>
-<polygon fill="black" stroke="black" points="3598.64,-13753.79 3607.18,-13755.81 3602.57,-13753.04 3606.5,-13752.28 3606.5,-13752.28 3606.5,-13752.28 3602.57,-13753.04 3605.82,-13748.74 3598.64,-13753.79 3598.64,-13753.79"/>
-<ellipse fill="none" stroke="black" cx="3595.5" cy="-13754.4" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M3580.66,-13756.89C3572.58,-13764.34 3572.43,-13779.76 3568,-13795.28 3550.52,-13856.56 3580.14,-22926.3 3535,-22971.28 3427.64,-23078.25 3303.74,-23075.8 3194,-22971.28 3139.47,-22919.34 3192.26,-22362.8 3161,-22294.28 3095.63,-22151 2970.17,-22192.65 2905,-22049.28 2838.82,-21903.67 2939.32,-21475.37 2872,-21330.28 2783.98,-21140.57 2635.54,-21189.04 2527,-21010.28 2498.29,-20963 2530.14,-20932.15 2494,-20890.28 2408.32,-20791 2303.11,-20875.87 2224,-20771.28 2160.37,-20687.16 2264.37,-20612.04 2191,-20536.28 2120.4,-20463.37 2064.7,-20520.93 1966,-20497.28 1710.07,-20435.95 1562.43,-20459.71 1439,-20227.28 1406.97,-20166.95 1454.94,-19045.92 1406,-18998.28 1367.31,-18960.61 1201.69,-18960.61 1163,-18998.28 1100.48,-19059.15 1208.25,-20568.28 1121,-20568.28"/>
+<polygon fill="black" stroke="black" points="3586.91,-13754.81 3595.64,-13755.69 3590.7,-13753.54 3594.5,-13752.28 3594.5,-13752.28 3594.5,-13752.28 3590.7,-13753.54 3593.36,-13748.86 3586.91,-13754.81 3586.91,-13754.81"/>
+<ellipse fill="none" stroke="black" cx="3583.87" cy="-13755.82" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_configuracaofiscal&#45;&gt;ad_org -->
 <g id="edge589" class="edge">
 <title>cof_configuracaofiscal:w&#45;&gt;ad_org:e</title>
-<path fill="none" stroke="black" d="M3592.35,-13726.68C3535.21,-13694.64 3572.1,-13457.82 3568,-13386.28 3565.81,-13348.09 3562.09,-2397.29 3535,-2370.28 3481.34,-2316.78 3267.43,-2351.56 3194,-2370.28 3177.81,-2374.41 3176.04,-2381 3161,-2388.28 3049.7,-2442.17 3003.61,-2422.66 2905,-2497.28 2886.35,-2511.39 2892.59,-2527.18 2872,-2538.28 2804.2,-2574.81 2603.64,-2563.71 2527,-2571.28 2343.83,-2589.38 1849.64,-2544.03 1703,-2655.28 1671.04,-2679.52 1701.72,-2714.73 1670,-2739.28 1588.21,-2802.57 1511.99,-2694.02 1439,-2767.28 1394.62,-2811.82 1434.37,-2992.17 1406,-3048.28 1339.31,-3180.17 1265.52,-3168.82 1163,-3275.28 983.57,-3461.61 915.53,-3493.73 782,-3715.28 613.11,-3995.49 575.98,-4079.84 515,-4401.28 508.16,-4437.34 511.71,-14973.28 475,-14973.28"/>
-<polygon fill="black" stroke="black" points="3598.75,-13728.31 3605.61,-13733.77 3602.62,-13729.29 3606.5,-13730.28 3606.5,-13730.28 3606.5,-13730.28 3602.62,-13729.29 3607.39,-13726.79 3598.75,-13728.31 3598.75,-13728.31"/>
-<ellipse fill="none" stroke="black" cx="3595.65" cy="-13727.52" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M3580.54,-13726.68C3524.84,-13694.61 3570.85,-13457.65 3568,-13386.28 3566.47,-13348.06 3562.09,-2397.29 3535,-2370.28 3481.34,-2316.78 3267.43,-2351.56 3194,-2370.28 3177.81,-2374.41 3176.04,-2381 3161,-2388.28 3049.7,-2442.17 3003.61,-2422.66 2905,-2497.28 2886.35,-2511.39 2892.59,-2527.18 2872,-2538.28 2804.2,-2574.81 2603.64,-2563.71 2527,-2571.28 2343.83,-2589.38 1849.64,-2544.03 1703,-2655.28 1671.04,-2679.52 1701.72,-2714.73 1670,-2739.28 1588.21,-2802.57 1511.99,-2694.02 1439,-2767.28 1394.62,-2811.82 1434.37,-2992.17 1406,-3048.28 1339.31,-3180.17 1265.52,-3168.82 1163,-3275.28 983.57,-3461.61 915.53,-3493.73 782,-3715.28 613.11,-3995.49 575.98,-4079.84 515,-4401.28 508.16,-4437.34 511.71,-14973.28 475,-14973.28"/>
+<polygon fill="black" stroke="black" points="3586.75,-13728.28 3593.6,-13733.76 3590.63,-13729.28 3594.5,-13730.28 3594.5,-13730.28 3594.5,-13730.28 3590.63,-13729.28 3595.4,-13726.79 3586.75,-13728.28 3586.75,-13728.28"/>
+<ellipse fill="none" stroke="black" cx="3583.66" cy="-13727.48" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_configuracaofiscal&#45;&gt;ad_user -->
 <g id="edge592" class="edge">
 <title>cof_configuracaofiscal:w&#45;&gt;ad_user:e</title>
-<path fill="none" stroke="black" d="M3592.1,-13556.47C3481.39,-13593 3628.59,-14074.3 3535,-14167.28 3481.06,-14220.87 3246.56,-14140.34 3194,-14195.28 3153.3,-14237.82 3212.88,-15254.28 3154,-15254.28"/>
-<polygon fill="black" stroke="black" points="3598.59,-13555.48 3607.04,-13557.84 3602.55,-13554.88 3606.5,-13554.28 3606.5,-13554.28 3606.5,-13554.28 3602.55,-13554.88 3605.96,-13550.72 3598.59,-13555.48 3598.59,-13555.48"/>
-<ellipse fill="none" stroke="black" cx="3595.43" cy="-13555.97" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M3580.18,-13556.47C3470.53,-13593.02 3628.39,-14074.49 3535,-14167.28 3481.06,-14220.87 3246.56,-14140.34 3194,-14195.28 3153.3,-14237.82 3212.88,-15254.28 3154,-15254.28"/>
+<polygon fill="black" stroke="black" points="3586.59,-13555.49 3595.05,-13557.84 3590.55,-13554.89 3594.5,-13554.28 3594.5,-13554.28 3594.5,-13554.28 3590.55,-13554.89 3593.95,-13550.72 3586.59,-13555.49 3586.59,-13555.49"/>
+<ellipse fill="none" stroke="black" cx="3583.43" cy="-13555.98" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_configuracaofiscal&#45;&gt;ad_user -->
 <g id="edge593" class="edge">
 <title>cof_configuracaofiscal:w&#45;&gt;ad_user:e</title>
-<path fill="none" stroke="black" d="M3593.92,-13495.46C3540.05,-13563.44 3583.53,-14092.39 3535,-14140.28 3480.88,-14193.68 3246.54,-14113.32 3194,-14168.28 3152.28,-14211.92 3214.37,-15254.28 3154,-15254.28"/>
-<polygon fill="black" stroke="black" points="3599.55,-13492.24 3608.28,-13491.41 3603.03,-13490.26 3606.5,-13488.28 3606.5,-13488.28 3606.5,-13488.28 3603.03,-13490.26 3604.72,-13485.15 3599.55,-13492.24 3599.55,-13492.24"/>
-<ellipse fill="none" stroke="black" cx="3596.77" cy="-13493.83" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M3580.01,-13490.38C3462.31,-13527.41 3634.61,-14041.57 3535,-14140.28 3480.99,-14193.8 3246.54,-14113.32 3194,-14168.28 3152.28,-14211.92 3214.37,-15254.28 3154,-15254.28"/>
+<polygon fill="black" stroke="black" points="3586.58,-13489.43 3595.02,-13491.84 3590.54,-13488.85 3594.5,-13488.28 3594.5,-13488.28 3594.5,-13488.28 3590.54,-13488.85 3593.98,-13484.72 3586.58,-13489.43 3586.58,-13489.43"/>
+<ellipse fill="none" stroke="black" cx="3583.42" cy="-13489.89" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_configuracaofiscal&#45;&gt;c_bpartner -->
 <g id="edge590" class="edge">
 <title>cof_configuracaofiscal:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M3591.75,-13577.34C3515,-13589.4 3576.29,-13702.23 3568,-13795.28 3562.46,-13857.44 3579.21,-22738.23 3535,-22782.28 3427.64,-22889.25 3302.32,-22888.28 3194,-22782.28 3133.55,-22723.13 3194.67,-21337.86 3161,-21260.28 3097.69,-21114.39 2967.4,-21156.55 2905,-21010.28 2866.05,-20918.99 2942.51,-17507.14 2872,-17437.28 2844.77,-17410.3 2559.71,-17417.29 2527,-17437.28 2493.76,-17457.59 2525.96,-17515.28 2487,-17515.28"/>
-<polygon fill="black" stroke="black" points="3598.52,-13576.85 3606.76,-13579.87 3602.51,-13576.57 3606.5,-13576.28 3606.5,-13576.28 3606.5,-13576.28 3602.51,-13576.57 3606.24,-13572.69 3598.52,-13576.85 3598.52,-13576.85"/>
-<ellipse fill="none" stroke="black" cx="3595.33" cy="-13577.08" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M3586.74,-13588.44C3473.28,-13959.45 3623.66,-22693.95 3535,-22782.28 3427.64,-22889.25 3302.32,-22888.28 3194,-22782.28 3133.55,-22723.13 3194.67,-21337.86 3161,-21260.28 3097.69,-21114.39 2967.4,-21156.55 2905,-21010.28 2866.05,-20918.99 2942.51,-17507.14 2872,-17437.28 2844.77,-17410.3 2559.71,-17417.29 2527,-17437.28 2493.76,-17457.59 2525.96,-17515.28 2487,-17515.28"/>
+<polygon fill="black" stroke="black" points="3590.2,-13583.02 3597.53,-13578.22 3592.35,-13579.65 3594.5,-13576.28 3594.5,-13576.28 3594.5,-13576.28 3592.35,-13579.65 3591.47,-13574.34 3590.2,-13583.02 3590.2,-13583.02"/>
+<ellipse fill="none" stroke="black" cx="3588.47" cy="-13585.72" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_configuracaofiscal&#45;&gt;cof_codclasstrib -->
 <g id="edge591" class="edge">
 <title>cof_configuracaofiscal:w&#45;&gt;cof_codclasstrib:e</title>
-<path fill="none" stroke="black" d="M3592.24,-13441.46C3575.76,-13433.58 3575.38,-13410.31 3568,-13386.28 3511.89,-13203.46 3602.75,-10123.1 3535,-9944.28 3516.86,-9896.4 3510.7,-9857.28 3459.5,-9857.28"/>
-<polygon fill="black" stroke="black" points="3598.65,-13442.73 3605.8,-13447.81 3602.58,-13443.5 3606.5,-13444.28 3606.5,-13444.28 3606.5,-13444.28 3602.58,-13443.5 3607.2,-13440.75 3598.65,-13442.73 3598.65,-13442.73"/>
-<ellipse fill="none" stroke="black" cx="3595.51" cy="-13442.11" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M3580.59,-13440.27C3568.98,-13431.13 3572.81,-13407.89 3568,-13386.28 3526.44,-13199.62 3602.75,-10123.1 3535,-9944.28 3516.86,-9896.4 3510.7,-9857.28 3459.5,-9857.28"/>
+<polygon fill="black" stroke="black" points="3586.81,-13442.06 3593.5,-13447.74 3590.66,-13443.17 3594.5,-13444.28 3594.5,-13444.28 3594.5,-13444.28 3590.66,-13443.17 3595.5,-13440.82 3586.81,-13442.06 3586.81,-13442.06"/>
+<ellipse fill="none" stroke="black" cx="3583.74" cy="-13441.18" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_configuracaometa -->
 <g id="node129" class="node">
