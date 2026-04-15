@@ -158,6 +158,16 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_controleestoqueetiqueta.m_warehouse_id references m_warehouse.m_warehouse_id via mwarehouse_cofcontroleestoqueetiqueta"><a href='cof_controleestoqueetiqueta.html'>cof_controleestoqueetiqueta</a><span class='relatedKey'>.m_warehouse_id</span></td>
+                                                <td class="constraint detail">mwarehouse_cofcontroleestoqueetiqueta</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_controleestoqueetiqueta.m_warehouseto_id references m_warehouse.m_warehouse_id via mwarehouseto_cofcontroleestoqueetiqueta"><a href='cof_controleestoqueetiqueta.html'>cof_controleestoqueetiqueta</a><span class='relatedKey'>.m_warehouseto_id</span></td>
+                                                <td class="constraint detail">mwarehouseto_cofcontroleestoqueetiqueta</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_equipments.cof_warehouse_id references m_warehouse.m_warehouse_id via cofwarehouse_cofequipments"><a href='cof_equipments.html'>cof_equipments</a><span class='relatedKey'>.cof_warehouse_id</span></td>
                                                 <td class="constraint detail">cofwarehouse_cofequipments</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -920,32 +930,32 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>m_warehouse_cof_isnaopermitirqtddispneg_check</td>
-                                    <td>((cof_isnaopermitirqtddispneg &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_warehouse_isdisallownegativeinv_check</td>
-                                    <td>((isdisallownegativeinv &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_warehouse_isdisableinventorypopup_check</td>
+                                    <td>((isdisableinventorypopup &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_warehouse_isintransit_check</td>
                                     <td>((isintransit &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_warehouse_isdisableinventorypopup_check</td>
-                                    <td>((isdisableinventorypopup &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_warehouse_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_warehouse_isdisallownegativeinv_check</td>
+                                    <td>((isdisallownegativeinv &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_warehouse_lbr_isthirdparty_check</td>
                                     <td>((lbr_isthirdparty &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_warehouse_cof_considerarabascompra_check</td>
-                                    <td>((cof_considerarabascompra &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_warehouse_cof_isnaopermitirqtddispneg_check</td>
+                                    <td>((cof_isnaopermitirqtddispneg &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_warehouse_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_warehouse_cof_considerarabascompra_check</td>
+                                    <td>((cof_considerarabascompra &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -3098,6 +3098,8 @@
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofcontroleciapentrada" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap_entrada"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofcontroleciapsaida" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap_saida"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofcontroleciapoutroscred" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciapoutroscred"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiquetaline"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofcontrolemulta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controlemulta"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofcsc" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_csc"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofdda" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_dda"/>
@@ -6439,6 +6441,9 @@
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcontroleciapentrada" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap_entrada"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcontroleciapsaida" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap_saida"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcontroleciapoutroscred" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciapoutroscred"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+            <child catalog="brerp-12" column="cof_orgto_id" foreignKey="coforgto_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiquetaline"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcontrolemulta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controlemulta"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcsc" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_csc"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofdda" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_dda"/>
@@ -11897,6 +11902,10 @@
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofcontroleciapsaida" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap_saida"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofcontroleciapoutroscred" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciapoutroscred"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofcontroleciapoutroscred" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciapoutroscred"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiquetaline"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiquetaline"/>
             <child catalog="brerp-12" column="ad_user_id" foreignKey="aduser_cofcontrolemulta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controlemulta"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofcontrolemulta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controlemulta"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofcontrolemulta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controlemulta"/>
@@ -17200,6 +17209,7 @@
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofcontractparticipa" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_contractparticipantes"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofcontroleabastecim" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleabastecimento"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofcontroleciap" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap"/>
+            <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofcontroleremessasi" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleremessasind"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofcreditanalysis" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_creditanalysis"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofdda" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_dda"/>
@@ -38943,6 +38953,95 @@
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_controleciapoutroscred_isactive_check"/>
          <checkConstraint constraint="((processed = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_controleciapoutroscred_processed_check"/>
+      </table>
+      <table catalog="brerp-12" name="cof_controleestoqueetiqueta" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="c_bpartner_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="c_bpartner"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_controleestoqueetiqueta_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="cof_conferencia_id" foreignKey="cofconferencia_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+            <child catalog="brerp-12" column="cof_controleestoqueetiqueta_id" foreignKey="cofcontroleestoqueetiqueta_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_controleestoqueetiquetaline"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_controleestoqueetiqueta_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="statement_timestamp()" digits="6" id="5" name="cof_datadocumento" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="6" name="cof_datamovimentacao" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="cof_motivo" nullable="false" remarks="" size="1000" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="8" name="cof_orgto_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="coforgto_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="cof_tipocontroleestoqueetiqueta" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="10" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'CO'::bpchar" digits="0" id="12" name="docaction" nullable="false" remarks="" size="2" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'DR'::character varying" digits="0" id="13" name="docstatus" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="14" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="m_warehouse_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="m_warehouse_id" foreignKey="mwarehouse_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="m_warehouse"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="m_warehouseto_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="m_warehouse_id" foreignKey="mwarehouseto_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="m_warehouse"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="17" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="value" nullable="true" remarks="" size="40" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="cof_conferencia_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_controleestoqueetiqueta_id" foreignKey="cofconferencia_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+         </column>
+         <primaryKey column="cof_controleestoqueetiqueta_id" sequenceNumberInPK="1"/>
+         <index name="cof_controleestoqueetiqueta_key" unique="true">
+            <column ascending="true" name="cof_controleestoqueetiqueta_id"/>
+         </index>
+         <index name="cof_controleestoqueetiqueta_uu_idx" unique="true">
+            <column ascending="true" name="cof_controleestoqueetiqueta_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_controleestoqueetiqueta_isactive_check"/>
+      </table>
+      <table catalog="brerp-12" name="cof_controleestoqueetiquetaline" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_controleestoqueetiqueta_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_controleestoqueetiqueta_id" foreignKey="cofcontroleestoqueetiqueta_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_controleestoqueetiquetaline_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="cof_controleestoqueetiquetaline_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="5" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="7" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="m_product_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="m_product_id" foreignKey="mproduct_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="m_product"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="qtyentered" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="10" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="12" name="m_locator_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="m_locator"/>
+         </column>
+         <primaryKey column="cof_controleestoqueetiquetaline_id" sequenceNumberInPK="1"/>
+         <index name="cof_controleestoqueetiquetaline_key" unique="true">
+            <column ascending="true" name="cof_controleestoqueetiquetaline_id"/>
+         </index>
+         <index name="cof_controleestoqueetiquetaline_uu_idx" unique="true">
+            <column ascending="true" name="cof_controleestoqueetiquetaline_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_controleestoqueetiquetaline_isactive_check"/>
       </table>
       <table catalog="brerp-12" name="cof_controlemulta" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -61040,6 +61139,7 @@
             <child catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_aassetaddition" implied="false" onDeleteCascade="false" schema="adempiere" table="a_asset_addition"/>
             <child catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_aassetproduct" implied="false" onDeleteCascade="false" schema="adempiere" table="a_asset_product"/>
             <child catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_cprojectissue" implied="false" onDeleteCascade="false" schema="adempiere" table="c_projectissue"/>
+            <child catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiquetaline"/>
             <child catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_coflabel" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_label"/>
             <child catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_coflabelentry" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_labelentry"/>
             <child catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_coflinhacalculo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhacalculo"/>
@@ -62308,6 +62408,7 @@
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cofcbenefconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_cbenef_config"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cofcombustivel" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_combustivel"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cofcontroleciap" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap"/>
+            <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_coflinhacontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiquetaline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cofcorrecaoestoquek28" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_correcaoestoquek280"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cofdeliveryrestrictio" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_deliveryrestriction"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cofestoqueescriturado" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_estoqueescrituradok200"/>
@@ -65272,6 +65373,8 @@
             <child catalog="brerp-12" column="m_warehouse_id" foreignKey="mwarehouse_corderline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_orderline"/>
             <child catalog="brerp-12" column="m_warehouse_id" foreignKey="mwarehouse_cpos" implied="false" onDeleteCascade="false" schema="adempiere" table="c_pos"/>
             <child catalog="brerp-12" column="m_warehouse_id" foreignKey="mwarehouse_cproject" implied="false" onDeleteCascade="false" schema="adempiere" table="c_project"/>
+            <child catalog="brerp-12" column="m_warehouse_id" foreignKey="mwarehouse_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
+            <child catalog="brerp-12" column="m_warehouseto_id" foreignKey="mwarehouseto_cofcontroleestoqueetiqueta" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleestoqueetiqueta"/>
             <child catalog="brerp-12" column="cof_warehouse_id" foreignKey="cofwarehouse_cofequipments" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_equipments"/>
             <child catalog="brerp-12" column="cof_warehouseto_id" foreignKey="cofwarehouseto_cofequipments" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_equipments"/>
             <child catalog="brerp-12" column="m_warehouse_id" foreignKey="mwarehouse_coflinhacalculo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhacalculo"/>

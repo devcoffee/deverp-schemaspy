@@ -343,6 +343,7 @@ mp_ot
 m_perpetualinv
 m_inventory
 m_inventoryline
+cof_controleestoqueetiqueta
 cof_orcamento
 m_bom
 r_category
@@ -1107,6 +1108,7 @@ cof_c_cnabconfig_line
 cof_calculociaplinhanfe
 cof_confrontoofx
 cof_controleciap_saida
+cof_controleestoqueetiquetaline
 cof_formacaopreco
 cof_historicoconsultas
 cof_imagenslinhaov

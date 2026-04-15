@@ -410,6 +410,12 @@ digraph "oneDegreeRelationshipsDiagram" {
   "cof_controleciap":"createdby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_controleciap":"lbr_docfiscal_id":w -> "lbr_docfiscal":"lbr_docfiscal_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_controleciap":"updatedby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_controleestoqueetiqueta":"ad_client_id":w -> "ad_client":"ad_client_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_controleestoqueetiqueta":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_controleestoqueetiqueta":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_controleestoqueetiqueta":"cof_orgto_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_controleestoqueetiqueta":"createdby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_controleestoqueetiqueta":"updatedby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_controleremessasind":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_controleremessasind":"c_doctypetarget_id":w -> "c_doctype":"c_doctype_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_controleremessasind":"c_invoice_id":w -> "c_invoice":"c_invoice_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -978,7 +984,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="ad_passwordrule_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="224" HEIGHT="16">ad_passwordrule_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="loginprefix" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="224" HEIGHT="16">loginprefix</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">2 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">210 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">2 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">212 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_client.html"
     target="_top"
@@ -1065,7 +1071,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="ad_org_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="185" HEIGHT="16">ad_org_uu</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="cof_c_snrange_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="185" HEIGHT="16">cof_c_snrange_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">3 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">290 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">3 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">293 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_org.html"
     target="_top"
@@ -1149,7 +1155,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_responsavelindicacao_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="219" HEIGHT="16">cof_responsavelindicacao_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="cof_respatribuicao_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="219" HEIGHT="16">cof_respatribuicao_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 19</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">8 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">454 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 19</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">8 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">458 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_user.html"
     target="_top"
@@ -1581,7 +1587,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_dataproxrevisaocadastral" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="233" HEIGHT="16">cof_dataproxrevisaocadastral</TD></TR></TABLE></TD><TD PORT="cof_dataproxrevisaocadastral.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
       <TR><TD PORT="ide_gcompragov_tpentegov" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="233" HEIGHT="16">ide_gcompragov_tpentegov</TD></TR></TABLE></TD><TD PORT="ide_gcompragov_tpentegov.type" ALIGN="LEFT">bpchar[1]</TD></TR>
       <TR><TD PORT="ide_gcompragov_tpopergov" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="233" HEIGHT="16">ide_gcompragov_tpopergov</TD></TR></TABLE></TD><TD PORT="ide_gcompragov_tpopergov.type" ALIGN="LEFT">bpchar[1]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 27</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">4 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">188 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 27</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">4 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">189 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_bpartner.html"
     target="_top"
@@ -2841,6 +2847,28 @@ digraph "oneDegreeRelationshipsDiagram" {
     URL="../../tables/cof_controleciap.html"
     target="_top"
     tooltip="cof_controleciap"
+  ];
+  "cof_controleestoqueetiqueta" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="210" HEIGHT="16"><B>cof_controleestoqueetiqueta</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ad_client_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">ad_client_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ad_org_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">ad_org_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_bpartner_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">c_bpartner_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_controleestoqueetiqueta_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">cof_controleestoqueetiqueta_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_controleestoqueetiqueta_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">cof_controleestoqueetiqueta_uu</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_orgto_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">cof_orgto_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="createdby" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">createdby</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_warehouse_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">m_warehouse_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_warehouseto_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">m_warehouseto_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="updatedby" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">updatedby</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_conferencia_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="239" HEIGHT="16">cof_conferencia_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 9</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_controleestoqueetiqueta.html"
+    target="_top"
+    tooltip="cof_controleestoqueetiqueta"
   ];
   "cof_controleremessasind" [
    label=<
