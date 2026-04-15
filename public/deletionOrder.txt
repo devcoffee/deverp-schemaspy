@@ -152,6 +152,7 @@ cof_invoicededucaomateriais
 cof_imagenslinhaov
 cof_historicoconsultas
 cof_formacaopreco
+cof_controleestoqueetiquetaline
 cof_controleciap_saida
 cof_confrontoofx
 cof_calculociaplinhanfe
@@ -916,6 +917,7 @@ r_group
 r_category
 m_bom
 cof_orcamento
+cof_controleestoqueetiqueta
 m_inventoryline
 m_inventory
 m_perpetualinv
