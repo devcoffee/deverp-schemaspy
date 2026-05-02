@@ -180,11 +180,11 @@ c_countrygroup
 cof_c_cnabconfig
 c_ordersource
 cof_c_alinea
+cof_wpp_configwhatsapp
 c_addressvalidationcfg
 c_taxprovidercfg
 cof_acaodossiefinanceiro
 cof_gruposeparacao
-cof_wpp_configwhatsapp
 m_locatortype
 ad_table
 m_pricelist
@@ -1031,6 +1031,7 @@ cof_labelfield
 cof_orderdeducaomateriais
 cof_parametroavancadobusca
 cof_pneu_manutencao
+cof_webhookevent
 cte_infctecomp
 lbr_docfiscal_cana_deduc
 lbr_docfiscal_cana_fordia

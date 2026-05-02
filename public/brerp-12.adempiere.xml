@@ -3133,6 +3133,7 @@
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofretentionconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_retentionconfig"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofterminalcfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_terminalcfe"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coftitulo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_titulo"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_webhookevent"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_zwppconfigwhatsapp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_wpp_configwhatsapp"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cteinfctecomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cte_infctecomp"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="ac_client_fact_acct" implied="false" onDeleteCascade="false" schema="adempiere" table="fact_acct"/>
@@ -6484,6 +6485,7 @@
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofterminalcfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_terminalcfe"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coftitulo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_titulo"/>
             <child catalog="brerp-12" column="cof_cedente_bpartner_id" foreignKey="cofcedentebpartner_coftitulo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_titulo"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_webhookevent"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_zwppconfigwhatsapp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_wpp_configwhatsapp"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cteinfctecomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cte_infctecomp"/>
             <child catalog="brerp-12" column="ad_orgtrx_id" foreignKey="adorgtrx_ddorder" implied="false" onDeleteCascade="false" schema="adempiere" table="dd_order"/>
@@ -11979,6 +11981,8 @@
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofterminalcfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_terminalcfe"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_coftitulo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_titulo"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_coftitulo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_titulo"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_webhookevent"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_webhookevent"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_zwppconfigwhatsapp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_wpp_configwhatsapp"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_zwppconfigwhatsapp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_wpp_configwhatsapp"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cteinfctecomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cte_infctecomp"/>
@@ -35054,6 +35058,7 @@
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="27" name="cof_isalocacaoautomatica" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="28" name="cof_tipocredito" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="29" name="cof_ordemalocacao" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="30" name="cof_isrestringirorgnabuscafinanceira" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="cof_c_custody_id" sequenceNumberInPK="1"/>
          <index name="cof_c_custody_key" unique="true">
             <column ascending="true" name="cof_c_custody_id"/>
@@ -35068,6 +35073,7 @@
          <checkConstraint constraint="((cof_isgeneratecheck = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_c_custody_cof_isgeneratecheck_check"/>
          <checkConstraint constraint="((cof_isgeneratecnab = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_c_custody_cof_isgeneratecnab_check"/>
          <checkConstraint constraint="((cof_isprotestcustody = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_c_custody_cof_isprotestcustody_check"/>
+         <checkConstraint constraint="((cof_isrestringirorgnabuscafinanceira = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_c_custody_cof_isrestringirorgnabuscafinanceira_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_c_custody_isactive_check"/>
          <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_c_custody_isdefault_check"/>
       </table>
@@ -49461,6 +49467,41 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="so_creditlimit" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="lbr_cnpj" nullable="true" remarks="" size="18" type="varchar" typeCode="12"/>
       </table>
+      <table catalog="brerp-12" name="cof_webhookevent" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_webhookevent" nullable="false" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_webhookevent_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_webhookevent_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="5" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="7" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="8" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofwebhookevent" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="cof_wpp_configwhatsapp_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_wpp_configwhatsapp_id" foreignKey="cofwppconfigwhatsapp_cofwebhookevent" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_wpp_configwhatsapp"/>
+         </column>
+         <primaryKey column="cof_webhookevent_id" sequenceNumberInPK="1"/>
+         <index name="cof_webhookevent_key" unique="true">
+            <column ascending="true" name="cof_webhookevent_id"/>
+         </index>
+         <index name="cof_webhookevent_event_idx" unique="true">
+            <column ascending="true" name="cof_webhookevent"/>
+            <column ascending="true" name="cof_wpp_configwhatsapp_id"/>
+         </index>
+         <index name="cof_webhookevent_uu_idx" unique="true">
+            <column ascending="true" name="cof_webhookevent_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_webhookevent_isactive_check"/>
+      </table>
       <table catalog="brerp-12" name="cof_wpp_configwhatsapp" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_zwppconfigwhatsapp" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
@@ -49483,6 +49524,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="value" nullable="true" remarks="" size="40" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="cof_wpp_configwhatsapp_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="cof_wpp_configwhatsapp_id" foreignKey="cofwppconfigwhatsapp_adwfnode" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_wf_node"/>
+            <child catalog="brerp-12" column="cof_wpp_configwhatsapp_id" foreignKey="cofwppconfigwhatsapp_cofwebhookevent" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_webhookevent"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="cof_wpp_configwhatsapp_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="url" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
