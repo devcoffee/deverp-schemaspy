@@ -230,6 +230,7 @@ lbr_docfiscal_line_arma
 lbr_docfiscal_cana_fordia
 lbr_docfiscal_cana_deduc
 cte_infctecomp
+cof_webhookevent
 cof_pneu_manutencao
 cof_parametroavancadobusca
 cof_orderdeducaomateriais
@@ -1076,11 +1077,11 @@ c_country
 m_pricelist
 ad_table
 m_locatortype
-cof_wpp_configwhatsapp
 cof_gruposeparacao
 cof_acaodossiefinanceiro
 c_taxprovidercfg
 c_addressvalidationcfg
+cof_wpp_configwhatsapp
 cof_c_alinea
 c_ordersource
 cof_c_cnabconfig
