@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>ad_pinstance</h1><p><span id="recordNumber">1729</span> rows</p><br />
+                    <h1>ad_pinstance</h1><p><span id="recordNumber">1795</span> rows</p><br />
                 </section>
                 <!-- Main content -->
                 <section class="content">
@@ -690,6 +690,23 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="externaltraceid">externaltraceid</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -725,6 +742,12 @@
                                     <td>Primary key</td>
                                     <td><span title='Ascending'>Asc</span></td>
                                     <td>ad_pinstance_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>ad_pinstance_externaltraceid</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>externaltraceid</td>
                                 </tr>
                                 <tr>
                                     <td title='Indexed'>ad_pinstance_last_ix</td>

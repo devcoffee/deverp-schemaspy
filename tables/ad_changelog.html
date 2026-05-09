@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>ad_changelog</h1><p><span id="recordNumber">100749</span> rows</p><br />
+                    <h1>ad_changelog</h1><p><span id="recordNumber">100659</span> rows</p><br />
                 </section>
                 <!-- Main content -->
                 <section class="content">
@@ -492,6 +492,23 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="externaltraceid">externaltraceid</span></td>
+                                    <td>varchar</td>
+                                    <td>100</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -527,6 +544,12 @@
                                     <td>Primary key</td>
                                     <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
                                     <td>ad_session_id + ad_column_id + ad_changelog_id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>ad_changelog_externaltraceid</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>externaltraceid</td>
                                 </tr>
                                 <tr>
                                     <td title='Indexed'>ad_changelog_record_uu</td>
@@ -575,12 +598,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>ad_changelog_iscustomization_check</td>
-                                    <td>((iscustomization &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>ad_changelog_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_changelog_iscustomization_check</td>
+                                    <td>((iscustomization &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

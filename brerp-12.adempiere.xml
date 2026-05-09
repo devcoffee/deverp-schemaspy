@@ -2758,7 +2758,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_broadcastmessage_trl_isactive_check"/>
          <checkConstraint constraint="((istranslated = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_broadcastmessage_trl_istranslated_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_changelog" numRows="100749" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_changelog" numRows="100659" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_changelog_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_session_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ad_table_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -2785,6 +2785,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="eventchangelog" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="20" name="ad_changelog_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="21" name="record_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="22" name="externaltraceid" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
          <primaryKey column="ad_session_id" sequenceNumberInPK="1"/>
          <primaryKey column="ad_column_id" sequenceNumberInPK="2"/>
          <primaryKey column="ad_changelog_id" sequenceNumberInPK="3"/>
@@ -2792,6 +2793,9 @@
             <column ascending="true" name="ad_session_id"/>
             <column ascending="true" name="ad_column_id"/>
             <column ascending="true" name="ad_changelog_id"/>
+         </index>
+         <index name="ad_changelog_externaltraceid" unique="false">
+            <column ascending="true" name="externaltraceid"/>
          </index>
          <index name="ad_changelog_record_uu" unique="false">
             <column ascending="true" name="record_uu"/>
@@ -7222,7 +7226,7 @@
          <checkConstraint constraint="((isusingdictionary = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_passwordrule_usingdictionary_check"/>
          <checkConstraint constraint="((iswhitespace = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_passwordrule_whitespace_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_pinstance" numRows="1729" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_pinstance" numRows="1795" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_pinstance_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_pilog" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance_log"/>
             <child catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_adpinstancepara" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance_para"/>
@@ -7284,9 +7288,13 @@
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="24" name="record_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="jsondata" nullable="true" remarks="" size="2147483647" type="json" typeCode="1111"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="26" name="externaltraceid" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
          <primaryKey column="ad_pinstance_id" sequenceNumberInPK="1"/>
          <index name="ad_pinstance_pkey" unique="true">
             <column ascending="true" name="ad_pinstance_id"/>
+         </index>
+         <index name="ad_pinstance_externaltraceid" unique="false">
+            <column ascending="true" name="externaltraceid"/>
          </index>
          <index name="ad_pinstance_last_ix" unique="false">
             <column ascending="true" name="ad_user_id"/>
