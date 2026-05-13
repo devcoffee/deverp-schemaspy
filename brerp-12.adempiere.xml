@@ -21265,6 +21265,8 @@
             <child catalog="brerp-12" column="account_id" foreignKey="celementvalue_paratioelement" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_ratioelement"/>
             <child catalog="brerp-12" column="c_elementvalue_id" foreignKey="celementvalue_pareportcolumn" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_reportcolumn"/>
             <child catalog="brerp-12" column="c_elementvalue_id" foreignKey="celementvalue_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_reportsource"/>
+            <child catalog="brerp-12" column="user1_id" foreignKey="user1_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_reportsource"/>
+            <child catalog="brerp-12" column="user2_id" foreignKey="user2_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="pa_reportsource"/>
             <child catalog="brerp-12" column="user1_id" foreignKey="user1_pporder" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_order"/>
             <child catalog="brerp-12" column="user2_id" foreignKey="user2_pporder" implied="false" onDeleteCascade="false" schema="adempiere" table="pp_order"/>
             <child catalog="brerp-12" column="user1_id" foreignKey="user1_taging" implied="false" onDeleteCascade="false" schema="adempiere" table="t_aging"/>
@@ -37482,7 +37484,7 @@
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="9" name="lbr_ncm_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="lbr_ncm_id" foreignKey="lbrncm_cofcbenefconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_ncm"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="imposto_icms_cst" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="imposto_icms_cst" nullable="false" remarks="" size="3" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="det_prod_cbenef" nullable="false" remarks="" size="10" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="12" name="priorityno" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="13" name="m_product_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
@@ -67524,6 +67526,14 @@
             <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorgtrx_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="35" name="pa_reportsource_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="36" name="user1_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_elementvalue_id" foreignKey="user1_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="c_elementvalue"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="37" name="user2_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_elementvalue_id" foreignKey="user2_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="c_elementvalue"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="38" name="cof_isincludenullsuser1id" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="39" name="cof_isincludenullsuser2id" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="pa_reportsource_id" sequenceNumberInPK="1"/>
          <index name="pa_reportsource_pkey" unique="true">
             <column ascending="true" name="pa_reportsource_id"/>
@@ -67531,6 +67541,8 @@
          <index name="pa_reportsource_uu_idx" unique="true">
             <column ascending="true" name="pa_reportsource_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isincludenullsuser1id = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_reportsource_cof_isincludenullsuser1id_check"/>
+         <checkConstraint constraint="((cof_isincludenullsuser2id = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_reportsource_cof_isincludenullsuser2id_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_reportsource_isactive_check"/>
          <checkConstraint constraint="((isincludenullsactivity = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_reportsource_isincludenullsactivity_check"/>
          <checkConstraint constraint="((isincludenullsbpartner = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="pa_reportsource_isincludenullsbpartner_check"/>
@@ -79161,6 +79173,13 @@
          <definition language="c"><![CDATA[Redacted, use --include-routine-definition]]></definition>
          <parameters>
             <parameter mode="IN"/>
+         </parameters>
+      </routine>
+      <routine dataAccess="MODIFIES" deterministic="false" name="valor_por_extenso(val numeric)" returnType="character varying" securityType="INVOKER" type="FUNCTION">
+         <comment/>
+         <definition language="plpgsql"><![CDATA[Redacted, use --include-routine-definition]]></definition>
+         <parameters>
+            <parameter mode="IN" name="val" type="numeric"/>
          </parameters>
       </routine>
    </routines>
