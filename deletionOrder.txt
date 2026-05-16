@@ -1019,6 +1019,7 @@ cof_contract
 c_validcombination
 c_project
 gl_journal
+c_banktransfer
 c_depositbatch
 gl_journalbatch
 c_doctype
@@ -1037,7 +1038,6 @@ cof_producttype
 m_product
 c_paymentbatch
 c_bp_bankaccount
-c_banktransfer
 c_postendertype
 c_paymentprocessor
 c_subacct
