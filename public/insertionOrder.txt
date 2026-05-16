@@ -224,7 +224,6 @@ c_bankaccount
 c_subacct
 c_paymentprocessor
 c_postendertype
-c_banktransfer
 c_bp_bankaccount
 c_paymentbatch
 m_product
@@ -243,6 +242,7 @@ cof_pp_roteiroprod
 c_doctype
 gl_journalbatch
 c_depositbatch
+c_banktransfer
 gl_journal
 c_project
 c_validcombination
