@@ -404,50 +404,50 @@
 <g id="node6" class="node">
 <title>m_pricelist</title>
 <g id="a_node6"><a xlink:href="../../tables/m_pricelist.html" xlink:title="m_pricelist" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="805.03,-37 805.03,-227 972.03,-227 972.03,-37 805.03,-37"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="805.53,-205 805.53,-227 972.53,-227 972.53,-205 805.53,-205"/>
-<polygon fill="none" stroke="black" points="805.53,-205 805.53,-227 972.53,-227 972.53,-205 805.53,-205"/>
-<text text-anchor="start" x="810.53" y="-214.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">m_pricelist</text>
-<text text-anchor="start" x="937.53" y="-213.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="805.53,-183 805.53,-205 972.53,-205 972.53,-183 805.53,-183"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="810.532" y="-200"/>
-<text text-anchor="start" x="825.53" y="-191.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_pricelist_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="805.53,-161 805.53,-183 972.53,-183 972.53,-161 805.53,-161"/>
-<polygon fill="none" stroke="black" points="805.53,-161 805.53,-183 972.53,-183 972.53,-161 805.53,-161"/>
-<text text-anchor="start" x="825.53" y="-169.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="805.53,-139 805.53,-161 972.53,-161 972.53,-139 805.53,-139"/>
-<polygon fill="none" stroke="black" points="805.53,-139 805.53,-161 972.53,-161 972.53,-139 805.53,-139"/>
-<text text-anchor="start" x="825.53" y="-147.2" font-family="Helvetica,sans-Serif" font-size="11.00">name</text>
-<polygon fill="none" stroke="black" points="805.53,-117 805.53,-139 972.53,-139 972.53,-117 805.53,-117"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="810.532" y="-134"/>
-<text text-anchor="start" x="825.53" y="-125.2" font-family="Helvetica,sans-Serif" font-size="11.00">basepricelist_id</text>
-<polygon fill="none" stroke="black" points="805.53,-95 805.53,-117 972.53,-117 972.53,-95 805.53,-95"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="810.532" y="-112"/>
-<text text-anchor="start" x="825.53" y="-103.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_currency_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="805.53,-73 805.53,-95 972.53,-95 972.53,-73 805.53,-73"/>
-<polygon fill="none" stroke="black" points="805.53,-73 805.53,-95 972.53,-95 972.53,-73 805.53,-73"/>
-<text text-anchor="start" x="825.53" y="-81.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_pricelist_uu</text>
-<polygon fill="none" stroke="black" points="805.53,-55 805.53,-73 972.53,-73 972.53,-55 805.53,-55"/>
-<text text-anchor="start" x="808.53" y="-61.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="805.53,-37 805.53,-55 972.53,-55 972.53,-37 805.53,-37"/>
-<polygon fill="none" stroke="black" points="805.53,-37 805.53,-55 972.53,-55 972.53,-37 805.53,-37"/>
-<polygon fill="#ffffff" stroke="transparent" points="806.53,-38 806.53,-54 854.53,-54 854.53,-38 806.53,-38"/>
-<text text-anchor="start" x="808.53" y="-43.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 2</text>
-<polygon fill="#ffffff" stroke="transparent" points="854.53,-38 854.53,-54 918.53,-54 918.53,-38 854.53,-38"/>
-<text text-anchor="start" x="870.03" y="-43.2" font-family="Helvetica,sans-Serif" font-size="11.00">3 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="918.53,-38 918.53,-54 971.53,-54 971.53,-38 918.53,-38"/>
-<text text-anchor="start" x="947.53" y="-43.2" font-family="Helvetica,sans-Serif" font-size="11.00">31 &gt;</text>
-<polygon fill="black" stroke="black" points="854.53,-38 854.53,-54 854.53,-54 854.53,-38 854.53,-38"/>
-<polygon fill="black" stroke="black" points="918.53,-38 918.53,-54 918.53,-54 918.53,-38 918.53,-38"/>
+<polygon fill="#ffffff" stroke="transparent" points="793.53,-37 793.53,-227 983.53,-227 983.53,-37 793.53,-37"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="793.53,-205 793.53,-227 983.53,-227 983.53,-205 793.53,-205"/>
+<polygon fill="none" stroke="black" points="793.53,-205 793.53,-227 983.53,-227 983.53,-205 793.53,-205"/>
+<text text-anchor="start" x="798.53" y="-214.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">m_pricelist</text>
+<text text-anchor="start" x="948.53" y="-213.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="793.53,-183 793.53,-205 983.53,-205 983.53,-183 793.53,-183"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="798.532" y="-200"/>
+<text text-anchor="start" x="813.53" y="-191.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_pricelist_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="793.53,-161 793.53,-183 983.53,-183 983.53,-161 793.53,-161"/>
+<polygon fill="none" stroke="black" points="793.53,-161 793.53,-183 983.53,-183 983.53,-161 793.53,-161"/>
+<text text-anchor="start" x="813.53" y="-169.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="793.53,-139 793.53,-161 983.53,-161 983.53,-139 793.53,-139"/>
+<polygon fill="none" stroke="black" points="793.53,-139 793.53,-161 983.53,-161 983.53,-139 793.53,-139"/>
+<text text-anchor="start" x="813.53" y="-147.2" font-family="Helvetica,sans-Serif" font-size="11.00">name</text>
+<polygon fill="none" stroke="black" points="793.53,-117 793.53,-139 983.53,-139 983.53,-117 793.53,-117"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="798.532" y="-134"/>
+<text text-anchor="start" x="813.53" y="-125.2" font-family="Helvetica,sans-Serif" font-size="11.00">basepricelist_id</text>
+<polygon fill="none" stroke="black" points="793.53,-95 793.53,-117 983.53,-117 983.53,-95 793.53,-95"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="798.532" y="-112"/>
+<text text-anchor="start" x="813.53" y="-103.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_currency_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="793.53,-73 793.53,-95 983.53,-95 983.53,-73 793.53,-73"/>
+<polygon fill="none" stroke="black" points="793.53,-73 793.53,-95 983.53,-95 983.53,-73 793.53,-73"/>
+<text text-anchor="start" x="813.53" y="-81.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_pricelist_uu</text>
+<polygon fill="none" stroke="black" points="793.53,-55 793.53,-73 983.53,-73 983.53,-55 793.53,-55"/>
+<text text-anchor="start" x="796.53" y="-61.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="793.53,-37 793.53,-55 983.53,-55 983.53,-37 793.53,-37"/>
+<polygon fill="none" stroke="black" points="793.53,-37 793.53,-55 983.53,-55 983.53,-37 793.53,-37"/>
+<polygon fill="#ffffff" stroke="transparent" points="794.53,-38 794.53,-54 849.53,-54 849.53,-38 794.53,-38"/>
+<text text-anchor="start" x="796.53" y="-43.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="849.53,-38 849.53,-54 921.53,-54 921.53,-38 849.53,-38"/>
+<text text-anchor="start" x="869.03" y="-43.2" font-family="Helvetica,sans-Serif" font-size="11.00">3 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="921.53,-38 921.53,-54 982.53,-54 982.53,-38 921.53,-38"/>
+<text text-anchor="start" x="958.53" y="-43.2" font-family="Helvetica,sans-Serif" font-size="11.00">31 &gt;</text>
+<polygon fill="black" stroke="black" points="849.53,-38 849.53,-54 849.53,-54 849.53,-38 849.53,-38"/>
+<polygon fill="black" stroke="black" points="921.53,-38 921.53,-54 921.53,-54 921.53,-38 921.53,-38"/>
 </a>
 </g>
 </g>
 <!-- m_pricelist_trl&#45;&gt;m_pricelist -->
 <g id="edge12" class="edge">
 <title>m_pricelist_trl:w&#45;&gt;m_pricelist:e</title>
-<path fill="none" stroke="black" d="M1046.34,-776.84C1003.85,-712.5 1040.1,-288.26 1016.53,-237 1005.24,-212.44 1000.56,-194 973.53,-194"/>
-<polygon fill="black" stroke="black" points="1051.88,-780.55 1056.53,-787.99 1055.21,-782.77 1058.53,-785 1058.53,-785 1058.53,-785 1055.21,-782.77 1060.53,-782.01 1051.88,-780.55 1051.88,-780.55"/>
-<ellipse fill="none" stroke="black" cx="1049.22" cy="-778.77" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1046.27,-776.87C1003.27,-712.74 1036.31,-289.84 1016.53,-237 1008.18,-214.69 1008.35,-194 984.53,-194"/>
+<polygon fill="black" stroke="black" points="1051.87,-780.58 1056.54,-788 1055.2,-782.79 1058.53,-785 1058.53,-785 1058.53,-785 1055.2,-782.79 1060.52,-782 1051.87,-780.58 1051.87,-780.58"/>
+<ellipse fill="none" stroke="black" cx="1049.2" cy="-778.81" rx="3.2" ry="3.2"/>
 </g>
 </g>
 </svg>
