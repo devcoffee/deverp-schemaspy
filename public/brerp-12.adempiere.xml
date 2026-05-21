@@ -7226,7 +7226,7 @@
          <checkConstraint constraint="((isusingdictionary = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_passwordrule_usingdictionary_check"/>
          <checkConstraint constraint="((iswhitespace = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_passwordrule_whitespace_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_pinstance" numRows="1795" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_pinstance" numRows="1817" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_pinstance_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_pilog" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance_log"/>
             <child catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_adpinstancepara" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance_para"/>
@@ -41555,29 +41555,28 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="7" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="value" nullable="false" remarks="" size="40" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="10" name="name" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="cof_label_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="9" name="name" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="cof_label_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_label_id" foreignKey="coflabel_coflabelentry" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_label"/>
          </column>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="12" name="ad_table_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="11" name="ad_table_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_table_id" foreignKey="adtable_coflabelentry" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_table"/>
          </column>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="13" name="record_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="14" name="status" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="15" name="issotrx" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="16" name="m_locator_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="12" name="record_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="13" name="status" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="14" name="issotrx" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="15" name="m_locator_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="m_locator_id" foreignKey="mlocator_coflabelentry" implied="false" onDeleteCascade="false" schema="adempiere" table="m_locator"/>
          </column>
-         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="17" name="cof_producttypeentry" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="ad_tableline_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="recordline_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="20" name="cof_processed" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="21" name="cof_barcodevalue" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="22" name="cof_labelconfig_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="16" name="cof_producttypeentry" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="ad_tableline_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="recordline_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="19" name="cof_processed" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="20" name="cof_barcodevalue" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="21" name="cof_labelconfig_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_labelconfig_id" foreignKey="coflabelconfig_coflabelentry" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_labelconfig"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="qty" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="qty" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="cof_labelentry_id" sequenceNumberInPK="1"/>
          <index name="cof_labelentry_key" unique="true">
             <column ascending="true" name="cof_labelentry_id"/>
@@ -62284,6 +62283,7 @@
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="19" name="m_pricelist_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="20" name="cof_ismarkup" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="21" name="cof_liberadosweb" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="22" name="cof_isexibirinfoproduto" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="m_pricelist_id" sequenceNumberInPK="1"/>
          <index name="m_pricelist_pkey" unique="true">
             <column ascending="true" name="m_pricelist_id"/>
@@ -62295,6 +62295,7 @@
          <index name="m_pricelist_uu_idx" unique="true">
             <column ascending="true" name="m_pricelist_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isexibirinfoproduto = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_pricelist_cof_isexibirinfoproduto_check"/>
          <checkConstraint constraint="((cof_ismarkup = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_pricelist_cof_ismarkup_check"/>
          <checkConstraint constraint="((cof_liberadosweb = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_pricelist_cof_liberadosweb_check"/>
          <checkConstraint constraint="((enforcepricelimit = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_pricelist_enforcepricelimit_check"/>
