@@ -15240,7 +15240,7 @@
             <column ascending="true" name="c_acctprocessor_uu"/>
          </index>
       </table>
-      <table catalog="brerp-12" name="c_acctprocessorlog" numRows="996" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="c_acctprocessorlog" numRows="1008" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="c_acctprocessor_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_acctprocessor_id" foreignKey="cacctprocessor_log" implied="false" onDeleteCascade="true" schema="adempiere" table="c_acctprocessor"/>
          </column>
@@ -24430,6 +24430,7 @@
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="183" name="cof_operacaopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="184" name="cof_relatoriopedidocompra" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="185" name="cof_convertercotacao" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="186" name="cte_isctesimplificado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="c_order_id" sequenceNumberInPK="1"/>
          <index name="c_order_pkey" unique="true">
             <column ascending="true" name="c_order_id"/>
@@ -24490,6 +24491,7 @@
          <checkConstraint constraint="((cof_liberarentregafutura = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_liberarentregafutura_check"/>
          <checkConstraint constraint="((cof_operacaopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_operacaopessoal_check"/>
          <checkConstraint constraint="((cof_tributacaodestino = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_tributacaodestino_check"/>
+         <checkConstraint constraint="((cte_isctesimplificado = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cte_isctesimplificado_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_isactive_check"/>
          <checkConstraint constraint="((isapproved = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_isapproved_check"/>
          <checkConstraint constraint="((iscreditapproved = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_iscreditapproved_check"/>
@@ -70662,7 +70664,7 @@
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="r_requestprocessor_route_isactive_check"/>
       </table>
-      <table catalog="brerp-12" name="r_requestprocessorlog" numRows="664" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="r_requestprocessorlog" numRows="672" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="r_requestprocessor_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="r_requestprocessor_id" foreignKey="rrequestprocessor_log" implied="false" onDeleteCascade="true" schema="adempiere" table="r_requestprocessor"/>
          </column>
