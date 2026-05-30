@@ -316,6 +316,40 @@
                                     <td></td>
                                 </tr>
                                 <tr>
+                                    <td><span id="m_production_id">m_production_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="m_production_uu">m_production_uu</span></td>
+                                    <td>varchar</td>
+                                    <td>36</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
                                     <td><span id="updated">updated</span></td>
                                     <td>timestamp</td>
                                     <td>29,6</td>
@@ -350,7 +384,24 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="m_production_id">m_production_id</span></td>
+                                    <td><span id="value">value</span></td>
+                                    <td>varchar</td>
+                                    <td>40</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="cof_apontamentotempoordemproducao_id">cof_apontamentotempoordemproducao_id</span></td>
                                     <td>numeric</td>
                                     <td>10</td>
                                     <td title=''></td>
@@ -367,26 +418,9 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="m_production_uu">m_production_uu</span></td>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="cof_apontamentotempoordemproducao_uu">cof_apontamentotempoordemproducao_uu</span></td>
                                     <td>varchar</td>
                                     <td>36</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>NULL::character varying</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td><span id="value">value</span></td>
-                                    <td>varchar</td>
-                                    <td>40</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>NULL::character varying</td>
@@ -434,7 +468,13 @@
                                     <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> cof_apontamentotempoordemproducao_key</td>
                                     <td>Primary key</td>
                                     <td><span title='Ascending'>Asc</span></td>
-                                    <td>m_production_id</td>
+                                    <td>cof_apontamentotempoordemproducao_id</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> cof_apontamentotempoordemproducao_uu_idx</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>cof_apontamentotempoordemproducao_uu</td>
                                 </tr>
                                 </tbody>
                             </table>
