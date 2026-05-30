@@ -201,6 +201,7 @@ c_poskey
 c_currency_acct
 c_countrygroupcountry
 c_countrygroup_trl
+c_commissiondetail
 c_campaign_trl
 c_addresstransaction
 c_activity_trl
@@ -302,7 +303,6 @@ c_paymentallocate
 c_nonbusinessday
 c_dunningrunline
 c_contactactivity
-c_commissiondetail
 c_charge_acct
 c_bp_relation
 c_bp_employee_acct
@@ -772,7 +772,6 @@ ad_modelvalidator
 gl_journalline
 pa_documentstatus
 cof_calculociaplinha
-c_allocationline
 m_requisitionline
 ad_userdef_info
 ad_process_drillrule
@@ -807,6 +806,7 @@ ad_ctxhelpmsg
 fact_acct
 cof_ordemservico
 m_transaction
+c_allocationline
 ad_wf_activity
 ad_scheduler
 m_forecastline

@@ -455,6 +455,7 @@ testuu
 m_forecastline
 ad_scheduler
 ad_wf_activity
+c_allocationline
 m_transaction
 cof_ordemservico
 fact_acct
@@ -489,7 +490,6 @@ cof_c_diadi
 ad_process_drillrule
 ad_userdef_info
 m_requisitionline
-c_allocationline
 cof_calculociaplinha
 pa_documentstatus
 gl_journalline
@@ -959,7 +959,6 @@ b_offer
 c_bp_employee_acct
 c_bp_relation
 c_charge_acct
-c_commissiondetail
 c_contactactivity
 c_dunningrunline
 c_nonbusinessday
@@ -1061,6 +1060,7 @@ ad_workbenchwindow
 c_activity_trl
 c_addresstransaction
 c_campaign_trl
+c_commissiondetail
 c_countrygroup_trl
 c_countrygroupcountry
 c_currency_acct

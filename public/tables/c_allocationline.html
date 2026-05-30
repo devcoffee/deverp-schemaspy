@@ -118,6 +118,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="c_commissiondetail.c_allocationline_id references c_allocationline.c_allocationline_id via callocationline_ccommissiondetail"><a href='c_commissiondetail.html'>c_commissiondetail</a><span class='relatedKey'>.c_allocationline_id</span></td>
+                                                <td class="constraint detail">callocationline_ccommissiondetail</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="c_paymentallocate.c_allocationline_id references c_allocationline.c_allocationline_id via cpaymtallocate_callocationline"><a href='c_paymentallocate.html'>c_paymentallocate</a><span class='relatedKey'>.c_allocationline_id</span></td>
                                                 <td class="constraint detail">cpaymtallocate_callocationline</td>
                                                 <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>

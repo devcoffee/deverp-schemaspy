@@ -298,7 +298,7 @@
 <g id="node5" class="node">
 <title>c_commissiondetail</title>
 <g id="a_node5"><a xlink:href="../../tables/c_commissiondetail.html" xlink:title="c_commissiondetail" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="962,-472 962,-662 1150,-662 1150,-472 962,-472"/>
+<polygon fill="#ffffff" stroke="transparent" points="962,-428 962,-662 1150,-662 1150,-428 962,-428"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="962,-640 962,-662 1150,-662 1150,-640 962,-640"/>
 <polygon fill="none" stroke="black" points="962,-640 962,-662 1150,-662 1150,-640 962,-640"/>
 <text text-anchor="start" x="967" y="-649.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_commissiondetail</text>
@@ -323,18 +323,24 @@
 <polygon fill="#ffffff" stroke="transparent" points="962,-508 962,-530 1150,-530 1150,-508 962,-508"/>
 <polygon fill="none" stroke="black" points="962,-508 962,-530 1150,-530 1150,-508 962,-508"/>
 <text text-anchor="start" x="982" y="-516.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_commissiondetail_uu</text>
-<polygon fill="none" stroke="black" points="962,-490 962,-508 1150,-508 1150,-490 962,-490"/>
-<text text-anchor="start" x="965" y="-496.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="962,-472 962,-490 1150,-490 1150,-472 962,-472"/>
-<polygon fill="none" stroke="black" points="962,-472 962,-490 1150,-490 1150,-472 962,-472"/>
-<polygon fill="#ffffff" stroke="transparent" points="963,-473 963,-489 1031,-489 1031,-473 963,-473"/>
-<text text-anchor="start" x="965" y="-478.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 4</text>
-<polygon fill="#ffffff" stroke="transparent" points="1031,-473 1031,-489 1090,-489 1090,-473 1031,-473"/>
-<text text-anchor="start" x="1057" y="-478.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1090,-473 1090,-489 1149,-489 1149,-473 1090,-473"/>
-<text text-anchor="start" x="1140" y="-478.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="black" stroke="black" points="1031,-473 1031,-489 1031,-489 1031,-473 1031,-473"/>
-<polygon fill="black" stroke="black" points="1090,-473 1090,-489 1090,-489 1090,-473 1090,-473"/>
+<polygon fill="none" stroke="black" points="962,-486 962,-508 1150,-508 1150,-486 962,-486"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="967" y="-503"/>
+<text text-anchor="start" x="982" y="-494.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_payment_id</text>
+<polygon fill="none" stroke="black" points="962,-464 962,-486 1150,-486 1150,-464 962,-464"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="967" y="-481"/>
+<text text-anchor="start" x="982" y="-472.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_allocationline_id</text>
+<polygon fill="none" stroke="black" points="962,-446 962,-464 1150,-464 1150,-446 962,-446"/>
+<text text-anchor="start" x="965" y="-452.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="962,-428 962,-446 1150,-446 1150,-428 962,-428"/>
+<polygon fill="none" stroke="black" points="962,-428 962,-446 1150,-446 1150,-428 962,-428"/>
+<polygon fill="#ffffff" stroke="transparent" points="963,-429 963,-445 1031,-445 1031,-429 963,-429"/>
+<text text-anchor="start" x="965" y="-434.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 6</text>
+<polygon fill="#ffffff" stroke="transparent" points="1031,-429 1031,-445 1090,-445 1090,-429 1031,-429"/>
+<text text-anchor="start" x="1057" y="-434.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1090,-429 1090,-445 1149,-445 1149,-429 1090,-429"/>
+<text text-anchor="start" x="1140" y="-434.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="black" stroke="black" points="1031,-429 1031,-445 1031,-445 1031,-429 1031,-429"/>
+<polygon fill="black" stroke="black" points="1090,-429 1090,-445 1090,-445 1090,-429 1090,-429"/>
 </a>
 </g>
 </g>
