@@ -25862,10 +25862,34 @@
 <polygon fill="black" stroke="black" points="5372.28,-39559.37 5376.93,-39551.94 5372.82,-39555.41 5373.36,-39551.45 5373.36,-39551.45 5373.36,-39551.45 5372.82,-39555.41 5369.8,-39550.96 5372.28,-39559.37 5372.28,-39559.37"/>
 <ellipse fill="none" stroke="black" cx="5371.84" cy="-39562.54" rx="3.2" ry="3.2"/>
 </g>
-<!-- c_rfqline -->
+<!-- c_revenuerecognition -->
 <g id="node370" class="node">
+<title>c_revenuerecognition</title>
+<g id="a_node370"><a xlink:href="../../tables/c_revenuerecognition.html" xlink:title="c_revenuerecognition" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="4034,-17015.13 4034,-17073.13 4231,-17073.13 4231,-17015.13 4034,-17015.13"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="4034.5,-17051.13 4034.5,-17073.13 4231.5,-17073.13 4231.5,-17051.13 4034.5,-17051.13"/>
+<polygon fill="none" stroke="black" points="4034.5,-17051.13 4034.5,-17073.13 4231.5,-17073.13 4231.5,-17051.13 4034.5,-17051.13"/>
+<text text-anchor="start" x="4039.5" y="-17060.33" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_revenuerecognition</text>
+<text text-anchor="start" x="4196.5" y="-17059.33" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="4034.5,-17033.13 4034.5,-17051.13 4231.5,-17051.13 4231.5,-17033.13 4034.5,-17033.13"/>
+<text text-anchor="start" x="4037.5" y="-17039.33" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="4034.5,-17015.13 4034.5,-17033.13 4231.5,-17033.13 4231.5,-17015.13 4034.5,-17015.13"/>
+<polygon fill="none" stroke="black" points="4034.5,-17015.13 4034.5,-17033.13 4231.5,-17033.13 4231.5,-17015.13 4034.5,-17015.13"/>
+<polygon fill="#ffffff" stroke="transparent" points="4035.5,-17016.13 4035.5,-17032.13 4097.5,-17032.13 4097.5,-17016.13 4035.5,-17016.13"/>
+<text text-anchor="start" x="4037.5" y="-17021.33" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="4097.5,-17016.13 4097.5,-17032.13 4159.5,-17032.13 4159.5,-17016.13 4097.5,-17016.13"/>
+<text text-anchor="start" x="4125" y="-17021.33" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="4159.5,-17016.13 4159.5,-17032.13 4230.5,-17032.13 4230.5,-17016.13 4159.5,-17016.13"/>
+<text text-anchor="start" x="4212.5" y="-17021.33" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
+<polygon fill="black" stroke="black" points="4097.5,-17016.13 4097.5,-17032.13 4097.5,-17032.13 4097.5,-17016.13 4097.5,-17016.13"/>
+<polygon fill="black" stroke="black" points="4159.5,-17016.13 4159.5,-17032.13 4159.5,-17032.13 4159.5,-17016.13 4159.5,-17016.13"/>
+</a>
+</g>
+</g>
+<!-- c_rfqline -->
+<g id="node371" class="node">
 <title>c_rfqline</title>
-<g id="a_node370"><a xlink:href="../../tables/c_rfqline.html" xlink:title="c_rfqline" target="_top">
+<g id="a_node371"><a xlink:href="../../tables/c_rfqline.html" xlink:title="c_rfqline" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="14392,-16831.13 14392,-16889.13 14494,-16889.13 14494,-16831.13 14392,-16831.13"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="14392,-16867.13 14392,-16889.13 14494,-16889.13 14494,-16867.13 14392,-16867.13"/>
 <polygon fill="none" stroke="black" points="14392,-16867.13 14392,-16889.13 14494,-16889.13 14494,-16867.13 14392,-16867.13"/>
@@ -25906,30 +25930,6 @@
 <path fill="none" stroke="black" d="M14408.21,-16815.41C14189.26,-16527.88 12962.85,-14951.13 12398,-14951.13 12398,-14951.13 12398,-14951.13 11821,-14951.13 11733.28,-14951.13 8731.71,-14904.59 8663,-14959.13 8612.93,-14998.87 8675.81,-15054.54 8630,-15099.13 8534.38,-15192.21 8425.35,-15061 8336,-15160.13 8287.25,-15214.22 8332.18,-15419.42 8303,-15486.13 8233.61,-15644.8 8119.71,-15621.9 8045,-15778.13 8007.27,-15857.03 8066.62,-15903.82 8012,-15972.13 7944.17,-16056.96 7872.62,-15999.6 7786,-16065.13 7767.07,-16079.45 7772.91,-16094.2 7753,-16107.13 7659.97,-16167.53 7613.34,-16125.36 7511,-16168.13 7495.18,-16174.74 7494.19,-16182.49 7478,-16188.13 7364.2,-16227.78 7308.44,-16154.05 7209,-16222.13 7183.57,-16239.54 7200.67,-16264.64 7176,-16283.13 7096.34,-16342.83 7030.5,-16262.99 6957,-16330.13 6920.57,-16363.41 6960.88,-16403.35 6924,-16436.13 6838.85,-16511.83 6764.08,-16416.04 6672,-16483.13 6647.09,-16501.28 6662.7,-16524.42 6639,-16544.13 6553.53,-16615.23 6474.76,-16537.94 6401,-16621.13 6350.23,-16678.39 6423.17,-16737.09 6368,-16790.13 6296.67,-16858.69 6227.42,-16765.12 6148,-16824.13 6120.71,-16844.4 6142.06,-16872.55 6115,-16893.13 6015.83,-16968.55 5962.39,-16924.88 5839,-16942.13 5774.18,-16951.19 5592.33,-16925.89 5546,-16972.13 5496.02,-17022 5564.37,-17239.69 5513,-17288.13 5438.23,-17358.64 4661.41,-17257.2 4589,-17330.13 4423,-17497.33 4418.06,-21366.89 4417.99,-21765.11"/>
 <polygon fill="black" stroke="black" points="14412.17,-16820.63 14414.15,-16829.17 14414.59,-16823.81 14417.01,-16827 14417.01,-16827 14417.01,-16827 14414.59,-16823.81 14419.88,-16824.82 14412.17,-16820.63 14412.17,-16820.63"/>
 <ellipse fill="none" stroke="black" cx="14410.24" cy="-16818.08" rx="3.2" ry="3.2"/>
-</g>
-<!-- c_revenuerecognition -->
-<g id="node371" class="node">
-<title>c_revenuerecognition</title>
-<g id="a_node371"><a xlink:href="../../tables/c_revenuerecognition.html" xlink:title="c_revenuerecognition" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="4034,-17015.13 4034,-17073.13 4231,-17073.13 4231,-17015.13 4034,-17015.13"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="4034.5,-17051.13 4034.5,-17073.13 4231.5,-17073.13 4231.5,-17051.13 4034.5,-17051.13"/>
-<polygon fill="none" stroke="black" points="4034.5,-17051.13 4034.5,-17073.13 4231.5,-17073.13 4231.5,-17051.13 4034.5,-17051.13"/>
-<text text-anchor="start" x="4039.5" y="-17060.33" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_revenuerecognition</text>
-<text text-anchor="start" x="4196.5" y="-17059.33" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="4034.5,-17033.13 4034.5,-17051.13 4231.5,-17051.13 4231.5,-17033.13 4034.5,-17033.13"/>
-<text text-anchor="start" x="4037.5" y="-17039.33" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="4034.5,-17015.13 4034.5,-17033.13 4231.5,-17033.13 4231.5,-17015.13 4034.5,-17015.13"/>
-<polygon fill="none" stroke="black" points="4034.5,-17015.13 4034.5,-17033.13 4231.5,-17033.13 4231.5,-17015.13 4034.5,-17015.13"/>
-<polygon fill="#ffffff" stroke="transparent" points="4035.5,-17016.13 4035.5,-17032.13 4097.5,-17032.13 4097.5,-17016.13 4035.5,-17016.13"/>
-<text text-anchor="start" x="4037.5" y="-17021.33" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="4097.5,-17016.13 4097.5,-17032.13 4159.5,-17032.13 4159.5,-17016.13 4097.5,-17016.13"/>
-<text text-anchor="start" x="4125" y="-17021.33" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="4159.5,-17016.13 4159.5,-17032.13 4230.5,-17032.13 4230.5,-17016.13 4159.5,-17016.13"/>
-<text text-anchor="start" x="4212.5" y="-17021.33" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
-<polygon fill="black" stroke="black" points="4097.5,-17016.13 4097.5,-17032.13 4097.5,-17032.13 4097.5,-17016.13 4097.5,-17016.13"/>
-<polygon fill="black" stroke="black" points="4159.5,-17016.13 4159.5,-17032.13 4159.5,-17032.13 4159.5,-17016.13 4159.5,-17016.13"/>
-</a>
-</g>
 </g>
 <!-- c_tax&#45;&gt;lbr_taxname -->
 <g id="edge2103" class="edge">
