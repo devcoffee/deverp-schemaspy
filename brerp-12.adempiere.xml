@@ -56929,7 +56929,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="ide_nfref_refnfp_mod" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="ide_nfref_refnfp_serie" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="ide_nfref_refnfp_nnf" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="ide_nfref_refcte" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="ide_nfref_refcte" nullable="true" remarks="" size="44" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="25" name="ide_nfref_refecf_mod" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="ide_nfref_refecf_necf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="ide_nfref_refecf_ncoo" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
@@ -72211,6 +72211,35 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="ad_user_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="email" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
       </table>
+      <table catalog="brerp-12" name="rv_cof_contaspagas" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT p.ad_client_id,&#10;    p.ad_org_id,&#10;    p.createdby,&#10;    p.c_payment_id,&#10;    p.documentno,&#10;    p.c_bankaccount_id,&#10;    p.c_doctype_id,&#10;    p.c_bpartner_id,&#10;    p.description AS descricaopagamento,&#10;    p.dateacct,&#10;    p.cof_creditdate,&#10;    p.c_charge_id AS cof_finalidadepagamento_id,&#10;    p.checkno,&#10;    p.payamt,&#10;    al.c_allocationhdr_id,&#10;    al.c_allocationline_id,&#10;    al.amount,&#10;    al.cof_interestamt,&#10;    al.cof_penaltyamt,&#10;    al.discountamt,&#10;    COALESCE(al.c_charge_id, al_charge.c_charge_id) AS cof_alocacaofinalidade_id,&#10;    i.c_invoice_id,&#10;    i.lbr_docfiscal_id,&#10;    ips.c_invoicepayschedule_id,&#10;    i.description AS descricaofatura,&#10;    p.isreconciled,&#10;    p.isreceipt&#10;   FROM (((((c_payment p&#10;     JOIN ad_org org ON ((org.ad_org_id = p.ad_org_id)))&#10;     LEFT JOIN c_allocationline al ON ((al.c_payment_id = p.c_payment_id)))&#10;     LEFT JOIN c_allocationline al_charge ON (((al_charge.c_allocationhdr_id = al.c_allocationhdr_id) AND (al_charge.c_charge_id IS NOT NULL) AND (al_charge.c_allocationline_id &lt;&gt; al.c_allocationline_id))))&#10;     LEFT JOIN c_invoice i ON ((i.c_invoice_id = al.c_invoice_id)))&#10;     LEFT JOIN c_invoicepayschedule ips ON (((ips.c_invoice_id = i.c_invoice_id) AND ((ips.c_invoicepayschedule_id = al.c_invoicepayschedule_id) OR (al.c_invoicepayschedule_id IS NULL)))))&#10;  WHERE (p.docstatus = ANY (ARRAY['CO'::bpchar, 'CL'::bpchar]));">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="createdby" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="c_payment_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="documentno" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="c_bankaccount_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="c_doctype_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="c_bpartner_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="descricaopagamento" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="9" name="dateacct" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="10" name="cof_creditdate" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="cof_finalidadepagamento_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="checkno" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="payamt" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="c_allocationhdr_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="c_allocationline_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="amount" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="cof_interestamt" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="cof_penaltyamt" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="discountamt" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="cof_alocacaofinalidade_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="c_invoice_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lbr_docfiscal_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="c_invoicepayschedule_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="descricaofatura" nullable="true" remarks="" size="500" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="isreconciled" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="isreceipt" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+      </table>
       <table catalog="brerp-12" name="rv_cof_detailassetmaintain" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT ot.ad_client_id,&#10;    ot.ad_org_id,&#10;    ot.mp_ot_id,&#10;    ot.c_doctype_id,&#10;    ot.datetrx,&#10;    ot.ad_user_id,&#10;    ot.description,&#10;    ot.docstatus,&#10;    ot.processed,&#10;    ot.a_asset_id,&#10;    ag.a_asset_group_id,&#10;    rot.mp_ot_request_id,&#10;    rot.ot_request_type,&#10;    ott.seqno,&#10;    ott.description AS ottdescription,&#10;    ott.c_uom_id,&#10;    ott.duration,&#10;    ott.status,&#10;    otr.resourcetype,&#10;    otr.m_product_id,&#10;    otr.s_resource_id,&#10;    otr.resourceqty,&#10;    otr.costamt,&#10;    ot.documentno&#10;   FROM (((((mp_ot ot&#10;     LEFT JOIN a_asset a ON ((ot.a_asset_id = a.a_asset_id)))&#10;     LEFT JOIN a_asset_group ag ON ((a.a_asset_group_id = ag.a_asset_group_id)))&#10;     LEFT JOIN mp_ot_request rot ON ((rot.mp_ot_request_id = ot.mp_ot_request_id)))&#10;     LEFT JOIN mp_ot_task ott ON ((ot.mp_ot_id = ott.mp_ot_id)))&#10;     LEFT JOIN mp_ot_resource otr ON ((otr.mp_ot_task_id = ott.mp_ot_task_id)));">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -78458,6 +78487,13 @@
             <parameter mode="IN" name="table_name" type="character varying"/>
             <parameter mode="IN" name="column_name" type="character varying"/>
             <parameter mode="IN" name="value_list" type="character varying"/>
+         </parameters>
+      </routine>
+      <routine dataAccess="MODIFIES" deterministic="false" name="cof_limpar_cnpj(p_cnpj character varying)" returnType="character varying" securityType="INVOKER" type="FUNCTION">
+         <comment/>
+         <definition language="plpgsql"><![CDATA[Redacted, use --include-routine-definition]]></definition>
+         <parameters>
+            <parameter mode="IN" name="p_cnpj" type="character varying"/>
          </parameters>
       </routine>
       <routine dataAccess="MODIFIES" deterministic="false" name="cof_linhassemfiscal(order_id numeric)" returnType="numeric" securityType="INVOKER" type="FUNCTION">
