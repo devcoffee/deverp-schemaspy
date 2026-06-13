@@ -567,6 +567,23 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="cof_payscheduleno">cof_payscheduleno</span></td>
+                                    <td>varchar</td>
+                                    <td>20</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -605,7 +622,7 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT p.ad_client_id,&#10;    p.ad_org_id,&#10;    p.createdby,&#10;    p.c_payment_id,&#10;    p.documentno,&#10;    p.c_bankaccount_id,&#10;    p.c_doctype_id,&#10;    p.c_bpartner_id,&#10;    p.description AS descricaopagamento,&#10;    p.dateacct,&#10;    p.cof_creditdate,&#10;    p.c_charge_id AS cof_finalidadepagamento_id,&#10;    p.checkno,&#10;    p.payamt,&#10;    al.c_allocationhdr_id,&#10;    al.c_allocationline_id,&#10;    al.amount,&#10;    al.cof_interestamt,&#10;    al.cof_penaltyamt,&#10;    al.discountamt,&#10;    COALESCE(al.c_charge_id, al_charge.c_charge_id) AS cof_alocacaofinalidade_id,&#10;    i.c_invoice_id,&#10;    i.lbr_docfiscal_id,&#10;    ips.c_invoicepayschedule_id,&#10;    i.description AS descricaofatura,&#10;    p.isreconciled,&#10;    p.isreceipt&#10;   FROM (((((c_payment p&#10;     JOIN ad_org org ON ((org.ad_org_id &#61; p.ad_org_id)))&#10;     LEFT JOIN c_allocationline al ON ((al.c_payment_id &#61; p.c_payment_id)))&#10;     LEFT JOIN c_allocationline al_charge ON (((al_charge.c_allocationhdr_id &#61; al.c_allocationhdr_id) AND (al_charge.c_charge_id IS NOT NULL) AND (al_charge.c_allocationline_id &lt;&gt; al.c_allocationline_id))))&#10;     LEFT JOIN c_invoice i ON ((i.c_invoice_id &#61; al.c_invoice_id)))&#10;     LEFT JOIN c_invoicepayschedule ips ON (((ips.c_invoice_id &#61; i.c_invoice_id) AND ((ips.c_invoicepayschedule_id &#61; al.c_invoicepayschedule_id) OR (al.c_invoicepayschedule_id IS NULL)))))&#10;  WHERE (p.docstatus &#61; ANY (ARRAY[&#39;CO&#39;::bpchar, &#39;CL&#39;::bpchar]));</textarea>
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT p.ad_client_id,&#10;    p.ad_org_id,&#10;    p.createdby,&#10;    p.c_payment_id,&#10;    p.documentno,&#10;    p.c_bankaccount_id,&#10;    p.c_doctype_id,&#10;    p.c_bpartner_id,&#10;    p.description AS descricaopagamento,&#10;    p.dateacct,&#10;    p.cof_creditdate,&#10;    p.c_charge_id AS cof_finalidadepagamento_id,&#10;    p.checkno,&#10;    p.payamt,&#10;    al.c_allocationhdr_id,&#10;    al.c_allocationline_id,&#10;    al.amount,&#10;    al.cof_interestamt,&#10;    al.cof_penaltyamt,&#10;    al.discountamt,&#10;    COALESCE(al.c_charge_id, al_charge.c_charge_id) AS cof_alocacaofinalidade_id,&#10;    i.c_invoice_id,&#10;    i.lbr_docfiscal_id,&#10;    ips.c_invoicepayschedule_id,&#10;    i.description AS descricaofatura,&#10;    p.isreconciled,&#10;    p.isreceipt,&#10;    ips.cof_payscheduleno&#10;   FROM (((((c_payment p&#10;     JOIN ad_org org ON ((org.ad_org_id &#61; p.ad_org_id)))&#10;     LEFT JOIN c_allocationline al ON ((al.c_payment_id &#61; p.c_payment_id)))&#10;     LEFT JOIN c_allocationline al_charge ON (((al_charge.c_allocationhdr_id &#61; al.c_allocationhdr_id) AND (al_charge.c_charge_id IS NOT NULL) AND (al_charge.c_allocationline_id &lt;&gt; al.c_allocationline_id))))&#10;     LEFT JOIN c_invoice i ON ((i.c_invoice_id &#61; al.c_invoice_id)))&#10;     LEFT JOIN c_invoicepayschedule ips ON (((ips.c_invoice_id &#61; i.c_invoice_id) AND ((ips.c_invoicepayschedule_id &#61; al.c_invoicepayschedule_id) OR (al.c_invoicepayschedule_id IS NULL)))))&#10;  WHERE (p.docstatus &#61; ANY (ARRAY[&#39;CO&#39;::bpchar, &#39;CL&#39;::bpchar]));</textarea>
                             <div style="padding-top: 5px;"><hr></div>
                             <div class="box box-solid">
                                 <div class="box-header with-border">
