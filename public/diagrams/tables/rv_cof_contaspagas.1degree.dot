@@ -31,6 +31,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="descricaofatura" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="205" HEIGHT="16">descricaofatura</TD></TR></TABLE></TD><TD PORT="descricaofatura.type" ALIGN="LEFT">varchar[500]</TD></TR>
       <TR><TD PORT="isreconciled" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="205" HEIGHT="16">isreconciled</TD></TR></TABLE></TD><TD PORT="isreconciled.type" ALIGN="LEFT">bpchar[1]</TD></TR>
       <TR><TD PORT="isreceipt" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="205" HEIGHT="16">isreceipt</TD></TR></TABLE></TD><TD PORT="isreceipt.type" ALIGN="LEFT">bpchar[1]</TD></TR>
+      <TR><TD PORT="cof_payscheduleno" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="205" HEIGHT="16">cof_payscheduleno</TD></TR></TABLE></TD><TD PORT="cof_payscheduleno.type" ALIGN="LEFT">varchar[20]</TD></TR>
     </TABLE>>
     URL="../../tables/rv_cof_contaspagas.html"
     target="_top"

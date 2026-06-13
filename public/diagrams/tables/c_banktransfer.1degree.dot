@@ -4,7 +4,10 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_allocationline":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_allocationline":"c_charge_id":w -> "c_charge":"c_charge_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_allocationline":"c_payment_id":w -> "c_payment":"c_payment_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_allocationline":"cof_elementvalue_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_bankaccount":"c_currency_id":w -> "c_currency":"c_currency_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_bankaccount":"cof_user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_bankaccount":"user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"c_conversiontype_id":w -> "c_conversiontype":"c_conversiontype_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"from_ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"from_c_bankaccount_id":w -> "c_bankaccount":"c_bankaccount_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -12,12 +15,16 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_banktransfer":"from_c_charge_id":w -> "c_charge":"c_charge_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"from_c_currency_id":w -> "c_currency":"c_currency_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"from_doctype_id":w -> "c_doctype":"c_doctype_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_banktransfer":"from_user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_banktransfer":"from_user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"to_ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"to_c_bankaccount_id":w -> "c_bankaccount":"c_bankaccount_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"to_c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"to_c_charge_id":w -> "c_charge":"c_charge_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"to_c_currency_id":w -> "c_currency":"c_currency_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_banktransfer":"to_doctype_id":w -> "c_doctype":"c_doctype_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_banktransfer":"to_user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_banktransfer":"to_user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_bpartner":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_bpartner":"ad_orgbp_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_bpartner":"cof_doctypepurchase_id":w -> "c_doctype":"c_doctype_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -25,6 +32,11 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_charge":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_currency":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"cof_charge_id":w -> "c_charge":"c_charge_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_doctype":"user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_doctype":"user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_elementvalue":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_elementvalue":"c_bankaccount_id":w -> "c_bankaccount":"c_bankaccount_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_elementvalue":"c_currency_id":w -> "c_currency":"c_currency_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"ad_orgtrx_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"c_bankaccount_id":w -> "c_bankaccount":"c_bankaccount_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -34,6 +46,8 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_payment":"c_conversiontype_id":w -> "c_conversiontype":"c_conversiontype_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"c_currency_id":w -> "c_currency":"c_currency_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"c_doctype_id":w -> "c_doctype":"c_doctype_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_payment":"user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_payment":"user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "ad_org" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -130,7 +144,11 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="isoverridecurrencyrate" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="169" HEIGHT="16">isoverridecurrencyrate</TD></TR></TABLE></TD><TD PORT="isoverridecurrencyrate.type" ALIGN="LEFT">bpchar[1]</TD></TR>
       <TR><TD PORT="from_doctype_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="169" HEIGHT="16">from_doctype_id</TD></TR></TABLE></TD><TD PORT="from_doctype_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
       <TR><TD PORT="to_doctype_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="169" HEIGHT="16">to_doctype_id</TD></TR></TABLE></TD><TD PORT="to_doctype_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 13</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="from_user1_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="169" HEIGHT="16">from_user1_id</TD></TR></TABLE></TD><TD PORT="from_user1_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
+      <TR><TD PORT="to_user1_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="169" HEIGHT="16">to_user1_id</TD></TR></TABLE></TD><TD PORT="to_user1_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
+      <TR><TD PORT="to_user2_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="169" HEIGHT="16">to_user2_id</TD></TR></TABLE></TD><TD PORT="to_user2_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
+      <TR><TD PORT="from_user2_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="169" HEIGHT="16">from_user2_id</TD></TR></TABLE></TD><TD PORT="from_user2_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 17</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_banktransfer.html"
     target="_top"
@@ -255,6 +273,27 @@ digraph "oneDegreeRelationshipsDiagram" {
     URL="../../tables/c_doctype.html"
     target="_top"
     tooltip="c_doctype"
+  ];
+  "c_elementvalue" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="113" HEIGHT="16"><B>c_elementvalue</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_elementvalue_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">c_elementvalue_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ad_client_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">ad_client_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ad_org_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">ad_org_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="value" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">value</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">name</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_element_id" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">c_element_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_bankaccount_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">c_bankaccount_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_currency_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">c_currency_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_elementvalue_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">c_elementvalue_uu</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_codagl_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="203" HEIGHT="16">cof_codagl_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">1.835 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">126 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/c_elementvalue.html"
+    target="_top"
+    tooltip="c_elementvalue"
   ];
   "c_payment" [
    label=<
