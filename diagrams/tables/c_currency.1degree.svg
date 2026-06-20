@@ -1223,6 +1223,7 @@
 <polygon fill="none" stroke="black" points="1464,-2575.08 1464,-2597.08 1776,-2597.08 1776,-2575.08 1464,-2575.08"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1469" y="-2592.08"/>
 <text text-anchor="start" x="1484" y="-2583.28" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="1464,-2553.08 1464,-2575.08 1776,-2575.08 1776,-2553.08 1464,-2553.08"/>
 <polygon fill="none" stroke="black" points="1464,-2553.08 1464,-2575.08 1776,-2575.08 1776,-2553.08 1464,-2553.08"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1469" y="-2570.08"/>
 <text text-anchor="start" x="1484" y="-2561.28" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_id</text>
