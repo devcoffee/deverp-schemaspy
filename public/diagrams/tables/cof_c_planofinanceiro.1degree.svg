@@ -400,6 +400,7 @@
 <polygon fill="none" stroke="black" points="634,-813 634,-835 946,-835 946,-813 634,-813"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="639" y="-830"/>
 <text text-anchor="start" x="654" y="-821.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="634,-791 634,-813 946,-813 946,-791 634,-791"/>
 <polygon fill="none" stroke="black" points="634,-791 634,-813 946,-813 946,-791 634,-791"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="639" y="-808"/>
 <text text-anchor="start" x="654" y="-799.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_id</text>

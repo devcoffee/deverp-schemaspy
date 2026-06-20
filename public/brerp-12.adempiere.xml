@@ -2412,6 +2412,7 @@
          <index name="ad_attachment_record" unique="true">
             <column ascending="true" name="ad_table_id"/>
             <column ascending="true" name="record_id"/>
+            <column ascending="true" name="record_uu"/>
          </index>
          <index name="ad_attachment_record_uu" unique="false">
             <column ascending="true" name="record_uu"/>
@@ -7405,6 +7406,7 @@
          <index name="ad_postit_record_id_ad_table_id" unique="true">
             <column ascending="true" name="record_id"/>
             <column ascending="true" name="ad_table_id"/>
+            <column ascending="true" name="record_uu"/>
          </index>
          <index name="ad_postit_record_uu" unique="true">
             <column ascending="true" name="record_uu"/>
@@ -24489,6 +24491,9 @@
          <index name="c_order_uu_idx" unique="true">
             <column ascending="true" name="c_order_uu"/>
          </index>
+         <index name="idx_c_order_cof_packiglistn_line_id" unique="false">
+            <column ascending="true" name="cof_packinglist_line_id"/>
+         </index>
          <index name="idxc_order_proc_on" unique="false">
             <column ascending="true" name="posted"/>
             <column ascending="true" name="processed"/>
@@ -32859,6 +32864,7 @@
          <index name="cm_chat_record" unique="true">
             <column ascending="true" name="ad_table_id"/>
             <column ascending="true" name="record_id"/>
+            <column ascending="true" name="record_uu"/>
          </index>
          <index name="cm_chat_record_uu" unique="true">
             <column ascending="true" name="record_uu"/>

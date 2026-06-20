@@ -505,6 +505,7 @@
 <polygon fill="none" stroke="black" points="297,-194.79 297,-216.79 609,-216.79 609,-194.79 297,-194.79"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="302" y="-211.793"/>
 <text text-anchor="start" x="317" y="-202.99" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="297,-172.79 297,-194.79 609,-194.79 609,-172.79 297,-172.79"/>
 <polygon fill="none" stroke="black" points="297,-172.79 297,-194.79 609,-194.79 609,-172.79 297,-172.79"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="302" y="-189.793"/>
 <text text-anchor="start" x="317" y="-180.99" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_id</text>

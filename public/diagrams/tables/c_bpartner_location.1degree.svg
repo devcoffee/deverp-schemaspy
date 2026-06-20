@@ -1655,6 +1655,7 @@
 <polygon fill="none" stroke="black" points="3348,-3393 3348,-3415 3660,-3415 3660,-3393 3348,-3393"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3353" y="-3410"/>
 <text text-anchor="start" x="3368" y="-3401.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="3348,-3371 3348,-3393 3660,-3393 3660,-3371 3348,-3371"/>
 <polygon fill="none" stroke="black" points="3348,-3371 3348,-3393 3660,-3393 3660,-3371 3348,-3371"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="3353" y="-3388"/>
 <text text-anchor="start" x="3368" y="-3379.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_id</text>
