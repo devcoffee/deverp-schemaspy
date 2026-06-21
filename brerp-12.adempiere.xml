@@ -9931,7 +9931,7 @@
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_sequence_no_isactive_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_session" numRows="3041" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_session" numRows="3344" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_session_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_session_id" foreignKey="adsession_adpinstance" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_pinstance"/>
             <child catalog="brerp-12" column="ad_session_id" foreignKey="adsession_kcomment" implied="false" onDeleteCascade="false" schema="adempiere" table="k_comment"/>
@@ -14863,8 +14863,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -14949,8 +14949,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
