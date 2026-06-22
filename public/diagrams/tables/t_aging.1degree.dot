@@ -6,6 +6,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_bpartner":"cof_doctypesale_id":w -> "c_doctype":"c_doctype_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_bpartner":"po_paymentterm_id":w -> "c_paymentterm":"c_paymentterm_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"c_activity_id":w -> "c_activity":"c_activity_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_doctype":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_elementvalue":"c_currency_id":w -> "c_currency":"c_currency_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -188,8 +189,9 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_cabecalhov_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cof_cabecalhov_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="cof_pontoremessa_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cof_pontoremessa_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="cte_doctype_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cte_doctype_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_c_planofinanceiro_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cof_c_planofinanceiro_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 16</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">134 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">84 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 17</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">134 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">84 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_doctype.html"
     target="_top"
@@ -269,7 +271,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_c_planofinanceiro_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="182" HEIGHT="16">cof_c_planofinanceiro_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="cof_c_planofinanceiro_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="182" HEIGHT="16">cof_c_planofinanceiro_uu</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">129 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">129 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">7 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/cof_c_planofinanceiro.html"
     target="_top"

@@ -489,7 +489,7 @@
 <g id="node7" class="node">
 <title>c_doctype</title>
 <g id="a_node7"><a xlink:href="../../tables/c_doctype.html" xlink:title="c_doctype" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="8,-941.02 8,-1439.02 395,-1439.02 395,-941.02 8,-941.02"/>
+<polygon fill="#ffffff" stroke="transparent" points="8,-919.02 8,-1439.02 395,-1439.02 395,-919.02 8,-919.02"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="8.5,-1417.02 8.5,-1439.02 395.5,-1439.02 395.5,-1417.02 8.5,-1417.02"/>
 <polygon fill="none" stroke="black" points="8.5,-1417.02 8.5,-1439.02 395.5,-1439.02 395.5,-1417.02 8.5,-1417.02"/>
 <text text-anchor="start" x="13.5" y="-1426.22" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_doctype</text>
@@ -554,18 +554,21 @@
 <polygon fill="none" stroke="black" points="8.5,-977.02 8.5,-999.02 395.5,-999.02 395.5,-977.02 8.5,-977.02"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13.5" y="-994.02"/>
 <text text-anchor="start" x="28.5" y="-985.22" font-family="Helvetica,sans-Serif" font-size="11.00">cte_doctype_id</text>
-<polygon fill="none" stroke="black" points="8.5,-959.02 8.5,-977.02 395.5,-977.02 395.5,-959.02 8.5,-959.02"/>
-<text text-anchor="start" x="11.5" y="-965.22" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="8.5,-941.02 8.5,-959.02 395.5,-959.02 395.5,-941.02 8.5,-941.02"/>
-<polygon fill="none" stroke="black" points="8.5,-941.02 8.5,-959.02 395.5,-959.02 395.5,-941.02 8.5,-941.02"/>
-<polygon fill="#ffffff" stroke="transparent" points="9.5,-942.02 9.5,-958.02 130.5,-958.02 130.5,-942.02 9.5,-942.02"/>
-<text text-anchor="start" x="11.5" y="-947.22" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 16</text>
-<polygon fill="#ffffff" stroke="transparent" points="130.5,-942.02 130.5,-958.02 274.5,-958.02 274.5,-942.02 130.5,-942.02"/>
-<text text-anchor="start" x="180" y="-947.22" font-family="Helvetica,sans-Serif" font-size="11.00">134 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="274.5,-942.02 274.5,-958.02 394.5,-958.02 394.5,-942.02 274.5,-942.02"/>
-<text text-anchor="start" x="370.5" y="-947.22" font-family="Helvetica,sans-Serif" font-size="11.00">84 &gt;</text>
-<polygon fill="black" stroke="black" points="130.5,-942.02 130.5,-958.02 130.5,-958.02 130.5,-942.02 130.5,-942.02"/>
-<polygon fill="black" stroke="black" points="274.5,-942.02 274.5,-958.02 274.5,-958.02 274.5,-942.02 274.5,-942.02"/>
+<polygon fill="none" stroke="black" points="8.5,-955.02 8.5,-977.02 395.5,-977.02 395.5,-955.02 8.5,-955.02"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13.5" y="-972.02"/>
+<text text-anchor="start" x="28.5" y="-963.22" font-family="Helvetica,sans-Serif" font-size="11.00">cof_c_planofinanceiro_id</text>
+<polygon fill="none" stroke="black" points="8.5,-937.02 8.5,-955.02 395.5,-955.02 395.5,-937.02 8.5,-937.02"/>
+<text text-anchor="start" x="11.5" y="-943.22" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="8.5,-919.02 8.5,-937.02 395.5,-937.02 395.5,-919.02 8.5,-919.02"/>
+<polygon fill="none" stroke="black" points="8.5,-919.02 8.5,-937.02 395.5,-937.02 395.5,-919.02 8.5,-919.02"/>
+<polygon fill="#ffffff" stroke="transparent" points="9.5,-920.02 9.5,-936.02 130.5,-936.02 130.5,-920.02 9.5,-920.02"/>
+<text text-anchor="start" x="11.5" y="-925.22" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 17</text>
+<polygon fill="#ffffff" stroke="transparent" points="130.5,-920.02 130.5,-936.02 274.5,-936.02 274.5,-920.02 130.5,-920.02"/>
+<text text-anchor="start" x="180" y="-925.22" font-family="Helvetica,sans-Serif" font-size="11.00">134 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="274.5,-920.02 274.5,-936.02 394.5,-936.02 394.5,-920.02 274.5,-920.02"/>
+<text text-anchor="start" x="370.5" y="-925.22" font-family="Helvetica,sans-Serif" font-size="11.00">84 &gt;</text>
+<polygon fill="black" stroke="black" points="130.5,-920.02 130.5,-936.02 130.5,-936.02 130.5,-920.02 130.5,-920.02"/>
+<polygon fill="black" stroke="black" points="274.5,-920.02 274.5,-936.02 274.5,-936.02 274.5,-920.02 274.5,-920.02"/>
 </a>
 </g>
 </g>
@@ -926,7 +929,7 @@
 <!-- c_invoice&#45;&gt;c_bpartner -->
 <g id="edge52" class="edge">
 <title>c_invoice:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1304.57,-819.74C1165.22,-814.63 828.4,-743.55 739,-830.02 675.75,-891.2 787,-1621.02 699,-1621.02"/>
+<path fill="none" stroke="black" d="M1304.58,-819.73C1165.23,-814.57 828.47,-742.62 739,-829.02 675.62,-890.23 787.11,-1621.02 699,-1621.02"/>
 <polygon fill="black" stroke="black" points="1311,-819.86 1318.93,-823.62 1315,-819.94 1319,-820.02 1319,-820.02 1319,-820.02 1315,-819.94 1319.07,-816.42 1311,-819.86 1311,-819.86"/>
 <ellipse fill="none" stroke="black" cx="1307.8" cy="-819.8" rx="3.2" ry="3.2"/>
 </g>
@@ -1490,7 +1493,7 @@
 <!-- a_asset_change&#45;&gt;c_bpartner -->
 <g id="edge22" class="edge">
 <title>a_asset_change:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1971.47,-768.21C1940.25,-752.78 1986.03,-678.08 1944,-648.02 1846.03,-577.95 1793.1,-638.93 1673,-648.02 1496.38,-661.39 1454.24,-682.18 1279,-708.02 1159.08,-725.7 820.6,-695.38 739,-785.02 676.4,-853.79 792,-1621.02 699,-1621.02"/>
+<path fill="none" stroke="black" d="M1971.47,-768.21C1940.25,-752.78 1986.03,-678.08 1944,-648.02 1846.03,-577.95 1793.1,-638.93 1673,-648.02 1496.38,-661.39 1454.26,-682.34 1279,-708.02 1159.1,-725.59 820.66,-694.48 739,-784.02 676.26,-852.82 792.11,-1621.02 699,-1621.02"/>
 <polygon fill="black" stroke="black" points="1978.15,-769.5 1985.32,-774.55 1982.07,-770.26 1986,-771.02 1986,-771.02 1986,-771.02 1982.07,-770.26 1986.68,-767.49 1978.15,-769.5 1978.15,-769.5"/>
 <ellipse fill="none" stroke="black" cx="1975" cy="-768.89" rx="3.2" ry="3.2"/>
 </g>
@@ -1518,7 +1521,7 @@
 <!-- a_asset_change&#45;&gt;c_location -->
 <g id="edge29" class="edge">
 <title>a_asset_change:w&#45;&gt;c_location:e</title>
-<path fill="none" stroke="black" d="M1971.42,-814.89C1753.84,-811.07 1702.03,-722.02 1477,-722.02 1477,-722.02 1477,-722.02 1150,-722.02 965.2,-722.02 903.59,-700.98 739,-785.02 697.3,-806.31 711.83,-860.02 665,-860.02"/>
+<path fill="none" stroke="black" d="M1971.42,-814.89C1753.84,-811.07 1702.03,-722.02 1477,-722.02 1477,-722.02 1477,-722.02 1150,-722.02 965.27,-722.02 903.35,-699.66 739,-784.02 697.06,-805.55 712.14,-860.02 665,-860.02"/>
 <polygon fill="black" stroke="black" points="1978,-814.95 1985.97,-818.62 1982,-814.98 1986,-815.02 1986,-815.02 1986,-815.02 1982,-814.98 1986.03,-811.42 1978,-814.95 1978,-814.95"/>
 <ellipse fill="none" stroke="black" cx="1974.8" cy="-814.92" rx="3.2" ry="3.2"/>
 </g>

@@ -14863,8 +14863,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -14949,8 +14949,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -19834,6 +19834,9 @@
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="118" name="cof_isemitentecomodestinatario" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="119" name="cte_ibscbs_inddoacao" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="120" name="cof_isgerarporpontoderemessa" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="121" name="cof_c_planofinanceiro_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_c_planofinanceiro_id" foreignKey="cofcplanofinanceiro_cdoctype" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_c_planofinanceiro"/>
+         </column>
          <primaryKey column="c_doctype_id" sequenceNumberInPK="1"/>
          <index name="c_doctype_pkey" unique="true">
             <column ascending="true" name="c_doctype_id"/>
@@ -35495,6 +35498,7 @@
       </table>
       <table catalog="brerp-12" name="cof_c_planofinanceiro" numRows="129" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="cof_c_planofinanceiro_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="cof_c_planofinanceiro_id" foreignKey="cofcplanofinanceiro_cdoctype" implied="false" onDeleteCascade="false" schema="adempiere" table="c_doctype"/>
             <child catalog="brerp-12" column="cof_c_planofinanceiro_id" foreignKey="cofcplanofinanceiro_cinvoice" implied="false" onDeleteCascade="false" schema="adempiere" table="c_invoice"/>
             <child catalog="brerp-12" column="cof_c_planofinanceiro_id" foreignKey="cofcplanofinanceiro_corder" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
             <child catalog="brerp-12" column="cof_c_planofinanceiro_id" foreignKey="cofcplanofinanceiro_cpayment" implied="false" onDeleteCascade="false" schema="adempiere" table="c_payment"/>
@@ -67555,7 +67559,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="pa_reportline_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="pa_reportline_id" foreignKey="pareportline_pareportsource" implied="false" onDeleteCascade="true" schema="adempiere" table="pa_reportline"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="elementtype" nullable="false" remarks="" size="2" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="elementtype" nullable="false" remarks="" size="4" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
          </column>
@@ -67601,14 +67605,14 @@
             <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorgtrx_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="35" name="pa_reportsource_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="36" name="user1_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="36" name="cof_isincludenullsuser1id" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="37" name="cof_isincludenullsuser2id" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="user1_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_elementvalue_id" foreignKey="user1_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="c_elementvalue"/>
          </column>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="37" name="user2_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="user2_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_elementvalue_id" foreignKey="user2_pareportsource" implied="false" onDeleteCascade="false" schema="adempiere" table="c_elementvalue"/>
          </column>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="38" name="cof_isincludenullsuser1id" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="39" name="cof_isincludenullsuser2id" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="pa_reportsource_id" sequenceNumberInPK="1"/>
          <index name="pa_reportsource_pkey" unique="true">
             <column ascending="true" name="pa_reportsource_id"/>

@@ -118,6 +118,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="c_doctype.cof_c_planofinanceiro_id references cof_c_planofinanceiro.cof_c_planofinanceiro_id via cofcplanofinanceiro_cdoctype"><a href='c_doctype.html'>c_doctype</a><span class='relatedKey'>.cof_c_planofinanceiro_id</span></td>
+                                                <td class="constraint detail">cofcplanofinanceiro_cdoctype</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="c_invoice.cof_c_planofinanceiro_id references cof_c_planofinanceiro.cof_c_planofinanceiro_id via cofcplanofinanceiro_cinvoice"><a href='c_invoice.html'>c_invoice</a><span class='relatedKey'>.cof_c_planofinanceiro_id</span></td>
                                                 <td class="constraint detail">cofcplanofinanceiro_cinvoice</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -447,12 +452,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>cof_c_planofinanceiro_issummary_check</td>
-                                    <td>((issummary &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_c_planofinanceiro_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_c_planofinanceiro_issummary_check</td>
+                                    <td>((issummary &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

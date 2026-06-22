@@ -657,7 +657,7 @@
 <polygon fill="none" stroke="black" points="853.5,-1373 853.5,-1395 1075.5,-1395 1075.5,-1373 853.5,-1373"/>
 <text text-anchor="start" x="873.5" y="-1381.2" font-family="Helvetica,sans-Serif" font-size="11.00">elementtype</text>
 <polygon fill="none" stroke="black" points="1075.5,-1373 1075.5,-1395 1158.5,-1395 1158.5,-1373 1075.5,-1373"/>
-<text text-anchor="start" x="1078.5" y="-1381.2" font-family="Helvetica,sans-Serif" font-size="11.00">bpchar[2]</text>
+<text text-anchor="start" x="1078.5" y="-1381.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[4]</text>
 <polygon fill="none" stroke="black" points="853.5,-1351 853.5,-1373 1075.5,-1373 1075.5,-1351 853.5,-1351"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="858.5" y="-1368"/>
 <text text-anchor="start" x="873.5" y="-1359.2" font-family="Helvetica,sans-Serif" font-size="11.00">org_id</text>
@@ -770,23 +770,23 @@
 <polygon fill="none" stroke="black" points="1075.5,-823 1075.5,-845 1158.5,-845 1158.5,-823 1075.5,-823"/>
 <text text-anchor="start" x="1078.5" y="-831.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[36]</text>
 <polygon fill="none" stroke="black" points="853.5,-801 853.5,-823 1075.5,-823 1075.5,-801 853.5,-801"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="858.5" y="-818"/>
-<text text-anchor="start" x="873.5" y="-809.2" font-family="Helvetica,sans-Serif" font-size="11.00">user1_id</text>
+<text text-anchor="start" x="873.5" y="-809.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_isincludenullsuser1id</text>
 <polygon fill="none" stroke="black" points="1075.5,-801 1075.5,-823 1158.5,-823 1158.5,-801 1075.5,-801"/>
-<text text-anchor="start" x="1078.5" y="-809.2" font-family="Helvetica,sans-Serif" font-size="11.00">numeric[10]</text>
+<text text-anchor="start" x="1078.5" y="-809.2" font-family="Helvetica,sans-Serif" font-size="11.00">bpchar[1]</text>
 <polygon fill="none" stroke="black" points="853.5,-779 853.5,-801 1075.5,-801 1075.5,-779 853.5,-779"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="858.5" y="-796"/>
-<text text-anchor="start" x="873.5" y="-787.2" font-family="Helvetica,sans-Serif" font-size="11.00">user2_id</text>
+<text text-anchor="start" x="873.5" y="-787.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_isincludenullsuser2id</text>
 <polygon fill="none" stroke="black" points="1075.5,-779 1075.5,-801 1158.5,-801 1158.5,-779 1075.5,-779"/>
-<text text-anchor="start" x="1078.5" y="-787.2" font-family="Helvetica,sans-Serif" font-size="11.00">numeric[10]</text>
+<text text-anchor="start" x="1078.5" y="-787.2" font-family="Helvetica,sans-Serif" font-size="11.00">bpchar[1]</text>
 <polygon fill="none" stroke="black" points="853.5,-757 853.5,-779 1075.5,-779 1075.5,-757 853.5,-757"/>
-<text text-anchor="start" x="873.5" y="-765.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_isincludenullsuser1id</text>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="858.5" y="-774"/>
+<text text-anchor="start" x="873.5" y="-765.2" font-family="Helvetica,sans-Serif" font-size="11.00">user1_id</text>
 <polygon fill="none" stroke="black" points="1075.5,-757 1075.5,-779 1158.5,-779 1158.5,-757 1075.5,-757"/>
-<text text-anchor="start" x="1078.5" y="-765.2" font-family="Helvetica,sans-Serif" font-size="11.00">bpchar[1]</text>
+<text text-anchor="start" x="1078.5" y="-765.2" font-family="Helvetica,sans-Serif" font-size="11.00">numeric[10]</text>
 <polygon fill="none" stroke="black" points="853.5,-735 853.5,-757 1075.5,-757 1075.5,-735 853.5,-735"/>
-<text text-anchor="start" x="873.5" y="-743.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_isincludenullsuser2id</text>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="858.5" y="-752"/>
+<text text-anchor="start" x="873.5" y="-743.2" font-family="Helvetica,sans-Serif" font-size="11.00">user2_id</text>
 <polygon fill="none" stroke="black" points="1075.5,-735 1075.5,-757 1158.5,-757 1158.5,-735 1075.5,-735"/>
-<text text-anchor="start" x="1078.5" y="-743.2" font-family="Helvetica,sans-Serif" font-size="11.00">bpchar[1]</text>
+<text text-anchor="start" x="1078.5" y="-743.2" font-family="Helvetica,sans-Serif" font-size="11.00">numeric[10]</text>
 <polygon fill="#ffffff" stroke="transparent" points="853.5,-717 853.5,-735 1158.5,-735 1158.5,-717 853.5,-717"/>
 <polygon fill="none" stroke="black" points="853.5,-717 853.5,-735 1158.5,-735 1158.5,-717 853.5,-717"/>
 <polygon fill="#ffffff" stroke="transparent" points="854.5,-718 854.5,-734 962.5,-734 962.5,-718 854.5,-718"/>
@@ -839,16 +839,16 @@
 <!-- pa_reportsource&#45;&gt;c_elementvalue -->
 <g id="edge26" class="edge">
 <title>pa_reportsource:w&#45;&gt;c_elementvalue:e</title>
-<path fill="none" stroke="black" d="M840.86,-802.8C803.32,-732.42 857.52,-282 803,-282"/>
-<polygon fill="black" stroke="black" points="846.22,-807.04 850.27,-814.82 849.36,-809.52 852.5,-812 852.5,-812 852.5,-812 849.36,-809.52 854.73,-809.18 846.22,-807.04 846.22,-807.04"/>
-<ellipse fill="none" stroke="black" cx="843.71" cy="-805.06" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M838.03,-764.37C760.25,-719.89 906.05,-282 803,-282"/>
+<polygon fill="black" stroke="black" points="844.74,-766.05 851.62,-771.49 848.62,-767.03 852.5,-768 852.5,-768 852.5,-768 848.62,-767.03 853.38,-764.51 844.74,-766.05 844.74,-766.05"/>
+<ellipse fill="none" stroke="black" cx="841.64" cy="-765.27" rx="3.2" ry="3.2"/>
 </g>
 <!-- pa_reportsource&#45;&gt;c_elementvalue -->
 <g id="edge27" class="edge">
 <title>pa_reportsource:w&#45;&gt;c_elementvalue:e</title>
-<path fill="none" stroke="black" d="M838.41,-786.76C755.06,-743.49 911.11,-282 803,-282"/>
-<polygon fill="black" stroke="black" points="844.7,-788.21 851.69,-793.51 848.6,-789.1 852.5,-790 852.5,-790 852.5,-790 848.6,-789.1 853.31,-786.49 844.7,-788.21 844.7,-788.21"/>
-<ellipse fill="none" stroke="black" cx="841.59" cy="-787.49" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M838.2,-742.27C764.73,-698.35 901.23,-282 803,-282"/>
+<polygon fill="black" stroke="black" points="844.76,-743.98 851.59,-749.48 848.63,-744.99 852.5,-746 852.5,-746 852.5,-746 848.63,-744.99 853.41,-742.52 844.76,-743.98 844.76,-743.98"/>
+<ellipse fill="none" stroke="black" cx="841.66" cy="-743.17" rx="3.2" ry="3.2"/>
 </g>
 <!-- pa_reportsource&#45;&gt;c_location -->
 <g id="edge20" class="edge">
