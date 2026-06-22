@@ -42,6 +42,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_doctype":"c_doctypeinvoice_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"c_doctypeproforma_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"c_doctypeshipment_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_doctype":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"cof_cabecalhov_id":w -> "ad_image":"ad_image_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"cof_charge_id":w -> "c_charge":"c_charge_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_doctype":"cof_pontoremessa_id":w -> "cof_pontoremessa":"cof_pontoremessa_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -63,6 +64,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_invoice":"c_order_id":w -> "c_order":"c_order_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoice":"c_payment_id":w -> "c_payment":"c_payment_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoice":"cof_bpespecialista_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_invoice":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoice":"cof_contract_id":w -> "cof_contract":"cof_contract_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoice":"cof_parceirointermediador_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoice":"cof_ref_order_id":w -> "c_order":"c_order_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -85,6 +87,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_order":"c_payment_id":w -> "c_payment":"c_payment_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_order":"c_pos_id":w -> "c_pos":"c_pos_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_order":"cof_bpespecialista_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_order":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_order":"cof_contract_id":w -> "cof_contract":"cof_contract_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_order":"cof_parceirointermediador_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_order":"cof_pnconcorrente_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -103,6 +106,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_payment":"c_doctype_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"c_invoice_id":w -> "c_invoice":"c_invoice_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"c_order_id":w -> "c_order":"c_order_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_payment":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_payment":"user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_pos":"c_bpartnercashtrx_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -125,6 +129,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "cof_conciliacaocartao":"c_invoice_id":w -> "c_invoice":"c_invoice_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"c_order_id":w -> "c_order":"c_order_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"c_payment_id":w -> "c_payment":"c_payment_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_conciliacaocartao":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"cof_tarifapagamento_id":w -> "c_payment":"c_payment_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -311,10 +316,12 @@ digraph "oneDegreeRelationshipsDiagram" {
   "t_aging":"c_activity_id":w -> "c_activity":"c_activity_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_aging":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_aging":"c_doctypetarget_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "t_aging":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_aging":"user1_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_aging":"user2_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_cof_fluxoplanofinanceiro":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_cof_fluxoplanofinanceiro":"c_doctype_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "t_cof_fluxoplanofinanceiro":"cof_c_planofinanceiro_id":w -> "cof_c_planofinanceiro":"cof_c_planofinanceiro_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_invoicegl":"c_doctypereval_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_invoicegl":"c_invoice_id":w -> "c_invoice":"c_invoice_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "t_replenish":"c_doctype_id":w -> "c_doctype":"c_doctype_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -821,7 +828,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_isemitentecomodestinatario" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cof_isemitentecomodestinatario</TD></TR></TABLE></TD><TD PORT="cof_isemitentecomodestinatario.type" ALIGN="LEFT">bpchar[1]</TD></TR>
       <TR><TD PORT="cte_ibscbs_inddoacao" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cte_ibscbs_inddoacao</TD></TR></TABLE></TD><TD PORT="cte_ibscbs_inddoacao.type" ALIGN="LEFT">bpchar[1]</TD></TR>
       <TR><TD PORT="cof_isgerarporpontoderemessa" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cof_isgerarporpontoderemessa</TD></TR></TABLE></TD><TD PORT="cof_isgerarporpontoderemessa.type" ALIGN="LEFT">bpchar[1]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 16</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">134 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">84 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_c_planofinanceiro_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="366" HEIGHT="16">cof_c_planofinanceiro_id</TD></TR></TABLE></TD><TD PORT="cof_c_planofinanceiro_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 17</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">134 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">84 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_doctype.html"
     target="_top"
@@ -1172,6 +1180,19 @@ digraph "oneDegreeRelationshipsDiagram" {
     URL="../../tables/cof_c_markup.html"
     target="_top"
     tooltip="cof_c_markup"
+  ];
+  "cof_c_planofinanceiro" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="157" HEIGHT="16"><B>cof_c_planofinanceiro</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_c_planofinanceiro_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="182" HEIGHT="16">cof_c_planofinanceiro_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_c_planofinanceiro_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="182" HEIGHT="16">cof_c_planofinanceiro_uu</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">129 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">7 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_c_planofinanceiro.html"
+    target="_top"
+    tooltip="cof_c_planofinanceiro"
   ];
   "cof_calcnivelminmax" [
    label=<

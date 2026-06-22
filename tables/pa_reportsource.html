@@ -290,8 +290,8 @@
                                 </tr>
                                 <tr>
                                     <td><span id="elementtype">elementtype</span></td>
-                                    <td>bpchar</td>
-                                    <td>2</td>
+                                    <td>varchar</td>
+                                    <td>4</td>
                                     <td title=''></td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -781,50 +781,6 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="user1_id">user1_id</span></td>
-                                    <td>numeric</td>
-                                    <td>10</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>NULL::numeric</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                            <tr>
-                                                <td title="pa_reportsource.user1_id references c_elementvalue.c_elementvalue_id via user1_pareportsource"><a href='c_elementvalue.html'>c_elementvalue</a><span class='relatedKey'>.c_elementvalue_id</span></td>
-                                                <td class="constraint detail">user1_pareportsource</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="user2_id">user2_id</span></td>
-                                    <td>numeric</td>
-                                    <td>10</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>NULL::numeric</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                            <tr>
-                                                <td title="pa_reportsource.user2_id references c_elementvalue.c_elementvalue_id via user2_pareportsource"><a href='c_elementvalue.html'>c_elementvalue</a><span class='relatedKey'>.c_elementvalue_id</span></td>
-                                                <td class="constraint detail">user2_pareportsource</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
                                     <td><span id="cof_isincludenullsuser1id">cof_isincludenullsuser1id</span></td>
                                     <td>bpchar</td>
                                     <td>1</td>
@@ -854,6 +810,50 @@
                                     </td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="user1_id">user1_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="pa_reportsource.user1_id references c_elementvalue.c_elementvalue_id via user1_pareportsource"><a href='c_elementvalue.html'>c_elementvalue</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">user1_pareportsource</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="user2_id">user2_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="pa_reportsource.user2_id references c_elementvalue.c_elementvalue_id via user2_pareportsource"><a href='c_elementvalue.html'>c_elementvalue</a><span class='relatedKey'>.c_elementvalue_id</span></td>
+                                                <td class="constraint detail">user2_pareportsource</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td></td>
@@ -933,60 +933,60 @@
                                     <td>((isincludenullsproduct &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportsource_isincludenullsorgtrx_check</td>
-                                    <td>((isincludenullsorgtrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportsource_isincludenullselementvalue_check</td>
-                                    <td>((isincludenullselementvalue &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportsource_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportsource_isincludenullsuserelement2_check</td>
-                                    <td>((isincludenullsuserelement2 &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportsource_isincludenullslocation_check</td>
-                                    <td>((isincludenullslocation &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>pa_reportsource_isincludenullssalesregion_check</td>
-                                    <td>((isincludenullssalesregion &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportsource_isincludenullscampaign_check</td>
+                                    <td>((isincludenullscampaign &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_reportsource_isincludenullsbpartner_check</td>
                                     <td>((isincludenullsbpartner &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportsource_isincludenullscampaign_check</td>
-                                    <td>((isincludenullscampaign &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportsource_cof_isincludenullsuser2id_check</td>
+                                    <td>((cof_isincludenullsuser2id &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportsource_cof_isincludenullsuser1id_check</td>
-                                    <td>((cof_isincludenullsuser1id &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportsource_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_reportsource_isincludenullsactivity_check</td>
                                     <td>((isincludenullsactivity &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportsource_isincludenullsorg_check</td>
-                                    <td>((isincludenullsorg &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportsource_isincludenullsproject_check</td>
+                                    <td>((isincludenullsproject &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportsource_isincludenullslocation_check</td>
+                                    <td>((isincludenullslocation &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportsource_cof_isincludenullsuser1id_check</td>
+                                    <td>((cof_isincludenullsuser1id &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>pa_reportsource_isincludenullsuserelement1_check</td>
                                     <td>((isincludenullsuserelement1 &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportsource_cof_isincludenullsuser2id_check</td>
-                                    <td>((cof_isincludenullsuser2id &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportsource_isincludenullsuserelement2_check</td>
+                                    <td>((isincludenullsuserelement2 &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>pa_reportsource_isincludenullsproject_check</td>
-                                    <td>((isincludenullsproject &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>pa_reportsource_isincludenullselementvalue_check</td>
+                                    <td>((isincludenullselementvalue &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportsource_isincludenullssalesregion_check</td>
+                                    <td>((isincludenullssalesregion &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportsource_isincludenullsorgtrx_check</td>
+                                    <td>((isincludenullsorgtrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>pa_reportsource_isincludenullsorg_check</td>
+                                    <td>((isincludenullsorg &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
