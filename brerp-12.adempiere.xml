@@ -14863,8 +14863,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -14949,8 +14949,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -48464,7 +48464,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="cof_orderservico_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="cof_movementos_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
       </table>
-      <table catalog="brerp-12" name="cof_rv_packinglist_mdfe" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT ad_org_id,&#10;    documentno,&#10;    cof_packingdate,&#10;    cof_equipments_id,&#10;    cof_driver_id,&#10;    cof_packingtype,&#10;    cof_m_shipregion_id,&#10;    cof_warehouse_id,&#10;    cof_situacaoembarque,&#10;    cof_fase,&#10;    cof_packinglist_id,&#10;    cof_packinglist_id AS cof_rv_packinglist_mdfe_id,&#10;    isactive,&#10;    issotrx,&#10;    ad_client_id&#10;   FROM cof_packinglist pl&#10;  WHERE ((issotrx = 'Y'::bpchar) AND (NOT (EXISTS ( SELECT 1&#10;           FROM cof_mdfe mdf&#10;          WHERE ((mdf.cof_packinglist_id = pl.cof_packinglist_id) AND ((mdf.docstatus)::text &lt;&gt; 'VO'::text))))));">
+      <table catalog="brerp-12" name="cof_rv_packinglist_mdfe" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT ad_org_id,&#10;    documentno,&#10;    cof_packingdate,&#10;    cof_equipments_id,&#10;    cof_driver_id,&#10;    cof_packingtype,&#10;    cof_m_shipregion_id,&#10;    cof_warehouse_id,&#10;    cof_situacaoembarque,&#10;    cof_fase,&#10;    cof_packinglist_id,&#10;    cof_packinglist_id AS cof_rv_packinglist_mdfe_id,&#10;    isactive,&#10;    issotrx,&#10;    ad_client_id&#10;   FROM cof_packinglist pl&#10;  WHERE ((issotrx = 'Y'::bpchar) AND (NOT (EXISTS ( SELECT 1&#10;           FROM cof_mdfe mdf&#10;          WHERE ((mdf.cof_packinglist_id = pl.cof_packinglist_id) AND ((mdf.docstatus)::text &lt;&gt; 'VO'::text) AND (((mdf.cof_mdfe_status)::text &lt;&gt; ALL ((ARRAY['101'::character varying, '132'::character varying])::text[])) OR (mdf.cof_mdfe_status IS NULL)))))));">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="documentno" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="2" name="cof_packingdate" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
