@@ -480,6 +480,7 @@ ad_label
 c_withholding
 cm_newschannel
 cm_templatetable
+cof_r_survey_question
 m_promotiondistribution
 mfa_method
 r_issueproject
@@ -525,7 +526,6 @@ c_servicelevel
 cof_ajusteestoqueprvstline
 cof_estoqueescrituradok200
 cof_orcamentoitem
-cof_r_survey_question
 cof_registrocorrecaoblocok270
 hr_listversion
 lbr_docfiscal_line_di
@@ -1030,6 +1030,7 @@ cof_labelfield
 cof_orderdeducaomateriais
 cof_parametroavancadobusca
 cof_pneu_manutencao
+cof_r_question_value_interval
 cof_webhookevent
 cte_infctecomp
 lbr_docfiscal_cana_deduc
@@ -1117,6 +1118,7 @@ cof_invoicededucaomateriais
 cof_mdfe_documentofiscal
 cof_produtolocalizadorconfig
 cof_projecaoestoquefiscal
+cof_testequalidade
 hr_concept_acct
 i_payment
 m_cost
