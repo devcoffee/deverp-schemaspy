@@ -145,6 +145,7 @@ m_discountschemabreak
 m_cost
 i_payment
 hr_concept_acct
+cof_testequalidade
 cof_projecaoestoquefiscal
 cof_produtolocalizadorconfig
 cof_mdfe_documentofiscal
@@ -232,6 +233,7 @@ lbr_docfiscal_cana_fordia
 lbr_docfiscal_cana_deduc
 cte_infctecomp
 cof_webhookevent
+cof_r_question_value_interval
 cof_pneu_manutencao
 cof_parametroavancadobusca
 cof_orderdeducaomateriais
@@ -736,7 +738,6 @@ m_attributeinstance
 lbr_docfiscal_line_di
 hr_listversion
 cof_registrocorrecaoblocok270
-cof_r_survey_question
 cof_orcamentoitem
 cof_estoqueescrituradok200
 cof_ajusteestoqueprvstline
@@ -782,6 +783,7 @@ ad_broadcastmessage
 r_issueproject
 mfa_method
 m_promotiondistribution
+cof_r_survey_question
 cm_templatetable
 cm_newschannel
 c_withholding

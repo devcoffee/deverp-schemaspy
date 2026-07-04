@@ -36,6 +36,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "cof_mprecebida":"m_attributesetinstance_id":w -> "m_attributesetinstance":"m_attributesetinstance_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_ordemservico":"a_asset_id":w -> "a_asset":"a_asset_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_ordemservico":"m_attributesetinstance_id":w -> "m_attributesetinstance":"m_attributesetinstance_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_testequalidade":"m_attributesetinstance_id":w -> "m_attributesetinstance":"m_attributesetinstance_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "dd_orderline":"m_attributesetinstance_id":w -> "m_attributesetinstance":"m_attributesetinstance_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "dd_orderline":"m_attributesetinstanceto_id":w -> "m_attributesetinstance":"m_attributesetinstance_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "i_asset":"m_attributesetinstance_id":w -> "m_attributesetinstance":"m_attributesetinstance_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -468,6 +469,26 @@ digraph "oneDegreeRelationshipsDiagram" {
     target="_top"
     tooltip="cof_ordemservico"
   ];
+  "cof_testequalidade" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="139" HEIGHT="16"><B>cof_testequalidade</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ad_client_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">ad_client_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ad_org_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">ad_org_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_testequalidade_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">cof_testequalidade_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_testequalidade_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">cof_testequalidade_uu</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="createdby" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">createdby</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_attributesetinstance_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">m_attributesetinstance_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_product_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">m_product_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="updatedby" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">updatedby</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ad_table_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="190" HEIGHT="16">ad_table_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 7</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_testequalidade.html"
+    target="_top"
+    tooltip="cof_testequalidade"
+  ];
   "dd_orderline" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -556,7 +577,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="m_lot_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="195" HEIGHT="16">m_lot_id</TD></TR></TABLE></TD><TD PORT="m_lot_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
       <TR><TD PORT="m_attributesetinstance_uu" COLSPAN="2" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="195" HEIGHT="16">m_attributesetinstance_uu</TD></TR></TABLE></TD><TD PORT="m_attributesetinstance_uu.type" ALIGN="LEFT">varchar[36]</TD></TR>
       <TR><TD PORT="movementdate" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="195" HEIGHT="16">movementdate</TD></TR></TABLE></TD><TD PORT="movementdate.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">1 row</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">50 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">1 row</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">51 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/m_attributesetinstance.html"
     target="_top"

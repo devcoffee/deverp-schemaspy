@@ -908,6 +908,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_r_question_value_interval.ad_client_id references ad_client.ad_client_id via adclient_cofrquestionvalueinterval"><a href='cof_r_question_value_interval.html'>cof_r_question_value_interval</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_cofrquestionvalueinterval</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_recuperacaoimposto.ad_client_id references ad_client.ad_client_id via adclient_cofrecuperacaoimposto"><a href='cof_recuperacaoimposto.html'>cof_recuperacaoimposto</a><span class='relatedKey'>.ad_client_id</span></td>
                                                 <td class="constraint detail">adclient_cofrecuperacaoimposto</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -925,6 +930,11 @@
                                             <tr>
                                                 <td title="cof_terminalcfe.ad_client_id references ad_client.ad_client_id via adclient_cofterminalcfe"><a href='cof_terminalcfe.html'>cof_terminalcfe</a><span class='relatedKey'>.ad_client_id</span></td>
                                                 <td class="constraint detail">adclient_cofterminalcfe</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_testequalidade.ad_client_id references ad_client.ad_client_id via adclient_coftestequalidade"><a href='cof_testequalidade.html'>cof_testequalidade</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_coftestequalidade</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -1985,16 +1995,16 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>ad_client_isuseasp_check</td>
+                                    <td>((isuseasp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>ad_client_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_client_issecuresmtp_check</td>
                                     <td>((issecuresmtp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_client_isuseasp_check</td>
-                                    <td>((isuseasp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
