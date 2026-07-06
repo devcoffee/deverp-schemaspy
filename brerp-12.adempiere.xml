@@ -9802,7 +9802,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isactive_check"/>
          <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isdefault_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_sequence" numRows="2125" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_sequence" numRows="2127" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_sequence_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceaudit" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_audit"/>
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceno" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_no"/>
@@ -14996,8 +14996,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_sellerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -15056,8 +15056,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -37566,6 +37566,12 @@
          <column autoUpdated="false" defaultValue="'CB'::character varying" digits="0" id="19" name="cof_tipoconfig" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="lbr_productsource" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="pcredpresumido" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="22" name="lbr_fiscalgroup_bpartner_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_fiscalgroup_bpartner_id" foreignKey="lbrfiscalgroupbpartner_cofcbenefconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_fiscalgroup_bpartner"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="23" name="lbr_fiscalgroup_product_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_fiscalgroup_product_id" foreignKey="lbrfiscalgroupproduct_cofcbenefconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_fiscalgroup_product"/>
+         </column>
          <primaryKey column="cof_cbenef_config_id" sequenceNumberInPK="1"/>
          <index name="cof_cbenef_config_key" unique="true">
             <column ascending="true" name="cof_cbenef_config_id"/>
@@ -57217,7 +57223,9 @@
          <checkConstraint constraint="((isapproved = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_eventonfe_isapproved_check"/>
       </table>
       <table catalog="brerp-12" name="lbr_fiscalgroup_bpartner" remarks="" schema="adempiere" type="TABLE">
-         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="lbr_fiscalgroup_bpartner_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="lbr_fiscalgroup_bpartner_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="lbr_fiscalgroup_bpartner_id" foreignKey="lbrfiscalgroupbpartner_cofcbenefconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_cbenef_config"/>
+         </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="3" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
@@ -57239,6 +57247,7 @@
       </table>
       <table catalog="brerp-12" name="lbr_fiscalgroup_product" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="lbr_fiscalgroup_product_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="lbr_fiscalgroup_product_id" foreignKey="lbrfiscalgroupproduct_cofcbenefconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_cbenef_config"/>
             <child catalog="brerp-12" column="lbr_fiscalgroup_product_id" foreignKey="lbrfiscalgroupproduct_coffcili" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_fciline"/>
             <child catalog="brerp-12" column="lbr_fiscalgroup_product_id" foreignKey="lbrfiscalgroupproduct_iproduct" implied="false" onDeleteCascade="false" schema="adempiere" table="i_product"/>
             <child catalog="brerp-12" column="lbr_fiscalgroup_product_id" foreignKey="lbrfiscalgroupproduct_lbrcfopl" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_cfopline"/>
