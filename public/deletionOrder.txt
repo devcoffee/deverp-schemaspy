@@ -15,7 +15,6 @@ t_1099extract
 lbr_nfewebservice
 lbr_nfelot
 lbr_icmsmatrix
-lbr_fiscalgroup_bpartner
 lbr_docprintfield
 lbr_docprint
 lbr_bpartnercategory
@@ -1153,6 +1152,7 @@ m_parttype
 m_attributesearch
 lbr_inutilizacaonfe
 lbr_formula
+lbr_fiscalgroup_bpartner
 lbr_digitalcertificate
 k_type
 k_source
@@ -1226,7 +1226,6 @@ pa_reportlineset
 m_lotctl
 m_freightcategory
 m_distributionlist
-lbr_fiscalgroup_product
 cof_labelconfig
 cof_dfe
 c_revenuerecognition
@@ -1234,6 +1233,7 @@ c_projecttype
 c_1099box
 a_asset_type
 a_asset_class
+lbr_fiscalgroup_product
 cof_nbs
 c_greeting
 c_dunning

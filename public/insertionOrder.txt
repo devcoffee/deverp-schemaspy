@@ -30,6 +30,7 @@ a_depreciation_table_header
 c_dunning
 c_greeting
 cof_nbs
+lbr_fiscalgroup_product
 a_asset_class
 a_asset_type
 c_1099box
@@ -37,7 +38,6 @@ c_projecttype
 c_revenuerecognition
 cof_dfe
 cof_labelconfig
-lbr_fiscalgroup_product
 m_distributionlist
 m_freightcategory
 m_lotctl
@@ -111,6 +111,7 @@ imp_processor_type
 k_source
 k_type
 lbr_digitalcertificate
+lbr_fiscalgroup_bpartner
 lbr_formula
 lbr_inutilizacaonfe
 m_attributesearch
@@ -1248,7 +1249,6 @@ lbr_averagecostline
 lbr_bpartnercategory
 lbr_docprint
 lbr_docprintfield
-lbr_fiscalgroup_bpartner
 lbr_icmsmatrix
 lbr_nfelot
 lbr_nfewebservice

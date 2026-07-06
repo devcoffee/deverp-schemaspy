@@ -292,7 +292,7 @@
 <!-- c_invoiceline&#45;&gt;c_orderline -->
 <g id="edge1" class="edge">
 <title>c_invoiceline:w&#45;&gt;c_orderline:e</title>
-<path fill="none" stroke="black" d="M2154.29,-768.97C2126.66,-783.98 2166.68,-851.77 2128,-879 2102.56,-896.91 1870.71,-900.27 1848,-879 1766.4,-802.58 1896.6,-453.42 1815,-377 1781.02,-345.18 1431.06,-346.37 1396,-377 1354.8,-413 1377.16,-568.15 1363,-621 1335.15,-724.94 1103.1,-1517 995.5,-1517"/>
+<path fill="none" stroke="black" d="M2154.29,-768.97C2126.66,-783.98 2166.68,-851.77 2128,-879 2102.56,-896.91 1870.71,-900.27 1848,-879 1766.4,-802.58 1896.6,-453.42 1815,-377 1781.02,-345.18 1431.06,-346.37 1396,-377 1354.8,-413 1377.16,-568.15 1363,-621 1356.04,-646.98 1022.4,-1517 995.5,-1517"/>
 <polygon fill="black" stroke="black" points="2160.67,-767.64 2169.24,-769.52 2164.58,-766.82 2168.5,-766 2168.5,-766 2168.5,-766 2164.58,-766.82 2167.76,-762.48 2160.67,-767.64 2160.67,-767.64"/>
 <ellipse fill="none" stroke="black" cx="2157.54" cy="-768.29" rx="3.2" ry="3.2"/>
 </g>
@@ -2061,9 +2061,9 @@
 <!-- lbr_docfiscal_line&#45;&gt;m_productionline -->
 <g id="edge33" class="edge">
 <title>lbr_docfiscal_line:w&#45;&gt;m_productionline:e</title>
-<path fill="none" stroke="black" d="M1394.14,-1904.93C1362.19,-1848.28 1373.12,-1544.25 1363,-1504 1259.93,-1094.02 1353.1,-859.46 1002,-624 902.71,-557.41 848.42,-592.84 733,-624 713.39,-629.29 713.81,-647 693.5,-647"/>
-<polygon fill="black" stroke="black" points="1399.25,-1909.01 1403.25,-1916.81 1402.37,-1911.5 1405.5,-1914 1405.5,-1914 1405.5,-1914 1402.37,-1911.5 1407.75,-1911.19 1399.25,-1909.01 1399.25,-1909.01"/>
-<ellipse fill="none" stroke="black" cx="1396.75" cy="-1907.01" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1393.72,-1905.13C1358.22,-1845.57 1374.45,-1504.77 1363,-1460 1262.68,-1067.91 1340.18,-846.33 1002,-624 902.1,-558.32 848.42,-592.84 733,-624 713.39,-629.29 713.81,-647 693.5,-647"/>
+<polygon fill="black" stroke="black" points="1399.11,-1909.19 1403.33,-1916.88 1402.3,-1911.59 1405.5,-1914 1405.5,-1914 1405.5,-1914 1402.3,-1911.59 1407.67,-1911.12 1399.11,-1909.19 1399.11,-1909.19"/>
+<ellipse fill="none" stroke="black" cx="1396.55" cy="-1907.26" rx="3.2" ry="3.2"/>
 </g>
 <!-- lbr_docfiscal_line&#45;&gt;cof_materialaplicado -->
 <g id="edge34" class="edge">
@@ -2097,64 +2097,70 @@
 <g id="node12" class="node">
 <title>cof_cbenef_config</title>
 <g id="a_node12"><a xlink:href="../../tables/cof_cbenef_config.html" xlink:title="cof_cbenef_config" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="1111,-1514 1111,-1704 1287,-1704 1287,-1514 1111,-1514"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="1111,-1682 1111,-1704 1287,-1704 1287,-1682 1111,-1682"/>
-<polygon fill="none" stroke="black" points="1111,-1682 1111,-1704 1287,-1704 1287,-1682 1111,-1682"/>
-<text text-anchor="start" x="1116" y="-1691.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_cbenef_config</text>
-<text text-anchor="start" x="1252" y="-1690.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="1111,-1660 1111,-1682 1287,-1682 1287,-1660 1111,-1660"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1116" y="-1677"/>
-<text text-anchor="start" x="1131" y="-1668.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cbenef_config_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="1111,-1638 1111,-1660 1287,-1660 1287,-1638 1111,-1638"/>
-<polygon fill="none" stroke="black" points="1111,-1638 1111,-1660 1287,-1660 1287,-1638 1111,-1638"/>
-<text text-anchor="start" x="1131" y="-1646.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cbenef_config_uu</text>
-<polygon fill="none" stroke="black" points="1111,-1616 1111,-1638 1287,-1638 1287,-1616 1111,-1616"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1116" y="-1633"/>
-<text text-anchor="start" x="1131" y="-1624.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_ncm_id</text>
-<polygon fill="none" stroke="black" points="1111,-1594 1111,-1616 1287,-1616 1287,-1594 1111,-1594"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1116" y="-1611"/>
-<text text-anchor="start" x="1131" y="-1602.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_product_id</text>
-<polygon fill="none" stroke="black" points="1111,-1572 1111,-1594 1287,-1594 1287,-1572 1111,-1572"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1116" y="-1589"/>
-<text text-anchor="start" x="1131" y="-1580.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
-<polygon fill="none" stroke="black" points="1111,-1550 1111,-1572 1287,-1572 1287,-1550 1111,-1550"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1116" y="-1567"/>
-<text text-anchor="start" x="1131" y="-1558.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_cfop_id</text>
-<polygon fill="none" stroke="black" points="1111,-1532 1111,-1550 1287,-1550 1287,-1532 1111,-1532"/>
-<text text-anchor="start" x="1114" y="-1538.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="1111,-1514 1111,-1532 1287,-1532 1287,-1514 1111,-1514"/>
-<polygon fill="none" stroke="black" points="1111,-1514 1111,-1532 1287,-1532 1287,-1514 1111,-1514"/>
-<polygon fill="#ffffff" stroke="transparent" points="1112,-1515 1112,-1531 1173,-1531 1173,-1515 1112,-1515"/>
-<text text-anchor="start" x="1114" y="-1520.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 4</text>
-<polygon fill="#ffffff" stroke="transparent" points="1173,-1515 1173,-1531 1225,-1531 1225,-1515 1173,-1515"/>
-<text text-anchor="start" x="1195.5" y="-1520.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1225,-1515 1225,-1531 1286,-1531 1286,-1515 1225,-1515"/>
-<text text-anchor="start" x="1268" y="-1520.2" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
-<polygon fill="black" stroke="black" points="1173,-1515 1173,-1531 1173,-1531 1173,-1515 1173,-1515"/>
-<polygon fill="black" stroke="black" points="1225,-1515 1225,-1531 1225,-1531 1225,-1515 1225,-1515"/>
+<polygon fill="#ffffff" stroke="transparent" points="1089,-1470 1089,-1704 1309,-1704 1309,-1470 1089,-1470"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="1089,-1682 1089,-1704 1309,-1704 1309,-1682 1089,-1682"/>
+<polygon fill="none" stroke="black" points="1089,-1682 1089,-1704 1309,-1704 1309,-1682 1089,-1682"/>
+<text text-anchor="start" x="1094" y="-1691.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_cbenef_config</text>
+<text text-anchor="start" x="1274" y="-1690.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="1089,-1660 1089,-1682 1309,-1682 1309,-1660 1089,-1660"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1094" y="-1677"/>
+<text text-anchor="start" x="1109" y="-1668.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cbenef_config_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="1089,-1638 1089,-1660 1309,-1660 1309,-1638 1089,-1638"/>
+<polygon fill="none" stroke="black" points="1089,-1638 1089,-1660 1309,-1660 1309,-1638 1089,-1638"/>
+<text text-anchor="start" x="1109" y="-1646.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_cbenef_config_uu</text>
+<polygon fill="none" stroke="black" points="1089,-1616 1089,-1638 1309,-1638 1309,-1616 1089,-1616"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1094" y="-1633"/>
+<text text-anchor="start" x="1109" y="-1624.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_ncm_id</text>
+<polygon fill="none" stroke="black" points="1089,-1594 1089,-1616 1309,-1616 1309,-1594 1089,-1594"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1094" y="-1611"/>
+<text text-anchor="start" x="1109" y="-1602.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_product_id</text>
+<polygon fill="none" stroke="black" points="1089,-1572 1089,-1594 1309,-1594 1309,-1572 1089,-1572"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1094" y="-1589"/>
+<text text-anchor="start" x="1109" y="-1580.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
+<polygon fill="none" stroke="black" points="1089,-1550 1089,-1572 1309,-1572 1309,-1550 1089,-1550"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1094" y="-1567"/>
+<text text-anchor="start" x="1109" y="-1558.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_cfop_id</text>
+<polygon fill="none" stroke="black" points="1089,-1528 1089,-1550 1309,-1550 1309,-1528 1089,-1528"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1094" y="-1545"/>
+<text text-anchor="start" x="1109" y="-1536.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_fiscalgroup_bpartner_id</text>
+<polygon fill="none" stroke="black" points="1089,-1506 1089,-1528 1309,-1528 1309,-1506 1089,-1506"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1094" y="-1523"/>
+<text text-anchor="start" x="1109" y="-1514.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_fiscalgroup_product_id</text>
+<polygon fill="none" stroke="black" points="1089,-1488 1089,-1506 1309,-1506 1309,-1488 1089,-1488"/>
+<text text-anchor="start" x="1092" y="-1494.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="1089,-1470 1089,-1488 1309,-1488 1309,-1470 1089,-1470"/>
+<polygon fill="none" stroke="black" points="1089,-1470 1089,-1488 1309,-1488 1309,-1470 1089,-1470"/>
+<polygon fill="#ffffff" stroke="transparent" points="1090,-1471 1090,-1487 1166,-1487 1166,-1471 1090,-1471"/>
+<text text-anchor="start" x="1092" y="-1476.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 6</text>
+<polygon fill="#ffffff" stroke="transparent" points="1166,-1471 1166,-1487 1233,-1487 1233,-1471 1166,-1471"/>
+<text text-anchor="start" x="1196" y="-1476.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1233,-1471 1233,-1487 1308,-1487 1308,-1471 1233,-1471"/>
+<text text-anchor="start" x="1290" y="-1476.2" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
+<polygon fill="black" stroke="black" points="1166,-1471 1166,-1487 1166,-1487 1166,-1471 1166,-1471"/>
+<polygon fill="black" stroke="black" points="1233,-1471 1233,-1487 1233,-1487 1233,-1471 1233,-1471"/>
 </a>
 </g>
 </g>
 <!-- lbr_docfiscal_line&#45;&gt;cof_cbenef_config -->
 <g id="edge29" class="edge">
 <title>lbr_docfiscal_line:w&#45;&gt;cof_cbenef_config:e</title>
-<path fill="none" stroke="black" d="M1391.27,-1756.24C1379.82,-1748.54 1378.94,-1730.62 1363,-1718 1332.16,-1693.58 1327.34,-1671 1288,-1671"/>
-<polygon fill="black" stroke="black" points="1397.77,-1757.96 1404.58,-1763.48 1401.63,-1758.98 1405.5,-1760 1405.5,-1760 1405.5,-1760 1401.63,-1758.98 1406.42,-1756.52 1397.77,-1757.96 1397.77,-1757.96"/>
-<ellipse fill="none" stroke="black" cx="1394.67" cy="-1757.14" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1391.46,-1756.67C1379.33,-1749.49 1377.99,-1732.04 1363,-1718 1340.02,-1696.48 1341.48,-1671 1310,-1671"/>
+<polygon fill="black" stroke="black" points="1397.72,-1758.15 1404.67,-1763.5 1401.61,-1759.08 1405.5,-1760 1405.5,-1760 1405.5,-1760 1401.61,-1759.08 1406.33,-1756.5 1397.72,-1758.15 1397.72,-1758.15"/>
+<ellipse fill="none" stroke="black" cx="1394.6" cy="-1757.42" rx="3.2" ry="3.2"/>
 </g>
 <!-- lbr_docfiscal_line&#45;&gt;cof_cbenef_config -->
 <g id="edge30" class="edge">
 <title>lbr_docfiscal_line:w&#45;&gt;cof_cbenef_config:e</title>
-<path fill="none" stroke="black" d="M1393.6,-2235.72C1353.67,-2172.24 1391.06,-1764.2 1363,-1718 1342.58,-1684.38 1327.34,-1671 1288,-1671"/>
-<polygon fill="black" stroke="black" points="1398.93,-2239.43 1403.44,-2246.95 1402.22,-2241.72 1405.5,-2244 1405.5,-2244 1405.5,-2244 1402.22,-2241.72 1407.56,-2241.05 1398.93,-2239.43 1398.93,-2239.43"/>
-<ellipse fill="none" stroke="black" cx="1396.31" cy="-2237.6" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1393.53,-2235.76C1353.06,-2172.58 1387.14,-1766.36 1363,-1718 1348.94,-1689.83 1341.48,-1671 1310,-1671"/>
+<polygon fill="black" stroke="black" points="1398.91,-2239.46 1403.46,-2246.97 1402.21,-2241.73 1405.5,-2244 1405.5,-2244 1405.5,-2244 1402.21,-2241.73 1407.54,-2241.03 1398.91,-2239.46 1398.91,-2239.46"/>
+<ellipse fill="none" stroke="black" cx="1396.27" cy="-2237.65" rx="3.2" ry="3.2"/>
 </g>
 <!-- lbr_docfiscal_line&#45;&gt;cof_cbenef_config -->
 <g id="edge31" class="edge">
 <title>lbr_docfiscal_line:w&#45;&gt;cof_cbenef_config:e</title>
-<path fill="none" stroke="black" d="M1391.35,-1734.4C1359.84,-1720.48 1313.83,-1671 1288,-1671"/>
-<polygon fill="black" stroke="black" points="1397.75,-1736.03 1404.61,-1741.49 1401.62,-1737.01 1405.5,-1738 1405.5,-1738 1405.5,-1738 1401.62,-1737.01 1406.39,-1734.51 1397.75,-1736.03 1397.75,-1736.03"/>
-<ellipse fill="none" stroke="black" cx="1394.65" cy="-1735.24" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1390.96,-1735.92C1354.71,-1724.61 1356.38,-1671 1310,-1671"/>
+<polygon fill="black" stroke="black" points="1397.58,-1736.87 1404.99,-1741.56 1401.54,-1737.43 1405.5,-1738 1405.5,-1738 1405.5,-1738 1401.54,-1737.43 1406.01,-1734.44 1397.58,-1736.87 1397.58,-1736.87"/>
+<ellipse fill="none" stroke="black" cx="1394.41" cy="-1736.42" rx="3.2" ry="3.2"/>
 </g>
 <!-- lbr_ncm -->
 <g id="node13" class="node">
@@ -2437,9 +2443,9 @@
 <!-- cof_cbenef_config&#45;&gt;lbr_ncm -->
 <g id="edge16" class="edge">
 <title>cof_cbenef_config:w&#45;&gt;lbr_ncm:e</title>
-<path fill="none" stroke="black" d="M1095.31,-1627.3C1022.75,-1630.29 1001.07,-1655 921.5,-1655"/>
-<polygon fill="black" stroke="black" points="1102,-1627.16 1110.07,-1630.6 1106,-1627.08 1110,-1627 1110,-1627 1110,-1627 1106,-1627.08 1109.93,-1623.4 1102,-1627.16 1102,-1627.16"/>
-<ellipse fill="none" stroke="black" cx="1098.8" cy="-1627.23" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1073.4,-1627.37C1010.44,-1630.7 991.41,-1655 921.5,-1655"/>
+<polygon fill="black" stroke="black" points="1080,-1627.21 1088.09,-1630.6 1084,-1627.1 1088,-1627 1088,-1627 1088,-1627 1084,-1627.1 1087.91,-1623.4 1080,-1627.21 1080,-1627.21"/>
+<ellipse fill="none" stroke="black" cx="1076.8" cy="-1627.29" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_codclasstrib&#45;&gt;lbr_taxstatus -->
 <g id="edge17" class="edge">

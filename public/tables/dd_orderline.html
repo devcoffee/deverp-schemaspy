@@ -995,6 +995,10 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>dd_orderline_isdescription_check</td>
+                                    <td>((isdescription &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>dd_orderline_isinvoiced_check</td>
                                     <td>((isinvoiced &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
@@ -1005,10 +1009,6 @@
                                 <tr>
                                     <td>dd_orderline_processed_check</td>
                                     <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>dd_orderline_isdescription_check</td>
-                                    <td>((isdescription &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
