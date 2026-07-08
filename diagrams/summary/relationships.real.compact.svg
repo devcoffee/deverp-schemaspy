@@ -25907,34 +25907,10 @@
 <polygon fill="black" stroke="black" points="5434.96,-33270.1 5442.45,-33274.67 5438.93,-33270.6 5442.9,-33271.1 5442.9,-33271.1 5442.9,-33271.1 5438.93,-33270.6 5443.35,-33267.53 5434.96,-33270.1 5434.96,-33270.1"/>
 <ellipse fill="none" stroke="black" cx="5431.79" cy="-33269.7" rx="3.2" ry="3.2"/>
 </g>
-<!-- c_revenuerecognition -->
-<g id="node370" class="node">
-<title>c_revenuerecognition</title>
-<g id="a_node370"><a xlink:href="../../tables/c_revenuerecognition.html" xlink:title="c_revenuerecognition" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="4188,-23379.88 4188,-23437.88 4385,-23437.88 4385,-23379.88 4188,-23379.88"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="4188.5,-23415.88 4188.5,-23437.88 4385.5,-23437.88 4385.5,-23415.88 4188.5,-23415.88"/>
-<polygon fill="none" stroke="black" points="4188.5,-23415.88 4188.5,-23437.88 4385.5,-23437.88 4385.5,-23415.88 4188.5,-23415.88"/>
-<text text-anchor="start" x="4193.5" y="-23425.08" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_revenuerecognition</text>
-<text text-anchor="start" x="4350.5" y="-23424.08" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="4188.5,-23397.88 4188.5,-23415.88 4385.5,-23415.88 4385.5,-23397.88 4188.5,-23397.88"/>
-<text text-anchor="start" x="4191.5" y="-23404.08" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="4188.5,-23379.88 4188.5,-23397.88 4385.5,-23397.88 4385.5,-23379.88 4188.5,-23379.88"/>
-<polygon fill="none" stroke="black" points="4188.5,-23379.88 4188.5,-23397.88 4385.5,-23397.88 4385.5,-23379.88 4188.5,-23379.88"/>
-<polygon fill="#ffffff" stroke="transparent" points="4189.5,-23380.88 4189.5,-23396.88 4251.5,-23396.88 4251.5,-23380.88 4189.5,-23380.88"/>
-<text text-anchor="start" x="4191.5" y="-23386.08" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="4251.5,-23380.88 4251.5,-23396.88 4313.5,-23396.88 4313.5,-23380.88 4251.5,-23380.88"/>
-<text text-anchor="start" x="4279" y="-23386.08" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="4313.5,-23380.88 4313.5,-23396.88 4384.5,-23396.88 4384.5,-23380.88 4313.5,-23380.88"/>
-<text text-anchor="start" x="4366.5" y="-23386.08" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
-<polygon fill="black" stroke="black" points="4251.5,-23380.88 4251.5,-23396.88 4251.5,-23396.88 4251.5,-23380.88 4251.5,-23380.88"/>
-<polygon fill="black" stroke="black" points="4313.5,-23380.88 4313.5,-23396.88 4313.5,-23396.88 4313.5,-23380.88 4313.5,-23380.88"/>
-</a>
-</g>
-</g>
 <!-- c_rfqline -->
-<g id="node371" class="node">
+<g id="node370" class="node">
 <title>c_rfqline</title>
-<g id="a_node371"><a xlink:href="../../tables/c_rfqline.html" xlink:title="c_rfqline" target="_top">
+<g id="a_node370"><a xlink:href="../../tables/c_rfqline.html" xlink:title="c_rfqline" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="14550,-5194.88 14550,-5252.88 14652,-5252.88 14652,-5194.88 14550,-5194.88"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="14550,-5230.88 14550,-5252.88 14652,-5252.88 14652,-5230.88 14550,-5230.88"/>
 <polygon fill="none" stroke="black" points="14550,-5230.88 14550,-5252.88 14652,-5252.88 14652,-5230.88 14550,-5230.88"/>
@@ -25975,6 +25951,30 @@
 <path fill="none" stroke="black" d="M14527.85,-5243.08C14437.68,-5266 14278.25,-5302.97 14139,-5316.88 14075.1,-5323.26 13898.56,-5358.91 13850,-5316.88 13772.59,-5249.86 13879.42,-5170.04 13817,-5088.88 13744.53,-4994.64 13641.11,-5079.87 13571,-4983.88 13525.05,-4920.97 13589.36,-4693.45 13538,-4634.88 13428.67,-4510.2 11939.41,-4436.32 11269,-4409.88 10649.22,-4385.44 8988.92,-4336.01 8494,-4709.88 8465.27,-4731.58 8486.76,-4758.71 8461,-4783.88 8372.09,-4870.76 8316.86,-4842 8203,-4891.88 8086.59,-4942.86 8049.62,-4941.72 7943,-5010.88 7790.03,-5110.1 7787.08,-5181.29 7635,-5281.88 7524.41,-5355.02 7470.92,-5329.81 7366,-5410.88 7348.03,-5424.76 7351.91,-5437.3 7333,-5449.88 7248.03,-5506.39 7210.85,-5486.73 7114,-5518.88 7051.9,-5539.49 6601.68,-5664.16 6558,-5712.88 6514.46,-5761.44 6572.69,-5811.38 6525,-5855.88 6501.84,-5877.48 5420.71,-6011.81 5399,-6034.88 5347.13,-6089.99 5412.71,-6314.32 5366,-6373.88 5294.78,-6464.68 5187.99,-6365.91 5121,-6459.88 5072.11,-6528.46 5145.26,-12462.12 5088,-12523.88 5035.7,-12580.28 4795.23,-12495.41 4743,-12551.88 4693.63,-12605.25 4724.23,-22949.58 4710,-23020.88 4686.8,-23137.15 4622.94,-23263.82 4590.88,-23322.54"/>
 <polygon fill="black" stroke="black" points="14534.24,-5241.44 14542.88,-5242.95 14538.11,-5240.45 14541.98,-5239.46 14541.98,-5239.46 14541.98,-5239.46 14538.11,-5240.45 14541.09,-5235.97 14534.24,-5241.44 14534.24,-5241.44"/>
 <ellipse fill="none" stroke="black" cx="14531.14" cy="-5242.24" rx="3.2" ry="3.2"/>
+</g>
+<!-- c_revenuerecognition -->
+<g id="node371" class="node">
+<title>c_revenuerecognition</title>
+<g id="a_node371"><a xlink:href="../../tables/c_revenuerecognition.html" xlink:title="c_revenuerecognition" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="4188,-23379.88 4188,-23437.88 4385,-23437.88 4385,-23379.88 4188,-23379.88"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="4188.5,-23415.88 4188.5,-23437.88 4385.5,-23437.88 4385.5,-23415.88 4188.5,-23415.88"/>
+<polygon fill="none" stroke="black" points="4188.5,-23415.88 4188.5,-23437.88 4385.5,-23437.88 4385.5,-23415.88 4188.5,-23415.88"/>
+<text text-anchor="start" x="4193.5" y="-23425.08" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_revenuerecognition</text>
+<text text-anchor="start" x="4350.5" y="-23424.08" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="4188.5,-23397.88 4188.5,-23415.88 4385.5,-23415.88 4385.5,-23397.88 4188.5,-23397.88"/>
+<text text-anchor="start" x="4191.5" y="-23404.08" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="4188.5,-23379.88 4188.5,-23397.88 4385.5,-23397.88 4385.5,-23379.88 4188.5,-23379.88"/>
+<polygon fill="none" stroke="black" points="4188.5,-23379.88 4188.5,-23397.88 4385.5,-23397.88 4385.5,-23379.88 4188.5,-23379.88"/>
+<polygon fill="#ffffff" stroke="transparent" points="4189.5,-23380.88 4189.5,-23396.88 4251.5,-23396.88 4251.5,-23380.88 4189.5,-23380.88"/>
+<text text-anchor="start" x="4191.5" y="-23386.08" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="4251.5,-23380.88 4251.5,-23396.88 4313.5,-23396.88 4313.5,-23380.88 4251.5,-23380.88"/>
+<text text-anchor="start" x="4279" y="-23386.08" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="4313.5,-23380.88 4313.5,-23396.88 4384.5,-23396.88 4384.5,-23380.88 4313.5,-23380.88"/>
+<text text-anchor="start" x="4366.5" y="-23386.08" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
+<polygon fill="black" stroke="black" points="4251.5,-23380.88 4251.5,-23396.88 4251.5,-23396.88 4251.5,-23380.88 4251.5,-23380.88"/>
+<polygon fill="black" stroke="black" points="4313.5,-23380.88 4313.5,-23396.88 4313.5,-23396.88 4313.5,-23380.88 4313.5,-23380.88"/>
+</a>
+</g>
 </g>
 <!-- c_tax&#45;&gt;lbr_taxname -->
 <g id="edge2108" class="edge">
