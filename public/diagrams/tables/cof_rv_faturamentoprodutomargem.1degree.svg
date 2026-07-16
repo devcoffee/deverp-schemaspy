@@ -658,7 +658,7 @@
 <polygon fill="none" stroke="black" points="10,-1535 10,-1557 291,-1557 291,-1535 10,-1535"/>
 <text text-anchor="start" x="30" y="-1543.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_taxruleshistory</text>
 <polygon fill="none" stroke="black" points="291,-1535 291,-1557 400,-1557 400,-1535 291,-1535"/>
-<text text-anchor="start" x="294" y="-1543.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[255]</text>
+<text text-anchor="start" x="294" y="-1543.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[1000]</text>
 <polygon fill="none" stroke="black" points="10,-1513 10,-1535 291,-1535 291,-1513 10,-1513"/>
 <text text-anchor="start" x="30" y="-1521.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_transactiontype</text>
 <polygon fill="none" stroke="black" points="291,-1513 291,-1535 400,-1535 400,-1513 291,-1513"/>

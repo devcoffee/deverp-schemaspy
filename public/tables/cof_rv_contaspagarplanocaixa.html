@@ -516,6 +516,40 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="c_invoice_id">c_invoice_id</span></td>
+                                    <td>numeric</td>
+                                    <td>0</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="c_cashplan_id">c_cashplan_id</span></td>
+                                    <td>numeric</td>
+                                    <td>0</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -554,7 +588,7 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT &#39;Real&#39;::text AS cof_tipolancamento,&#10;    op.documentno,&#10;    doc.printname AS cof_tipodocumento,&#10;    bp.name,&#10;    op.duedate,&#10;    COALESCE(op.grandtotal, (0)::numeric) AS grandtotal,&#10;    COALESCE(op.openamt, (0)::numeric) AS openamt,&#10;    op.issotrx,&#10;    op.ad_org_id,&#10;    ((op.ide_nnf || &#39; / &#39;::text) || op.ide_serie) AS cof_nota,&#10;    (((op.cof_payscheduleno)::text || &#39; / &#39;::text) || ( SELECT count(*) AS count&#10;           FROM c_invoicepayschedule&#10;          WHERE (c_invoicepayschedule.c_invoice_id &#61; op.c_invoice_id))) AS cof_payscheduleno,&#10;    op.description,&#10;    op.ad_client_id,&#10;    NULL::character varying AS cof_namecashplanline,&#10;    op.c_bpartner_id,&#10;    NULL::numeric AS m_product_id,&#10;    op.c_charge_id,&#10;    op.c_project_id,&#10;    op.c_activity_id,&#10;    op.user1_id,&#10;    op.user2_id,&#10;    op.cof_c_planofinanceiro_id,&#10;    op.cof_c_custody_id,&#10;    op.lbr_docfiscal_id&#10;   FROM ((rv_openitem op&#10;     LEFT JOIN c_doctype doc ON ((op.c_doctype_id &#61; doc.c_doctype_id)))&#10;     LEFT JOIN c_bpartner bp ON ((op.c_bpartner_id &#61; bp.c_bpartner_id)))&#10;UNION&#10; SELECT &#39;Previsto&#39;::text AS cof_tipolancamento,&#10;    cp.documentno,&#10;        CASE&#10;            WHEN (cp.cashflowtype &#61; &#39;F&#39;::bpchar) THEN &#39;Financeiro&#39;::text&#10;            WHEN (cp.cashflowtype &#61; &#39;I&#39;::bpchar) THEN &#39;Investimento&#39;::text&#10;            WHEN (cp.cashflowtype &#61; &#39;O&#39;::bpchar) THEN &#39;Operacional&#39;::text&#10;            ELSE NULL::text&#10;        END AS cof_tipodocumento,&#10;    bp.name,&#10;    cpl.datetrx AS duedate,&#10;    ((COALESCE(cpl.linetotalamt, (0)::numeric) * cpl.probability) / (100)::numeric) AS grandtotal,&#10;    COALESCE(cpl.linetotalamt, (0)::numeric) AS openamt,&#10;    cp.issotrx,&#10;    cp.ad_org_id,&#10;    ((df.ide_nnf || &#39; / &#39;::text) || df.ide_serie) AS cof_nota,&#10;    &#39;&#39;::text AS cof_payscheduleno,&#10;    COALESCE(cpl.description, i.description) AS description,&#10;    cp.ad_client_id,&#10;    cpl.name AS cof_namecashplanline,&#10;    cpl.c_bpartner_id,&#10;    cpl.m_product_id,&#10;    cpl.c_charge_id,&#10;    cpl.c_project_id,&#10;    cpl.c_activity_id,&#10;    cpl.user1_id,&#10;    cpl.user2_id,&#10;    i.cof_c_planofinanceiro_id,&#10;    i.cof_c_custody_id,&#10;    i.lbr_docfiscal_id&#10;   FROM ((((c_cashplan cp&#10;     LEFT JOIN c_cashplanline cpl ON ((cp.c_cashplan_id &#61; cpl.c_cashplan_id)))&#10;     LEFT JOIN c_invoice i ON (((i.c_cashplanline_id &#61; cpl.c_cashplanline_id) AND (i.docstatus &lt;&gt; ALL (ARRAY[&#39;RE&#39;::bpchar, &#39;VO&#39;::bpchar])))))&#10;     LEFT JOIN c_bpartner bp ON ((cp.c_bpartner_id &#61; bp.c_bpartner_id)))&#10;     LEFT JOIN lbr_docfiscal df ON ((df.lbr_docfiscal_id &#61; i.lbr_docfiscal_id)))&#10;  WHERE (i.c_invoice_id IS NULL);</textarea>
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">SELECT &#39;Real&#39;::text AS cof_tipolancamento,&#10;    op.documentno,&#10;    doc.printname AS cof_tipodocumento,&#10;    bp.name,&#10;    op.duedate,&#10;    COALESCE(op.grandtotal, (0)::numeric) AS grandtotal,&#10;    COALESCE(op.openamt, (0)::numeric) AS openamt,&#10;    op.issotrx,&#10;    op.ad_org_id,&#10;    ((op.ide_nnf || &#39; / &#39;::text) || op.ide_serie) AS cof_nota,&#10;    (((op.cof_payscheduleno)::text || &#39; / &#39;::text) || ( SELECT count(*) AS count&#10;           FROM c_invoicepayschedule&#10;          WHERE (c_invoicepayschedule.c_invoice_id &#61; op.c_invoice_id))) AS cof_payscheduleno,&#10;    op.description,&#10;    op.ad_client_id,&#10;    NULL::character varying AS cof_namecashplanline,&#10;    op.c_bpartner_id,&#10;    NULL::numeric AS m_product_id,&#10;    op.c_charge_id,&#10;    op.c_project_id,&#10;    op.c_activity_id,&#10;    op.user1_id,&#10;    op.user2_id,&#10;    op.cof_c_planofinanceiro_id,&#10;    op.cof_c_custody_id,&#10;    op.lbr_docfiscal_id,&#10;    op.c_invoice_id,&#10;    NULL::numeric AS c_cashplan_id&#10;   FROM ((rv_openitem op&#10;     LEFT JOIN c_doctype doc ON ((op.c_doctype_id &#61; doc.c_doctype_id)))&#10;     LEFT JOIN c_bpartner bp ON ((op.c_bpartner_id &#61; bp.c_bpartner_id)))&#10;UNION&#10; SELECT &#39;Previsto&#39;::text AS cof_tipolancamento,&#10;    cp.documentno,&#10;        CASE&#10;            WHEN (cp.cashflowtype &#61; &#39;F&#39;::bpchar) THEN &#39;Financeiro&#39;::text&#10;            WHEN (cp.cashflowtype &#61; &#39;I&#39;::bpchar) THEN &#39;Investimento&#39;::text&#10;            WHEN (cp.cashflowtype &#61; &#39;O&#39;::bpchar) THEN &#39;Operacional&#39;::text&#10;            ELSE NULL::text&#10;        END AS cof_tipodocumento,&#10;    bp.name,&#10;    cpl.datetrx AS duedate,&#10;    ((COALESCE(cpl.linetotalamt, (0)::numeric) * cpl.probability) / (100)::numeric) AS grandtotal,&#10;    COALESCE(cpl.linetotalamt, (0)::numeric) AS openamt,&#10;    cp.issotrx,&#10;    cp.ad_org_id,&#10;    ((df.ide_nnf || &#39; / &#39;::text) || df.ide_serie) AS cof_nota,&#10;    &#39;&#39;::text AS cof_payscheduleno,&#10;    COALESCE(cpl.description, i.description) AS description,&#10;    cp.ad_client_id,&#10;    cpl.name AS cof_namecashplanline,&#10;    cpl.c_bpartner_id,&#10;    cpl.m_product_id,&#10;    cpl.c_charge_id,&#10;    cpl.c_project_id,&#10;    cpl.c_activity_id,&#10;    cpl.user1_id,&#10;    cpl.user2_id,&#10;    i.cof_c_planofinanceiro_id,&#10;    i.cof_c_custody_id,&#10;    i.lbr_docfiscal_id,&#10;    NULL::numeric AS c_invoice_id,&#10;    cp.c_cashplan_id&#10;   FROM ((((c_cashplan cp&#10;     LEFT JOIN c_cashplanline cpl ON ((cp.c_cashplan_id &#61; cpl.c_cashplan_id)))&#10;     LEFT JOIN c_invoice i ON (((i.c_cashplanline_id &#61; cpl.c_cashplanline_id) AND (i.docstatus &lt;&gt; ALL (ARRAY[&#39;RE&#39;::bpchar, &#39;VO&#39;::bpchar])))))&#10;     LEFT JOIN c_bpartner bp ON ((cp.c_bpartner_id &#61; bp.c_bpartner_id)))&#10;     LEFT JOIN lbr_docfiscal df ON ((df.lbr_docfiscal_id &#61; i.lbr_docfiscal_id)))&#10;  WHERE (i.c_invoice_id IS NULL);</textarea>
                             <div style="padding-top: 5px;"><hr></div>
                             <div class="box box-solid">
                                 <div class="box-header with-border">
