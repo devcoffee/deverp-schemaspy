@@ -1031,11 +1031,11 @@
                                 </tr>
                                 <tr>
                                     <td><span id="lbr_nfdescription">lbr_nfdescription</span></td>
-                                    <td>varchar</td>
-                                    <td>255</td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
-                                    <td>NULL::character varying</td>
+                                    <td>null</td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
@@ -1340,16 +1340,16 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>m_movement_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_movement_processed_check</td>
+                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_movement_cof_isgeneratenfmovement_check</td>
                                     <td>((cof_isgeneratenfmovement &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_movement_processed_check</td>
-                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_movement_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_movement_cof_pp_devolucao_check</td>

@@ -240,6 +240,7 @@ cof_labelfield
 cof_gruponcmlinha
 cof_formacaoprecolista
 cof_configuracaociap
+cof_c_sped_fiscal_cst_blocod
 cof_c_sped_contabil
 cof_ajusteqtdcontabil
 c_uom_conversion
@@ -679,7 +680,6 @@ m_costdetail
 pa_reportsource
 ad_inforelated
 i_bankstatement
-cof_c_sped_fiscal
 pp_product_planning
 mp_ot_task
 c_dunningrunentry
@@ -773,6 +773,7 @@ gl_journalline
 pa_documentstatus
 cof_calculociaplinha
 m_requisitionline
+cof_c_sped_fiscal
 ad_userdef_info
 ad_process_drillrule
 cof_c_diadi

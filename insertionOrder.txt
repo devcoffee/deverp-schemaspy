@@ -491,6 +491,7 @@ r_requestprocessor
 cof_c_diadi
 ad_process_drillrule
 ad_userdef_info
+cof_c_sped_fiscal
 m_requisitionline
 cof_calculociaplinha
 pa_documentstatus
@@ -584,7 +585,6 @@ mp_maintain_task
 c_dunningrunentry
 mp_ot_task
 pp_product_planning
-cof_c_sped_fiscal
 i_bankstatement
 ad_inforelated
 pa_reportsource
@@ -1024,6 +1024,7 @@ c_landedcostallocation
 c_uom_conversion
 cof_ajusteqtdcontabil
 cof_c_sped_contabil
+cof_c_sped_fiscal_cst_blocod
 cof_configuracaociap
 cof_formacaoprecolista
 cof_gruponcmlinha
