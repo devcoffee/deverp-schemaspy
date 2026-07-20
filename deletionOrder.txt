@@ -237,6 +237,7 @@ cof_pneu_manutencao
 cof_parametroavancadobusca
 cof_orderdeducaomateriais
 cof_labelfield
+cof_labelentry
 cof_gruponcmlinha
 cof_formacaoprecolista
 cof_configuracaociap
@@ -288,7 +289,6 @@ cof_pp_roteirodetalhe
 cof_pp_consumomateriaprima
 cof_osproduto
 cof_osapontamentos
-cof_labelentry
 cof_gruponcm
 cof_csc
 cof_configovs

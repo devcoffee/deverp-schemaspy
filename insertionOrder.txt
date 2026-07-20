@@ -976,7 +976,6 @@ cof_configexportcontabexcecoes
 cof_configovs
 cof_csc
 cof_gruponcm
-cof_labelentry
 cof_osapontamentos
 cof_osproduto
 cof_pp_consumomateriaprima
@@ -1028,6 +1027,7 @@ cof_c_sped_fiscal_cst_blocod
 cof_configuracaociap
 cof_formacaoprecolista
 cof_gruponcmlinha
+cof_labelentry
 cof_labelfield
 cof_orderdeducaomateriais
 cof_parametroavancadobusca
