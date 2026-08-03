@@ -217,7 +217,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="524,-273.45 524,-289.45 613,-289.45 613,-273.45 524,-273.45"/>
 <text text-anchor="start" x="552" y="-278.65" font-family="Helvetica,sans-Serif" font-size="11.00">4 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="613,-273.45 613,-289.45 697,-289.45 697,-273.45 613,-273.45"/>
-<text text-anchor="start" x="667" y="-278.65" font-family="Helvetica,sans-Serif" font-size="11.00">189 &gt;</text>
+<text text-anchor="start" x="667" y="-278.65" font-family="Helvetica,sans-Serif" font-size="11.00">190 &gt;</text>
 <polygon fill="black" stroke="black" points="524,-273.45 524,-289.45 524,-289.45 524,-273.45 524,-273.45"/>
 <polygon fill="black" stroke="black" points="613,-273.45 613,-289.45 613,-289.45 613,-273.45 613,-273.45"/>
 </a>
@@ -881,7 +881,7 @@
 <g id="node7" class="node">
 <title>lbr_docfiscal</title>
 <g id="a_node7"><a xlink:href="../../tables/lbr_docfiscal.html" xlink:title="lbr_docfiscal" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="747,-1382.45 747,-1748.45 1059,-1748.45 1059,-1382.45 747,-1382.45"/>
+<polygon fill="#ffffff" stroke="transparent" points="747,-1360.45 747,-1748.45 1059,-1748.45 1059,-1360.45 747,-1360.45"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="747,-1726.45 747,-1748.45 1059,-1748.45 1059,-1726.45 747,-1726.45"/>
 <polygon fill="none" stroke="black" points="747,-1726.45 747,-1748.45 1059,-1748.45 1059,-1726.45 747,-1726.45"/>
 <text text-anchor="start" x="752" y="-1735.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_docfiscal</text>
@@ -928,18 +928,21 @@
 <polygon fill="none" stroke="black" points="747,-1418.45 747,-1440.45 1059,-1440.45 1059,-1418.45 747,-1418.45"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="752" y="-1435.45"/>
 <text text-anchor="start" x="767" y="-1426.65" font-family="Helvetica,sans-Serif" font-size="11.00">gl_journal_id</text>
-<polygon fill="none" stroke="black" points="747,-1400.45 747,-1418.45 1059,-1418.45 1059,-1400.45 747,-1400.45"/>
-<text text-anchor="start" x="750" y="-1406.65" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="747,-1382.45 747,-1400.45 1059,-1400.45 1059,-1382.45 747,-1382.45"/>
-<polygon fill="none" stroke="black" points="747,-1382.45 747,-1400.45 1059,-1400.45 1059,-1382.45 747,-1382.45"/>
-<polygon fill="#ffffff" stroke="transparent" points="748,-1383.45 748,-1399.45 857,-1399.45 857,-1383.45 748,-1383.45"/>
-<text text-anchor="start" x="750" y="-1388.65" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 10</text>
-<polygon fill="#ffffff" stroke="transparent" points="857,-1383.45 857,-1399.45 950,-1399.45 950,-1383.45 857,-1383.45"/>
-<text text-anchor="start" x="900" y="-1388.65" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="950,-1383.45 950,-1399.45 1058,-1399.45 1058,-1383.45 950,-1383.45"/>
-<text text-anchor="start" x="1034" y="-1388.65" font-family="Helvetica,sans-Serif" font-size="11.00">34 &gt;</text>
-<polygon fill="black" stroke="black" points="857,-1383.45 857,-1399.45 857,-1399.45 857,-1383.45 857,-1383.45"/>
-<polygon fill="black" stroke="black" points="950,-1383.45 950,-1399.45 950,-1399.45 950,-1383.45 950,-1383.45"/>
+<polygon fill="none" stroke="black" points="747,-1396.45 747,-1418.45 1059,-1418.45 1059,-1396.45 747,-1396.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="752" y="-1413.45"/>
+<text text-anchor="start" x="767" y="-1404.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_codigooperacao_id</text>
+<polygon fill="none" stroke="black" points="747,-1378.45 747,-1396.45 1059,-1396.45 1059,-1378.45 747,-1378.45"/>
+<text text-anchor="start" x="750" y="-1384.65" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="747,-1360.45 747,-1378.45 1059,-1378.45 1059,-1360.45 747,-1360.45"/>
+<polygon fill="none" stroke="black" points="747,-1360.45 747,-1378.45 1059,-1378.45 1059,-1360.45 747,-1360.45"/>
+<polygon fill="#ffffff" stroke="transparent" points="748,-1361.45 748,-1377.45 857,-1377.45 857,-1361.45 748,-1361.45"/>
+<text text-anchor="start" x="750" y="-1366.65" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 11</text>
+<polygon fill="#ffffff" stroke="transparent" points="857,-1361.45 857,-1377.45 950,-1377.45 950,-1361.45 857,-1361.45"/>
+<text text-anchor="start" x="900" y="-1366.65" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="950,-1361.45 950,-1377.45 1058,-1377.45 1058,-1361.45 950,-1361.45"/>
+<text text-anchor="start" x="1034" y="-1366.65" font-family="Helvetica,sans-Serif" font-size="11.00">34 &gt;</text>
+<polygon fill="black" stroke="black" points="857,-1361.45 857,-1377.45 857,-1377.45 857,-1361.45 857,-1361.45"/>
+<polygon fill="black" stroke="black" points="950,-1361.45 950,-1377.45 950,-1377.45 950,-1361.45 950,-1361.45"/>
 </a>
 </g>
 </g>
@@ -1344,9 +1347,9 @@
 <!-- m_rma&#45;&gt;ad_user -->
 <g id="edge67" class="edge">
 <title>m_rma:w&#45;&gt;ad_user:e</title>
-<path fill="none" stroke="black" d="M1099.72,-2244.27C1061.12,-2144.98 1069.51,-1417.19 1067,-1371.45 1062.78,-1294.53 1101.04,-679.45 1024,-679.45"/>
-<polygon fill="black" stroke="black" points="1103.89,-2249.3 1106.23,-2257.75 1106.45,-2252.38 1109,-2255.45 1109,-2255.45 1109,-2255.45 1106.45,-2252.38 1111.77,-2253.16 1103.89,-2249.3 1103.89,-2249.3"/>
-<ellipse fill="none" stroke="black" cx="1101.85" cy="-2246.83" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1099.63,-2244.31C1060.05,-2143.79 1069.59,-1396.38 1067,-1349.45 1062.88,-1274.97 1098.6,-679.45 1024,-679.45"/>
+<polygon fill="black" stroke="black" points="1103.85,-2249.33 1106.24,-2257.77 1106.43,-2252.39 1109,-2255.45 1109,-2255.45 1109,-2255.45 1106.43,-2252.39 1111.76,-2253.14 1103.85,-2249.33 1103.85,-2249.33"/>
+<ellipse fill="none" stroke="black" cx="1101.79" cy="-2246.88" rx="3.2" ry="3.2"/>
 </g>
 <!-- m_rma&#45;&gt;c_bpartner -->
 <g id="edge59" class="edge">
@@ -1659,16 +1662,16 @@
 <!-- m_inout&#45;&gt;c_bpartner -->
 <g id="edge48" class="edge">
 <title>m_inout:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1410.12,-1689.33C1359.04,-1653.74 1435,-1398.93 1384,-1348.45 1179.12,-1145.69 945.57,-1481.5 739,-1280.45 690.65,-1233.39 766.48,-979.45 699,-979.45"/>
-<polygon fill="black" stroke="black" points="1416.33,-1691.17 1422.97,-1696.91 1420.17,-1692.31 1424,-1693.45 1424,-1693.45 1424,-1693.45 1420.17,-1692.31 1425.03,-1690 1416.33,-1691.17 1416.33,-1691.17"/>
-<ellipse fill="none" stroke="black" cx="1413.26" cy="-1690.26" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1409.96,-1689.54C1354.48,-1653.59 1437.63,-1381.14 1384,-1326.45 1181.62,-1120.1 945.65,-1445.53 739,-1243.45 696.58,-1201.97 758.34,-979.45 699,-979.45"/>
+<polygon fill="black" stroke="black" points="1416.29,-1691.31 1423.03,-1696.92 1420.15,-1692.38 1424,-1693.45 1424,-1693.45 1424,-1693.45 1420.15,-1692.38 1424.97,-1689.99 1416.29,-1691.31 1416.29,-1691.31"/>
+<ellipse fill="none" stroke="black" cx="1413.21" cy="-1690.45" rx="3.2" ry="3.2"/>
 </g>
 <!-- m_inout&#45;&gt;c_bpartner -->
 <g id="edge52" class="edge">
 <title>m_inout:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1410.23,-1314.73C1401.01,-1306.4 1400.45,-1289.25 1384,-1281.45 1253.45,-1219.62 843.87,-1299.8 739,-1200.45 666.53,-1131.81 798.82,-979.45 699,-979.45"/>
-<polygon fill="black" stroke="black" points="1416.43,-1316.86 1422.83,-1322.86 1420.22,-1318.16 1424,-1319.45 1424,-1319.45 1424,-1319.45 1420.22,-1318.16 1425.17,-1316.05 1416.43,-1316.86 1416.43,-1316.86"/>
-<ellipse fill="none" stroke="black" cx="1413.41" cy="-1315.82" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1409.96,-1314.82C1396.52,-1302.2 1408.03,-1267.17 1384,-1252.45 1322.75,-1214.94 792.4,-1257.49 739,-1209.45 661.86,-1140.06 802.76,-979.45 699,-979.45"/>
+<polygon fill="black" stroke="black" points="1416.4,-1316.95 1422.87,-1322.87 1420.2,-1318.2 1424,-1319.45 1424,-1319.45 1424,-1319.45 1420.2,-1318.2 1425.13,-1316.04 1416.4,-1316.95 1416.4,-1316.95"/>
+<ellipse fill="none" stroke="black" cx="1413.36" cy="-1315.95" rx="3.2" ry="3.2"/>
 </g>
 <!-- m_inout&#45;&gt;c_bpartner -->
 <g id="edge56" class="edge">
@@ -1680,9 +1683,9 @@
 <!-- m_inout&#45;&gt;c_doctype -->
 <g id="edge49" class="edge">
 <title>m_inout:w&#45;&gt;c_doctype:e</title>
-<path fill="none" stroke="black" d="M1409.71,-1733.63C1396.83,-1724.58 1399.46,-1701.24 1384,-1683.45 1254.33,-1534.24 1249.93,-1446.38 1067,-1371.45 932.1,-1316.2 869.9,-1307.29 739,-1371.45 541.59,-1468.22 522.51,-1560.34 436,-1762.45 412.83,-1816.58 455.38,-2024.45 396.5,-2024.45"/>
-<polygon fill="black" stroke="black" points="1416.27,-1735.39 1423.07,-1740.93 1420.14,-1736.42 1424,-1737.45 1424,-1737.45 1424,-1737.45 1420.14,-1736.42 1424.93,-1733.98 1416.27,-1735.39 1416.27,-1735.39"/>
-<ellipse fill="none" stroke="black" cx="1413.18" cy="-1734.56" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1409.67,-1733.67C1396.7,-1724.69 1399.15,-1701.5 1384,-1683.45 1252.4,-1526.71 1255.04,-1430.24 1067,-1349.45 933.06,-1291.91 869.04,-1283.57 739,-1349.45 535.92,-1452.34 522.83,-1552.01 436,-1762.45 413.54,-1816.88 455.38,-2024.45 396.5,-2024.45"/>
+<polygon fill="black" stroke="black" points="1416.27,-1735.41 1423.08,-1740.94 1420.13,-1736.43 1424,-1737.45 1424,-1737.45 1424,-1737.45 1420.13,-1736.43 1424.92,-1733.97 1416.27,-1735.41 1416.27,-1735.41"/>
+<ellipse fill="none" stroke="black" cx="1413.17" cy="-1734.59" rx="3.2" ry="3.2"/>
 </g>
 <!-- m_inout&#45;&gt;c_invoice -->
 <g id="edge50" class="edge">
