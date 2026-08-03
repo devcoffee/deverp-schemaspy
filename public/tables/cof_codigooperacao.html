@@ -167,6 +167,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="lbr_docfiscal.cof_codigooperacao_id references cof_codigooperacao.cof_codigooperacao_id via cofcodigooperacao_lbrdocfiscal"><a href='lbr_docfiscal.html'>lbr_docfiscal</a><span class='relatedKey'>.cof_codigooperacao_id</span></td>
+                                                <td class="constraint detail">cofcodigooperacao_lbrdocfiscal</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="lbr_taxline.cof_codigooperacao_id references cof_codigooperacao.cof_codigooperacao_id via cofcodigooperacao_lbrtaxline"><a href='lbr_taxline.html'>lbr_taxline</a><span class='relatedKey'>.cof_codigooperacao_id</span></td>
                                                 <td class="constraint detail">cofcodigooperacao_lbrtaxline</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -435,12 +440,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>cof_codigooperacao_cof_isexigedadosdestinatario_check</td>
-                                    <td>((cof_isexigedadosdestinatario &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_codigooperacao_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_codigooperacao_cof_isexigedadosdestinatario_check</td>
+                                    <td>((cof_isexigedadosdestinatario &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

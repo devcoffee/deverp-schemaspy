@@ -193,6 +193,7 @@ c_country
 c_cashbook
 c_year
 c_taxprovider
+cof_codigooperacao
 c_addressvalidation
 ad_statusline
 s_expensetype
@@ -412,7 +413,6 @@ m_distributionrun
 c_rfqline
 hr_list
 m_requisition
-cof_codigooperacao
 w_store
 c_revenuerecognition_plan
 c_bankstatementline

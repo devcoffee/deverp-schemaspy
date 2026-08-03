@@ -14,7 +14,7 @@
 <g id="node1" class="node">
 <title>m_locator</title>
 <g id="a_node1"><a xlink:href="../../tables/m_locator.html" xlink:title="m_locator" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="328.5,-949.88 328.5,-1205.88 511.5,-1205.88 511.5,-949.88 328.5,-949.88"/>
+<polygon fill="#ffffff" stroke="transparent" points="328.5,-927.88 328.5,-1205.88 511.5,-1205.88 511.5,-927.88 328.5,-927.88"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="329,-1183.88 329,-1205.88 512,-1205.88 512,-1183.88 329,-1183.88"/>
 <polygon fill="none" stroke="black" points="329,-1183.88 329,-1205.88 512,-1205.88 512,-1183.88 329,-1183.88"/>
 <text text-anchor="start" x="334" y="-1193.08" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">m_locator</text>
@@ -46,19 +46,22 @@
 <text text-anchor="start" x="349" y="-1016.08" font-family="Helvetica,sans-Serif" font-size="11.00">m_locator_uu</text>
 <polygon fill="none" stroke="black" points="329,-985.88 329,-1007.88 512,-1007.88 512,-985.88 329,-985.88"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="333.998" y="-1002.88"/>
-<text text-anchor="start" x="349" y="-994.08" font-family="Helvetica,sans-Serif" font-size="11.00">m_locatortype_id</text>
-<polygon fill="none" stroke="black" points="329,-967.88 329,-985.88 512,-985.88 512,-967.88 329,-967.88"/>
-<text text-anchor="start" x="332" y="-974.08" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="329,-949.88 329,-967.88 512,-967.88 512,-949.88 329,-949.88"/>
-<polygon fill="none" stroke="black" points="329,-949.88 329,-967.88 512,-967.88 512,-949.88 329,-949.88"/>
-<polygon fill="#ffffff" stroke="transparent" points="330,-950.88 330,-966.88 383,-966.88 383,-950.88 330,-950.88"/>
-<text text-anchor="start" x="332" y="-956.08" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 4</text>
-<polygon fill="#ffffff" stroke="transparent" points="383,-950.88 383,-966.88 453,-966.88 453,-950.88 383,-950.88"/>
-<text text-anchor="start" x="401.5" y="-956.08" font-family="Helvetica,sans-Serif" font-size="11.00">8 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="453,-950.88 453,-966.88 511,-966.88 511,-950.88 453,-950.88"/>
-<text text-anchor="start" x="487" y="-956.08" font-family="Helvetica,sans-Serif" font-size="11.00">40 &gt;</text>
-<polygon fill="black" stroke="black" points="383,-950.88 383,-966.88 383,-966.88 383,-950.88 383,-950.88"/>
-<polygon fill="black" stroke="black" points="453,-950.88 453,-966.88 453,-966.88 453,-950.88 453,-950.88"/>
+<text text-anchor="start" x="349" y="-994.08" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
+<polygon fill="none" stroke="black" points="329,-963.88 329,-985.88 512,-985.88 512,-963.88 329,-963.88"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="333.998" y="-980.881"/>
+<text text-anchor="start" x="349" y="-972.08" font-family="Helvetica,sans-Serif" font-size="11.00">m_locatortype_id</text>
+<polygon fill="none" stroke="black" points="329,-945.88 329,-963.88 512,-963.88 512,-945.88 329,-945.88"/>
+<text text-anchor="start" x="332" y="-952.08" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="329,-927.88 329,-945.88 512,-945.88 512,-927.88 329,-927.88"/>
+<polygon fill="none" stroke="black" points="329,-927.88 329,-945.88 512,-945.88 512,-927.88 329,-927.88"/>
+<polygon fill="#ffffff" stroke="transparent" points="330,-928.88 330,-944.88 383,-944.88 383,-928.88 330,-928.88"/>
+<text text-anchor="start" x="332" y="-934.08" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 5</text>
+<polygon fill="#ffffff" stroke="transparent" points="383,-928.88 383,-944.88 453,-944.88 453,-928.88 383,-928.88"/>
+<text text-anchor="start" x="401.5" y="-934.08" font-family="Helvetica,sans-Serif" font-size="11.00">8 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="453,-928.88 453,-944.88 511,-944.88 511,-928.88 453,-928.88"/>
+<text text-anchor="start" x="487" y="-934.08" font-family="Helvetica,sans-Serif" font-size="11.00">40 &gt;</text>
+<polygon fill="black" stroke="black" points="383,-928.88 383,-944.88 383,-944.88 383,-928.88 383,-928.88"/>
+<polygon fill="black" stroke="black" points="453,-928.88 453,-944.88 453,-944.88 453,-928.88 453,-928.88"/>
 </a>
 </g>
 </g>
@@ -1051,7 +1054,7 @@
 <!-- pp_order&#45;&gt;m_warehouse -->
 <g id="edge24" class="edge">
 <title>pp_order:w&#45;&gt;m_warehouse:e</title>
-<path fill="none" stroke="black" d="M889.29,-1097.37C824.16,-1060.44 927.75,-743.64 863,-684.88 816.59,-642.77 639.61,-662.72 581,-684.88 420.77,-745.46 373.33,-789.12 292,-939.88 262.48,-994.6 314.68,-1216.88 252.5,-1216.88"/>
+<path fill="none" stroke="black" d="M889.29,-1097.37C824.16,-1060.44 927.75,-743.64 863,-684.88 816.59,-642.77 640.09,-664.03 581,-684.88 425.41,-739.79 372.8,-774.03 292,-917.88 259.17,-976.31 319.52,-1216.88 252.5,-1216.88"/>
 <polygon fill="black" stroke="black" points="895.73,-1098.96 902.63,-1104.38 899.62,-1099.92 903.5,-1100.88 903.5,-1100.88 903.5,-1100.88 899.62,-1099.92 904.36,-1097.39 895.73,-1098.96 895.73,-1098.96"/>
 <ellipse fill="none" stroke="black" cx="892.63" cy="-1098.19" rx="3.2" ry="3.2"/>
 </g>

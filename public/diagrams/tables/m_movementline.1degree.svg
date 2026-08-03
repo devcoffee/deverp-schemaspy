@@ -558,7 +558,7 @@
 <g id="node9" class="node">
 <title>m_locator</title>
 <g id="a_node9"><a xlink:href="../../tables/m_locator.html" xlink:title="m_locator" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="8,-2035.06 8,-2291.06 191,-2291.06 191,-2035.06 8,-2035.06"/>
+<polygon fill="#ffffff" stroke="transparent" points="8,-2013.06 8,-2291.06 191,-2291.06 191,-2013.06 8,-2013.06"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="8.5,-2269.06 8.5,-2291.06 191.5,-2291.06 191.5,-2269.06 8.5,-2269.06"/>
 <polygon fill="none" stroke="black" points="8.5,-2269.06 8.5,-2291.06 191.5,-2291.06 191.5,-2269.06 8.5,-2269.06"/>
 <text text-anchor="start" x="13.5" y="-2278.26" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">m_locator</text>
@@ -590,19 +590,22 @@
 <text text-anchor="start" x="28.5" y="-2101.26" font-family="Helvetica,sans-Serif" font-size="11.00">m_locator_uu</text>
 <polygon fill="none" stroke="black" points="8.5,-2071.06 8.5,-2093.06 191.5,-2093.06 191.5,-2071.06 8.5,-2071.06"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13.5" y="-2088.06"/>
-<text text-anchor="start" x="28.5" y="-2079.26" font-family="Helvetica,sans-Serif" font-size="11.00">m_locatortype_id</text>
-<polygon fill="none" stroke="black" points="8.5,-2053.06 8.5,-2071.06 191.5,-2071.06 191.5,-2053.06 8.5,-2053.06"/>
-<text text-anchor="start" x="11.5" y="-2059.26" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="8.5,-2035.06 8.5,-2053.06 191.5,-2053.06 191.5,-2035.06 8.5,-2035.06"/>
-<polygon fill="none" stroke="black" points="8.5,-2035.06 8.5,-2053.06 191.5,-2053.06 191.5,-2035.06 8.5,-2035.06"/>
-<polygon fill="#ffffff" stroke="transparent" points="9.5,-2036.06 9.5,-2052.06 62.5,-2052.06 62.5,-2036.06 9.5,-2036.06"/>
-<text text-anchor="start" x="11.5" y="-2041.26" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 4</text>
-<polygon fill="#ffffff" stroke="transparent" points="62.5,-2036.06 62.5,-2052.06 132.5,-2052.06 132.5,-2036.06 62.5,-2036.06"/>
-<text text-anchor="start" x="81" y="-2041.26" font-family="Helvetica,sans-Serif" font-size="11.00">8 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="132.5,-2036.06 132.5,-2052.06 190.5,-2052.06 190.5,-2036.06 132.5,-2036.06"/>
-<text text-anchor="start" x="166.5" y="-2041.26" font-family="Helvetica,sans-Serif" font-size="11.00">40 &gt;</text>
-<polygon fill="black" stroke="black" points="62.5,-2036.06 62.5,-2052.06 62.5,-2052.06 62.5,-2036.06 62.5,-2036.06"/>
-<polygon fill="black" stroke="black" points="132.5,-2036.06 132.5,-2052.06 132.5,-2052.06 132.5,-2036.06 132.5,-2036.06"/>
+<text text-anchor="start" x="28.5" y="-2079.26" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
+<polygon fill="none" stroke="black" points="8.5,-2049.06 8.5,-2071.06 191.5,-2071.06 191.5,-2049.06 8.5,-2049.06"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13.5" y="-2066.06"/>
+<text text-anchor="start" x="28.5" y="-2057.26" font-family="Helvetica,sans-Serif" font-size="11.00">m_locatortype_id</text>
+<polygon fill="none" stroke="black" points="8.5,-2031.06 8.5,-2049.06 191.5,-2049.06 191.5,-2031.06 8.5,-2031.06"/>
+<text text-anchor="start" x="11.5" y="-2037.26" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="8.5,-2013.06 8.5,-2031.06 191.5,-2031.06 191.5,-2013.06 8.5,-2013.06"/>
+<polygon fill="none" stroke="black" points="8.5,-2013.06 8.5,-2031.06 191.5,-2031.06 191.5,-2013.06 8.5,-2013.06"/>
+<polygon fill="#ffffff" stroke="transparent" points="9.5,-2014.06 9.5,-2030.06 62.5,-2030.06 62.5,-2014.06 9.5,-2014.06"/>
+<text text-anchor="start" x="11.5" y="-2019.26" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 5</text>
+<polygon fill="#ffffff" stroke="transparent" points="62.5,-2014.06 62.5,-2030.06 132.5,-2030.06 132.5,-2014.06 62.5,-2014.06"/>
+<text text-anchor="start" x="81" y="-2019.26" font-family="Helvetica,sans-Serif" font-size="11.00">8 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="132.5,-2014.06 132.5,-2030.06 190.5,-2030.06 190.5,-2014.06 132.5,-2014.06"/>
+<text text-anchor="start" x="166.5" y="-2019.26" font-family="Helvetica,sans-Serif" font-size="11.00">40 &gt;</text>
+<polygon fill="black" stroke="black" points="62.5,-2014.06 62.5,-2030.06 62.5,-2030.06 62.5,-2014.06 62.5,-2014.06"/>
+<polygon fill="black" stroke="black" points="132.5,-2014.06 132.5,-2030.06 132.5,-2030.06 132.5,-2014.06 132.5,-2014.06"/>
 </a>
 </g>
 </g>

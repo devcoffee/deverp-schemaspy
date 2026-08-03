@@ -852,7 +852,6 @@ cof_pneu
 c_bankstatementline
 c_revenuerecognition_plan
 w_store
-cof_codigooperacao
 m_requisition
 hr_list
 c_rfqline
@@ -1072,6 +1071,7 @@ s_resourcetype
 s_expensetype
 ad_statusline
 c_addressvalidation
+cof_codigooperacao
 c_taxprovider
 c_year
 c_cashbook

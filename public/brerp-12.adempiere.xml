@@ -17328,6 +17328,7 @@
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_minout" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inout"/>
             <child catalog="brerp-12" column="dropship_bpartner_id" foreignKey="dropshipbpartner_minout" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inout"/>
             <child catalog="brerp-12" column="returnbpartner_id" foreignKey="returnbpartner_minout" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inout"/>
+            <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_mlocator" implied="false" onDeleteCascade="false" schema="adempiere" table="m_locator"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_mmovement" implied="false" onDeleteCascade="false" schema="adempiere" table="m_movement"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="c_buspartner_m_product_po" implied="false" onDeleteCascade="false" schema="adempiere" table="m_product_po"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_mproduction" implied="false" onDeleteCascade="false" schema="adempiere" table="m_production"/>
@@ -37856,6 +37857,7 @@
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_codigooperacao_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_rps"/>
+            <child catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_lbrdocfiscal" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal"/>
             <child catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_lbrtaxline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_taxline"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="3" name="cof_codigooperacao_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
@@ -56247,6 +56249,10 @@
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="296" name="ide_gcompragov_tpopergov" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="297" name="ide_gcompragov_predutor" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="298" name="lbr_nfeemaillog" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="299" name="cof_codigooperacao_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_lbrdocfiscal" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codigooperacao"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="300" name="lbr_suframa" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
          <primaryKey column="lbr_docfiscal_id" sequenceNumberInPK="1"/>
          <index name="lbr_docfiscal_key" unique="true">
             <column ascending="true" name="lbr_docfiscal_id"/>
@@ -56774,6 +56780,10 @@
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="284" name="imposto_ibscbs_cct_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_codclasstrib_id" foreignKey="impostoibscbscct_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codclasstrib"/>
          </column>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="285" name="imposto_ibsuf_pdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="286" name="lbr_tpalczfmcbs" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="287" name="imposto_cbs_pdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="288" name="imposto_ibsmun_pdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="lbr_docfiscal_line_id" sequenceNumberInPK="1"/>
          <index name="lbr_docfiscal_line_key" unique="true">
             <column ascending="true" name="lbr_docfiscal_line_id"/>
@@ -57896,6 +57906,10 @@
             <parent catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_lbrtaxline" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codigooperacao"/>
          </column>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="63" name="cof_overridedbyconfiguracaofiscal" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="64" name="cof_overridetaxstatusdelivery" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="65" name="cof_overridecctdelivery" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="66" name="cof_percentualdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="67" name="lbr_tpalczfmcbs" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="lbr_taxline_id" sequenceNumberInPK="1"/>
          <index name="lbr_taxline_key" unique="true">
             <column ascending="true" name="lbr_taxline_id"/>
@@ -57908,6 +57922,7 @@
             <column ascending="true" name="lbr_taxline_uu"/>
          </index>
          <checkConstraint constraint="((cof_overridecct = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridecct_check"/>
+         <checkConstraint constraint="((cof_overridecctdelivery = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridecctdelivery_check"/>
          <checkConstraint constraint="((cof_overridecenq = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridecenq_check"/>
          <checkConstraint constraint="((cof_overridecodoperacao = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridecodoperacao_check"/>
          <checkConstraint constraint="((cof_overridedesonrate = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridedesonrate_check"/>
@@ -57923,6 +57938,7 @@
          <checkConstraint constraint="((cof_overridetaxlm = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridetaxlm_check"/>
          <checkConstraint constraint="((cof_overridetaxrate = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridetaxrate_check"/>
          <checkConstraint constraint="((cof_overridetaxstatus = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridetaxstatus_check"/>
+         <checkConstraint constraint="((cof_overridetaxstatusdelivery = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridetaxstatusdelivery_check"/>
          <checkConstraint constraint="((cof_printondelivery = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_printondelivery_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_isactive_check"/>
          <checkConstraint constraint="((ismanual = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_ismanual_check"/>
@@ -61495,12 +61511,15 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="y" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="z" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="15" name="m_locator_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="c_bpartner_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="c_bpartner_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_mlocator" implied="false" onDeleteCascade="false" schema="adempiere" table="c_bpartner"/>
+         </column>
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="17" name="m_locatortype_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="m_locatortype_id" foreignKey="mlocatortype_mlocator" implied="false" onDeleteCascade="false" schema="adempiere" table="m_locatortype"/>
          </column>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="18" name="cof_volcalclocalizador" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="cof_volumelocalizador" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="20" name="h010_cod_part" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
          <primaryKey column="m_locator_id" sequenceNumberInPK="1"/>
          <index name="m_locator_pkey" unique="true">
             <column ascending="true" name="m_locator_id"/>
@@ -61542,6 +61561,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_mlocatortype" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="15" name="cof_isterceiroemnossopoder" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="m_locatortype_id" sequenceNumberInPK="1"/>
          <index name="m_locatortype_key" unique="true">
             <column ascending="true" name="m_locatortype_id"/>
@@ -61549,6 +61569,7 @@
          <index name="m_locatortype_uu_idx" unique="true">
             <column ascending="true" name="m_locatortype_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isterceiroemnossopoder = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_locatortype_cof_isterceiroemnossopoder_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_locatortype_isactive_check"/>
          <checkConstraint constraint="((isavailableforreplenishment = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_locatortype_isavailableforreplenishment_check"/>
          <checkConstraint constraint="((isavailableforreservation = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="m_locatortype_isavailableforreservation_check"/>
@@ -63042,6 +63063,7 @@
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="138" name="isbompriceoverride" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="139" name="cof_codigoitemlistaservico" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="140" name="cof_codigotributacaonacional" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="141" name="lbr_nprocsuframa" nullable="true" remarks="" size="12" type="varchar" typeCode="12"/>
          <primaryKey column="m_product_id" sequenceNumberInPK="1"/>
          <index name="m_product_pkey" unique="true">
             <column ascending="true" name="m_product_id"/>

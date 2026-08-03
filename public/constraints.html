@@ -80,7 +80,7 @@
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="ion ion-key"></i>
-                            <h3 class="box-title">5309 Foreign Key Constraints</h3>
+                            <h3 class="box-title">5311 Foreign Key Constraints</h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -73406,6 +73406,24 @@
                                         <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
+                                        <td>cofcodigooperacao_lbrdocfiscal</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/lbr_docfiscal.html'>lbr_docfiscal</a><span>.cof_codigooperacao_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_codigooperacao.html'>cof_codigooperacao</a><span>.cof_codigooperacao_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
                                         <td>cofpnlocationretira_lbrdocfisc</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -77396,6 +77414,24 @@
                                             <table border='0' cellspacing='0' cellpadding='0'>
                                                 <tr>
                                                     <td><a href='tables/ad_printformat.html'>ad_printformat</a><span>.ad_printformat_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cbpartner_mlocator</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/m_locator.html'>m_locator</a><span>.c_bpartner_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bpartner.html'>c_bpartner</a><span>.c_bpartner_id</span></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -102606,13 +102642,13 @@
                                         <td>((istranslated &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/c_revenuerecognition.html'>c_revenuerecognition</a></td>
-                                        <td>c_revenuerecognition_isactive_check</td>
+                                        <td><a href='tables/c_rfqline.html'>c_rfqline</a></td>
+                                        <td>c_rfqline_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/c_rfqline.html'>c_rfqline</a></td>
-                                        <td>c_rfqline_isactive_check</td>
+                                        <td><a href='tables/c_revenuerecognition.html'>c_revenuerecognition</a></td>
+                                        <td>c_revenuerecognition_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
@@ -106264,6 +106300,11 @@
                                         <td><a href='tables/hr_year.html'>hr_year</a></td>
                                         <td>hr_year_processed_check</td>
                                         <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/m_locatortype.html'>m_locatortype</a></td>
+                                        <td>m_locatortype_cof_isterceiroemnossopoder_check</td>
+                                        <td>((cof_isterceiroemnossopoder &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/m_locatortype.html'>m_locatortype</a></td>
@@ -110287,6 +110328,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/lbr_taxline.html'>lbr_taxline</a></td>
+                                        <td>lbr_taxline_cof_overridecctdelivery_check</td>
+                                        <td>((cof_overridecctdelivery &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/lbr_taxline.html'>lbr_taxline</a></td>
                                         <td>lbr_taxline_cof_overridecenq_check</td>
                                         <td>((cof_overridecenq &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -110359,6 +110405,11 @@
                                         <td><a href='tables/lbr_taxline.html'>lbr_taxline</a></td>
                                         <td>lbr_taxline_cof_overridetaxstatus_check</td>
                                         <td>((cof_overridetaxstatus &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/lbr_taxline.html'>lbr_taxline</a></td>
+                                        <td>lbr_taxline_cof_overridetaxstatusdelivery_check</td>
+                                        <td>((cof_overridetaxstatusdelivery &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/lbr_taxline.html'>lbr_taxline</a></td>
