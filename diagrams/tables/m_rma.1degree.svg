@@ -98,7 +98,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="858,-149.45 858,-165.45 943,-165.45 943,-149.45 858,-149.45"/>
 <text text-anchor="start" x="884" y="-154.65" font-family="Helvetica,sans-Serif" font-size="11.00">8 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="943,-149.45 943,-165.45 1022,-165.45 1022,-149.45 943,-149.45"/>
-<text text-anchor="start" x="992" y="-154.65" font-family="Helvetica,sans-Serif" font-size="11.00">466 &gt;</text>
+<text text-anchor="start" x="992" y="-154.65" font-family="Helvetica,sans-Serif" font-size="11.00">468 &gt;</text>
 <polygon fill="black" stroke="black" points="858,-149.45 858,-165.45 858,-165.45 858,-149.45 858,-149.45"/>
 <polygon fill="black" stroke="black" points="943,-149.45 943,-165.45 943,-165.45 943,-149.45 943,-149.45"/>
 </a>
@@ -217,7 +217,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="524,-273.45 524,-289.45 613,-289.45 613,-273.45 524,-273.45"/>
 <text text-anchor="start" x="552" y="-278.65" font-family="Helvetica,sans-Serif" font-size="11.00">4 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="613,-273.45 613,-289.45 697,-289.45 697,-273.45 613,-273.45"/>
-<text text-anchor="start" x="667" y="-278.65" font-family="Helvetica,sans-Serif" font-size="11.00">190 &gt;</text>
+<text text-anchor="start" x="667" y="-278.65" font-family="Helvetica,sans-Serif" font-size="11.00">191 &gt;</text>
 <polygon fill="black" stroke="black" points="524,-273.45 524,-289.45 524,-289.45 524,-273.45 524,-273.45"/>
 <polygon fill="black" stroke="black" points="613,-273.45 613,-289.45 613,-289.45 613,-273.45 613,-273.45"/>
 </a>
@@ -1183,9 +1183,9 @@
 <!-- c_order&#45;&gt;c_bpartner -->
 <g id="edge23" class="edge">
 <title>c_order:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1997.06,-1699.79C1959.12,-1636.93 1991.31,-1251.84 1969,-1205.45 1896.09,-1053.86 1849.42,-1008.35 1693,-946.45 1578.94,-901.32 1539.67,-946.36 1417,-946.45 1266.33,-946.57 881.14,-897.48 739,-947.45 717.52,-955.01 721.77,-979.45 699,-979.45"/>
-<polygon fill="black" stroke="black" points="2002.52,-1703.76 2006.89,-1711.37 2005.76,-1706.11 2009,-1708.45 2009,-1708.45 2009,-1708.45 2005.76,-1706.11 2011.11,-1705.54 2002.52,-1703.76 2002.52,-1703.76"/>
-<ellipse fill="none" stroke="black" cx="1999.93" cy="-1701.88" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1997.07,-1700C1958.1,-1637 1992.26,-1241.74 1969,-1194.45 1896.07,-1046.22 1847.21,-1004.74 1693,-945.45 1578.5,-901.44 1539.67,-945.27 1417,-945.45 1266.33,-945.68 881.1,-897.37 739,-947.45 717.53,-955.02 721.77,-979.45 699,-979.45"/>
+<polygon fill="black" stroke="black" points="2002.47,-1703.83 2006.92,-1711.39 2005.74,-1706.14 2009,-1708.45 2009,-1708.45 2009,-1708.45 2005.74,-1706.14 2011.08,-1705.52 2002.47,-1703.83 2002.47,-1703.83"/>
+<ellipse fill="none" stroke="black" cx="1999.86" cy="-1701.98" rx="3.2" ry="3.2"/>
 </g>
 <!-- c_order&#45;&gt;c_bpartner -->
 <g id="edge27" class="edge">
@@ -1254,81 +1254,84 @@
 <g id="node9" class="node">
 <title>cof_packinglist_line</title>
 <g id="a_node9"><a xlink:href="../../tables/cof_packinglist_line.html" xlink:title="cof_packinglist_line" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="1734,-1216.45 1734,-1626.45 1961,-1626.45 1961,-1216.45 1734,-1216.45"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="1734.5,-1604.45 1734.5,-1626.45 1961.5,-1626.45 1961.5,-1604.45 1734.5,-1604.45"/>
-<polygon fill="none" stroke="black" points="1734.5,-1604.45 1734.5,-1626.45 1961.5,-1626.45 1961.5,-1604.45 1734.5,-1604.45"/>
-<text text-anchor="start" x="1739.5" y="-1613.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_packinglist_line</text>
-<text text-anchor="start" x="1926.5" y="-1612.65" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="1734.5,-1582.45 1734.5,-1604.45 1961.5,-1604.45 1961.5,-1582.45 1734.5,-1582.45"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1599.45"/>
-<text text-anchor="start" x="1754.5" y="-1590.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="1734.5,-1560.45 1734.5,-1582.45 1961.5,-1582.45 1961.5,-1560.45 1734.5,-1560.45"/>
-<polygon fill="none" stroke="black" points="1734.5,-1560.45 1734.5,-1582.45 1961.5,-1582.45 1961.5,-1560.45 1734.5,-1560.45"/>
-<text text-anchor="start" x="1754.5" y="-1568.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_uu</text>
-<polygon fill="none" stroke="black" points="1734.5,-1538.45 1734.5,-1560.45 1961.5,-1560.45 1961.5,-1538.45 1734.5,-1538.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1555.45"/>
-<text text-anchor="start" x="1754.5" y="-1546.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1516.45 1734.5,-1538.45 1961.5,-1538.45 1961.5,-1516.45 1734.5,-1516.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1533.45"/>
-<text text-anchor="start" x="1754.5" y="-1524.65" font-family="Helvetica,sans-Serif" font-size="11.00">m_inout_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1494.45 1734.5,-1516.45 1961.5,-1516.45 1961.5,-1494.45 1734.5,-1494.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1511.45"/>
-<text text-anchor="start" x="1754.5" y="-1502.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_deliveryrestriction_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1472.45 1734.5,-1494.45 1961.5,-1494.45 1961.5,-1472.45 1734.5,-1472.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1489.45"/>
-<text text-anchor="start" x="1754.5" y="-1480.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_deliveryoccurrence_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1450.45 1734.5,-1472.45 1961.5,-1472.45 1961.5,-1450.45 1734.5,-1450.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1467.45"/>
-<text text-anchor="start" x="1754.5" y="-1458.65" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1428.45 1734.5,-1450.45 1961.5,-1450.45 1961.5,-1428.45 1734.5,-1428.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1445.45"/>
-<text text-anchor="start" x="1754.5" y="-1436.65" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_location_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="1734.5,-1406.45 1734.5,-1428.45 1961.5,-1428.45 1961.5,-1406.45 1734.5,-1406.45"/>
-<polygon fill="none" stroke="black" points="1734.5,-1406.45 1734.5,-1428.45 1961.5,-1428.45 1961.5,-1406.45 1734.5,-1406.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1423.45"/>
-<text text-anchor="start" x="1754.5" y="-1414.65" font-family="Helvetica,sans-Serif" font-size="11.00">c_order_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1384.45 1734.5,-1406.45 1961.5,-1406.45 1961.5,-1384.45 1734.5,-1384.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1401.45"/>
-<text text-anchor="start" x="1754.5" y="-1392.65" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_docfiscal_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1362.45 1734.5,-1384.45 1961.5,-1384.45 1961.5,-1362.45 1734.5,-1362.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1379.45"/>
-<text text-anchor="start" x="1754.5" y="-1370.65" font-family="Helvetica,sans-Serif" font-size="11.00">m_rma_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1340.45 1734.5,-1362.45 1961.5,-1362.45 1961.5,-1340.45 1734.5,-1340.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1357.45"/>
-<text text-anchor="start" x="1754.5" y="-1348.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_m_shipregion_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1318.45 1734.5,-1340.45 1961.5,-1340.45 1961.5,-1318.45 1734.5,-1318.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1335.45"/>
-<text text-anchor="start" x="1754.5" y="-1326.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_dfe_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1296.45 1734.5,-1318.45 1961.5,-1318.45 1961.5,-1296.45 1734.5,-1296.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1313.45"/>
-<text text-anchor="start" x="1754.5" y="-1304.65" font-family="Helvetica,sans-Serif" font-size="11.00">cte_bpremetente_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1274.45 1734.5,-1296.45 1961.5,-1296.45 1961.5,-1274.45 1734.5,-1274.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1291.45"/>
-<text text-anchor="start" x="1754.5" y="-1282.65" font-family="Helvetica,sans-Serif" font-size="11.00">cte_bptomador_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1252.45 1734.5,-1274.45 1961.5,-1274.45 1961.5,-1252.45 1734.5,-1252.45"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1269.45"/>
-<text text-anchor="start" x="1754.5" y="-1260.65" font-family="Helvetica,sans-Serif" font-size="11.00">cte_cte_id</text>
-<polygon fill="none" stroke="black" points="1734.5,-1234.45 1734.5,-1252.45 1961.5,-1252.45 1961.5,-1234.45 1734.5,-1234.45"/>
-<text text-anchor="start" x="1737.5" y="-1240.65" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="1734.5,-1216.45 1734.5,-1234.45 1961.5,-1234.45 1961.5,-1216.45 1734.5,-1216.45"/>
-<polygon fill="none" stroke="black" points="1734.5,-1216.45 1734.5,-1234.45 1961.5,-1234.45 1961.5,-1216.45 1734.5,-1216.45"/>
-<polygon fill="#ffffff" stroke="transparent" points="1735.5,-1217.45 1735.5,-1233.45 1817.5,-1233.45 1817.5,-1217.45 1735.5,-1217.45"/>
-<text text-anchor="start" x="1737.5" y="-1222.65" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 14</text>
-<polygon fill="#ffffff" stroke="transparent" points="1817.5,-1217.45 1817.5,-1233.45 1884.5,-1233.45 1884.5,-1217.45 1817.5,-1217.45"/>
-<text text-anchor="start" x="1847.5" y="-1222.65" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1884.5,-1217.45 1884.5,-1233.45 1960.5,-1233.45 1960.5,-1217.45 1884.5,-1217.45"/>
-<text text-anchor="start" x="1942.5" y="-1222.65" font-family="Helvetica,sans-Serif" font-size="11.00">2 &gt;</text>
-<polygon fill="black" stroke="black" points="1817.5,-1217.45 1817.5,-1233.45 1817.5,-1233.45 1817.5,-1217.45 1817.5,-1217.45"/>
-<polygon fill="black" stroke="black" points="1884.5,-1217.45 1884.5,-1233.45 1884.5,-1233.45 1884.5,-1217.45 1884.5,-1217.45"/>
+<polygon fill="#ffffff" stroke="transparent" points="1734,-1205.45 1734,-1637.45 1961,-1637.45 1961,-1205.45 1734,-1205.45"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="1734.5,-1615.45 1734.5,-1637.45 1961.5,-1637.45 1961.5,-1615.45 1734.5,-1615.45"/>
+<polygon fill="none" stroke="black" points="1734.5,-1615.45 1734.5,-1637.45 1961.5,-1637.45 1961.5,-1615.45 1734.5,-1615.45"/>
+<text text-anchor="start" x="1739.5" y="-1624.65" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_packinglist_line</text>
+<text text-anchor="start" x="1926.5" y="-1623.65" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="1734.5,-1593.45 1734.5,-1615.45 1961.5,-1615.45 1961.5,-1593.45 1734.5,-1593.45"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1610.45"/>
+<text text-anchor="start" x="1754.5" y="-1601.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="1734.5,-1571.45 1734.5,-1593.45 1961.5,-1593.45 1961.5,-1571.45 1734.5,-1571.45"/>
+<polygon fill="none" stroke="black" points="1734.5,-1571.45 1734.5,-1593.45 1961.5,-1593.45 1961.5,-1571.45 1734.5,-1571.45"/>
+<text text-anchor="start" x="1754.5" y="-1579.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_line_uu</text>
+<polygon fill="none" stroke="black" points="1734.5,-1549.45 1734.5,-1571.45 1961.5,-1571.45 1961.5,-1549.45 1734.5,-1549.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1566.45"/>
+<text text-anchor="start" x="1754.5" y="-1557.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_packinglist_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1527.45 1734.5,-1549.45 1961.5,-1549.45 1961.5,-1527.45 1734.5,-1527.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1544.45"/>
+<text text-anchor="start" x="1754.5" y="-1535.65" font-family="Helvetica,sans-Serif" font-size="11.00">m_inout_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1505.45 1734.5,-1527.45 1961.5,-1527.45 1961.5,-1505.45 1734.5,-1505.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1522.45"/>
+<text text-anchor="start" x="1754.5" y="-1513.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_deliveryrestriction_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1483.45 1734.5,-1505.45 1961.5,-1505.45 1961.5,-1483.45 1734.5,-1483.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1500.45"/>
+<text text-anchor="start" x="1754.5" y="-1491.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_deliveryoccurrence_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1461.45 1734.5,-1483.45 1961.5,-1483.45 1961.5,-1461.45 1734.5,-1461.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1478.45"/>
+<text text-anchor="start" x="1754.5" y="-1469.65" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1439.45 1734.5,-1461.45 1961.5,-1461.45 1961.5,-1439.45 1734.5,-1439.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1456.45"/>
+<text text-anchor="start" x="1754.5" y="-1447.65" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_location_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="1734.5,-1417.45 1734.5,-1439.45 1961.5,-1439.45 1961.5,-1417.45 1734.5,-1417.45"/>
+<polygon fill="none" stroke="black" points="1734.5,-1417.45 1734.5,-1439.45 1961.5,-1439.45 1961.5,-1417.45 1734.5,-1417.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1434.45"/>
+<text text-anchor="start" x="1754.5" y="-1425.65" font-family="Helvetica,sans-Serif" font-size="11.00">c_order_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1395.45 1734.5,-1417.45 1961.5,-1417.45 1961.5,-1395.45 1734.5,-1395.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1412.45"/>
+<text text-anchor="start" x="1754.5" y="-1403.65" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_docfiscal_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1373.45 1734.5,-1395.45 1961.5,-1395.45 1961.5,-1373.45 1734.5,-1373.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1390.45"/>
+<text text-anchor="start" x="1754.5" y="-1381.65" font-family="Helvetica,sans-Serif" font-size="11.00">m_rma_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1351.45 1734.5,-1373.45 1961.5,-1373.45 1961.5,-1351.45 1734.5,-1351.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1368.45"/>
+<text text-anchor="start" x="1754.5" y="-1359.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_m_shipregion_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1329.45 1734.5,-1351.45 1961.5,-1351.45 1961.5,-1329.45 1734.5,-1329.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1346.45"/>
+<text text-anchor="start" x="1754.5" y="-1337.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_dfe_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1307.45 1734.5,-1329.45 1961.5,-1329.45 1961.5,-1307.45 1734.5,-1307.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1324.45"/>
+<text text-anchor="start" x="1754.5" y="-1315.65" font-family="Helvetica,sans-Serif" font-size="11.00">cte_bpremetente_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1285.45 1734.5,-1307.45 1961.5,-1307.45 1961.5,-1285.45 1734.5,-1285.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1302.45"/>
+<text text-anchor="start" x="1754.5" y="-1293.65" font-family="Helvetica,sans-Serif" font-size="11.00">cte_bptomador_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1263.45 1734.5,-1285.45 1961.5,-1285.45 1961.5,-1263.45 1734.5,-1263.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1280.45"/>
+<text text-anchor="start" x="1754.5" y="-1271.65" font-family="Helvetica,sans-Serif" font-size="11.00">cte_cte_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1241.45 1734.5,-1263.45 1961.5,-1263.45 1961.5,-1241.45 1734.5,-1241.45"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1739.5" y="-1258.45"/>
+<text text-anchor="start" x="1754.5" y="-1249.65" font-family="Helvetica,sans-Serif" font-size="11.00">cof_entregaavulsa_id</text>
+<polygon fill="none" stroke="black" points="1734.5,-1223.45 1734.5,-1241.45 1961.5,-1241.45 1961.5,-1223.45 1734.5,-1223.45"/>
+<text text-anchor="start" x="1737.5" y="-1229.65" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="1734.5,-1205.45 1734.5,-1223.45 1961.5,-1223.45 1961.5,-1205.45 1734.5,-1205.45"/>
+<polygon fill="none" stroke="black" points="1734.5,-1205.45 1734.5,-1223.45 1961.5,-1223.45 1961.5,-1205.45 1734.5,-1205.45"/>
+<polygon fill="#ffffff" stroke="transparent" points="1735.5,-1206.45 1735.5,-1222.45 1817.5,-1222.45 1817.5,-1206.45 1735.5,-1206.45"/>
+<text text-anchor="start" x="1737.5" y="-1211.65" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 15</text>
+<polygon fill="#ffffff" stroke="transparent" points="1817.5,-1206.45 1817.5,-1222.45 1884.5,-1222.45 1884.5,-1206.45 1817.5,-1206.45"/>
+<text text-anchor="start" x="1847.5" y="-1211.65" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1884.5,-1206.45 1884.5,-1222.45 1960.5,-1222.45 1960.5,-1206.45 1884.5,-1206.45"/>
+<text text-anchor="start" x="1942.5" y="-1211.65" font-family="Helvetica,sans-Serif" font-size="11.00">2 &gt;</text>
+<polygon fill="black" stroke="black" points="1817.5,-1206.45 1817.5,-1222.45 1817.5,-1222.45 1817.5,-1206.45 1817.5,-1206.45"/>
+<polygon fill="black" stroke="black" points="1884.5,-1206.45 1884.5,-1222.45 1884.5,-1222.45 1884.5,-1206.45 1884.5,-1206.45"/>
 </a>
 </g>
 </g>
 <!-- c_order&#45;&gt;cof_packinglist_line -->
 <g id="edge29" class="edge">
 <title>c_order:w&#45;&gt;cof_packinglist_line:e</title>
-<path fill="none" stroke="black" d="M1999.51,-509.65C1956.6,-625.03 2019.76,-1593.45 1962.5,-1593.45"/>
-<polygon fill="black" stroke="black" points="2003.83,-504.56 2011.75,-500.78 2006.41,-501.51 2009,-498.45 2009,-498.45 2009,-498.45 2006.41,-501.51 2006.25,-496.13 2003.83,-504.56 2003.83,-504.56"/>
-<ellipse fill="none" stroke="black" cx="2001.76" cy="-507" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1999.56,-509.4C1955.99,-624.27 2020.4,-1604.45 1962.5,-1604.45"/>
+<polygon fill="black" stroke="black" points="2003.77,-504.51 2011.73,-500.81 2006.39,-501.48 2009,-498.45 2009,-498.45 2009,-498.45 2006.39,-501.48 2006.27,-496.1 2003.77,-504.51 2003.77,-504.51"/>
+<ellipse fill="none" stroke="black" cx="2001.68" cy="-506.93" rx="3.2" ry="3.2"/>
 </g>
 <!-- lbr_docfiscal&#45;&gt;c_bpartner -->
 <g id="edge46" class="edge">
@@ -1585,51 +1588,51 @@
 <!-- cof_packinglist_line&#45;&gt;c_bpartner -->
 <g id="edge38" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1719.31,-1458.2C1648.57,-1421.32 1761.77,-1082.41 1693,-1019.45 1688.11,-1014.98 745.17,-1018.88 739,-1016.45 716.46,-1007.59 723.22,-979.45 699,-979.45"/>
-<polygon fill="black" stroke="black" points="1725.7,-1459.67 1732.69,-1464.96 1729.6,-1460.56 1733.5,-1461.45 1733.5,-1461.45 1733.5,-1461.45 1729.6,-1460.56 1734.31,-1457.95 1725.7,-1459.67 1725.7,-1459.67"/>
-<ellipse fill="none" stroke="black" cx="1722.58" cy="-1458.95" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1719.42,-1469.35C1646.09,-1432.76 1763.55,-1084.18 1693,-1019.45 1688.12,-1014.98 745.17,-1018.88 739,-1016.45 716.46,-1007.59 723.22,-979.45 699,-979.45"/>
+<polygon fill="black" stroke="black" points="1725.69,-1470.73 1732.72,-1475.97 1729.59,-1471.59 1733.5,-1472.45 1733.5,-1472.45 1733.5,-1472.45 1729.59,-1471.59 1734.28,-1468.94 1725.69,-1470.73 1725.69,-1470.73"/>
+<ellipse fill="none" stroke="black" cx="1722.56" cy="-1470.04" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_packinglist_line&#45;&gt;c_bpartner -->
 <g id="edge40" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1719.74,-1302.46C1679.34,-1267.08 1737.69,-1054.8 1693,-1014.45 1610.97,-940.4 809.51,-979.45 699,-979.45"/>
-<polygon fill="black" stroke="black" points="1725.98,-1304.72 1732.27,-1310.84 1729.74,-1306.09 1733.5,-1307.45 1733.5,-1307.45 1733.5,-1307.45 1729.74,-1306.09 1734.73,-1304.07 1725.98,-1304.72 1725.98,-1304.72"/>
-<ellipse fill="none" stroke="black" cx="1722.97" cy="-1303.63" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1719.8,-1313.73C1677.04,-1278.46 1739.43,-1056.58 1693,-1014.45 1611.15,-940.2 809.51,-979.45 699,-979.45"/>
+<polygon fill="black" stroke="black" points="1725.94,-1315.85 1732.33,-1321.86 1729.72,-1317.15 1733.5,-1318.45 1733.5,-1318.45 1733.5,-1318.45 1729.72,-1317.15 1734.67,-1315.05 1725.94,-1315.85 1725.94,-1315.85"/>
+<ellipse fill="none" stroke="black" cx="1722.91" cy="-1314.8" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_packinglist_line&#45;&gt;c_bpartner -->
 <g id="edge41" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M1719.63,-1280.78C1675.03,-1244.92 1741.57,-1013.74 1693,-970.45 1641.73,-924.76 1452.67,-966.9 1384,-966.45 1097.34,-964.6 1022.98,-929.32 739,-968.45 720.73,-970.97 717.44,-979.45 699,-979.45"/>
-<polygon fill="black" stroke="black" points="1725.92,-1282.9 1732.35,-1288.87 1729.71,-1284.18 1733.5,-1285.45 1733.5,-1285.45 1733.5,-1285.45 1729.71,-1284.18 1734.65,-1282.04 1725.92,-1282.9 1725.92,-1282.9"/>
-<ellipse fill="none" stroke="black" cx="1722.89" cy="-1281.88" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1719.73,-1292.06C1672.46,-1256.42 1743.57,-1014.59 1693,-969.45 1641.77,-923.73 1452.67,-966.79 1384,-966.45 1097.34,-965.06 1022.98,-929.32 739,-968.45 720.73,-970.97 717.44,-979.45 699,-979.45"/>
+<polygon fill="black" stroke="black" points="1725.88,-1294.02 1732.41,-1299.88 1729.69,-1295.24 1733.5,-1296.45 1733.5,-1296.45 1733.5,-1296.45 1729.69,-1295.24 1734.59,-1293.02 1725.88,-1294.02 1725.88,-1294.02"/>
+<ellipse fill="none" stroke="black" cx="1722.83" cy="-1293.05" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_packinglist_line&#45;&gt;c_order -->
 <g id="edge39" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;c_order:e</title>
-<path fill="none" stroke="black" d="M1725.13,-1405.58C1713.25,-1363.9 1720.81,-1226.07 1734.5,-1212.45 1808.38,-1138.94 1893.61,-1140.49 1969,-1212.45 2026.05,-1266.91 1944.95,-1867 2002,-1921.45 2014.86,-1933.73 2309.26,-1933.85 2322,-1921.45 2333.79,-1909.98 2339.45,-1884.45 2323,-1884.45"/>
-<polygon fill="black" stroke="black" points="1728.89,-1410.92 1730.56,-1419.53 1731.2,-1414.19 1733.5,-1417.45 1733.5,-1417.45 1733.5,-1417.45 1731.2,-1414.19 1736.44,-1415.38 1728.89,-1410.92 1728.89,-1410.92"/>
-<ellipse fill="none" stroke="black" cx="1727.05" cy="-1408.3" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1725.26,-1440.49C1714.45,-1482.76 1726.87,-1622.9 1734.5,-1641.45 1791.12,-1779.08 1870.12,-1769.25 1969,-1880.45 1984.54,-1897.94 1980.9,-1911.35 2002,-1921.45 2018.03,-1929.13 2309.26,-1933.85 2322,-1921.45 2333.79,-1909.98 2339.45,-1884.45 2323,-1884.45"/>
+<polygon fill="black" stroke="black" points="1728.98,-1435.06 1736.47,-1430.49 1731.24,-1431.75 1733.5,-1428.45 1733.5,-1428.45 1733.5,-1428.45 1731.24,-1431.75 1730.53,-1426.42 1728.98,-1435.06 1728.98,-1435.06"/>
+<ellipse fill="none" stroke="black" cx="1727.17" cy="-1437.7" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_packinglist_line&#45;&gt;lbr_docfiscal -->
 <g id="edge42" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;lbr_docfiscal:e</title>
-<path fill="none" stroke="black" d="M1721.38,-1404.04C1680.67,-1471.67 1735.27,-1917.13 1693,-1956.45 1648.1,-1998.23 1463.46,-1996.49 1417,-1956.45 1341.77,-1891.62 1457.2,-1802.57 1384,-1735.45 1277.66,-1637.95 1204.27,-1715.45 1060,-1715.45"/>
-<polygon fill="black" stroke="black" points="1726.97,-1400.08 1735.58,-1398.39 1730.24,-1397.77 1733.5,-1395.45 1733.5,-1395.45 1733.5,-1395.45 1730.24,-1397.77 1731.42,-1392.52 1726.97,-1400.08 1726.97,-1400.08"/>
-<ellipse fill="none" stroke="black" cx="1724.36" cy="-1401.93" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1721.6,-1414.87C1681.59,-1481.18 1734.47,-1917.92 1693,-1956.45 1648.07,-1998.2 1463.46,-1996.49 1417,-1956.45 1341.77,-1891.62 1457.2,-1802.57 1384,-1735.45 1277.66,-1637.95 1204.27,-1715.45 1060,-1715.45"/>
+<polygon fill="black" stroke="black" points="1726.97,-1411.07 1735.58,-1409.39 1730.23,-1408.76 1733.5,-1406.45 1733.5,-1406.45 1733.5,-1406.45 1730.23,-1408.76 1731.42,-1403.52 1726.97,-1411.07 1726.97,-1411.07"/>
+<ellipse fill="none" stroke="black" cx="1724.36" cy="-1412.92" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_packinglist_line&#45;&gt;m_rma -->
 <g id="edge44" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;m_rma:e</title>
-<path fill="none" stroke="black" d="M1721.09,-1381.24C1674.16,-1448.25 1725.52,-1926.68 1693,-1980.45 1618.56,-2103.53 1492.97,-2027.32 1417,-2149.45 1390.01,-2192.85 1426.1,-2607.45 1375,-2607.45"/>
-<polygon fill="black" stroke="black" points="1726.72,-1377.7 1735.41,-1376.5 1730.11,-1375.58 1733.5,-1373.45 1733.5,-1373.45 1733.5,-1373.45 1730.11,-1375.58 1731.59,-1370.4 1726.72,-1377.7 1726.72,-1377.7"/>
-<ellipse fill="none" stroke="black" cx="1724.01" cy="-1379.4" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1721.01,-1392.52C1675.34,-1459.87 1724.9,-1927.78 1693,-1980.45 1618.48,-2103.48 1492.97,-2027.32 1417,-2149.45 1390.01,-2192.85 1426.1,-2607.45 1375,-2607.45"/>
+<polygon fill="black" stroke="black" points="1726.78,-1388.79 1735.45,-1387.48 1730.14,-1386.62 1733.5,-1384.45 1733.5,-1384.45 1733.5,-1384.45 1730.14,-1386.62 1731.55,-1381.43 1726.78,-1388.79 1726.78,-1388.79"/>
+<ellipse fill="none" stroke="black" cx="1724.09" cy="-1390.53" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_packinglist_line&#45;&gt;m_inout -->
 <g id="edge43" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;m_inout:e</title>
-<path fill="none" stroke="black" d="M1719.67,-1531.79C1661.92,-1574.2 1767.02,-1913.45 1686,-1913.45"/>
-<polygon fill="black" stroke="black" points="1725.87,-1529.85 1734.58,-1530.89 1729.68,-1528.65 1733.5,-1527.45 1733.5,-1527.45 1733.5,-1527.45 1729.68,-1528.65 1732.42,-1524.02 1725.87,-1529.85 1725.87,-1529.85"/>
-<ellipse fill="none" stroke="black" cx="1722.81" cy="-1530.81" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1719.7,-1542.93C1664.18,-1585.24 1764.59,-1913.45 1686,-1913.45"/>
+<polygon fill="black" stroke="black" points="1725.89,-1540.92 1734.61,-1541.88 1729.69,-1539.69 1733.5,-1538.45 1733.5,-1538.45 1733.5,-1538.45 1729.69,-1539.69 1732.39,-1535.03 1725.89,-1540.92 1725.89,-1540.92"/>
+<ellipse fill="none" stroke="black" cx="1722.85" cy="-1541.91" rx="3.2" ry="3.2"/>
 </g>
 <!-- m_inout&#45;&gt;ad_user -->
 <g id="edge47" class="edge">

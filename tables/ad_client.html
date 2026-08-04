@@ -788,6 +788,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_entregaavulsa.ad_client_id references ad_client.ad_client_id via adclient_cofentregaavulsa"><a href='cof_entregaavulsa.html'>cof_entregaavulsa</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_cofentregaavulsa</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_formacaopreco.ad_client_id references ad_client.ad_client_id via adclient_cofformacaopreco"><a href='cof_formacaopreco.html'>cof_formacaopreco</a><span class='relatedKey'>.ad_client_id</span></td>
                                                 <td class="constraint detail">adclient_cofformacaopreco</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -2004,12 +2009,12 @@
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_client_isuseasp_check</td>
-                                    <td>((isuseasp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>ad_client_issecuresmtp_check</td>
                                     <td>((issecuresmtp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_client_isuseasp_check</td>
+                                    <td>((isuseasp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

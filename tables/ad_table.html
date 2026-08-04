@@ -428,6 +428,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_entregaavulsa.ad_table_id references ad_table.ad_table_id via adtable_cofentregaavulsa"><a href='cof_entregaavulsa.html'>cof_entregaavulsa</a><span class='relatedKey'>.ad_table_id</span></td>
+                                                <td class="constraint detail">adtable_cofentregaavulsa</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_historicoconsultas.ad_table_id references ad_table.ad_table_id via adtable_cofhistoricoconsultas"><a href='cof_historicoconsultas.html'>cof_historicoconsultas</a><span class='relatedKey'>.ad_table_id</span></td>
                                                 <td class="constraint detail">adtable_cofhistoricoconsultas</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1264,36 +1269,36 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>ad_table_iscentrallymaintained_check</td>
-                                    <td>((iscentrallymaintained &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_table_isview_check</td>
+                                    <td>((isview &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_table_issecurityenabled_check</td>
                                     <td>((issecurityenabled &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_table_isdeleteable_check</td>
-                                    <td>((isdeleteable &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_table_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_table_isview_check</td>
-                                    <td>((isview &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_table_isshowindrilloptions_check</td>
+                                    <td>((isshowindrilloptions &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_table_iscentrallymaintained_check</td>
+                                    <td>((iscentrallymaintained &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_table_ispartition_check</td>
                                     <td>((ispartition &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_table_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_table_isdeleteable_check</td>
+                                    <td>((isdeleteable &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_table_ishighvolume_check</td>
                                     <td>((ishighvolume &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_table_isshowindrilloptions_check</td>
-                                    <td>((isshowindrilloptions &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

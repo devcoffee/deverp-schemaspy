@@ -1208,6 +1208,28 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="cof_entregaavulsa_id">cof_entregaavulsa_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="cof_packinglist_line.cof_entregaavulsa_id references cof_entregaavulsa.cof_entregaavulsa_id via cofentregaavulsa_cofpackinglistline"><a href='cof_entregaavulsa.html'>cof_entregaavulsa</a><span class='relatedKey'>.cof_entregaavulsa_id</span></td>
+                                                <td class="constraint detail">cofentregaavulsa_cofpackinglistline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1285,28 +1307,28 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>cof_packinglist_line_cte_isdestinatario_check</td>
-                                    <td>((cte_isdestinatario &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_packinglist_line_z_isdispvinculoobrigatorio_check</td>
                                     <td>((z_isdispvinculoobrigatorio &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>cof_packinglist_line_cof_isdispvinculoobrigatorio_check</td>
-                                    <td>((cof_isdispvinculoobrigatorio &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_packinglist_line_cof_permiteestorno_check</td>
                                     <td>((cof_permiteestorno &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
+                                    <td>cof_packinglist_line_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_packinglist_line_cof_isdispvinculoobrigatorio_check</td>
+                                    <td>((cof_isdispvinculoobrigatorio &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>cof_packinglist_line_cof_isincluiralmoco_check</td>
                                     <td>((cof_isincluiralmoco &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>cof_packinglist_line_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>cof_packinglist_line_cte_isdestinatario_check</td>
+                                    <td>((cte_isdestinatario &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
