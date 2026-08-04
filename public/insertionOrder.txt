@@ -219,6 +219,7 @@ m_shipper
 cof_driver
 cof_c_cardnetwork
 cof_contractgroup
+cof_entregaavulsa
 cof_c_custody
 cof_c_bankoccurrence
 c_elementvalue

@@ -1046,6 +1046,7 @@ c_bankaccount
 c_elementvalue
 cof_c_bankoccurrence
 cof_c_custody
+cof_entregaavulsa
 cof_contractgroup
 cof_c_cardnetwork
 cof_driver

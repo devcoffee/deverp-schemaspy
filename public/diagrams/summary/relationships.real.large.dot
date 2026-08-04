@@ -973,7 +973,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="72" HEIGHT="16"><B>c_location</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">16 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">39 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">16 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">40 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_location.html"
     target="_top"
@@ -3811,7 +3811,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="65" HEIGHT="16"><B>ad_client</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">2 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">216 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">2 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">217 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_client.html"
     target="_top"
@@ -4416,7 +4416,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="49" HEIGHT="16"><B>ad_org</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">3 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">297 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">3 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">298 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_org.html"
     target="_top"
@@ -4427,7 +4427,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="142" HEIGHT="16"><B>cof_packinglist_line</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 14</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 15</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/cof_packinglist_line.html"
     target="_top"
@@ -8387,7 +8387,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="62" HEIGHT="16"><B>ad_table</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">1.443 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">84 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">1.443 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">85 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_table.html"
     target="_top"
@@ -9575,7 +9575,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="56" HEIGHT="16"><B>ad_user</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 19</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">8 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">466 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 19</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">8 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">468 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_user.html"
     target="_top"
@@ -10009,6 +10009,17 @@ digraph "largeRelationshipsDiagram" {
     URL="../../tables/ad_modelgeneratortemplate.html"
     target="_top"
     tooltip="ad_modelgeneratortemplate"
+  ];
+  "cof_entregaavulsa" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="133" HEIGHT="16"><B>cof_entregaavulsa</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 7</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_entregaavulsa.html"
+    target="_top"
+    tooltip="cof_entregaavulsa"
   ];
   "r_requestupdates" [
    label=<
@@ -11412,7 +11423,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="78" HEIGHT="16"><B>c_bpartner</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 27</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">4 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">190 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 27</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">4 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">191 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_bpartner.html"
     target="_top"
@@ -18984,6 +18995,13 @@ digraph "largeRelationshipsDiagram" {
   "cof_driver":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_elementvaluereference":"c_elementvalue_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_elementvaluereference":"cof_elementfrom_id":w -> "c_element":"c_element_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"ad_client_id":w -> "ad_client":"ad_client_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"ad_table_id":w -> "ad_table":"ad_table_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"c_location_id":w -> "c_location":"c_location_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"createdby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"updatedby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_equipments":"a_asset_id":w -> "a_asset":"a_asset_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_equipments":"cof_combustivel_id":w -> "cof_combustivel":"cof_combustivel_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_equipments":"cof_driver_id":w -> "cof_driver":"cof_driver_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -19268,6 +19286,7 @@ digraph "largeRelationshipsDiagram" {
   "cof_packinglist_line":"cof_deliveryoccurrence_id":w -> "cof_deliveryoccurrence":"cof_deliveryoccurrence_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_packinglist_line":"cof_deliveryrestriction_id":w -> "cof_deliveryrestriction":"cof_deliveryrestriction_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_packinglist_line":"cof_dfe_id":w -> "cof_dfe":"cof_dfe_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_packinglist_line":"cof_entregaavulsa_id":w -> "cof_entregaavulsa":"cof_entregaavulsa_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_packinglist_line":"cof_m_shipregion_id":w -> "cof_m_shipregion":"cof_m_shipregion_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_packinglist_line":"cof_packinglist_id":w -> "cof_packinglist":"cof_packinglist_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_packinglist_line":"cte_bpremetente_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];

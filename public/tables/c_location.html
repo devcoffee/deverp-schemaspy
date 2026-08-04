@@ -183,6 +183,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_entregaavulsa.c_location_id references c_location.c_location_id via clocation_cofentregaavulsa"><a href='cof_entregaavulsa.html'>cof_entregaavulsa</a><span class='relatedKey'>.c_location_id</span></td>
+                                                <td class="constraint detail">clocation_cofentregaavulsa</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_member.c_location_id references c_location.c_location_id via clocation_cofmember"><a href='cof_member.html'>cof_member</a><span class='relatedKey'>.c_location_id</span></td>
                                                 <td class="constraint detail">clocation_cofmember</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -897,12 +902,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>c_location_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>c_location_isvalid_check</td>
                                     <td>((isvalid &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_location_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
