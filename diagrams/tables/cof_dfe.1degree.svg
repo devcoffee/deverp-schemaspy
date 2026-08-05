@@ -353,51 +353,60 @@
 <g id="node4" class="node">
 <title>lbr_eventonfe</title>
 <g id="a_node4"><a xlink:href="../../tables/lbr_eventonfe.html" xlink:title="lbr_eventonfe" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="725,-656 725,-802 882,-802 882,-656 725,-656"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="725.5,-780 725.5,-802 882.5,-802 882.5,-780 725.5,-780"/>
-<polygon fill="none" stroke="black" points="725.5,-780 725.5,-802 882.5,-802 882.5,-780 725.5,-780"/>
-<text text-anchor="start" x="730.5" y="-789.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_eventonfe</text>
-<text text-anchor="start" x="847.5" y="-788.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="725.5,-758 725.5,-780 882.5,-780 882.5,-758 725.5,-758"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="730.5" y="-775"/>
-<text text-anchor="start" x="745.5" y="-766.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_eventonfe_id</text>
-<polygon fill="none" stroke="black" points="725.5,-736 725.5,-758 882.5,-758 882.5,-736 725.5,-736"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="730.5" y="-753"/>
-<text text-anchor="start" x="745.5" y="-744.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_docfiscal_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="725.5,-714 725.5,-736 882.5,-736 882.5,-714 725.5,-714"/>
-<polygon fill="none" stroke="black" points="725.5,-714 725.5,-736 882.5,-736 882.5,-714 725.5,-714"/>
-<text text-anchor="start" x="745.5" y="-722.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_eventonfe_uu</text>
-<polygon fill="none" stroke="black" points="725.5,-692 725.5,-714 882.5,-714 882.5,-692 725.5,-692"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="730.5" y="-709"/>
-<text text-anchor="start" x="745.5" y="-700.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_dfe_id</text>
-<polygon fill="none" stroke="black" points="725.5,-674 725.5,-692 882.5,-692 882.5,-674 725.5,-674"/>
-<text text-anchor="start" x="728.5" y="-680.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="725.5,-656 725.5,-674 882.5,-674 882.5,-656 725.5,-656"/>
-<polygon fill="none" stroke="black" points="725.5,-656 725.5,-674 882.5,-674 882.5,-656 725.5,-656"/>
-<polygon fill="#ffffff" stroke="transparent" points="726.5,-657 726.5,-673 784.5,-673 784.5,-657 726.5,-657"/>
-<text text-anchor="start" x="728.5" y="-662.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 2</text>
-<polygon fill="#ffffff" stroke="transparent" points="784.5,-657 784.5,-673 833.5,-673 833.5,-657 784.5,-657"/>
-<text text-anchor="start" x="805.5" y="-662.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="833.5,-657 833.5,-673 881.5,-673 881.5,-657 833.5,-657"/>
-<text text-anchor="start" x="872.5" y="-662.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="black" stroke="black" points="784.5,-657 784.5,-673 784.5,-673 784.5,-657 784.5,-657"/>
-<polygon fill="black" stroke="black" points="833.5,-657 833.5,-673 833.5,-673 833.5,-657 833.5,-657"/>
+<polygon fill="#ffffff" stroke="transparent" points="724.5,-559 724.5,-771 882.5,-771 882.5,-559 724.5,-559"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="724.5,-749 724.5,-771 882.5,-771 882.5,-749 724.5,-749"/>
+<polygon fill="none" stroke="black" points="724.5,-749 724.5,-771 882.5,-771 882.5,-749 724.5,-749"/>
+<text text-anchor="start" x="729.5" y="-758.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_eventonfe</text>
+<text text-anchor="start" x="847.5" y="-757.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="724.5,-727 724.5,-749 882.5,-749 882.5,-727 724.5,-727"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="729.5" y="-744"/>
+<text text-anchor="start" x="744.5" y="-735.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_eventonfe_id</text>
+<polygon fill="none" stroke="black" points="724.5,-705 724.5,-727 882.5,-727 882.5,-705 724.5,-705"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="729.5" y="-722"/>
+<text text-anchor="start" x="744.5" y="-713.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_docfiscal_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="724.5,-683 724.5,-705 882.5,-705 882.5,-683 724.5,-683"/>
+<polygon fill="none" stroke="black" points="724.5,-683 724.5,-705 882.5,-705 882.5,-683 724.5,-683"/>
+<text text-anchor="start" x="744.5" y="-691.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_eventonfe_uu</text>
+<polygon fill="none" stroke="black" points="724.5,-661 724.5,-683 882.5,-683 882.5,-661 724.5,-661"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="729.5" y="-678"/>
+<text text-anchor="start" x="744.5" y="-669.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_dfe_id</text>
+<polygon fill="none" stroke="black" points="724.5,-639 724.5,-661 882.5,-661 882.5,-639 724.5,-639"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="729.5" y="-656"/>
+<text text-anchor="start" x="744.5" y="-647.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_uom_id</text>
+<polygon fill="none" stroke="black" points="724.5,-617 724.5,-639 882.5,-639 882.5,-617 724.5,-617"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="729.5" y="-634"/>
+<text text-anchor="start" x="744.5" y="-625.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_tpeventoaut_id</text>
+<polygon fill="none" stroke="black" points="724.5,-595 724.5,-617 882.5,-617 882.5,-595 724.5,-595"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="729.5" y="-612"/>
+<text text-anchor="start" x="744.5" y="-603.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_nitem_id</text>
+<polygon fill="none" stroke="black" points="724.5,-577 724.5,-595 882.5,-595 882.5,-577 724.5,-577"/>
+<text text-anchor="start" x="727.5" y="-583.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="724.5,-559 724.5,-577 882.5,-577 882.5,-559 724.5,-559"/>
+<polygon fill="none" stroke="black" points="724.5,-559 724.5,-577 882.5,-577 882.5,-559 724.5,-559"/>
+<polygon fill="#ffffff" stroke="transparent" points="725.5,-560 725.5,-576 780.5,-576 780.5,-560 725.5,-560"/>
+<text text-anchor="start" x="727.5" y="-565.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 5</text>
+<polygon fill="#ffffff" stroke="transparent" points="780.5,-560 780.5,-576 826.5,-576 826.5,-560 780.5,-560"/>
+<text text-anchor="start" x="800" y="-565.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="826.5,-560 826.5,-576 881.5,-576 881.5,-560 826.5,-560"/>
+<text text-anchor="start" x="863.5" y="-565.2" font-family="Helvetica,sans-Serif" font-size="11.00">1 &gt;</text>
+<polygon fill="black" stroke="black" points="780.5,-560 780.5,-576 780.5,-576 780.5,-560 780.5,-560"/>
+<polygon fill="black" stroke="black" points="826.5,-560 826.5,-576 826.5,-576 826.5,-560 826.5,-560"/>
 </a>
 </g>
 </g>
 <!-- lbr_eventonfe&#45;&gt;cof_dfe -->
 <g id="edge4" class="edge">
 <title>lbr_eventonfe:w&#45;&gt;cof_dfe:e</title>
-<path fill="none" stroke="black" d="M710.11,-700.75C679.63,-689.85 688.01,-642.38 649,-626 514.59,-569.55 432.82,-532.47 321,-626 239.95,-693.79 384.66,-860 279,-860"/>
-<polygon fill="black" stroke="black" points="716.6,-701.76 723.94,-706.56 720.55,-702.38 724.5,-703 724.5,-703 724.5,-703 720.55,-702.38 725.06,-699.44 716.6,-701.76 716.6,-701.76"/>
-<ellipse fill="none" stroke="black" cx="713.43" cy="-701.27" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M709,-670.01C684.43,-662.5 680.88,-635.88 649,-627 508.57,-587.88 432.85,-533.51 321,-627 240.26,-694.48 384.22,-860 279,-860"/>
+<polygon fill="black" stroke="black" points="715.57,-670.91 723.01,-675.57 719.54,-671.46 723.5,-672 723.5,-672 723.5,-672 719.54,-671.46 723.99,-668.43 715.57,-670.91 715.57,-670.91"/>
+<ellipse fill="none" stroke="black" cx="712.4" cy="-670.48" rx="3.2" ry="3.2"/>
 </g>
 <!-- lbr_eventonfe&#45;&gt;lbr_docfiscal -->
 <g id="edge5" class="edge">
 <title>lbr_eventonfe:w&#45;&gt;lbr_docfiscal:e</title>
-<path fill="none" stroke="black" d="M710.03,-749.29C682.51,-759.73 695.52,-803.85 682,-842 658.95,-907.03 711,-992 642,-992"/>
-<polygon fill="black" stroke="black" points="716.6,-748.25 725.06,-750.56 720.55,-747.63 724.5,-747 724.5,-747 724.5,-747 720.55,-747.63 723.94,-743.44 716.6,-748.25 716.6,-748.25"/>
-<ellipse fill="none" stroke="black" cx="713.44" cy="-748.75" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M708.76,-717.91C670.75,-729.45 697.18,-791.01 682,-842 662.31,-908.13 711,-992 642,-992"/>
+<polygon fill="black" stroke="black" points="715.57,-717.03 723.96,-719.57 719.53,-716.51 723.5,-716 723.5,-716 723.5,-716 719.53,-716.51 723.04,-712.43 715.57,-717.03 715.57,-717.03"/>
+<ellipse fill="none" stroke="black" cx="712.39" cy="-717.44" rx="3.2" ry="3.2"/>
 </g>
 </g>
 </svg>
