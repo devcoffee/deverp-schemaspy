@@ -168,6 +168,11 @@
                                                 <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="lbr_eventonfe.lbr_nitem_id references lbr_docfiscal_line.lbr_docfiscal_line_id via lbrnitem_lbreventonfe"><a href='lbr_eventonfe.html'>lbr_eventonfe</a><span class='relatedKey'>.lbr_nitem_id</span></td>
+                                                <td class="constraint detail">lbrnitem_lbreventonfe</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="m_inoutline.lbr_docfiscal_line_id references lbr_docfiscal_line.lbr_docfiscal_line_id via lbrdocfiscalline_minoutline"><a href='m_inoutline.html'>m_inoutline</a><span class='relatedKey'>.lbr_docfiscal_line_id</span></td>
                                                 <td class="constraint detail">lbrdocfiscalline_minoutline</td>
                                                 <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
@@ -5234,32 +5239,32 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>lbr_docfiscal_line_cof_ind_gajustecompet_check</td>
-                                    <td>((cof_ind_gajustecompet &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>lbr_docfiscal_line_cof_ind_gtribregular_check</td>
+                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_docfiscal_line_imposto_ibscbs_inddoacao_check</td>
                                     <td>((imposto_ibscbs_inddoacao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_docfiscal_line_cof_ind_gtribregular_check</td>
-                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>lbr_docfiscal_line_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>lbr_docfiscal_line_cof_ind_gajustecompet_check</td>
+                                    <td>((cof_ind_gajustecompet &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_docfiscal_line_cof_ind_gisencao_check</td>
                                     <td>((cof_ind_gisencao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_docfiscal_line_cof_ind_gestornocred_check</td>
-                                    <td>((cof_ind_gestornocred &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>lbr_docfiscal_line_det_prod_indbemmovelusado_check</td>
                                     <td>((det_prod_indbemmovelusado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_docfiscal_line_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_docfiscal_line_cof_ind_gestornocred_check</td>
+                                    <td>((cof_ind_gestornocred &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

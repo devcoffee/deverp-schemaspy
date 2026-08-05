@@ -9806,7 +9806,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isactive_check"/>
          <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isdefault_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_sequence" numRows="2128" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_sequence" numRows="2129" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_sequence_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceaudit" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_audit"/>
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceno" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_no"/>
@@ -31933,6 +31933,7 @@
             <child catalog="brerp-12" column="c_uom_id" foreignKey="cuom_ipricelist" implied="false" onDeleteCascade="false" schema="adempiere" table="i_pricelist"/>
             <child catalog="brerp-12" column="c_uom_id" foreignKey="cuom_iproduct" implied="false" onDeleteCascade="false" schema="adempiere" table="i_product"/>
             <child catalog="brerp-12" column="cof_uomcomercial_id" foreignKey="cofuomcomercial_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
+            <child catalog="brerp-12" column="c_uom_id" foreignKey="cuom_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_eventonfe"/>
             <child catalog="brerp-12" column="c_uom_id" foreignKey="cuom_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inoutline"/>
             <child catalog="brerp-12" column="c_uom_id" foreignKey="cuom_mmovementline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_movementline"/>
             <child catalog="brerp-12" column="c_uom_length_id" foreignKey="cuomlength_mpackage" implied="false" onDeleteCascade="false" schema="adempiere" table="m_package"/>
@@ -56520,6 +56521,7 @@
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_lbrdocfiscallinedi" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line_di"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_lbrdocfiscallinenve" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line_nve"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_lbrdocfiscallinerastro" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line_rastro"/>
+            <child catalog="brerp-12" column="lbr_nitem_id" foreignKey="lbrnitem_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_eventonfe"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inoutline"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="lbr_docfiscal_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -57331,7 +57333,9 @@
          <column autoUpdated="false" defaultValue="'DR'::character varying" digits="0" id="8" name="docstatus" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="9" name="email" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="10" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="lbr_eventonfe_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="lbr_eventonfe_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="lbr_tpeventoaut_id" foreignKey="lbrtpeventoaut_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_eventonfe"/>
+         </column>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="12" name="processed" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="1" digits="0" id="13" name="seqno" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="14" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
@@ -57359,6 +57363,23 @@
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="32" name="lbr_cpfautorizado" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="33" name="lbr_cnpjautorizado" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="34" name="lbr_tpautorizacao" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="35" name="lbr_vibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="36" name="lbr_vcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="37" name="lbr_qtde" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="c_uom_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_uom_id" foreignKey="cuom_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="c_uom"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="39" name="lbr_nitemdferef" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="40" name="lbr_vcredibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="41" name="lbr_vcredcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="lbr_indaceitacao" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="lbr_tpeventoaut_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_eventonfe_id" foreignKey="lbrtpeventoaut_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_eventonfe"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="44" name="lbr_dpreventrega" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="lbr_nitem_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrnitem_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
+         </column>
          <primaryKey column="lbr_eventonfe_id" sequenceNumberInPK="1"/>
          <index name="lbr_cce_key" unique="true">
             <column ascending="true" name="lbr_eventonfe_id"/>

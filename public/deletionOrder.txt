@@ -426,7 +426,6 @@ m_commodityshipment
 m_attributeuse
 m_attributesetexclude
 lbr_issmatrix
-lbr_eventonfe
 lbr_docfiscal_ref
 lbr_docfiscal_line_di_adi
 k_entryrelated
@@ -900,6 +899,7 @@ c_projectissue
 s_timeexpenseline
 s_timeexpense
 ad_wf_process
+lbr_eventonfe
 cof_label
 m_matchpo
 ad_tree_favorite_node

@@ -366,6 +366,7 @@ ad_tree_favorite
 ad_tree_favorite_node
 m_matchpo
 cof_label
+lbr_eventonfe
 ad_wf_process
 s_timeexpense
 s_timeexpenseline
@@ -839,7 +840,6 @@ k_comment
 k_entryrelated
 lbr_docfiscal_line_di_adi
 lbr_docfiscal_ref
-lbr_eventonfe
 lbr_issmatrix
 m_attributesetexclude
 m_attributeuse
