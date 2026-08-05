@@ -17622,6 +17622,7 @@
             <child catalog="brerp-12" column="cof_payfrom_location_id" foreignKey="cofpayfromlocation_cofcontract" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_contract"/>
             <child catalog="brerp-12" column="c_bpartner_location_id" foreignKey="cbpartnerlocation_cofcreditana" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_creditanalysis"/>
             <child catalog="brerp-12" column="c_bpartner_location_id" foreignKey="cbpartnerlocation_cofdeliveryr" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_deliveryrestriction"/>
+            <child catalog="brerp-12" column="c_bpartner_location_id" foreignKey="cbpartnerlocation_cofentregaavulsa" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_entregaavulsa"/>
             <child catalog="brerp-12" column="c_bpartner_location_id" foreignKey="cbpartnerlocation_cofmdfereboq" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_reboque"/>
             <child catalog="brerp-12" column="c_bpartner_location_id" foreignKey="cbpartnerlocation_cofordemserv" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_ordemservico"/>
             <child catalog="brerp-12" column="c_bpartner_location_id" foreignKey="cbpartnerlocation_cofpackingli" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packinglist_line"/>
@@ -40710,6 +40711,9 @@
          <column autoUpdated="false" defaultValue="null" digits="6" id="14" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofentregaavulsa" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="16" name="c_bpartner_location_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_bpartner_location_id" foreignKey="cbpartnerlocation_cofentregaavulsa" implied="false" onDeleteCascade="false" schema="adempiere" table="c_bpartner_location"/>
          </column>
          <primaryKey column="cof_entregaavulsa_id" sequenceNumberInPK="1"/>
          <index name="cof_entregaavulsa_key" unique="true">

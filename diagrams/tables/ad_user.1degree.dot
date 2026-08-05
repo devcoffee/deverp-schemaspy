@@ -658,6 +658,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "cof_entregaavulsa":"ad_client_id":w -> "ad_client":"ad_client_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_entregaavulsa":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_entregaavulsa":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_entregaavulsa":"c_bpartner_location_id":w -> "c_bpartner_location":"c_bpartner_location_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_entregaavulsa":"c_location_id":w -> "c_location":"c_location_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_entregaavulsa":"createdby":w -> "ad_user":"ad_user_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_entregaavulsa":"updatedby":w -> "ad_user":"ad_user_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -2823,7 +2824,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="c_bpartner_location_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="214" HEIGHT="16">c_bpartner_location_uu</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="cof_m_shipregion_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="214" HEIGHT="16">cof_m_shipregion_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">5 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">66 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">5 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">67 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_bpartner_location.html"
     target="_top"
@@ -4466,8 +4467,9 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_entregaavulsa_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="166" HEIGHT="16">cof_entregaavulsa_uu</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="createdby" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="166" HEIGHT="16">createdby</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="updatedby" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="166" HEIGHT="16">updatedby</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_bpartner_location_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="166" HEIGHT="16">c_bpartner_location_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 7</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/cof_entregaavulsa.html"
     target="_top"

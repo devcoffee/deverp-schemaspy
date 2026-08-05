@@ -268,6 +268,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_entregaavulsa.c_bpartner_location_id references c_bpartner_location.c_bpartner_location_id via cbpartnerlocation_cofentregaavulsa"><a href='cof_entregaavulsa.html'>cof_entregaavulsa</a><span class='relatedKey'>.c_bpartner_location_id</span></td>
+                                                <td class="constraint detail">cbpartnerlocation_cofentregaavulsa</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_mdfe_reboque.c_bpartner_location_id references c_bpartner_location.c_bpartner_location_id via cbpartnerlocation_cofmdfereboq"><a href='cof_mdfe_reboque.html'>cof_mdfe_reboque</a><span class='relatedKey'>.c_bpartner_location_id</span></td>
                                                 <td class="constraint detail">cbpartnerlocation_cofmdfereboq</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1180,6 +1185,14 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>c_bpartner_location_isbillto_check</td>
+                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_location_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>c_bpartner_location_iscof_automatico_check</td>
                                     <td>((iscof_automatico &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
@@ -1188,28 +1201,20 @@
                                     <td>((isshipto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_bpartner_location_ispayfrom_check</td>
-                                    <td>((ispayfrom &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_location_isremitto_check</td>
-                                    <td>((isremitto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_location_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_location_isbillto_check</td>
-                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>c_bpartner_location_ispreservecustomname_check</td>
                                     <td>((ispreservecustomname &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_bpartner_location_cof_isenderecocomplementar_check</td>
                                     <td>((cof_isenderecocomplementar &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_location_ispayfrom_check</td>
+                                    <td>((ispayfrom &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_location_isremitto_check</td>
+                                    <td>((isremitto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
