@@ -1804,6 +1804,28 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="cof_produtosubstitutonfe_id">cof_produtosubstitutonfe_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="c_invoiceline.cof_produtosubstitutonfe_id references m_product.m_product_id via cofprodutosubstitutonfe_cinvoiceline"><a href='m_product.html'>m_product</a><span class='relatedKey'>.m_product_id</span></td>
+                                                <td class="constraint detail">cofprodutosubstitutonfe_cinvoiceline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1909,12 +1931,12 @@
                                     <td>((a_createasset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_invoiceline_cof_kitcomercial_check</td>
-                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_invoiceline_cof_isgenericitem_check</td>
+                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_invoiceline_imposto_ibscbs_inddoacao_check</td>
-                                    <td>((imposto_ibscbs_inddoacao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_invoiceline_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_invoiceline_lbr_recalculatetax_check</td>
@@ -1925,16 +1947,16 @@
                                     <td>((isfixedassetinvoice &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_invoiceline_cof_isgenericitem_check</td>
-                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_invoiceline_cof_kitcomercial_check</td>
+                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_invoiceline_a_processed_check</td>
                                     <td>((a_processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_invoiceline_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_invoiceline_imposto_ibscbs_inddoacao_check</td>
+                                    <td>((imposto_ibscbs_inddoacao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
