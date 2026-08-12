@@ -188,6 +188,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="c_invoiceline.cof_produtosubstitutonfe_id references m_product.m_product_id via cofprodutosubstitutonfe_cinvoiceline"><a href='c_invoiceline.html'>c_invoiceline</a><span class='relatedKey'>.cof_produtosubstitutonfe_id</span></td>
+                                                <td class="constraint detail">cofprodutosubstitutonfe_cinvoiceline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="c_invoiceline.m_product_id references m_product.m_product_id via mproduct_cinvoiceline"><a href='c_invoiceline.html'>c_invoiceline</a><span class='relatedKey'>.m_product_id</span></td>
                                                 <td class="constraint detail">mproduct_cinvoiceline</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -205,6 +210,11 @@
                                             <tr>
                                                 <td title="c_orderline.cof_kitvendas_id references m_product.m_product_id via cofkitvendas_corderline"><a href='c_orderline.html'>c_orderline</a><span class='relatedKey'>.cof_kitvendas_id</span></td>
                                                 <td class="constraint detail">cofkitvendas_corderline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="c_orderline.cof_produtosubstitutonfe_id references m_product.m_product_id via cofprodutosubstitutonfe_corderline"><a href='c_orderline.html'>c_orderline</a><span class='relatedKey'>.cof_produtosubstitutonfe_id</span></td>
+                                                <td class="constraint detail">cofprodutosubstitutonfe_corderline</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -710,6 +720,11 @@
                                             <tr>
                                                 <td title="m_inoutline.cof_kitvendas_id references m_product.m_product_id via cofkitvendas_minoutline"><a href='m_inoutline.html'>m_inoutline</a><span class='relatedKey'>.cof_kitvendas_id</span></td>
                                                 <td class="constraint detail">cofkitvendas_minoutline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_inoutline.cof_produtosubstitutonfe_id references m_product.m_product_id via cofprodutosubstitutonfe_minoutline"><a href='m_inoutline.html'>m_inoutline</a><span class='relatedKey'>.cof_produtosubstitutonfe_id</span></td>
+                                                <td class="constraint detail">cofprodutosubstitutonfe_minoutline</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -3694,52 +3709,64 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>m_product_cof_kitcomercial_check</td>
-                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_istoformule_check</td>
-                                    <td>((istoformule &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_ismanufactured_check</td>
-                                    <td>((ismanufactured &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_isownbox_check</td>
-                                    <td>((isownbox &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_isinvoiceprintdetails_check</td>
-                                    <td>((isinvoiceprintdetails &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_cof_isindustrializadoporterceiro_check</td>
-                                    <td>((cof_isindustrializadoporterceiro &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_cof_isrestringirlocalizador_check</td>
-                                    <td>((cof_isrestringirlocalizador &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_cof_rateioobrigatorio_check</td>
-                                    <td>((cof_rateioobrigatorio &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_cof_ismaterialdeterceiro_check</td>
-                                    <td>((cof_ismaterialdeterceiro &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_isverified_check</td>
-                                    <td>((isverified &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_det_prod_indbemmovelusado_check</td>
+                                    <td>((det_prod_indbemmovelusado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_product_cof_executado_check</td>
                                     <td>((cof_executado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
+                                    <td>m_product_istoformule_check</td>
+                                    <td>((istoformule &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_isinvoiceprintdetails_check</td>
+                                    <td>((isinvoiceprintdetails &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_cof_isrestringirlocalizador_check</td>
+                                    <td>((cof_isrestringirlocalizador &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_cof_isgenericitem_check</td>
+                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_lbr_hassubstitution_check</td>
+                                    <td>((lbr_hassubstitution &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_cof_rateioobrigatorio_check</td>
+                                    <td>((cof_rateioobrigatorio &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_iskanban_check</td>
+                                    <td>((iskanban &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_ismanufactured_check</td>
+                                    <td>((ismanufactured &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_issold_check</td>
+                                    <td>((issold &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_isbompriceoverride_check</td>
+                                    <td>((isbompriceoverride &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>m_product_cof_iskitvendas_check</td>
                                     <td>((cof_iskitvendas &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_product_cof_ismaterialdeterceiro_check</td>
+                                    <td>((cof_ismaterialdeterceiro &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_product_isbom_check</td>
@@ -3750,60 +3777,48 @@
                                     <td>((cof_liberadosweb &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_det_prod_indbemmovelusado_check</td>
-                                    <td>((det_prod_indbemmovelusado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_discontinued_check</td>
+                                    <td>((discontinued &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_ispicklistprintdetails_check</td>
-                                    <td>((ispicklistprintdetails &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_isverified_check</td>
+                                    <td>((isverified &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_product_ispurchased_check</td>
                                     <td>((ispurchased &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_cof_isfci_check</td>
-                                    <td>((cof_isfci &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_isbompriceoverride_check</td>
-                                    <td>((isbompriceoverride &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_cof_isnve_check</td>
+                                    <td>((cof_isnve &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_product_isstocked_check</td>
                                     <td>((isstocked &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_lbr_hassubstitution_check</td>
-                                    <td>((lbr_hassubstitution &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_cof_isfci_check</td>
+                                    <td>((cof_isfci &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_cof_isindustrializadoporterceiro_check</td>
+                                    <td>((cof_isindustrializadoporterceiro &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_iskanban_check</td>
-                                    <td>((iskanban &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_cof_isnve_check</td>
-                                    <td>((cof_isnve &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_cof_kitcomercial_check</td>
+                                    <td>((cof_kitcomercial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>m_product_isautoproduce_check</td>
                                     <td>((isautoproduce &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_issold_check</td>
-                                    <td>((issold &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_isownbox_check</td>
+                                    <td>((isownbox &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_product_cof_isgenericitem_check</td>
-                                    <td>((cof_isgenericitem &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_product_discontinued_check</td>
-                                    <td>((discontinued &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_product_ispicklistprintdetails_check</td>
+                                    <td>((ispicklistprintdetails &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

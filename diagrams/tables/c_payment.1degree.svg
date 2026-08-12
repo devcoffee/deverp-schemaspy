@@ -1780,6 +1780,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="1984,-2205.08 1984,-2227.08 2296,-2227.08 2296,-2205.08 1984,-2205.08"/>
 <polygon fill="none" stroke="black" points="1984,-2205.08 1984,-2227.08 2296,-2227.08 2296,-2205.08 1984,-2205.08"/>
 <text text-anchor="start" x="2004" y="-2213.28" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="1984,-2183.08 1984,-2205.08 2296,-2205.08 2296,-2183.08 1984,-2183.08"/>
 <polygon fill="none" stroke="black" points="1984,-2183.08 1984,-2205.08 2296,-2205.08 2296,-2183.08 1984,-2183.08"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1989" y="-2200.08"/>
 <text text-anchor="start" x="2004" y="-2191.28" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>

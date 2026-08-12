@@ -21838,6 +21838,7 @@
             <column ascending="true" name="c_bpartner_id"/>
             <column ascending="true" name="documentno"/>
             <column ascending="true" name="c_doctypetarget_id"/>
+            <column ascending="true" name="ad_org_id"/>
          </index>
          <index name="c_invoice_order" unique="false">
             <column ascending="true" name="c_order_id"/>
@@ -23514,6 +23515,9 @@
             <parent catalog="brerp-12" column="c_uom_id" foreignKey="cofuomcomercial_cinvoiceline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_uom"/>
          </column>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="82" name="imposto_ibscbs_inddoacao" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="83" name="cof_produtosubstitutonfe_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="m_product_id" foreignKey="cofprodutosubstitutonfe_cinvoiceline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_product"/>
+         </column>
          <primaryKey column="c_invoiceline_id" sequenceNumberInPK="1"/>
          <index name="c_invoiceline_pkey" unique="true">
             <column ascending="true" name="c_invoiceline_id"/>
@@ -26607,6 +26611,9 @@
             <parent catalog="brerp-12" column="cof_linhareposicao_id" foreignKey="coflinhareposicao_corderline" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_linhareposicao"/>
          </column>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="112" name="imposto_ibscbs_inddoacao" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="113" name="cof_produtosubstitutonfe_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="m_product_id" foreignKey="cofprodutosubstitutonfe_corderline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_product"/>
+         </column>
          <primaryKey column="c_orderline_id" sequenceNumberInPK="1"/>
          <index name="c_orderline_pkey" unique="true">
             <column ascending="true" name="c_orderline_id"/>
@@ -37772,7 +37779,7 @@
             <child catalog="brerp-12" column="cof_cobranca_pix_id" foreignKey="cofcobrancapix_coftitulo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_titulo"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="3" name="cof_cobranca_pix_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_pix_txid" nullable="true" remarks="" size="35" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="cof_pix_txid" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="5" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofcobrancapix" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
@@ -49139,7 +49146,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="124" name="cof_classeparceiro_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="125" name="cof_pix_status" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="126" name="cof_pix_texto_qrcode" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="127" name="cof_pix_txid" nullable="true" remarks="" size="35" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="127" name="cof_pix_txid" nullable="true" remarks="" size="100" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="128" name="cof_ispixgerado" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="129" name="cof_vezesprorrogado" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="6" id="130" name="cof_titulo_datavencimentooriginal" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
@@ -61179,6 +61186,9 @@
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="50" name="cof_mprecebida_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_mprecebida_id" foreignKey="cofmprecebida_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mprecebida"/>
          </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="51" name="cof_produtosubstitutonfe_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="m_product_id" foreignKey="cofprodutosubstitutonfe_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_product"/>
+         </column>
          <primaryKey column="m_inoutline_id" sequenceNumberInPK="1"/>
          <index name="m_inoutline_pkey" unique="true">
             <column ascending="true" name="m_inoutline_id"/>
@@ -62776,10 +62786,12 @@
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_ccommission" implied="false" onDeleteCascade="false" schema="adempiere" table="c_commission"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_ccommissionline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_commissionline"/>
             <child catalog="brerp-12" column="cof_kitvendas_id" foreignKey="cofkitvendas_cinvoiceline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_invoiceline"/>
+            <child catalog="brerp-12" column="cof_produtosubstitutonfe_id" foreignKey="cofprodutosubstitutonfe_cinvoiceline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_invoiceline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cinvoiceline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_invoiceline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_clandedcost" implied="false" onDeleteCascade="false" schema="adempiere" table="c_landedcost"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_clandedcostalloc" implied="false" onDeleteCascade="false" schema="adempiere" table="c_landedcostallocation"/>
             <child catalog="brerp-12" column="cof_kitvendas_id" foreignKey="cofkitvendas_corderline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_orderline"/>
+            <child catalog="brerp-12" column="cof_produtosubstitutonfe_id" foreignKey="cofprodutosubstitutonfe_corderline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_orderline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_corderline" implied="false" onDeleteCascade="false" schema="adempiere" table="c_orderline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cphase" implied="false" onDeleteCascade="false" schema="adempiere" table="c_phase"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_cposkey" implied="false" onDeleteCascade="false" schema="adempiere" table="c_poskey"/>
@@ -62881,6 +62893,7 @@
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_medi" implied="false" onDeleteCascade="false" schema="adempiere" table="m_edi"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_mforecastline" implied="false" onDeleteCascade="true" schema="adempiere" table="m_forecastline"/>
             <child catalog="brerp-12" column="cof_kitvendas_id" foreignKey="cofkitvendas_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inoutline"/>
+            <child catalog="brerp-12" column="cof_produtosubstitutonfe_id" foreignKey="cofprodutosubstitutonfe_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inoutline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inoutline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_minventoryline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inventoryline"/>
             <child catalog="brerp-12" column="m_product_id" foreignKey="mproduct_mlot" implied="false" onDeleteCascade="false" schema="adempiere" table="m_lot"/>

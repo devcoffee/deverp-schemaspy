@@ -4070,17 +4070,6 @@ digraph "largeRelationshipsDiagram" {
     target="_top"
     tooltip="a_asset_group_trl"
   ];
-  "c_rfqline" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="62" HEIGHT="16"><B>c_rfqline</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
-    </TABLE>>
-    URL="../../tables/c_rfqline.html"
-    target="_top"
-    tooltip="c_rfqline"
-  ];
   "c_revenuerecognition" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -4091,6 +4080,17 @@ digraph "largeRelationshipsDiagram" {
     URL="../../tables/c_revenuerecognition.html"
     target="_top"
     tooltip="c_revenuerecognition"
+  ];
+  "c_rfqline" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="62" HEIGHT="16"><B>c_rfqline</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/c_rfqline.html"
+    target="_top"
+    tooltip="c_rfqline"
   ];
   "c_tax" [
    label=<
@@ -5296,7 +5296,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16"><B>m_inoutline</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 24</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 25</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/m_inoutline.html"
     target="_top"
@@ -9251,17 +9251,6 @@ digraph "largeRelationshipsDiagram" {
     target="_top"
     tooltip="cof_mdfe_percurso"
   ];
-  "ad_task_access" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="110" HEIGHT="16"><B>ad_task_access</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">3 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
-    </TABLE>>
-    URL="../../tables/ad_task_access.html"
-    target="_top"
-    tooltip="ad_task_access"
-  ];
   "ad_task_trl" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -9272,6 +9261,17 @@ digraph "largeRelationshipsDiagram" {
     URL="../../tables/ad_task_trl.html"
     target="_top"
     tooltip="ad_task_trl"
+  ];
+  "ad_task_access" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="110" HEIGHT="16"><B>ad_task_access</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">3 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/ad_task_access.html"
+    target="_top"
+    tooltip="ad_task_access"
   ];
   "cof_materialaplicado" [
    label=<
@@ -11341,17 +11341,6 @@ digraph "largeRelationshipsDiagram" {
     target="_top"
     tooltip="cm_accesslistrole"
   ];
-  "cte_destinatario" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="118" HEIGHT="16"><B>cte_destinatario</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
-    </TABLE>>
-    URL="../../tables/cte_destinatario.html"
-    target="_top"
-    tooltip="cte_destinatario"
-  ];
   "cte_info" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -11362,6 +11351,17 @@ digraph "largeRelationshipsDiagram" {
     URL="../../tables/cte_info.html"
     target="_top"
     tooltip="cte_info"
+  ];
+  "cte_destinatario" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="118" HEIGHT="16"><B>cte_destinatario</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cte_destinatario.html"
+    target="_top"
+    tooltip="cte_destinatario"
   ];
   "cof_m_shipregion_city" [
    label=<
@@ -11676,7 +11676,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="93" HEIGHT="16"><B>c_invoiceline</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 33</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 34</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_invoiceline.html"
     target="_top"
@@ -11742,7 +11742,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="81" HEIGHT="16"><B>c_orderline</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 37</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 38</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_orderline.html"
     target="_top"
@@ -13227,7 +13227,7 @@ digraph "largeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="77" HEIGHT="16"><B>m_product</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 24</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">1 row</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">189 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 24</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">1 row</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">192 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/m_product.html"
     target="_top"
@@ -17965,6 +17965,7 @@ digraph "largeRelationshipsDiagram" {
   "c_invoiceline":"cof_mprecebida_id":w -> "cof_mprecebida":"cof_mprecebida_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline":"cof_pontoremessa_id":w -> "cof_pontoremessa":"cof_pontoremessa_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline":"cof_products_id":w -> "cof_products":"cof_products_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_invoiceline":"cof_produtosubstitutonfe_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline":"cof_uomcomercial_id":w -> "c_uom":"c_uom_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline":"lbr_legalmessage_id":w -> "lbr_legalmessage":"lbr_legalmessage_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline":"m_attributesetinstance_id":w -> "m_attributesetinstance":"m_attributesetinstance_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -18105,6 +18106,7 @@ digraph "largeRelationshipsDiagram" {
   "c_orderline":"cof_linhareposicao_id":w -> "cof_linhareposicao":"cof_linhareposicao_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"cof_pontoremessa_id":w -> "cof_pontoremessa":"cof_pontoremessa_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"cof_products_id":w -> "cof_products":"cof_products_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_orderline":"cof_produtosubstitutonfe_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"cof_uomcomercial_id":w -> "c_uom":"c_uom_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"lbr_legalmessage_id":w -> "lbr_legalmessage":"lbr_legalmessage_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"link_orderline_id":w -> "c_orderline":"c_orderline_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -20428,6 +20430,7 @@ digraph "largeRelationshipsDiagram" {
   "m_inoutline":"cof_kitvendas_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_inoutline":"cof_mprecebida_id":w -> "cof_mprecebida":"cof_mprecebida_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_inoutline":"cof_pontoremessa_id":w -> "cof_pontoremessa":"cof_pontoremessa_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "m_inoutline":"cof_produtosubstitutonfe_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_inoutline":"lbr_docfiscal_line_id":w -> "lbr_docfiscal_line":"lbr_docfiscal_line_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_inoutline":"m_attributesetinstance_id":w -> "m_attributesetinstance":"m_attributesetinstance_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_inoutline":"m_inout_id":w -> "m_inout":"m_inout_id":e [arrowhead=none dir=back arrowtail=crowodot];

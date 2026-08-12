@@ -686,6 +686,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="2214,-1941 2214,-1963 2526,-1963 2526,-1941 2214,-1941"/>
 <polygon fill="none" stroke="black" points="2214,-1941 2214,-1963 2526,-1963 2526,-1941 2214,-1941"/>
 <text text-anchor="start" x="2234" y="-1949.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="2214,-1919 2214,-1941 2526,-1941 2526,-1919 2214,-1919"/>
 <polygon fill="none" stroke="black" points="2214,-1919 2214,-1941 2526,-1941 2526,-1919 2214,-1919"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2219" y="-1936"/>
 <text text-anchor="start" x="2234" y="-1927.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>

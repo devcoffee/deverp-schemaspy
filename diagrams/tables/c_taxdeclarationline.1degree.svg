@@ -14,59 +14,59 @@
 <g id="node1" class="node">
 <title>c_allocationline</title>
 <g id="a_node1"><a xlink:href="../../tables/c_allocationline.html" xlink:title="c_allocationline" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="699,-557 699,-857 898,-857 898,-557 699,-557"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="699.5,-835 699.5,-857 898.5,-857 898.5,-835 699.5,-835"/>
-<polygon fill="none" stroke="black" points="699.5,-835 699.5,-857 898.5,-857 898.5,-835 699.5,-835"/>
-<text text-anchor="start" x="704.5" y="-844.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_allocationline</text>
-<text text-anchor="start" x="863.5" y="-843.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="#ffffff" stroke="transparent" points="699,-535 699,-835 898,-835 898,-535 699,-535"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="699.5,-813 699.5,-835 898.5,-835 898.5,-813 699.5,-813"/>
 <polygon fill="none" stroke="black" points="699.5,-813 699.5,-835 898.5,-835 898.5,-813 699.5,-813"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-830"/>
-<text text-anchor="start" x="719.5" y="-821.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_allocationline_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="699.5,-791 699.5,-813 898.5,-813 898.5,-791 699.5,-791"/>
+<text text-anchor="start" x="704.5" y="-822.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_allocationline</text>
+<text text-anchor="start" x="863.5" y="-821.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
 <polygon fill="none" stroke="black" points="699.5,-791 699.5,-813 898.5,-813 898.5,-791 699.5,-791"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-808"/>
-<text text-anchor="start" x="719.5" y="-799.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_invoice_id</text>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-808"/>
+<text text-anchor="start" x="719.5" y="-799.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_allocationline_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="699.5,-769 699.5,-791 898.5,-791 898.5,-769 699.5,-769"/>
 <polygon fill="none" stroke="black" points="699.5,-769 699.5,-791 898.5,-791 898.5,-769 699.5,-769"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-786"/>
-<text text-anchor="start" x="719.5" y="-777.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="699.5,-747 699.5,-769 898.5,-769 898.5,-747 699.5,-747"/>
+<text text-anchor="start" x="719.5" y="-777.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_invoice_id</text>
 <polygon fill="none" stroke="black" points="699.5,-747 699.5,-769 898.5,-769 898.5,-747 699.5,-747"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-764"/>
-<text text-anchor="start" x="719.5" y="-755.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_order_id</text>
+<text text-anchor="start" x="719.5" y="-755.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_id</text>
 <polygon fill="#ffffff" stroke="transparent" points="699.5,-725 699.5,-747 898.5,-747 898.5,-725 699.5,-725"/>
 <polygon fill="none" stroke="black" points="699.5,-725 699.5,-747 898.5,-747 898.5,-725 699.5,-725"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-742"/>
-<text text-anchor="start" x="719.5" y="-733.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_payment_id</text>
+<text text-anchor="start" x="719.5" y="-733.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_order_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="699.5,-703 699.5,-725 898.5,-725 898.5,-703 699.5,-703"/>
 <polygon fill="none" stroke="black" points="699.5,-703 699.5,-725 898.5,-725 898.5,-703 699.5,-703"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-720"/>
-<text text-anchor="start" x="719.5" y="-711.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_cashline_id</text>
+<text text-anchor="start" x="719.5" y="-711.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_payment_id</text>
 <polygon fill="none" stroke="black" points="699.5,-681 699.5,-703 898.5,-703 898.5,-681 699.5,-681"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-698"/>
-<text text-anchor="start" x="719.5" y="-689.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_allocationhdr_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="699.5,-659 699.5,-681 898.5,-681 898.5,-659 699.5,-659"/>
+<text text-anchor="start" x="719.5" y="-689.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_cashline_id</text>
 <polygon fill="none" stroke="black" points="699.5,-659 699.5,-681 898.5,-681 898.5,-659 699.5,-659"/>
-<text text-anchor="start" x="719.5" y="-667.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_allocationline_uu</text>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-676"/>
+<text text-anchor="start" x="719.5" y="-667.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_allocationhdr_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="699.5,-637 699.5,-659 898.5,-659 898.5,-637 699.5,-637"/>
 <polygon fill="none" stroke="black" points="699.5,-637 699.5,-659 898.5,-659 898.5,-637 699.5,-637"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-654"/>
-<text text-anchor="start" x="719.5" y="-645.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_charge_id</text>
+<text text-anchor="start" x="719.5" y="-645.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_allocationline_uu</text>
 <polygon fill="none" stroke="black" points="699.5,-615 699.5,-637 898.5,-637 898.5,-615 699.5,-615"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-632"/>
-<text text-anchor="start" x="719.5" y="-623.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_elementvalue_id</text>
+<text text-anchor="start" x="719.5" y="-623.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_charge_id</text>
 <polygon fill="none" stroke="black" points="699.5,-593 699.5,-615 898.5,-615 898.5,-593 699.5,-593"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-610"/>
-<text text-anchor="start" x="719.5" y="-601.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_banktransfer_id</text>
-<polygon fill="none" stroke="black" points="699.5,-575 699.5,-593 898.5,-593 898.5,-575 699.5,-575"/>
-<text text-anchor="start" x="702.5" y="-581.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="699.5,-557 699.5,-575 898.5,-575 898.5,-557 699.5,-557"/>
-<polygon fill="none" stroke="black" points="699.5,-557 699.5,-575 898.5,-575 898.5,-557 699.5,-557"/>
-<polygon fill="#ffffff" stroke="transparent" points="700.5,-558 700.5,-574 769.5,-574 769.5,-558 700.5,-558"/>
-<text text-anchor="start" x="702.5" y="-563.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 9</text>
-<polygon fill="#ffffff" stroke="transparent" points="769.5,-558 769.5,-574 829.5,-574 829.5,-558 769.5,-558"/>
-<text text-anchor="start" x="796" y="-563.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="829.5,-558 829.5,-574 897.5,-574 897.5,-558 829.5,-558"/>
-<text text-anchor="start" x="879.5" y="-563.2" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
-<polygon fill="black" stroke="black" points="769.5,-558 769.5,-574 769.5,-574 769.5,-558 769.5,-558"/>
-<polygon fill="black" stroke="black" points="829.5,-558 829.5,-574 829.5,-574 829.5,-558 829.5,-558"/>
+<text text-anchor="start" x="719.5" y="-601.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_elementvalue_id</text>
+<polygon fill="none" stroke="black" points="699.5,-571 699.5,-593 898.5,-593 898.5,-571 699.5,-571"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="704.5" y="-588"/>
+<text text-anchor="start" x="719.5" y="-579.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_banktransfer_id</text>
+<polygon fill="none" stroke="black" points="699.5,-553 699.5,-571 898.5,-571 898.5,-553 699.5,-553"/>
+<text text-anchor="start" x="702.5" y="-559.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="699.5,-535 699.5,-553 898.5,-553 898.5,-535 699.5,-535"/>
+<polygon fill="none" stroke="black" points="699.5,-535 699.5,-553 898.5,-553 898.5,-535 699.5,-535"/>
+<polygon fill="#ffffff" stroke="transparent" points="700.5,-536 700.5,-552 769.5,-552 769.5,-536 700.5,-536"/>
+<text text-anchor="start" x="702.5" y="-541.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 9</text>
+<polygon fill="#ffffff" stroke="transparent" points="769.5,-536 769.5,-552 829.5,-552 829.5,-536 769.5,-536"/>
+<text text-anchor="start" x="796" y="-541.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="829.5,-536 829.5,-552 897.5,-552 897.5,-536 829.5,-536"/>
+<text text-anchor="start" x="879.5" y="-541.2" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
+<polygon fill="black" stroke="black" points="769.5,-536 769.5,-552 769.5,-552 769.5,-536 769.5,-536"/>
+<polygon fill="black" stroke="black" points="829.5,-536 829.5,-552 829.5,-552 829.5,-536 829.5,-536"/>
 </a>
 </g>
 </g>
@@ -192,9 +192,9 @@
 <!-- c_allocationline&#45;&gt;c_bpartner -->
 <g id="edge1" class="edge">
 <title>c_allocationline:w&#45;&gt;c_bpartner:e</title>
-<path fill="none" stroke="black" d="M684.24,-777.62C583.66,-741 722.14,-292.95 631,-212 603.75,-187.8 329.47,-186.95 303,-212 244.72,-267.14 343.23,-933 263,-933"/>
-<polygon fill="black" stroke="black" points="690.61,-778.68 697.91,-783.55 694.55,-779.34 698.5,-780 698.5,-780 698.5,-780 694.55,-779.34 699.09,-776.45 690.61,-778.68 690.61,-778.68"/>
-<ellipse fill="none" stroke="black" cx="687.45" cy="-778.16" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M684.19,-755.49C588.38,-718.75 718.66,-289.49 631,-212 603.69,-187.86 329.47,-186.95 303,-212 244.72,-267.14 343.23,-933 263,-933"/>
+<polygon fill="black" stroke="black" points="690.62,-756.62 697.88,-761.55 694.56,-757.31 698.5,-758 698.5,-758 698.5,-758 694.56,-757.31 699.12,-754.45 690.62,-756.62 690.62,-756.62"/>
+<ellipse fill="none" stroke="black" cx="687.47" cy="-756.07" rx="3.2" ry="3.2"/>
 </g>
 <!-- c_invoice -->
 <g id="node3" class="node">
@@ -211,6 +211,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="311,-1315 311,-1337 623,-1337 623,-1315 311,-1315"/>
 <polygon fill="none" stroke="black" points="311,-1315 311,-1337 623,-1337 623,-1315 311,-1315"/>
 <text text-anchor="start" x="331" y="-1323.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="311,-1293 311,-1315 623,-1315 623,-1293 311,-1293"/>
 <polygon fill="none" stroke="black" points="311,-1293 311,-1315 623,-1315 623,-1293 311,-1293"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="316" y="-1310"/>
 <text text-anchor="start" x="331" y="-1301.2" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
@@ -385,9 +386,9 @@
 <!-- c_allocationline&#45;&gt;c_invoice -->
 <g id="edge2" class="edge">
 <title>c_allocationline:w&#45;&gt;c_invoice:e</title>
-<path fill="none" stroke="black" d="M683.96,-805.31C667.99,-814.53 671.48,-841.5 664,-867 648.9,-918.46 677.63,-1348 624,-1348"/>
-<polygon fill="black" stroke="black" points="690.7,-803.78 699.3,-805.51 694.6,-802.89 698.5,-802 698.5,-802 698.5,-802 694.6,-802.89 697.7,-798.49 690.7,-803.78 690.7,-803.78"/>
-<ellipse fill="none" stroke="black" cx="687.58" cy="-804.49" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M684.42,-783.05C667.91,-792 671.51,-819.24 664,-845 648.31,-898.82 680.07,-1348 624,-1348"/>
+<polygon fill="black" stroke="black" points="690.68,-781.69 699.26,-783.52 694.59,-780.85 698.5,-780 698.5,-780 698.5,-780 694.59,-780.85 697.74,-776.48 690.68,-781.69 690.68,-781.69"/>
+<ellipse fill="none" stroke="black" cx="687.55" cy="-782.37" rx="3.2" ry="3.2"/>
 </g>
 <!-- c_invoice&#45;&gt;c_bpartner -->
 <g id="edge3" class="edge">
@@ -460,7 +461,7 @@
 <g id="node5" class="node">
 <title>c_invoiceline</title>
 <g id="a_node5"><a xlink:href="../../tables/c_invoiceline.html" xlink:title="c_invoiceline" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="672,-878 672,-1706 925,-1706 925,-878 672,-878"/>
+<polygon fill="#ffffff" stroke="transparent" points="672,-856 672,-1706 925,-1706 925,-856 672,-856"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="672.5,-1684 672.5,-1706 925.5,-1706 925.5,-1684 672.5,-1684"/>
 <polygon fill="none" stroke="black" points="672.5,-1684 672.5,-1706 925.5,-1706 925.5,-1684 672.5,-1684"/>
 <text text-anchor="start" x="677.5" y="-1693.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_invoiceline</text>
@@ -575,18 +576,21 @@
 <polygon fill="none" stroke="black" points="672.5,-914 672.5,-936 925.5,-936 925.5,-914 672.5,-914"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="677.5" y="-931"/>
 <text text-anchor="start" x="692.5" y="-922.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_uomcomercial_id</text>
-<polygon fill="none" stroke="black" points="672.5,-896 672.5,-914 925.5,-914 925.5,-896 672.5,-896"/>
-<text text-anchor="start" x="675.5" y="-902.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="672.5,-878 672.5,-896 925.5,-896 925.5,-878 672.5,-878"/>
-<polygon fill="none" stroke="black" points="672.5,-878 672.5,-896 925.5,-896 925.5,-878 672.5,-878"/>
-<polygon fill="#ffffff" stroke="transparent" points="673.5,-879 673.5,-895 762.5,-895 762.5,-879 673.5,-879"/>
-<text text-anchor="start" x="675.5" y="-884.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 33</text>
-<polygon fill="#ffffff" stroke="transparent" points="762.5,-879 762.5,-895 836.5,-895 836.5,-879 762.5,-879"/>
-<text text-anchor="start" x="796" y="-884.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="836.5,-879 836.5,-895 924.5,-895 924.5,-879 836.5,-879"/>
-<text text-anchor="start" x="900.5" y="-884.2" font-family="Helvetica,sans-Serif" font-size="11.00">24 &gt;</text>
-<polygon fill="black" stroke="black" points="762.5,-879 762.5,-895 762.5,-895 762.5,-879 762.5,-879"/>
-<polygon fill="black" stroke="black" points="836.5,-879 836.5,-895 836.5,-895 836.5,-879 836.5,-879"/>
+<polygon fill="none" stroke="black" points="672.5,-892 672.5,-914 925.5,-914 925.5,-892 672.5,-892"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="677.5" y="-909"/>
+<text text-anchor="start" x="692.5" y="-900.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_produtosubstitutonfe_id</text>
+<polygon fill="none" stroke="black" points="672.5,-874 672.5,-892 925.5,-892 925.5,-874 672.5,-874"/>
+<text text-anchor="start" x="675.5" y="-880.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="672.5,-856 672.5,-874 925.5,-874 925.5,-856 672.5,-856"/>
+<polygon fill="none" stroke="black" points="672.5,-856 672.5,-874 925.5,-874 925.5,-856 672.5,-856"/>
+<polygon fill="#ffffff" stroke="transparent" points="673.5,-857 673.5,-873 762.5,-873 762.5,-857 673.5,-857"/>
+<text text-anchor="start" x="675.5" y="-862.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 34</text>
+<polygon fill="#ffffff" stroke="transparent" points="762.5,-857 762.5,-873 836.5,-873 836.5,-857 762.5,-857"/>
+<text text-anchor="start" x="796" y="-862.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="836.5,-857 836.5,-873 924.5,-873 924.5,-857 836.5,-857"/>
+<text text-anchor="start" x="900.5" y="-862.2" font-family="Helvetica,sans-Serif" font-size="11.00">24 &gt;</text>
+<polygon fill="black" stroke="black" points="762.5,-857 762.5,-873 762.5,-873 762.5,-857 762.5,-857"/>
+<polygon fill="black" stroke="black" points="836.5,-857 836.5,-873 836.5,-873 836.5,-857 836.5,-857"/>
 </a>
 </g>
 </g>
@@ -798,9 +802,9 @@
 <!-- c_taxdeclarationline&#45;&gt;c_allocationline -->
 <g id="edge9" class="edge">
 <title>c_taxdeclarationline:w&#45;&gt;c_allocationline:e</title>
-<path fill="none" stroke="black" d="M966.1,-1674.41C932.07,-1577.63 947.75,-906.61 933,-867 924.54,-844.3 923.73,-824 899.5,-824"/>
-<polygon fill="black" stroke="black" points="970.13,-1679.65 972.14,-1688.19 972.56,-1682.83 975,-1686 975,-1686 975,-1686 972.56,-1682.83 977.86,-1683.81 970.13,-1679.65 970.13,-1679.65"/>
-<ellipse fill="none" stroke="black" cx="968.18" cy="-1677.11" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M965.99,-1674.41C931.04,-1576.17 948.14,-885.72 933,-845 924.56,-822.29 923.73,-802 899.5,-802"/>
+<polygon fill="black" stroke="black" points="970.09,-1679.68 972.16,-1688.21 972.55,-1682.84 975,-1686 975,-1686 975,-1686 972.55,-1682.84 977.84,-1683.79 970.09,-1679.68 970.09,-1679.68"/>
+<ellipse fill="none" stroke="black" cx="968.13" cy="-1677.16" rx="3.2" ry="3.2"/>
 </g>
 <!-- c_taxdeclarationline&#45;&gt;c_bpartner -->
 <g id="edge10" class="edge">
@@ -819,9 +823,9 @@
 <!-- c_taxdeclarationline&#45;&gt;c_currency -->
 <g id="edge11" class="edge">
 <title>c_taxdeclarationline:w&#45;&gt;c_currency:e</title>
-<path fill="none" stroke="black" d="M965.12,-1653.5C917.63,-1543.21 954.23,-600.53 933,-546 857.86,-352.96 817.02,-282.15 631,-191 463.6,-108.98 398.41,-172 212,-172"/>
-<polygon fill="black" stroke="black" points="969.52,-1658.17 972.38,-1666.47 972.26,-1661.09 975,-1664 975,-1664 975,-1664 972.26,-1661.09 977.62,-1661.53 969.52,-1658.17 969.52,-1658.17"/>
-<ellipse fill="none" stroke="black" cx="967.33" cy="-1655.84" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M964.94,-1653.29C916.69,-1540.8 955.5,-579.26 933,-524 857.64,-338.96 811.79,-276.06 631,-191 462.32,-111.64 398.41,-172 212,-172"/>
+<polygon fill="black" stroke="black" points="969.52,-1658.17 972.38,-1666.46 972.26,-1661.08 975,-1664 975,-1664 975,-1664 972.26,-1661.08 977.62,-1661.54 969.52,-1658.17 969.52,-1658.17"/>
+<ellipse fill="none" stroke="black" cx="967.33" cy="-1655.83" rx="3.2" ry="3.2"/>
 </g>
 <!-- c_taxdeclarationline&#45;&gt;c_invoiceline -->
 <g id="edge13" class="edge">

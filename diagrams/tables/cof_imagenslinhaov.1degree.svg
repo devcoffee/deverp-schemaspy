@@ -216,7 +216,7 @@
 <!-- ad_user&#45;&gt;ad_client -->
 <g id="edge2" class="edge">
 <title>ad_user:w&#45;&gt;ad_client:e</title>
-<path fill="none" stroke="black" d="M541.6,-1137.97C401.28,-1143.76 373.22,-1235.68 294,-1360.67 258.01,-1417.45 321.72,-1506.67 254.5,-1506.67"/>
+<path fill="none" stroke="black" d="M541.58,-1137.97C401.01,-1143.81 373.34,-1236.43 294,-1361.67 258.26,-1418.1 321.29,-1506.67 254.5,-1506.67"/>
 <polygon fill="black" stroke="black" points="548,-1137.84 556.07,-1141.27 552,-1137.76 556,-1137.67 556,-1137.67 556,-1137.67 552,-1137.76 555.93,-1134.08 548,-1137.84 548,-1137.84"/>
 <ellipse fill="none" stroke="black" cx="544.8" cy="-1137.9" rx="3.2" ry="3.2"/>
 </g>
@@ -546,7 +546,7 @@
 <g id="node6" class="node">
 <title>c_orderline</title>
 <g id="a_node6"><a xlink:href="../../tables/c_orderline.html" xlink:title="c_orderline" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="1207,-716.67 1207,-1632.67 1460,-1632.67 1460,-716.67 1207,-716.67"/>
+<polygon fill="#ffffff" stroke="transparent" points="1207,-694.67 1207,-1632.67 1460,-1632.67 1460,-694.67 1207,-694.67"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="1207.5,-1610.67 1207.5,-1632.67 1460.5,-1632.67 1460.5,-1610.67 1207.5,-1610.67"/>
 <polygon fill="none" stroke="black" points="1207.5,-1610.67 1207.5,-1632.67 1460.5,-1632.67 1460.5,-1610.67 1207.5,-1610.67"/>
 <text text-anchor="start" x="1212.5" y="-1619.87" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_orderline</text>
@@ -672,18 +672,21 @@
 <polygon fill="none" stroke="black" points="1207.5,-752.67 1207.5,-774.67 1460.5,-774.67 1460.5,-752.67 1207.5,-752.67"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1212.5" y="-769.675"/>
 <text text-anchor="start" x="1227.5" y="-760.87" font-family="Helvetica,sans-Serif" font-size="11.00">cof_linhareposicao_id</text>
-<polygon fill="none" stroke="black" points="1207.5,-734.67 1207.5,-752.67 1460.5,-752.67 1460.5,-734.67 1207.5,-734.67"/>
-<text text-anchor="start" x="1210.5" y="-740.87" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="1207.5,-716.67 1207.5,-734.67 1460.5,-734.67 1460.5,-716.67 1207.5,-716.67"/>
-<polygon fill="none" stroke="black" points="1207.5,-716.67 1207.5,-734.67 1460.5,-734.67 1460.5,-716.67 1207.5,-716.67"/>
-<polygon fill="#ffffff" stroke="transparent" points="1208.5,-717.67 1208.5,-733.67 1297.5,-733.67 1297.5,-717.67 1208.5,-717.67"/>
-<text text-anchor="start" x="1210.5" y="-722.87" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 37</text>
-<polygon fill="#ffffff" stroke="transparent" points="1297.5,-717.67 1297.5,-733.67 1371.5,-733.67 1371.5,-717.67 1297.5,-717.67"/>
-<text text-anchor="start" x="1331" y="-722.87" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1371.5,-717.67 1371.5,-733.67 1459.5,-733.67 1459.5,-717.67 1371.5,-717.67"/>
-<text text-anchor="start" x="1435.5" y="-722.87" font-family="Helvetica,sans-Serif" font-size="11.00">23 &gt;</text>
-<polygon fill="black" stroke="black" points="1297.5,-717.67 1297.5,-733.67 1297.5,-733.67 1297.5,-717.67 1297.5,-717.67"/>
-<polygon fill="black" stroke="black" points="1371.5,-717.67 1371.5,-733.67 1371.5,-733.67 1371.5,-717.67 1371.5,-717.67"/>
+<polygon fill="none" stroke="black" points="1207.5,-730.67 1207.5,-752.67 1460.5,-752.67 1460.5,-730.67 1207.5,-730.67"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1212.5" y="-747.675"/>
+<text text-anchor="start" x="1227.5" y="-738.87" font-family="Helvetica,sans-Serif" font-size="11.00">cof_produtosubstitutonfe_id</text>
+<polygon fill="none" stroke="black" points="1207.5,-712.67 1207.5,-730.67 1460.5,-730.67 1460.5,-712.67 1207.5,-712.67"/>
+<text text-anchor="start" x="1210.5" y="-718.87" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="1207.5,-694.67 1207.5,-712.67 1460.5,-712.67 1460.5,-694.67 1207.5,-694.67"/>
+<polygon fill="none" stroke="black" points="1207.5,-694.67 1207.5,-712.67 1460.5,-712.67 1460.5,-694.67 1207.5,-694.67"/>
+<polygon fill="#ffffff" stroke="transparent" points="1208.5,-695.67 1208.5,-711.67 1297.5,-711.67 1297.5,-695.67 1208.5,-695.67"/>
+<text text-anchor="start" x="1210.5" y="-700.87" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 38</text>
+<polygon fill="#ffffff" stroke="transparent" points="1297.5,-695.67 1297.5,-711.67 1371.5,-711.67 1371.5,-695.67 1297.5,-695.67"/>
+<text text-anchor="start" x="1331" y="-700.87" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1371.5,-695.67 1371.5,-711.67 1459.5,-711.67 1459.5,-695.67 1371.5,-695.67"/>
+<text text-anchor="start" x="1435.5" y="-700.87" font-family="Helvetica,sans-Serif" font-size="11.00">23 &gt;</text>
+<polygon fill="black" stroke="black" points="1297.5,-695.67 1297.5,-711.67 1297.5,-711.67 1297.5,-695.67 1297.5,-695.67"/>
+<polygon fill="black" stroke="black" points="1371.5,-695.67 1371.5,-711.67 1371.5,-711.67 1371.5,-695.67 1371.5,-695.67"/>
 </a>
 </g>
 </g>
@@ -697,7 +700,7 @@
 <!-- c_orderline&#45;&gt;ad_org -->
 <g id="edge15" class="edge">
 <title>c_orderline:w&#45;&gt;ad_org:e</title>
-<path fill="none" stroke="black" d="M1194.93,-1124.52C1159.33,-1188.65 1203.61,-1580.99 1166,-1615.67 1112.42,-1665.09 910.28,-1625.07 838,-1615.67 833.31,-1615.07 513.73,-1528.67 509,-1528.67"/>
+<path fill="none" stroke="black" d="M1194.91,-1124.53C1159.25,-1188.8 1203.68,-1581.91 1166,-1616.67 1139.21,-1641.38 874.13,-1621.42 838,-1616.67 833.31,-1616.06 513.73,-1528.67 509,-1528.67"/>
 <polygon fill="black" stroke="black" points="1200.14,-1120.53 1208.69,-1118.54 1203.32,-1118.1 1206.5,-1115.67 1206.5,-1115.67 1206.5,-1115.67 1203.32,-1118.1 1204.31,-1112.81 1200.14,-1120.53 1200.14,-1120.53"/>
 <ellipse fill="none" stroke="black" cx="1197.6" cy="-1122.47" rx="3.2" ry="3.2"/>
 </g>
@@ -795,30 +798,30 @@
 <!-- cof_imagenslinhaov&#45;&gt;ad_org -->
 <g id="edge19" class="edge">
 <title>cof_imagenslinhaov:w&#45;&gt;ad_org:e</title>
-<path fill="none" stroke="black" d="M1495.88,-1715.81C1271.35,-1719.71 712.45,-1807.15 549,-1676.67 495.75,-1634.17 577.14,-1528.67 509,-1528.67"/>
+<path fill="none" stroke="black" d="M1495.88,-1715.81C1271.34,-1719.67 712.5,-1806.1 549,-1675.67 496.07,-1633.45 576.71,-1528.67 509,-1528.67"/>
 <polygon fill="black" stroke="black" points="1502.5,-1715.75 1510.53,-1719.27 1506.5,-1715.71 1510.5,-1715.67 1510.5,-1715.67 1510.5,-1715.67 1506.5,-1715.71 1510.47,-1712.07 1502.5,-1715.75 1502.5,-1715.75"/>
 <ellipse fill="none" stroke="black" cx="1499.3" cy="-1715.78" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_imagenslinhaov&#45;&gt;ad_client -->
 <g id="edge17" class="edge">
 <title>cof_imagenslinhaov:w&#45;&gt;ad_client:e</title>
-<path fill="none" stroke="black" d="M1495.87,-1759.68C1282.37,-1759.89 1223.61,-1764.67 1003,-1764.67 1003,-1764.67 1003,-1764.67 676,-1764.67 485.78,-1764.67 429.46,-1705.21 294,-1571.67 269.93,-1547.94 288.3,-1506.67 254.5,-1506.67"/>
+<path fill="none" stroke="black" d="M1495.87,-1759.68C1282.37,-1759.89 1223.61,-1764.67 1003,-1764.67 1003,-1764.67 1003,-1764.67 676,-1764.67 563.03,-1764.67 294.62,-1573.28 294,-1572.67 269.63,-1548.7 288.69,-1506.67 254.5,-1506.67"/>
 <polygon fill="black" stroke="black" points="1502.5,-1759.68 1510.5,-1763.27 1506.5,-1759.68 1510.5,-1759.67 1510.5,-1759.67 1510.5,-1759.67 1506.5,-1759.68 1510.5,-1756.07 1502.5,-1759.68 1502.5,-1759.68"/>
 <ellipse fill="none" stroke="black" cx="1499.3" cy="-1759.68" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_imagenslinhaov&#45;&gt;ad_user -->
 <g id="edge22" class="edge">
 <title>cof_imagenslinhaov:w&#45;&gt;ad_user:e</title>
-<path fill="none" stroke="black" d="M1496.04,-1630.35C1487.23,-1633.99 1481.73,-1640.32 1468,-1642.67 1329.88,-1666.33 937.72,-1714.12 838,-1615.67 765.61,-1544.21 899.72,-1159.67 798,-1159.67"/>
+<path fill="none" stroke="black" d="M1496.04,-1630.35C1487.23,-1633.99 1481.73,-1640.32 1468,-1642.67 1329.89,-1666.33 937.84,-1714.99 838,-1616.67 765.36,-1545.15 899.94,-1159.67 798,-1159.67"/>
 <polygon fill="black" stroke="black" points="1502.63,-1629.13 1511.15,-1631.21 1506.57,-1628.4 1510.5,-1627.67 1510.5,-1627.67 1510.5,-1627.67 1506.57,-1628.4 1509.85,-1624.13 1502.63,-1629.13 1502.63,-1629.13"/>
 <ellipse fill="none" stroke="black" cx="1499.49" cy="-1629.71" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_imagenslinhaov&#45;&gt;ad_user -->
 <g id="edge23" class="edge">
 <title>cof_imagenslinhaov:w&#45;&gt;ad_user:e</title>
-<path fill="none" stroke="black" d="M1501.14,-1550.33C1462.3,-1448.03 1481.6,-687.41 1468,-641.67 1392.57,-388.08 1395.69,-259.99 1166,-128.67 320.63,354.64 897.98,-1159.67 798,-1159.67"/>
-<polygon fill="black" stroke="black" points="1505.41,-1555.5 1507.72,-1563.97 1507.95,-1558.59 1510.5,-1561.67 1510.5,-1561.67 1510.5,-1561.67 1507.95,-1558.59 1513.28,-1559.38 1505.41,-1555.5 1505.41,-1555.5"/>
-<ellipse fill="none" stroke="black" cx="1503.37" cy="-1553.04" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1501.06,-1550.38C1461.29,-1446.93 1482.37,-666.42 1468,-619.67 1392.72,-374.79 1389.63,-253.67 1166,-128.67 301.31,354.64 837.2,-1159.67 798,-1159.67"/>
+<polygon fill="black" stroke="black" points="1505.37,-1555.54 1507.74,-1563.98 1507.93,-1558.61 1510.5,-1561.67 1510.5,-1561.67 1510.5,-1561.67 1507.93,-1558.61 1513.26,-1559.37 1505.37,-1555.54 1505.37,-1555.54"/>
+<ellipse fill="none" stroke="black" cx="1503.31" cy="-1553.08" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_imagenslinhaov&#45;&gt;ad_image -->
 <g id="edge18" class="edge">
@@ -830,7 +833,7 @@
 <!-- cof_imagenslinhaov&#45;&gt;c_order -->
 <g id="edge20" class="edge">
 <title>cof_imagenslinhaov:w&#45;&gt;c_order:e</title>
-<path fill="none" stroke="black" d="M1497.44,-1511.18C1432.02,-1437.72 1529.95,-764.47 1468,-705.67 1381.28,-623.38 1285.46,-623.11 1199,-705.67 1129.26,-772.28 1255.44,-1572.67 1159,-1572.67"/>
+<path fill="none" stroke="black" d="M1497.1,-1511.01C1430.02,-1435.56 1531.58,-744.1 1468,-683.67 1381.34,-601.32 1285.42,-601.06 1199,-683.67 1127.53,-752 1257.88,-1572.67 1159,-1572.67"/>
 <polygon fill="black" stroke="black" points="1503.34,-1514.11 1508.9,-1520.9 1506.92,-1515.89 1510.5,-1517.67 1510.5,-1517.67 1510.5,-1517.67 1506.92,-1515.89 1512.1,-1514.45 1503.34,-1514.11 1503.34,-1514.11"/>
 <ellipse fill="none" stroke="black" cx="1500.47" cy="-1512.69" rx="3.2" ry="3.2"/>
 </g>

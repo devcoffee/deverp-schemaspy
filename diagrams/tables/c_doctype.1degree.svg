@@ -693,6 +693,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="2948,-8787.97 2948,-8809.97 3260,-8809.97 3260,-8787.97 2948,-8787.97"/>
 <polygon fill="none" stroke="black" points="2948,-8787.97 2948,-8809.97 3260,-8809.97 3260,-8787.97 2948,-8787.97"/>
 <text text-anchor="start" x="2968" y="-8796.17" font-family="Helvetica,sans-Serif" font-size="11.00">ad_client_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="2948,-8765.97 2948,-8787.97 3260,-8787.97 3260,-8765.97 2948,-8765.97"/>
 <polygon fill="none" stroke="black" points="2948,-8765.97 2948,-8787.97 3260,-8787.97 3260,-8765.97 2948,-8765.97"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="2953" y="-8782.97"/>
 <text text-anchor="start" x="2968" y="-8774.17" font-family="Helvetica,sans-Serif" font-size="11.00">ad_org_id</text>
