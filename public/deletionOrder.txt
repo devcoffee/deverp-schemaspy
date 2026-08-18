@@ -86,10 +86,10 @@ c_bankaccount_acct
 c_acctschema_element
 ad_orginfo
 t_itensnaovendidosaclientes
+t_inventoryvalue
 t_aging
 cof_configuracaofiscal
 a_asset_transfer
-t_inventoryvalue
 i_productplanning
 i_movement
 i_asset
