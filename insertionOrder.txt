@@ -1176,10 +1176,10 @@ cof_orcamentoconfig
 i_asset
 i_movement
 i_productplanning
-t_inventoryvalue
 a_asset_transfer
 cof_configuracaofiscal
 t_aging
+t_inventoryvalue
 t_itensnaovendidosaclientes
 ad_orginfo
 c_acctschema_element

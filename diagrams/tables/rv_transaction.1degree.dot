@@ -224,6 +224,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_valueproductgroup" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="235" HEIGHT="16">cof_valueproductgroup</TD></TR></TABLE></TD><TD PORT="cof_valueproductgroup.type" ALIGN="LEFT">varchar[40]</TD></TR>
       <TR><TD PORT="cof_grupofornecedor_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="235" HEIGHT="16">cof_grupofornecedor_id</TD></TR></TABLE></TD><TD PORT="cof_grupofornecedor_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
       <TR><TD PORT="cof_netweight" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="235" HEIGHT="16">cof_netweight</TD></TR></TABLE></TD><TD PORT="cof_netweight.type" ALIGN="LEFT">numeric[0]</TD></TR>
+      <TR><TD PORT="c_bpartner_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="235" HEIGHT="16">c_bpartner_id</TD></TR></TABLE></TD><TD PORT="c_bpartner_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
     </TABLE>>
     URL="../../tables/rv_transaction.html"
     target="_top"
