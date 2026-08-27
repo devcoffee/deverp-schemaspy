@@ -64190,6 +64190,42 @@
                                         <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
+                                        <td>ad_tasktrl</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_task_trl.html'>ad_task_trl</a><span>.ad_task_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_task.html'>ad_task</a><span>.ad_task_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Cascade on delete:&#10;Deletion of parent deletes child'>Cascade on delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ad_language_tasktrl</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_task_trl.html'>ad_task_trl</a><span>.ad_language</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_language.html'>ad_language</a><span>.ad_language</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
                                         <td>ad_taskaccess_client</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -64260,42 +64296,6 @@
                                             </table>
                                         </td>
                                         <td><span title='Cascade on delete:&#10;Deletion of parent deletes child'>Cascade on delete</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>ad_tasktrl</td>
-                                        <td>
-                                            <table border='0' cellspacing='0' cellpadding='0'>
-                                                <tr>
-                                                    <td><a href='tables/ad_task_trl.html'>ad_task_trl</a><span>.ad_task_id</span></td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table border='0' cellspacing='0' cellpadding='0'>
-                                                <tr>
-                                                    <td><a href='tables/ad_task.html'>ad_task</a><span>.ad_task_id</span></td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td><span title='Cascade on delete:&#10;Deletion of parent deletes child'>Cascade on delete</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>ad_language_tasktrl</td>
-                                        <td>
-                                            <table border='0' cellspacing='0' cellpadding='0'>
-                                                <tr>
-                                                    <td><a href='tables/ad_task_trl.html'>ad_task_trl</a><span>.ad_language</span></td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table border='0' cellspacing='0' cellpadding='0'>
-                                                <tr>
-                                                    <td><a href='tables/ad_language.html'>ad_language</a><span>.ad_language</span></td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
                                         <td>mproduction_cofmaterialaplicad</td>
@@ -100051,6 +100051,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/c_invoice.html'>c_invoice</a></td>
+                                        <td>c_invoice_cof_isprestacaoservicopresencial_check</td>
+                                        <td>((cof_isprestacaoservicopresencial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/c_invoice.html'>c_invoice</a></td>
                                         <td>c_invoice_cof_isremessaindustrializacaoprestador_check</td>
                                         <td>((cof_isremessaindustrializacaoprestador &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -100062,7 +100067,7 @@
                                     <tr>
                                         <td><a href='tables/c_invoice.html'>c_invoice</a></td>
                                         <td>c_invoice_cof_operacaopessoal_check</td>
-                                        <td>((cof_operacaopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                        <td>((cof_isoperacaousoconsumopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/c_invoice.html'>c_invoice</a></td>
@@ -102930,13 +102935,13 @@
                                         <td>((istranslated &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/c_revenuerecognition.html'>c_revenuerecognition</a></td>
-                                        <td>c_revenuerecognition_isactive_check</td>
+                                        <td><a href='tables/c_rfqline.html'>c_rfqline</a></td>
+                                        <td>c_rfqline_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/c_rfqline.html'>c_rfqline</a></td>
-                                        <td>c_rfqline_isactive_check</td>
+                                        <td><a href='tables/c_revenuerecognition.html'>c_revenuerecognition</a></td>
+                                        <td>c_revenuerecognition_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
@@ -104251,6 +104256,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/c_order.html'>c_order</a></td>
+                                        <td>c_order_cof_isprestacaoservicopresencial_check</td>
+                                        <td>((cof_isprestacaoservicopresencial &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/c_order.html'>c_order</a></td>
                                         <td>c_order_cof_isremessaindustrializacaoprestador_check</td>
                                         <td>((cof_isremessaindustrializacaoprestador &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -104262,7 +104272,7 @@
                                     <tr>
                                         <td><a href='tables/c_order.html'>c_order</a></td>
                                         <td>c_order_cof_operacaopessoal_check</td>
-                                        <td>((cof_operacaopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                        <td>((cof_isoperacaousoconsumopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/c_order.html'>c_order</a></td>
@@ -108185,16 +108195,6 @@
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
-                                        <td><a href='tables/ad_task_access.html'>ad_task_access</a></td>
-                                        <td>ad_task_access_isactive_check</td>
-                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href='tables/ad_task_access.html'>ad_task_access</a></td>
-                                        <td>ad_task_access_isreadwrite_check</td>
-                                        <td>((isreadwrite &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                    </tr>
-                                    <tr>
                                         <td><a href='tables/ad_task_trl.html'>ad_task_trl</a></td>
                                         <td>ad_task_trl_cof_checked_check</td>
                                         <td>((cof_checked &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -108213,6 +108213,16 @@
                                         <td><a href='tables/ad_task_trl.html'>ad_task_trl</a></td>
                                         <td>ad_task_trl_istranslated_check</td>
                                         <td>((istranslated &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/ad_task_access.html'>ad_task_access</a></td>
+                                        <td>ad_task_access_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/ad_task_access.html'>ad_task_access</a></td>
+                                        <td>ad_task_access_isreadwrite_check</td>
+                                        <td>((isreadwrite &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/cof_materialaplicado.html'>cof_materialaplicado</a></td>
@@ -110072,7 +110082,7 @@
                                     <tr>
                                         <td><a href='tables/cof_rps.html'>cof_rps</a></td>
                                         <td>cof_rps_cof_operacaopessoal_check</td>
-                                        <td>((cof_operacaopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                        <td>((cof_isoperacaousoconsumopessoal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/cof_rps.html'>cof_rps</a></td>

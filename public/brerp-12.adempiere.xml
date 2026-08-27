@@ -7349,7 +7349,7 @@
             <column ascending="true" name="ad_pinstance_log_uu"/>
          </index>
       </table>
-      <table catalog="brerp-12" name="ad_pinstance_para" numRows="1814" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_pinstance_para" numRows="1935" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_pinstance_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_adpinstancepara" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance"/>
          </column>
@@ -14881,8 +14881,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -14967,8 +14967,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -15005,8 +15005,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_sellerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -15065,8 +15065,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -21810,7 +21810,8 @@
          </column>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="133" name="cof_isimportadorcte" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="134" name="cof_isemitentecomodestinatario" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="135" name="cof_operacaopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="135" name="cof_isoperacaousoconsumopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="136" name="cof_isprestacaoservicopresencial" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="c_invoice_id" sequenceNumberInPK="1"/>
          <index name="c_invoice_pkey" unique="true">
             <column ascending="true" name="c_invoice_id"/>
@@ -21876,9 +21877,10 @@
          <checkConstraint constraint="((cof_isfaturadoporexpedicao = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_isfaturadoporexpedicao_check"/>
          <checkConstraint constraint="((cof_isimportadorcte = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_isimportadorcte_check"/>
          <checkConstraint constraint="((cof_isindustrialization = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_isindustrialization_check"/>
+         <checkConstraint constraint="((cof_isprestacaoservicopresencial = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_isprestacaoservicopresencial_check"/>
          <checkConstraint constraint="((cof_isremessaindustrializacaoprestador = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_isremessaindustrializacaoprestador_check"/>
          <checkConstraint constraint="((cof_isreversal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_isreversal_check"/>
-         <checkConstraint constraint="((cof_operacaopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_operacaopessoal_check"/>
+         <checkConstraint constraint="((cof_isoperacaousoconsumopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_cof_operacaopessoal_check"/>
          <checkConstraint constraint="((createfrom = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_createfrom_check"/>
          <checkConstraint constraint="((generateto = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_generateto_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_invoice_isactive_check"/>
@@ -24486,10 +24488,11 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="180" name="cof_customaoobra" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="181" name="cof_custototal" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="182" name="cof_iscriadorepoauto" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="183" name="cof_operacaopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="183" name="cof_isoperacaousoconsumopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="184" name="cof_relatoriopedidocompra" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="185" name="cof_convertercotacao" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="186" name="cte_isctesimplificado" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="187" name="cof_isprestacaoservicopresencial" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="c_order_id" sequenceNumberInPK="1"/>
          <index name="c_order_pkey" unique="true">
             <column ascending="true" name="c_order_id"/>
@@ -24549,9 +24552,10 @@
          <checkConstraint constraint="((cof_isgeneratenftransp = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_isgeneratenftransp_check"/>
          <checkConstraint constraint="((cof_isindustrialization = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_isindustrialization_check"/>
          <checkConstraint constraint="((cof_ismarkup = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_ismarkup_check"/>
+         <checkConstraint constraint="((cof_isprestacaoservicopresencial = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_isprestacaoservicopresencial_check"/>
          <checkConstraint constraint="((cof_isremessaindustrializacaoprestador = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_isremessaindustrializacaoprestador_check"/>
          <checkConstraint constraint="((cof_liberarentregafutura = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_liberarentregafutura_check"/>
-         <checkConstraint constraint="((cof_operacaopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_operacaopessoal_check"/>
+         <checkConstraint constraint="((cof_isoperacaousoconsumopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_operacaopessoal_check"/>
          <checkConstraint constraint="((cof_tributacaodestino = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cof_tributacaodestino_check"/>
          <checkConstraint constraint="((cte_isctesimplificado = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_cte_isctesimplificado_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_order_isactive_check"/>
@@ -46133,7 +46137,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="189" name="cof_inscricaoestadualdestinatario" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="190" name="cof_inscricaomunicipaldestinatario" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="191" name="cof_ind_gtribregular" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
-         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="192" name="cof_operacaopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="192" name="cof_isoperacaousoconsumopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="193" name="cof_destinatariocity_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_city_id" foreignKey="cofdestinatariocity_cofrps" implied="false" onDeleteCascade="false" schema="adempiere" table="c_city"/>
          </column>
@@ -46170,7 +46174,7 @@
          </index>
          <checkConstraint constraint="((cof_ind_gtribregular = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_cof_ind_gtribregular_check"/>
          <checkConstraint constraint="((cof_isambientenacional = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_cof_isambientenacional_check"/>
-         <checkConstraint constraint="((cof_operacaopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_cof_operacaopessoal_check"/>
+         <checkConstraint constraint="((cof_isoperacaousoconsumopessoal = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_cof_operacaopessoal_check"/>
          <checkConstraint constraint="((isprinted = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_isprinted_check"/>
          <checkConstraint constraint="((issotrx = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_issotrx_check"/>
          <checkConstraint constraint="((lbr_isowndocument = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_rps_lbr_isowndocument_check"/>
