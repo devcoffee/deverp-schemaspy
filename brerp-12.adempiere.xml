@@ -7325,7 +7325,7 @@
          <checkConstraint constraint="((isprocessing = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_pinstance_isprocessing_check"/>
          <checkConstraint constraint="((issummary = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_pinstance_issummary_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_pinstance_log" numRows="1681" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_pinstance_log" numRows="1940" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_pinstance_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_pinstance_id" foreignKey="adpinstance_pilog" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_pinstance"/>
          </column>
