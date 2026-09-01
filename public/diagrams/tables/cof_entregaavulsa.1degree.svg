@@ -610,7 +610,7 @@
 <g id="node8" class="node">
 <title>cof_entregaavulsa</title>
 <g id="a_node8"><a xlink:href="../../tables/cof_entregaavulsa.html" xlink:title="cof_entregaavulsa" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="1433,-925 1433,-1343 1707,-1343 1707,-925 1433,-925"/>
+<polygon fill="#ffffff" stroke="transparent" points="1433,-903 1433,-1343 1707,-1343 1707,-903 1433,-903"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="1435,-1319 1435,-1341 1705,-1341 1705,-1319 1435,-1319"/>
 <polygon fill="none" stroke="black" points="1435,-1319 1435,-1341 1705,-1341 1705,-1319 1435,-1319"/>
 <text text-anchor="start" x="1440" y="-1328.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_entregaavulsa</text>
@@ -693,17 +693,21 @@
 <text text-anchor="start" x="1455" y="-953.2" font-family="Helvetica,sans-Serif" font-size="11.00">c_bpartner_location_id</text>
 <polygon fill="none" stroke="black" points="1622,-945 1622,-967 1705,-967 1705,-945 1622,-945"/>
 <text text-anchor="start" x="1625" y="-953.2" font-family="Helvetica,sans-Serif" font-size="11.00">numeric[10]</text>
-<polygon fill="#ffffff" stroke="transparent" points="1435,-927 1435,-945 1705,-945 1705,-927 1435,-927"/>
-<polygon fill="none" stroke="black" points="1435,-927 1435,-945 1705,-945 1705,-927 1435,-927"/>
-<polygon fill="#ffffff" stroke="transparent" points="1436,-928 1436,-944 1529,-944 1529,-928 1436,-928"/>
-<text text-anchor="start" x="1438" y="-933.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 8</text>
-<polygon fill="#ffffff" stroke="transparent" points="1529,-928 1529,-944 1612,-944 1612,-928 1529,-928"/>
-<text text-anchor="start" x="1567" y="-933.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1612,-928 1612,-944 1704,-944 1704,-928 1612,-928"/>
-<text text-anchor="start" x="1686" y="-933.2" font-family="Helvetica,sans-Serif" font-size="11.00">1 &gt;</text>
-<polygon fill="black" stroke="black" points="1529,-928 1529,-944 1529,-944 1529,-928 1529,-928"/>
-<polygon fill="black" stroke="black" points="1612,-928 1612,-944 1612,-944 1612,-928 1612,-928"/>
-<polygon fill="none" stroke="black" stroke-width="2" points="1434,-926 1434,-1342 1706,-1342 1706,-926 1434,-926"/>
+<polygon fill="none" stroke="black" points="1435,-923 1435,-945 1622,-945 1622,-923 1435,-923"/>
+<text text-anchor="start" x="1455" y="-931.2" font-family="Helvetica,sans-Serif" font-size="11.00">deliveryviarule</text>
+<polygon fill="none" stroke="black" points="1622,-923 1622,-945 1705,-945 1705,-923 1622,-923"/>
+<text text-anchor="start" x="1625" y="-931.2" font-family="Helvetica,sans-Serif" font-size="11.00">bpchar[1]</text>
+<polygon fill="#ffffff" stroke="transparent" points="1435,-905 1435,-923 1705,-923 1705,-905 1435,-905"/>
+<polygon fill="none" stroke="black" points="1435,-905 1435,-923 1705,-923 1705,-905 1435,-905"/>
+<polygon fill="#ffffff" stroke="transparent" points="1436,-906 1436,-922 1529,-922 1529,-906 1436,-906"/>
+<text text-anchor="start" x="1438" y="-911.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 8</text>
+<polygon fill="#ffffff" stroke="transparent" points="1529,-906 1529,-922 1612,-922 1612,-906 1529,-906"/>
+<text text-anchor="start" x="1567" y="-911.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1612,-906 1612,-922 1704,-922 1704,-906 1612,-906"/>
+<text text-anchor="start" x="1686" y="-911.2" font-family="Helvetica,sans-Serif" font-size="11.00">1 &gt;</text>
+<polygon fill="black" stroke="black" points="1529,-906 1529,-922 1529,-922 1529,-906 1529,-906"/>
+<polygon fill="black" stroke="black" points="1612,-906 1612,-922 1612,-922 1612,-906 1612,-906"/>
+<polygon fill="none" stroke="black" stroke-width="2" points="1434,-904 1434,-1342 1706,-1342 1706,-904 1434,-904"/>
 </a>
 </g>
 </g>
@@ -863,9 +867,9 @@
 <!-- cof_packinglist_line&#45;&gt;c_bpartner_location -->
 <g id="edge31" class="edge">
 <title>cof_packinglist_line:w&#45;&gt;c_bpartner_location:e</title>
-<path fill="none" stroke="black" d="M1743.49,-1403.51C1704.45,-1341.9 1727.27,-964.36 1715,-915 1627.31,-562.4 1695.46,-363.82 1392,-164 1296.97,-101.43 1222.22,-89.76 1136,-164 1091.21,-202.56 1155.6,-427 1096.5,-427"/>
-<polygon fill="black" stroke="black" points="1748.97,-1407.38 1753.42,-1414.94 1752.23,-1409.69 1755.5,-1412 1755.5,-1412 1755.5,-1412 1752.23,-1409.69 1757.58,-1409.06 1748.97,-1407.38 1748.97,-1407.38"/>
-<ellipse fill="none" stroke="black" cx="1746.35" cy="-1405.54" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M1743.51,-1403.94C1702.3,-1342.15 1728.06,-944.7 1715,-893 1628.19,-549.42 1689.03,-357.28 1392,-164 1296.63,-101.95 1222.22,-89.76 1136,-164 1091.21,-202.56 1155.6,-427 1096.5,-427"/>
+<polygon fill="black" stroke="black" points="1748.86,-1407.53 1753.49,-1414.99 1752.18,-1409.77 1755.5,-1412 1755.5,-1412 1755.5,-1412 1752.18,-1409.77 1757.51,-1409.01 1748.86,-1407.53 1748.86,-1407.53"/>
+<ellipse fill="none" stroke="black" cx="1746.21" cy="-1405.75" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_packinglist_line&#45;&gt;cof_entregaavulsa -->
 <g id="edge32" class="edge">
