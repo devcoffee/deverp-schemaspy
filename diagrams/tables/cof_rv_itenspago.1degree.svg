@@ -354,7 +354,7 @@
 <polygon fill="none" stroke="black" points="10.5,-655 10.5,-677 218.5,-677 218.5,-655 10.5,-655"/>
 <text text-anchor="start" x="30.5" y="-663.2" font-family="Helvetica,sans-Serif" font-size="11.00">infnfe_id</text>
 <polygon fill="none" stroke="black" points="218.5,-655 218.5,-677 327.5,-677 327.5,-655 218.5,-655"/>
-<text text-anchor="start" x="221.5" y="-663.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[44]</text>
+<text text-anchor="start" x="221.5" y="-663.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[50]</text>
 <polygon fill="none" stroke="black" points="10.5,-633 10.5,-655 218.5,-655 218.5,-633 10.5,-633"/>
 <text text-anchor="start" x="30.5" y="-641.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_nfentrada</text>
 <polygon fill="none" stroke="black" points="218.5,-633 218.5,-655 327.5,-655 327.5,-633 218.5,-633"/>

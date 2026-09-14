@@ -58,7 +58,7 @@
 <polygon fill="none" stroke="black" points="10,-325 10,-347 195,-347 195,-325 10,-325"/>
 <text text-anchor="start" x="30" y="-333.2" font-family="Helvetica,sans-Serif" font-size="11.00">infnfe_id</text>
 <polygon fill="none" stroke="black" points="195,-325 195,-347 278,-347 278,-325 195,-325"/>
-<text text-anchor="start" x="198" y="-333.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[44]</text>
+<text text-anchor="start" x="198" y="-333.2" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[50]</text>
 <polygon fill="none" stroke="black" points="10,-303 10,-325 195,-325 195,-303 10,-303"/>
 <text text-anchor="start" x="30" y="-311.2" font-family="Helvetica,sans-Serif" font-size="11.00">bpname</text>
 <polygon fill="none" stroke="black" points="195,-303 195,-325 278,-325 278,-303 195,-303"/>
