@@ -667,7 +667,7 @@
 <polygon fill="none" stroke="black" points="1082,-6902.06 1082,-6924.06 1394,-6924.06 1394,-6902.06 1082,-6902.06"/>
 <text text-anchor="start" x="1102" y="-6910.26" font-family="Helvetica,sans-Serif" font-size="11.00">infnfe_id</text>
 <polygon fill="none" stroke="black" points="1394,-6902.06 1394,-6924.06 1484,-6924.06 1484,-6902.06 1394,-6902.06"/>
-<text text-anchor="start" x="1397" y="-6910.26" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[47]</text>
+<text text-anchor="start" x="1397" y="-6910.26" font-family="Helvetica,sans-Serif" font-size="11.00">varchar[53]</text>
 <polygon fill="none" stroke="black" points="1082,-6880.06 1082,-6902.06 1394,-6902.06 1394,-6880.06 1082,-6880.06"/>
 <text text-anchor="start" x="1102" y="-6888.26" font-family="Helvetica,sans-Serif" font-size="11.00">ide_cuf</text>
 <polygon fill="none" stroke="black" points="1394,-6880.06 1394,-6902.06 1484,-6902.06 1484,-6880.06 1394,-6880.06"/>
