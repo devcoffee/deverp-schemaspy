@@ -8752,7 +8752,7 @@
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_ref_list_isactive_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_ref_list_trl" numRows="9860" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_ref_list_trl" numRows="10951" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_ref_list_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="ad_ref_list_id" foreignKey="ad_reflisttrl" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_ref_list"/>
          </column>
@@ -56856,6 +56856,9 @@
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="286" name="lbr_tpalczfmcbs" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="287" name="imposto_cbs_pdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="288" name="imposto_ibsmun_pdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="289" name="imposto_icms_qbcmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="290" name="imposto_icms_adremicmsret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="291" name="imposto_icms_vicmsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="lbr_docfiscal_line_id" sequenceNumberInPK="1"/>
          <index name="lbr_docfiscal_line_key" unique="true">
             <column ascending="true" name="lbr_docfiscal_line_id"/>
