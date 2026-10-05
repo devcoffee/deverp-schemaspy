@@ -143,6 +143,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="lbr_docfiscal_line.lbr_docfiscal_line_ref_origem_id references lbr_docfiscal_line.lbr_docfiscal_line_id via lbrdocfiscallinereforigem_lbrdocfiscalline"><a href='lbr_docfiscal_line.html'>lbr_docfiscal_line</a><span class='relatedKey'>.lbr_docfiscal_line_ref_origem_id</span></td>
+                                                <td class="constraint detail">lbrdocfiscallinereforigem_lbrdocfiscalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="lbr_docfiscal_line_arma.lbr_docfiscal_line_id references lbr_docfiscal_line.lbr_docfiscal_line_id via lbrdocfiscalline_lbrdocfiscallinearma"><a href='lbr_docfiscal_line_arma.html'>lbr_docfiscal_line_arma</a><span class='relatedKey'>.lbr_docfiscal_line_id</span></td>
                                                 <td class="constraint detail">lbrdocfiscalline_lbrdocfiscallinearma</td>
                                                 <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
@@ -176,6 +181,11 @@
                                                 <td title="m_inoutline.lbr_docfiscal_line_id references lbr_docfiscal_line.lbr_docfiscal_line_id via lbrdocfiscalline_minoutline"><a href='m_inoutline.html'>m_inoutline</a><span class='relatedKey'>.lbr_docfiscal_line_id</span></td>
                                                 <td class="constraint detail">lbrdocfiscalline_minoutline</td>
                                                 <td class="constraint detail"><span title='Null on delete:&#10;Foreign key to parent set to NULL when parent deleted'>N</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="m_rmaline.lbr_docfiscal_line_id references lbr_docfiscal_line.lbr_docfiscal_line_id via lbrdocfiscalline_mrmaline"><a href='m_rmaline.html'>m_rmaline</a><span class='relatedKey'>.lbr_docfiscal_line_id</span></td>
+                                                <td class="constraint detail">lbrdocfiscalline_mrmaline</td>
+                                                <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -5207,6 +5217,28 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="lbr_docfiscal_line_ref_origem_id">lbr_docfiscal_line_ref_origem_id</span></td>
+                                    <td>numeric</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="lbr_docfiscal_line.lbr_docfiscal_line_ref_origem_id references lbr_docfiscal_line.lbr_docfiscal_line_id via lbrdocfiscallinereforigem_lbrdocfiscalline"><a href='lbr_docfiscal_line.html'>lbr_docfiscal_line</a><span class='relatedKey'>.lbr_docfiscal_line_id</span></td>
+                                                <td class="constraint detail">lbrdocfiscallinereforigem_lbrdocfiscalline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -5290,12 +5322,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>lbr_docfiscal_line_cof_ind_gtribregular_check</td>
-                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>lbr_docfiscal_line_cof_ind_gestornocred_check</td>
+                                    <td>((cof_ind_gestornocred &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_docfiscal_line_det_prod_indbemmovelusado_check</td>
-                                    <td>((det_prod_indbemmovelusado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>lbr_docfiscal_line_cof_ind_gtribregular_check</td>
+                                    <td>((cof_ind_gtribregular &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_docfiscal_line_cof_ind_gajustecompet_check</td>
@@ -5306,12 +5338,12 @@
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>lbr_docfiscal_line_cof_ind_gestornocred_check</td>
-                                    <td>((cof_ind_gestornocred &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>lbr_docfiscal_line_cof_ind_gisencao_check</td>
                                     <td>((cof_ind_gisencao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_docfiscal_line_det_prod_indbemmovelusado_check</td>
+                                    <td>((det_prod_indbemmovelusado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>lbr_docfiscal_line_imposto_ibscbs_inddoacao_check</td>
