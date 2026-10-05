@@ -680,7 +680,7 @@
 <g id="node6" class="node">
 <title>lbr_docfiscal_line</title>
 <g id="a_node6"><a xlink:href="../../tables/lbr_docfiscal_line.html" xlink:title="lbr_docfiscal_line" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="1566,-915 1566,-1347 1882,-1347 1882,-915 1566,-915"/>
+<polygon fill="#ffffff" stroke="transparent" points="1566,-893 1566,-1347 1882,-1347 1882,-893 1566,-893"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="1566,-1325 1566,-1347 1882,-1347 1882,-1325 1566,-1325"/>
 <polygon fill="none" stroke="black" points="1566,-1325 1566,-1347 1882,-1347 1882,-1325 1566,-1325"/>
 <text text-anchor="start" x="1571" y="-1334.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_docfiscal_line</text>
@@ -738,18 +738,21 @@
 <polygon fill="none" stroke="black" points="1566,-951 1566,-973 1882,-973 1882,-951 1566,-951"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1571" y="-968"/>
 <text text-anchor="start" x="1586" y="-959.2" font-family="Helvetica,sans-Serif" font-size="11.00">imposto_ibscbs_cct_id</text>
-<polygon fill="none" stroke="black" points="1566,-933 1566,-951 1882,-951 1882,-933 1566,-933"/>
-<text text-anchor="start" x="1569" y="-939.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="1566,-915 1566,-933 1882,-933 1882,-915 1566,-915"/>
-<polygon fill="none" stroke="black" points="1566,-915 1566,-933 1882,-933 1882,-915 1566,-915"/>
-<polygon fill="#ffffff" stroke="transparent" points="1567,-916 1567,-932 1677,-932 1677,-916 1567,-916"/>
-<text text-anchor="start" x="1569" y="-921.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 15</text>
-<polygon fill="#ffffff" stroke="transparent" points="1677,-916 1677,-932 1772,-932 1772,-916 1677,-916"/>
-<text text-anchor="start" x="1721" y="-921.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="1772,-916 1772,-932 1881,-932 1881,-916 1772,-916"/>
-<text text-anchor="start" x="1857" y="-921.2" font-family="Helvetica,sans-Serif" font-size="11.00">12 &gt;</text>
-<polygon fill="black" stroke="black" points="1677,-916 1677,-932 1677,-932 1677,-916 1677,-916"/>
-<polygon fill="black" stroke="black" points="1772,-916 1772,-932 1772,-932 1772,-916 1772,-916"/>
+<polygon fill="none" stroke="black" points="1566,-929 1566,-951 1882,-951 1882,-929 1566,-929"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="1571" y="-946"/>
+<text text-anchor="start" x="1586" y="-937.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_docfiscal_line_ref_origem_id</text>
+<polygon fill="none" stroke="black" points="1566,-911 1566,-929 1882,-929 1882,-911 1566,-911"/>
+<text text-anchor="start" x="1569" y="-917.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="1566,-893 1566,-911 1882,-911 1882,-893 1566,-893"/>
+<polygon fill="none" stroke="black" points="1566,-893 1566,-911 1882,-911 1882,-893 1566,-893"/>
+<polygon fill="#ffffff" stroke="transparent" points="1567,-894 1567,-910 1677,-910 1677,-894 1567,-894"/>
+<text text-anchor="start" x="1569" y="-899.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 16</text>
+<polygon fill="#ffffff" stroke="transparent" points="1677,-894 1677,-910 1772,-910 1772,-894 1677,-894"/>
+<text text-anchor="start" x="1721" y="-899.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="1772,-894 1772,-910 1881,-910 1881,-894 1772,-894"/>
+<text text-anchor="start" x="1857" y="-899.2" font-family="Helvetica,sans-Serif" font-size="11.00">14 &gt;</text>
+<polygon fill="black" stroke="black" points="1677,-894 1677,-910 1677,-910 1677,-894 1677,-894"/>
+<polygon fill="black" stroke="black" points="1772,-894 1772,-910 1772,-910 1772,-894 1772,-894"/>
 </a>
 </g>
 </g>

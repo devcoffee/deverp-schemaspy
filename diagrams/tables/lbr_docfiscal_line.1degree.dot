@@ -7,6 +7,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_invoiceline":"cof_mprecebida_id":w -> "cof_mprecebida":"cof_mprecebida_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline":"cof_uomcomercial_id":w -> "c_uom":"c_uom_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline":"m_inoutline_id":w -> "m_inoutline":"m_inoutline_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_invoiceline":"m_rmaline_id":w -> "m_rmaline":"m_rmaline_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"c_uom_id":w -> "c_uom":"c_uom_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"cof_linhaopindusprestador_id":w -> "m_productionline":"m_productionline_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_orderline":"cof_linhaopmataplicadoprest_id":w -> "cof_materialaplicado":"cof_materialaplicado_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -39,6 +40,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "lbr_docfiscal_line":"imposto_ibscbs_cct_id":w -> "cof_codclasstrib":"cof_codclasstrib_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_docfiscal_line":"imposto_ibscbs_cst_id":w -> "lbr_taxstatus":"lbr_taxstatus_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_docfiscal_line":"lbr_docfiscal_id":w -> "lbr_docfiscal":"lbr_docfiscal_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "lbr_docfiscal_line":"lbr_docfiscal_line_ref_origem_id":w -> "lbr_docfiscal_line":"lbr_docfiscal_line_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_docfiscal_line":"lbr_ncm_id":w -> "lbr_ncm":"lbr_ncm_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_docfiscal_line":"m_inoutline_id":w -> "m_inoutline":"m_inoutline_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_docfiscal_line":"m_movementline_id":w -> "m_movementline":"m_movementline_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -54,9 +56,13 @@ digraph "oneDegreeRelationshipsDiagram" {
   "m_inoutline":"c_uom_id":w -> "c_uom":"c_uom_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_inoutline":"cof_mprecebida_id":w -> "cof_mprecebida":"cof_mprecebida_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_inoutline":"lbr_docfiscal_line_id":w -> "lbr_docfiscal_line":"lbr_docfiscal_line_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "m_inoutline":"m_rmaline_id":w -> "m_rmaline":"m_rmaline_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_movementline":"c_uom_id":w -> "c_uom":"c_uom_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_movementline":"cof_orderline_id":w -> "c_orderline":"c_orderline_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_productionline":"cof_mprecebida_id":w -> "cof_mprecebida":"cof_mprecebida_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "m_rmaline":"cof_mprecebida_id":w -> "cof_mprecebida":"cof_mprecebida_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "m_rmaline":"lbr_docfiscal_line_id":w -> "lbr_docfiscal_line":"lbr_docfiscal_line_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "m_rmaline":"m_inoutline_id":w -> "m_inoutline":"m_inoutline_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_invoiceline" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -669,7 +675,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="imposto_icms_qbcmonoret" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">imposto_icms_qbcmonoret</TD></TR></TABLE></TD><TD PORT="imposto_icms_qbcmonoret.type" ALIGN="LEFT">numeric[0]</TD></TR>
       <TR><TD PORT="imposto_icms_adremicmsret" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">imposto_icms_adremicmsret</TD></TR></TABLE></TD><TD PORT="imposto_icms_adremicmsret.type" ALIGN="LEFT">numeric[0]</TD></TR>
       <TR><TD PORT="imposto_icms_vicmsmonoret" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">imposto_icms_vicmsmonoret</TD></TR></TABLE></TD><TD PORT="imposto_icms_vicmsmonoret.type" ALIGN="LEFT">numeric[0]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 15</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="lbr_docfiscal_line_ref_origem_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="295" HEIGHT="16">lbr_docfiscal_line_ref_origem_id</TD></TR></TABLE></TD><TD PORT="lbr_docfiscal_line_ref_origem_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 16</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">14 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/lbr_docfiscal_line.html"
     target="_top"
@@ -894,5 +901,26 @@ digraph "oneDegreeRelationshipsDiagram" {
     URL="../../tables/m_productionline.html"
     target="_top"
     tooltip="m_productionline"
+  ];
+  "m_rmaline" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="75" HEIGHT="16"><B>m_rmaline</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_rmaline_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">m_rmaline_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_rma_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">m_rma_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_inoutline_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">m_inoutline_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_charge_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">c_charge_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="ref_rmaline_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">ref_rmaline_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_rmaline_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">m_rmaline_uu</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_tax_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">c_tax_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_product_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">m_product_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_mprecebida_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">cof_mprecebida_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="lbr_docfiscal_line_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16">lbr_docfiscal_line_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/m_rmaline.html"
+    target="_top"
+    tooltip="m_rmaline"
   ];
 }

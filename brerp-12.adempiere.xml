@@ -8259,7 +8259,7 @@
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_private_access_isactive_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_process" numRows="982" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_process" numRows="984" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_process_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_adarchive" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_archive"/>
             <child catalog="brerp-12" column="ad_process_id" foreignKey="adprocess_adcolumn" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_column"/>
@@ -56530,6 +56530,7 @@
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_cofcontroleciap" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_controleciap"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_cofcontroleciapsaida" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_controleciap_saida"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_coftrxestoque" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_trxestoqueprevisto"/>
+            <child catalog="brerp-12" column="lbr_docfiscal_line_ref_origem_id" foreignKey="lbrdocfiscallinereforigem_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_lbrdocfiscallinearma" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line_arma"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_lbrdocfiscallinedetexport" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line_detexport"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_lbrdocfiscallinedi" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line_di"/>
@@ -56537,6 +56538,7 @@
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_lbrdocfiscallinerastro" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line_rastro"/>
             <child catalog="brerp-12" column="lbr_nitem_id" foreignKey="lbrnitem_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_eventonfe"/>
             <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_minoutline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_inoutline"/>
+            <child catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_mrmaline" implied="false" onDeleteCascade="true" schema="adempiere" table="m_rmaline"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="lbr_docfiscal_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="lbr_docfiscal_id" foreignKey="lbrdocfiscal_lbrdocfiscalline" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal"/>
@@ -56859,6 +56861,9 @@
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="289" name="imposto_icms_qbcmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="290" name="imposto_icms_adremicmsret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="291" name="imposto_icms_vicmsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="292" name="lbr_docfiscal_line_ref_origem_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscallinereforigem_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
+         </column>
          <primaryKey column="lbr_docfiscal_line_id" sequenceNumberInPK="1"/>
          <index name="lbr_docfiscal_line_key" unique="true">
             <column ascending="true" name="lbr_docfiscal_line_id"/>
@@ -64754,6 +64759,9 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="cof_sourceqty" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="27" name="cof_mprecebida_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="cof_mprecebida_id" foreignKey="cofmprecebida_mrmaline" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mprecebida"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="28" name="lbr_docfiscal_line_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscalline_mrmaline" implied="false" onDeleteCascade="true" schema="adempiere" table="lbr_docfiscal_line"/>
          </column>
          <primaryKey column="m_rmaline_id" sequenceNumberInPK="1"/>
          <index name="m_rmaline_pkey" unique="true">

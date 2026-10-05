@@ -475,54 +475,54 @@
 <g id="node9" class="node">
 <title>cof_nve_product</title>
 <g id="a_node9"><a xlink:href="../../tables/cof_nve_product.html" xlink:title="cof_nve_product" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="660,-361 660,-529 824,-529 824,-361 660,-361"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="660,-507 660,-529 824,-529 824,-507 660,-507"/>
-<polygon fill="none" stroke="black" points="660,-507 660,-529 824,-529 824,-507 660,-507"/>
-<text text-anchor="start" x="665" y="-516.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_nve_product</text>
-<text text-anchor="start" x="789" y="-515.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="660,-485 660,-507 824,-507 824,-485 660,-485"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-502"/>
-<text text-anchor="start" x="680" y="-493.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nve_product_id</text>
-<polygon fill="#ffffff" stroke="transparent" points="660,-463 660,-485 824,-485 824,-463 660,-463"/>
-<polygon fill="none" stroke="black" points="660,-463 660,-485 824,-485 824,-463 660,-463"/>
-<text text-anchor="start" x="680" y="-471.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nve_product_uu</text>
-<polygon fill="none" stroke="black" points="660,-441 660,-463 824,-463 824,-441 660,-441"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-458"/>
-<text text-anchor="start" x="680" y="-449.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_product_id</text>
-<polygon fill="none" stroke="black" points="660,-419 660,-441 824,-441 824,-419 660,-419"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-436"/>
-<text text-anchor="start" x="680" y="-427.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nve_id</text>
-<polygon fill="none" stroke="black" points="660,-397 660,-419 824,-419 824,-397 660,-397"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-414"/>
-<text text-anchor="start" x="680" y="-405.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_ncm_id</text>
-<polygon fill="none" stroke="black" points="660,-379 660,-397 824,-397 824,-379 660,-379"/>
-<text text-anchor="start" x="663" y="-385.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="660,-361 660,-379 824,-379 824,-361 660,-361"/>
-<polygon fill="none" stroke="black" points="660,-361 660,-379 824,-379 824,-361 660,-361"/>
-<polygon fill="#ffffff" stroke="transparent" points="661,-362 661,-378 721,-378 721,-362 661,-362"/>
-<text text-anchor="start" x="663" y="-367.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 3</text>
-<polygon fill="#ffffff" stroke="transparent" points="721,-362 721,-378 772,-378 772,-362 721,-362"/>
-<text text-anchor="start" x="743" y="-367.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="772,-362 772,-378 823,-378 823,-362 772,-362"/>
-<text text-anchor="start" x="814" y="-367.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="black" stroke="black" points="721,-362 721,-378 721,-378 721,-362 721,-362"/>
-<polygon fill="black" stroke="black" points="772,-362 772,-378 772,-378 772,-362 772,-362"/>
+<polygon fill="#ffffff" stroke="transparent" points="660,-360 660,-528 824,-528 824,-360 660,-360"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="660,-506 660,-528 824,-528 824,-506 660,-506"/>
+<polygon fill="none" stroke="black" points="660,-506 660,-528 824,-528 824,-506 660,-506"/>
+<text text-anchor="start" x="665" y="-515.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">cof_nve_product</text>
+<text text-anchor="start" x="789" y="-514.2" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="660,-484 660,-506 824,-506 824,-484 660,-484"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-501"/>
+<text text-anchor="start" x="680" y="-492.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nve_product_id</text>
+<polygon fill="#ffffff" stroke="transparent" points="660,-462 660,-484 824,-484 824,-462 660,-462"/>
+<polygon fill="none" stroke="black" points="660,-462 660,-484 824,-484 824,-462 660,-462"/>
+<text text-anchor="start" x="680" y="-470.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nve_product_uu</text>
+<polygon fill="none" stroke="black" points="660,-440 660,-462 824,-462 824,-440 660,-440"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-457"/>
+<text text-anchor="start" x="680" y="-448.2" font-family="Helvetica,sans-Serif" font-size="11.00">m_product_id</text>
+<polygon fill="none" stroke="black" points="660,-418 660,-440 824,-440 824,-418 660,-418"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-435"/>
+<text text-anchor="start" x="680" y="-426.2" font-family="Helvetica,sans-Serif" font-size="11.00">cof_nve_id</text>
+<polygon fill="none" stroke="black" points="660,-396 660,-418 824,-418 824,-396 660,-396"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="665" y="-413"/>
+<text text-anchor="start" x="680" y="-404.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_ncm_id</text>
+<polygon fill="none" stroke="black" points="660,-378 660,-396 824,-396 824,-378 660,-378"/>
+<text text-anchor="start" x="663" y="-384.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="660,-360 660,-378 824,-378 824,-360 660,-360"/>
+<polygon fill="none" stroke="black" points="660,-360 660,-378 824,-378 824,-360 660,-360"/>
+<polygon fill="#ffffff" stroke="transparent" points="661,-361 661,-377 721,-377 721,-361 661,-361"/>
+<text text-anchor="start" x="663" y="-366.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 3</text>
+<polygon fill="#ffffff" stroke="transparent" points="721,-361 721,-377 772,-377 772,-361 721,-361"/>
+<text text-anchor="start" x="743" y="-366.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="772,-361 772,-377 823,-377 823,-361 772,-361"/>
+<text text-anchor="start" x="814" y="-366.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="black" stroke="black" points="721,-361 721,-377 721,-377 721,-361 721,-361"/>
+<polygon fill="black" stroke="black" points="772,-361 772,-377 772,-377 772,-361 772,-361"/>
 </a>
 </g>
 </g>
 <!-- cof_nve_product&#45;&gt;lbr_ncm -->
 <g id="edge9" class="edge">
 <title>cof_nve_product:w&#45;&gt;lbr_ncm:e</title>
-<path fill="none" stroke="black" d="M644.48,-407.31C603.16,-403.17 590.9,-381.68 543,-375 476.75,-365.76 290.73,-329.18 242,-375 187.5,-426.24 275.31,-1047 200.5,-1047"/>
-<polygon fill="black" stroke="black" points="651.01,-407.62 658.83,-411.6 655,-407.81 659,-408 659,-408 659,-408 655,-407.81 659.17,-404.4 651.01,-407.62 651.01,-407.62"/>
-<ellipse fill="none" stroke="black" cx="647.81" cy="-407.47" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M644.51,-406.33C603.24,-402.32 590.82,-381.48 543,-375 476.72,-366.02 290.73,-329.18 242,-375 187.5,-426.24 275.31,-1047 200.5,-1047"/>
+<polygon fill="black" stroke="black" points="651.01,-406.63 658.83,-410.6 655,-406.82 659,-407 659,-407 659,-407 655,-406.82 659.17,-403.4 651.01,-406.63 651.01,-406.63"/>
+<ellipse fill="none" stroke="black" cx="647.81" cy="-406.48" rx="3.2" ry="3.2"/>
 </g>
 <!-- cof_nve_product&#45;&gt;cof_nve -->
 <g id="edge8" class="edge">
 <title>cof_nve_product:w&#45;&gt;cof_nve:e</title>
-<path fill="none" stroke="black" d="M644.6,-430.36C560.17,-434.64 538.13,-476 446.5,-476"/>
-<polygon fill="black" stroke="black" points="651,-430.2 659.09,-433.6 655,-430.1 659,-430 659,-430 659,-430 655,-430.1 658.91,-426.4 651,-430.2 651,-430.2"/>
-<ellipse fill="none" stroke="black" cx="647.8" cy="-430.28" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="black" d="M644.58,-429.36C560.09,-433.74 538.22,-476 446.5,-476"/>
+<polygon fill="black" stroke="black" points="651,-429.2 659.09,-432.6 655,-429.1 659,-429 659,-429 659,-429 655,-429.1 658.91,-425.4 651,-429.2 651,-429.2"/>
+<ellipse fill="none" stroke="black" cx="647.8" cy="-429.28" rx="3.2" ry="3.2"/>
 </g>
 <!-- i_product -->
 <g id="node10" class="node">
@@ -592,7 +592,7 @@
 <g id="node11" class="node">
 <title>lbr_docfiscal_line</title>
 <g id="a_node11"><a xlink:href="../../tables/lbr_docfiscal_line.html" xlink:title="lbr_docfiscal_line" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="584,-1482 584,-1914 900,-1914 900,-1482 584,-1482"/>
+<polygon fill="#ffffff" stroke="transparent" points="584,-1460 584,-1914 900,-1914 900,-1460 584,-1460"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="584,-1892 584,-1914 900,-1914 900,-1892 584,-1892"/>
 <polygon fill="none" stroke="black" points="584,-1892 584,-1914 900,-1914 900,-1892 584,-1892"/>
 <text text-anchor="start" x="589" y="-1901.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">lbr_docfiscal_line</text>
@@ -650,18 +650,21 @@
 <polygon fill="none" stroke="black" points="584,-1518 584,-1540 900,-1540 900,-1518 584,-1518"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="589" y="-1535"/>
 <text text-anchor="start" x="604" y="-1526.2" font-family="Helvetica,sans-Serif" font-size="11.00">imposto_ibscbs_cct_id</text>
-<polygon fill="none" stroke="black" points="584,-1500 584,-1518 900,-1518 900,-1500 584,-1500"/>
-<text text-anchor="start" x="587" y="-1506.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="584,-1482 584,-1500 900,-1500 900,-1482 584,-1482"/>
-<polygon fill="none" stroke="black" points="584,-1482 584,-1500 900,-1500 900,-1482 584,-1482"/>
-<polygon fill="#ffffff" stroke="transparent" points="585,-1483 585,-1499 695,-1499 695,-1483 585,-1483"/>
-<text text-anchor="start" x="587" y="-1488.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 15</text>
-<polygon fill="#ffffff" stroke="transparent" points="695,-1483 695,-1499 790,-1499 790,-1483 695,-1483"/>
-<text text-anchor="start" x="739" y="-1488.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="790,-1483 790,-1499 899,-1499 899,-1483 790,-1483"/>
-<text text-anchor="start" x="875" y="-1488.2" font-family="Helvetica,sans-Serif" font-size="11.00">12 &gt;</text>
-<polygon fill="black" stroke="black" points="695,-1483 695,-1499 695,-1499 695,-1483 695,-1483"/>
-<polygon fill="black" stroke="black" points="790,-1483 790,-1499 790,-1499 790,-1483 790,-1483"/>
+<polygon fill="none" stroke="black" points="584,-1496 584,-1518 900,-1518 900,-1496 584,-1496"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="589" y="-1513"/>
+<text text-anchor="start" x="604" y="-1504.2" font-family="Helvetica,sans-Serif" font-size="11.00">lbr_docfiscal_line_ref_origem_id</text>
+<polygon fill="none" stroke="black" points="584,-1478 584,-1496 900,-1496 900,-1478 584,-1478"/>
+<text text-anchor="start" x="587" y="-1484.2" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="584,-1460 584,-1478 900,-1478 900,-1460 584,-1460"/>
+<polygon fill="none" stroke="black" points="584,-1460 584,-1478 900,-1478 900,-1460 584,-1460"/>
+<polygon fill="#ffffff" stroke="transparent" points="585,-1461 585,-1477 695,-1477 695,-1461 585,-1461"/>
+<text text-anchor="start" x="587" y="-1466.2" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 16</text>
+<polygon fill="#ffffff" stroke="transparent" points="695,-1461 695,-1477 790,-1477 790,-1461 695,-1461"/>
+<text text-anchor="start" x="739" y="-1466.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="790,-1461 790,-1477 899,-1477 899,-1461 790,-1461"/>
+<text text-anchor="start" x="875" y="-1466.2" font-family="Helvetica,sans-Serif" font-size="11.00">14 &gt;</text>
+<polygon fill="black" stroke="black" points="695,-1461 695,-1477 695,-1477 695,-1461 695,-1461"/>
+<polygon fill="black" stroke="black" points="790,-1461 790,-1477 790,-1477 790,-1461 790,-1461"/>
 </a>
 </g>
 </g>
