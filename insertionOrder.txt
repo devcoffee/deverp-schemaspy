@@ -285,8 +285,8 @@ c_invoice
 c_invoicepayschedule
 dd_order
 cof_controleremessasind
-cof_mprecebida
 m_movement
+cof_mprecebida
 dd_orderline
 pp_order
 pp_order_bom

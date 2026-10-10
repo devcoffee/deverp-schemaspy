@@ -118,6 +118,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="cof_packinglist_line.m_movement_id references m_movement.m_movement_id via mmovement_cofpackinglistline"><a href='cof_packinglist_line.html'>cof_packinglist_line</a><span class='relatedKey'>.m_movement_id</span></td>
+                                                <td class="constraint detail">mmovement_cofpackinglistline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="i_movement.m_movement_id references m_movement.m_movement_id via mmovement_imovement"><a href='i_movement.html'>i_movement</a><span class='relatedKey'>.m_movement_id</span></td>
                                                 <td class="constraint detail">mmovement_imovement</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1340,6 +1345,10 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>m_movement_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>m_movement_processed_check</td>
                                     <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
@@ -1348,16 +1357,12 @@
                                     <td>((cof_docautomatico &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_movement_cof_pp_devolucao_check</td>
-                                    <td>((cof_pp_devolucao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_movement_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>m_movement_cof_isgeneratenfmovement_check</td>
                                     <td>((cof_isgeneratenfmovement &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_movement_cof_pp_devolucao_check</td>
+                                    <td>((cof_pp_devolucao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -30,6 +30,12 @@ digraph "oneDegreeRelationshipsDiagram" {
   "c_project":"c_campaign_id":w -> "c_campaign":"c_campaign_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_project":"m_warehouse_id":w -> "m_warehouse":"m_warehouse_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_project":"salesrep_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_packinglist_line":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_packinglist_line":"c_bpartner_location_id":w -> "c_bpartner_location":"c_bpartner_location_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_packinglist_line":"cte_bpremetente_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_packinglist_line":"cte_bptomador_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_packinglist_line":"lbr_docfiscal_id":w -> "lbr_docfiscal":"lbr_docfiscal_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_packinglist_line":"m_movement_id":w -> "m_movement":"m_movement_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pp_planomestreprod":"c_activity_id":w -> "c_activity":"c_activity_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pp_planomestreprod":"c_campaign_id":w -> "c_campaign":"c_campaign_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pp_planomestreprod":"c_doctype_id":w -> "c_doctype":"c_doctype_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -331,6 +337,35 @@ digraph "oneDegreeRelationshipsDiagram" {
     target="_top"
     tooltip="c_project"
   ];
+  "cof_packinglist_line" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="142" HEIGHT="16"><B>cof_packinglist_line</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_packinglist_line_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_packinglist_line_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_packinglist_line_uu" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_packinglist_line_uu</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_packinglist_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_packinglist_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_inout_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">m_inout_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_deliveryrestriction_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_deliveryrestriction_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_deliveryoccurrence_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_deliveryoccurrence_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_bpartner_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">c_bpartner_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_bpartner_location_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">c_bpartner_location_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="c_order_id" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">c_order_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="lbr_docfiscal_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">lbr_docfiscal_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_rma_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">m_rma_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_m_shipregion_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_m_shipregion_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_dfe_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_dfe_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cte_bpremetente_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cte_bpremetente_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cte_bptomador_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cte_bptomador_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cte_cte_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cte_cte_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_entregaavulsa_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">cof_entregaavulsa_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="m_movement_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="206" HEIGHT="16">m_movement_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 16</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_packinglist_line.html"
+    target="_top"
+    tooltip="cof_packinglist_line"
+  ];
   "cof_pp_planomestreprod" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -502,7 +537,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="m_warehouse_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="200" HEIGHT="16">m_warehouse_id</TD></TR></TABLE></TD><TD PORT="m_warehouse_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
       <TR><TD PORT="m_warehouseto_id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="200" HEIGHT="16">m_warehouseto_id</TD></TR></TABLE></TD><TD PORT="m_warehouseto_id.type" ALIGN="LEFT">numeric[10]</TD></TR>
       <TR><TD PORT="createlinesfrom" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="200" HEIGHT="16">createlinesfrom</TD></TR></TABLE></TD><TD PORT="createlinesfrom.type" ALIGN="LEFT">bpchar[1]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 22</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 22</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/m_movement.html"
     target="_top"
