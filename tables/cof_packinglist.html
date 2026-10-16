@@ -133,6 +133,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_packing_infvpomdfe.cof_packinglist_id references cof_packinglist.cof_packinglist_id via cofpackinglist_cofpackinginfvpomdfe"><a href='cof_packing_infvpomdfe.html'>cof_packing_infvpomdfe</a><span class='relatedKey'>.cof_packinglist_id</span></td>
+                                                <td class="constraint detail">cofpackinglist_cofpackinginfvpomdfe</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_packinglist_line.cof_packinglist_id references cof_packinglist.cof_packinglist_id via cofpackinglist_cofpackinglistl"><a href='cof_packinglist_line.html'>cof_packinglist_line</a><span class='relatedKey'>.cof_packinglist_id</span></td>
                                                 <td class="constraint detail">cofpackinglist_cofpackinglistl</td>
                                                 <td class="constraint detail"><span title='Cascade on delete:&#10;Deletion of parent deletes child'>C</span></td>
@@ -1546,32 +1551,32 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>cof_packinglist_cte_istomadorremetenteeminfe_check</td>
-                                    <td>((cte_istomadorremetenteeminfe &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>cof_packinglist_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_packinglist_cte_isremetenteemissor_check</td>
                                     <td>((cte_isremetenteemissor &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>cof_packinglist_issotrx_check</td>
-                                    <td>((issotrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>cof_packinglist_cte_istomadoremissor_check</td>
-                                    <td>((cte_istomadoremissor &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_packinglist_cof_isprinted_check</td>
                                     <td>((cof_isprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>cof_packinglist_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>cof_packinglist_cte_istomadorremetenteeminfe_check</td>
+                                    <td>((cte_istomadorremetenteeminfe &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_packinglist_issotrx_check</td>
+                                    <td>((issotrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_packinglist_cof_iscteautomatizado_check</td>
                                     <td>((cof_iscteautomatizado &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_packinglist_cte_istomadoremissor_check</td>
+                                    <td>((cte_istomadoremissor &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

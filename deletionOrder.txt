@@ -235,7 +235,11 @@ cof_webhookevent
 cof_r_question_value_interval
 cof_pneu_manutencao
 cof_parametroavancadobusca
+cof_packing_infvpomdfe
 cof_orderdeducaomateriais
+cof_mdfe_infvpo
+cof_mdfe_infpag_infprazo
+cof_mdfe_infpag_comp
 cof_labelfield
 cof_labelentry
 cof_gruponcmlinha
@@ -773,6 +777,7 @@ pa_documentstatus
 cof_calculociaplinha
 m_requisitionline
 cof_c_sped_fiscal
+cof_mdfe_infpag
 ad_userdef_info
 ad_process_drillrule
 cof_c_diadi
@@ -821,7 +826,6 @@ k_entry
 cof_configexportcontab
 cm_media
 cof_pp_ferramenta
-cof_mdfe
 ad_field
 c_rfqresponse
 gl_journalgenerator
@@ -866,6 +870,7 @@ ad_labelcategory
 cof_controleciap
 ad_infocolumn
 hr_concept
+cof_mdfe
 ad_process_para
 i_fixedasset
 mp_prognosis

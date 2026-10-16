@@ -863,6 +863,26 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_mdfe_infpag.ad_client_id references ad_client.ad_client_id via adclient_cofmdfeinfpag"><a href='cof_mdfe_infpag.html'>cof_mdfe_infpag</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_cofmdfeinfpag</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_mdfe_infpag_comp.ad_client_id references ad_client.ad_client_id via adclient_cofmdfeinfpagcomp"><a href='cof_mdfe_infpag_comp.html'>cof_mdfe_infpag_comp</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_cofmdfeinfpagcomp</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_mdfe_infpag_infprazo.ad_client_id references ad_client.ad_client_id via adclient_cofmdfeinfpaginfprazo"><a href='cof_mdfe_infpag_infprazo.html'>cof_mdfe_infpag_infprazo</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_cofmdfeinfpaginfprazo</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_mdfe_infvpo.ad_client_id references ad_client.ad_client_id via adclient_cofmdfeinfvpo"><a href='cof_mdfe_infvpo.html'>cof_mdfe_infvpo</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_cofmdfeinfvpo</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_mdfe_muncarregamento.ad_client_id references ad_client.ad_client_id via adclient_cofmdfemuncarregament"><a href='cof_mdfe_muncarregamento.html'>cof_mdfe_muncarregamento</a><span class='relatedKey'>.ad_client_id</span></td>
                                                 <td class="constraint detail">adclient_cofmdfemuncarregament</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -890,6 +910,11 @@
                                             <tr>
                                                 <td title="cof_orderdeducaomateriais.ad_client_id references ad_client.ad_client_id via adclient_coforderdeducaomateriais"><a href='cof_orderdeducaomateriais.html'>cof_orderdeducaomateriais</a><span class='relatedKey'>.ad_client_id</span></td>
                                                 <td class="constraint detail">adclient_coforderdeducaomateriais</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_packing_infvpomdfe.ad_client_id references ad_client.ad_client_id via adclient_cofpackinginfvpomdfe"><a href='cof_packing_infvpomdfe.html'>cof_packing_infvpomdfe</a><span class='relatedKey'>.ad_client_id</span></td>
+                                                <td class="constraint detail">adclient_cofpackinginfvpomdfe</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -2009,12 +2034,12 @@
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_client_isuseasp_check</td>
-                                    <td>((isuseasp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>ad_client_issecuresmtp_check</td>
                                     <td>((issecuresmtp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_client_isuseasp_check</td>
+                                    <td>((isuseasp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
