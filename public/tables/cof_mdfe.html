@@ -318,6 +318,16 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_mdfe_infpag.cof_mdfe_id references cof_mdfe.cof_mdfe_id via cofmdfe_cofmdfeinfpag"><a href='cof_mdfe_infpag.html'>cof_mdfe_infpag</a><span class='relatedKey'>.cof_mdfe_id</span></td>
+                                                <td class="constraint detail">cofmdfe_cofmdfeinfpag</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_mdfe_infvpo.cof_mdfe_id references cof_mdfe.cof_mdfe_id via cofmdfe_cofmdfeinfvpo"><a href='cof_mdfe_infvpo.html'>cof_mdfe_infvpo</a><span class='relatedKey'>.cof_mdfe_id</span></td>
+                                                <td class="constraint detail">cofmdfe_cofmdfeinfvpo</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_mdfe_muncarregamento.cof_mdfe_id references cof_mdfe.cof_mdfe_id via cofmdfe_cofmdfemuncarregamento"><a href='cof_mdfe_muncarregamento.html'>cof_mdfe_muncarregamento</a><span class='relatedKey'>.cof_mdfe_id</span></td>
                                                 <td class="constraint detail">cofmdfe_cofmdfemuncarregamento</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1294,16 +1304,16 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>cof_mdfe_processed_check</td>
+                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>cof_mdfe_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_mdfe_processing_check</td>
                                     <td>((processing &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>cof_mdfe_processed_check</td>
-                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_mdfe_cof_mdfe_isencerradoterceiro_check</td>

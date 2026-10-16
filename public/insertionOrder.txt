@@ -400,6 +400,7 @@ cof_pneu_marca
 mp_prognosis
 i_fixedasset
 ad_process_para
+cof_mdfe
 hr_concept
 ad_infocolumn
 cof_controleciap
@@ -444,7 +445,6 @@ cof_configuracaometa
 gl_journalgenerator
 c_rfqresponse
 ad_field
-cof_mdfe
 cof_pp_ferramenta
 cm_media
 cof_configexportcontab
@@ -493,6 +493,7 @@ r_requestprocessor
 cof_c_diadi
 ad_process_drillrule
 ad_userdef_info
+cof_mdfe_infpag
 cof_c_sped_fiscal
 m_requisitionline
 cof_calculociaplinha
@@ -1030,7 +1031,11 @@ cof_formacaoprecolista
 cof_gruponcmlinha
 cof_labelentry
 cof_labelfield
+cof_mdfe_infpag_comp
+cof_mdfe_infpag_infprazo
+cof_mdfe_infvpo
 cof_orderdeducaomateriais
+cof_packing_infvpomdfe
 cof_parametroavancadobusca
 cof_pneu_manutencao
 cof_r_question_value_interval

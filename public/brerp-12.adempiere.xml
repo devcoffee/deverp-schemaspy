@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <database name="brerp-12" schema="adempiere" type="PostgreSQL - 16.9 (Ubuntu 16.9-1.pgdg22.04+1)">
    <sequences>
+      <sequence increment="1" name="cof_mdfe_infpag_comp_sq" startValue="1000000"/>
+      <sequence increment="1" name="cof_mdfe_infpag_sq" startValue="1000000"/>
       <sequence increment="1" name="cte_cte_sq" startValue="1000000"/>
    </sequences>
    <tables>
@@ -3124,12 +3126,17 @@
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfecondutor" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_condutor"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfedocumentofisca" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_documentofiscal"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_comp"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_infprazo"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infvpo"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfemuncarregament" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_muncarregamento"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfemundescarregam" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_mundescarregamento"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfepercurso" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_percurso"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfereboque" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_reboque"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmetadevendas" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_metadevendas"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
+            <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packing_infvpomdfe"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofparametroavancadobusca" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_parametroavancadobusca"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofparamformacaopreco" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_paramformacaopreco"/>
             <child catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofpontoremessa" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_pontoremessa"/>
@@ -4153,7 +4160,7 @@
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_error_isactive_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_field" numRows="34945" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_field" numRows="35683" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_field_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_field_id" foreignKey="ad_fieldtrl" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_field_trl"/>
             <child catalog="brerp-12" column="ad_field_id" foreignKey="adfield_adfieldsuggestion" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_fieldsuggestion"/>
@@ -6473,6 +6480,10 @@
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfecondutor" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_condutor"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfedocumentofiscal" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_documentofiscal"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_comp"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_infprazo"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infvpo"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfemuncarregamento" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_muncarregamento"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfemundescarregament" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_mundescarregamento"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfepercurso" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_percurso"/>
@@ -6481,6 +6492,7 @@
             <child catalog="brerp-12" column="cof_orgorcamento_id" foreignKey="coforgorcamento_coforcamentoor" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_orcamentoorgs"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_coforgst" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orgst"/>
+            <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packing_infvpomdfe"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofparametroavancadobusca" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_parametroavancadobusca"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofparamformacaopreco" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_paramformacaopreco"/>
             <child catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofpontoremessa" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_pontoremessa"/>
@@ -11968,6 +11980,14 @@
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmdfecondutor" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_condutor"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmdfedocumentofisc" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_documentofiscal"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmdfedocumentofisc" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_documentofiscal"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_comp"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_comp"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_infprazo"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_infprazo"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infvpo"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infvpo"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmdfemuncarregamen" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_muncarregamento"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofmdfemuncarregamen" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_muncarregamento"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofmdfemundescarrega" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_mundescarregamento"/>
@@ -11982,6 +12002,8 @@
             <child catalog="brerp-12" column="cof_solucionadopor_id" foreignKey="cofsolucionadopor_cofocorrenci" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_ocorrenciaembdes"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
             <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_coforderdeducaomateriais" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orderdeducaomateriais"/>
+            <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packing_infvpomdfe"/>
+            <child catalog="brerp-12" column="updatedby" foreignKey="updatedby_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packing_infvpomdfe"/>
             <child catalog="brerp-12" column="cof_porteiroentrada_id" foreignKey="cofporteiroentrada_cofpackingl" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packinglist"/>
             <child catalog="brerp-12" column="cof_porteirosaida_id" foreignKey="cofporteirosaida_cofpackinglis" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packinglist"/>
             <child catalog="brerp-12" column="createdby" foreignKey="createdby_cofparametroavancadobusca" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_parametroavancadobusca"/>
@@ -14881,8 +14903,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -14967,8 +14989,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -15005,8 +15027,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_boffer" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_sellerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -15065,8 +15087,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="bseller_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_seller"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bsellerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -17267,6 +17289,7 @@
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofdeliveryrestricti" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_deliveryrestriction"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofdriver" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_driver"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofentregaavulsa" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_entregaavulsa"/>
+            <child catalog="brerp-12" column="cof_infpag_bpartnerpagador_id" foreignKey="cofinfpagbpartnerpagador_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofmdfereboque" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_reboque"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_cofmetarepresentante" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_metarepresentante"/>
             <child catalog="brerp-12" column="c_bpartner_id" foreignKey="cbpartner_coforcamentoconfig" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_orcamentoconfig"/>
@@ -42205,6 +42228,8 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="cof_mdfe_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfecondutor" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_condutor"/>
             <child catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfedocumentofiscal" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_documentofiscal"/>
+            <child catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag"/>
+            <child catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infvpo"/>
             <child catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfemuncarregamento" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_muncarregamento"/>
             <child catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfemundescarregame" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_mundescarregamento"/>
             <child catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfepercurso" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_percurso"/>
@@ -42360,6 +42385,150 @@
             <column ascending="true" name="cof_mdfe_documentofiscal_uu"/>
          </index>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_mdfe_documentofiscal_isactive_check"/>
+      </table>
+      <table catalog="brerp-12" name="cof_mdfe_infpag" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_mdfe_infpag_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <child catalog="brerp-12" column="cof_mdfe_infpag_id" foreignKey="cofmdfeinfpag_cofmdfeinfpagcomp" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_mdfe_infpag_comp"/>
+            <child catalog="brerp-12" column="cof_mdfe_infpag_id" foreignKey="cofmdfeinfpag_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag_infprazo"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="3" name="cof_mdfe_infpag_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="4" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="6" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="7" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="cof_infpag_vcontrato" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="10" name="cof_infpag_indpag" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="11" name="cof_infpag_pix" nullable="true" remarks="" size="300" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="12" name="cof_infpag_codbanco" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="13" name="cof_infpag_codagencia" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="14" name="cof_infpag_bpartnerpagador_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_bpartner_id" foreignKey="cofinfpagbpartnerpagador_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="c_bpartner"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="cof_mdfe_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfeinfpag" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe"/>
+         </column>
+         <primaryKey column="cof_mdfe_infpag_id" sequenceNumberInPK="1"/>
+         <index name="cof_mdfe_infpag_key" unique="true">
+            <column ascending="true" name="cof_mdfe_infpag_id"/>
+         </index>
+         <index name="cof_mdfe_infpag_uu_idx" unique="true">
+            <column ascending="true" name="cof_mdfe_infpag_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_mdfe_infpag_isactive_check"/>
+      </table>
+      <table catalog="brerp-12" name="cof_mdfe_infpag_comp" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_infpag_comp_vcomp" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="3" name="cof_infpag_comp_xcomp" nullable="true" remarks="" size="300" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="cof_mdfe_infpag_comp_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="5" name="cof_mdfe_infpag_comp_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="6" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="8" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="9" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofmdfeinfpagcomp" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="cof_infpag_comp_tpcomp" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="cof_mdfe_infpag_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_mdfe_infpag_id" foreignKey="cofmdfeinfpag_cofmdfeinfpagcomp" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_mdfe_infpag"/>
+         </column>
+         <primaryKey column="cof_mdfe_infpag_comp_id" sequenceNumberInPK="1"/>
+         <index name="cof_mdfe_infpag_comp_key" unique="true">
+            <column ascending="true" name="cof_mdfe_infpag_comp_id"/>
+         </index>
+         <index name="cof_mdfe_infpag_comp_uu_idx" unique="true">
+            <column ascending="true" name="cof_mdfe_infpag_comp_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_mdfe_infpag_comp_isactive_check"/>
+      </table>
+      <table catalog="brerp-12" name="cof_mdfe_infpag_infprazo" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_mdfe_infpag_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_mdfe_infpag_id" foreignKey="cofmdfeinfpag_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe_infpag"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_mdfe_infpag_infprazo_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_mdfe_infpag_infprazo_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="5" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="7" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="8" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofmdfeinfpaginfprazo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="cof_infpag_infprazo_nparcela" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="11" name="cof_infpag_infprazo_dvenc" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="cof_infpag_infprazo_vparcela" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
+         <primaryKey column="cof_mdfe_infpag_infprazo_id" sequenceNumberInPK="1"/>
+         <index name="cof_mdfe_infpag_infprazo_key" unique="true">
+            <column ascending="true" name="cof_mdfe_infpag_infprazo_id"/>
+         </index>
+         <index name="cof_mdfe_infpag_infprazo_uu_idx" unique="true">
+            <column ascending="true" name="cof_mdfe_infpag_infprazo_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_mdfe_infpag_infprazo_isactive_check"/>
+      </table>
+      <table catalog="brerp-12" name="cof_mdfe_infvpo" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="2" name="cof_categcombveic" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_cnpjforn" nullable="false" remarks="" size="18" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_cnpjpg" nullable="true" remarks="" size="18" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="5" name="cof_cpfpg" nullable="true" remarks="" size="14" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="cof_mdfe_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_mdfe_id" foreignKey="cofmdfe_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="cof_mdfe_infvpo_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="8" name="cof_mdfe_infvpo_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="9" name="cof_ncompra" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="10" name="cof_tpvaleped" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="cof_vvaleped" nullable="false" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="12" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="14" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="15" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofmdfeinfvpo" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <primaryKey column="cof_mdfe_infvpo_id" sequenceNumberInPK="1"/>
+         <index name="cof_mdfe_infvpo_key" unique="true">
+            <column ascending="true" name="cof_mdfe_infvpo_id"/>
+         </index>
+         <index name="cof_mdfe_infvpo_uu_idx" unique="true">
+            <column ascending="true" name="cof_mdfe_infvpo_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_mdfe_infvpo_isactive_check"/>
       </table>
       <table catalog="brerp-12" name="cof_mdfe_muncarregamento" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -43539,11 +43708,49 @@
          <checkConstraint constraint="((cof_faturado = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_osservico_cof_faturado_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_osservico_isactive_check"/>
       </table>
+      <table catalog="brerp-12" name="cof_packing_infvpomdfe" remarks="" schema="adempiere" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_client_id" foreignKey="adclient_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_client"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_org_id" foreignKey="adorg_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_org"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="2" name="cof_categcombveic" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="cof_cnpjforn" nullable="false" remarks="" size="18" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="4" name="cof_cnpjpg" nullable="true" remarks="" size="18" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="5" name="cof_cpfpg" nullable="true" remarks="" size="14" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="cof_packing_infvpomdfe_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="7" name="cof_packing_infvpomdfe_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="cof_packinglist_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="cof_packinglist_id" foreignKey="cofpackinglist_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packinglist"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="9" name="cof_ncompra" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="cof_tpvaleped" nullable="false" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="cof_vvaleped" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="12" name="created" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="createdby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="createdby_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="14" name="isactive" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="15" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="updatedby_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+         </column>
+         <primaryKey column="cof_packing_infvpomdfe_id" sequenceNumberInPK="1"/>
+         <index name="cof_packing_infvpomdfe_key" unique="true">
+            <column ascending="true" name="cof_packing_infvpomdfe_id"/>
+         </index>
+         <index name="cof_packing_infvpomdfe_uu_idx" unique="true">
+            <column ascending="true" name="cof_packing_infvpomdfe_uu"/>
+         </index>
+         <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="cof_packing_infvpomdfe_isactive_check"/>
+      </table>
       <table catalog="brerp-12" name="cof_packinglist" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="cof_packinglist_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="cof_packinglist_id" foreignKey="cofpackinglist_corder" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
             <child catalog="brerp-12" column="cof_packinglist_id" foreignKey="cofpackinglist_cofmdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_mdfe"/>
             <child catalog="brerp-12" column="cof_packinglist_id" foreignKey="cofpackinglist_cofocorrenciaem" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_ocorrenciaembdes"/>
+            <child catalog="brerp-12" column="cof_packinglist_id" foreignKey="cofpackinglist_cofpackinginfvpomdfe" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_packing_infvpomdfe"/>
             <child catalog="brerp-12" column="cof_packinglist_id" foreignKey="cofpackinglist_cofpackinglistl" implied="false" onDeleteCascade="true" schema="adempiere" table="cof_packinglist_line"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="1" name="cof_packinglist_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
@@ -46661,6 +46868,27 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="cof_ischangecheck" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="cof_reasonchange" nullable="true" remarks="" size="250" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="user2_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+      </table>
+      <table catalog="brerp-12" name="cof_rv_controleremessainddevcliente" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT cri.ad_client_id,&#10;    cri.ad_org_id,&#10;    cri.cof_controleremessasind_id,&#10;    doc.c_invoice_id,&#10;    doc.lbr_docfiscal_id,&#10;    doc.datedoc,&#10;    doc.docstatus,&#10;    docl.m_product_id,&#10;    docl.det_prod_qcom AS qtyordered,&#10;    docl.lbr_cfop_id,&#10;    docl.det_prod_vuncom AS priceactual,&#10;    docl.det_prod_vprod AS linenetamt,&#10;    cri.isactive,&#10;    cri.created,&#10;    cri.updated,&#10;    cri.updatedby,&#10;    cri.createdby,&#10;    mp.m_attributesetinstance_id,&#10;    mp.c_uom_id&#10;   FROM (((((cof_mprecebida mp&#10;     JOIN cof_controleremessasind cri ON ((cri.cof_controleremessasind_id = mp.cof_controleremessasind_id)))&#10;     JOIN m_productionline prl ON ((prl.cof_mprecebida_id = mp.cof_mprecebida_id)))&#10;     JOIN lbr_docfiscal_line docl ON ((docl.cof_linhaopindusprestador_id = prl.m_productionline_id)))&#10;     JOIN lbr_docfiscal doc ON ((doc.lbr_docfiscal_id = docl.lbr_docfiscal_id)))&#10;     JOIN c_invoice inv ON ((inv.c_invoice_id = doc.c_invoice_id)))&#10;  WHERE ((doc.ide_tpnf = '0'::bpchar) AND (doc.ide_finnfe = '4'::bpchar));">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ad_org_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="cof_controleremessasind_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="c_invoice_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="lbr_docfiscal_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="5" name="datedoc" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="docstatus" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="m_product_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="qtyordered" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="lbr_cfop_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="priceactual" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="linenetamt" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="isactive" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="13" name="created" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="14" name="updated" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="updatedby" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="createdby" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="m_attributesetinstance_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="c_uom_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
       </table>
       <table catalog="brerp-12" name="cof_rv_controleremessasinddevmprecebida" numRows="0" remarks="" schema="adempiere" type="VIEW" viewSql=" SELECT cri.ad_client_id,&#10;    cri.ad_org_id,&#10;    cri.cof_controleremessasind_id,&#10;    dev.m_inout_id,&#10;    dev.movementdate,&#10;    doc.c_invoice_id,&#10;    doc.lbr_docfiscal_id,&#10;    doc.datedoc,&#10;    doc.docstatus,&#10;    dev.c_bpartner_id,&#10;    docl.m_product_id,&#10;    docl.det_prod_qcom AS qtyordered,&#10;    docl.lbr_cfop_id,&#10;    docl.det_prod_vuncom AS priceactual,&#10;    docl.det_prod_vprod AS linenetamt,&#10;    cri.isactive,&#10;    cri.created,&#10;    cri.updated,&#10;    cri.updatedby,&#10;    cri.createdby,&#10;    mp.m_attributesetinstance_id,&#10;    mp.c_uom_id&#10;   FROM (((((cof_mprecebida mp&#10;     JOIN cof_controleremessasind cri ON ((cri.cof_controleremessasind_id = mp.cof_controleremessasind_id)))&#10;     JOIN lbr_docfiscal_line docl ON ((docl.cof_mprecebida_id = mp.cof_mprecebida_id)))&#10;     JOIN lbr_docfiscal doc ON ((doc.lbr_docfiscal_id = docl.lbr_docfiscal_id)))&#10;     JOIN m_inoutline devl ON ((devl.m_inoutline_id = docl.m_inoutline_id)))&#10;     JOIN m_inout dev ON ((dev.m_inout_id = devl.m_inout_id)))&#10;  WHERE (dev.movementtype = 'V-'::bpchar);">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_client_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
@@ -57481,6 +57709,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="lbr_formula" nullable="false" remarks="" size="512" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="11" name="lbr_formula_uu" nullable="true" remarks="" size="36" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="12" name="istaxincluded" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="13" name="cof_isdeduzirmargem" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="lbr_formula_id" sequenceNumberInPK="1"/>
          <index name="lbr_formula_key" unique="true">
             <column ascending="true" name="lbr_formula_id"/>
@@ -57488,6 +57717,7 @@
          <index name="lbr_formula_uu_idx" unique="true">
             <column ascending="true" name="lbr_formula_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isdeduzirmargem = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_formula_cof_isdeduzirmargem_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_formula_isactive_check"/>
          <checkConstraint constraint="((istaxincluded = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_formula_istaxincluded_check"/>
       </table>
@@ -58012,6 +58242,7 @@
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="65" name="cof_overridecctdelivery" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="66" name="cof_percentualdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="67" name="lbr_tpalczfmcbs" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="68" name="cof_isdeduzirmargem" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="lbr_taxline_id" sequenceNumberInPK="1"/>
          <index name="lbr_taxline_key" unique="true">
             <column ascending="true" name="lbr_taxline_id"/>
@@ -58023,6 +58254,7 @@
          <index name="lbr_taxline_uu_idx" unique="true">
             <column ascending="true" name="lbr_taxline_uu"/>
          </index>
+         <checkConstraint constraint="((cof_isdeduzirmargem = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_isdeduzirmargem_check"/>
          <checkConstraint constraint="((cof_overridecct = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridecct_check"/>
          <checkConstraint constraint="((cof_overridecctdelivery = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridecctdelivery_check"/>
          <checkConstraint constraint="((cof_overridecenq = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="lbr_taxline_cof_overridecenq_check"/>
