@@ -12516,7 +12516,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="4695.5,-17451.08 4695.5,-17467.08 4727.5,-17467.08 4727.5,-17451.08 4695.5,-17451.08"/>
 <text text-anchor="start" x="4697.5" y="-17456.28" font-family="Helvetica,sans-Serif" font-size="11.00">&lt; 2</text>
 <polygon fill="#ffffff" stroke="transparent" points="4727.5,-17451.08 4727.5,-17467.08 4796.5,-17467.08 4796.5,-17451.08 4727.5,-17451.08"/>
-<text text-anchor="start" x="4735" y="-17456.28" font-family="Helvetica,sans-Serif" font-size="11.00">2.129 rows</text>
+<text text-anchor="start" x="4735" y="-17456.28" font-family="Helvetica,sans-Serif" font-size="11.00">2.134 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="4796.5,-17451.08 4796.5,-17467.08 4827.5,-17467.08 4827.5,-17451.08 4796.5,-17451.08"/>
 <text text-anchor="start" x="4809.5" y="-17456.28" font-family="Helvetica,sans-Serif" font-size="11.00">9 &gt;</text>
 <polygon fill="black" stroke="black" points="4727.5,-17451.08 4727.5,-17467.08 4727.5,-17467.08 4727.5,-17451.08 4727.5,-17451.08"/>
@@ -25994,10 +25994,34 @@
 <polygon fill="black" stroke="black" points="5828.07,-33732.6 5834.68,-33738.37 5831.9,-33733.76 5835.73,-33734.93 5835.73,-33734.93 5835.73,-33734.93 5831.9,-33733.76 5836.78,-33731.48 5828.07,-33732.6 5828.07,-33732.6"/>
 <ellipse fill="none" stroke="black" cx="5825.01" cy="-33731.66" rx="3.2" ry="3.2"/>
 </g>
-<!-- c_rfqline -->
+<!-- c_revenuerecognition -->
 <g id="node371" class="node">
+<title>c_revenuerecognition</title>
+<g id="a_node371"><a xlink:href="../../tables/c_revenuerecognition.html" xlink:title="c_revenuerecognition" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="4663,-13560.08 4663,-13618.08 4860,-13618.08 4860,-13560.08 4663,-13560.08"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="4663.5,-13596.08 4663.5,-13618.08 4860.5,-13618.08 4860.5,-13596.08 4663.5,-13596.08"/>
+<polygon fill="none" stroke="black" points="4663.5,-13596.08 4663.5,-13618.08 4860.5,-13618.08 4860.5,-13596.08 4663.5,-13596.08"/>
+<text text-anchor="start" x="4668.5" y="-13605.28" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_revenuerecognition</text>
+<text text-anchor="start" x="4825.5" y="-13604.28" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
+<polygon fill="none" stroke="black" points="4663.5,-13578.08 4663.5,-13596.08 4860.5,-13596.08 4860.5,-13578.08 4663.5,-13578.08"/>
+<text text-anchor="start" x="4666.5" y="-13584.28" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="4663.5,-13560.08 4663.5,-13578.08 4860.5,-13578.08 4860.5,-13560.08 4663.5,-13560.08"/>
+<polygon fill="none" stroke="black" points="4663.5,-13560.08 4663.5,-13578.08 4860.5,-13578.08 4860.5,-13560.08 4663.5,-13560.08"/>
+<polygon fill="#ffffff" stroke="transparent" points="4664.5,-13561.08 4664.5,-13577.08 4726.5,-13577.08 4726.5,-13561.08 4664.5,-13561.08"/>
+<text text-anchor="start" x="4666.5" y="-13566.28" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="4726.5,-13561.08 4726.5,-13577.08 4788.5,-13577.08 4788.5,-13561.08 4726.5,-13561.08"/>
+<text text-anchor="start" x="4754" y="-13566.28" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="4788.5,-13561.08 4788.5,-13577.08 4859.5,-13577.08 4859.5,-13561.08 4788.5,-13561.08"/>
+<text text-anchor="start" x="4841.5" y="-13566.28" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
+<polygon fill="black" stroke="black" points="4726.5,-13561.08 4726.5,-13577.08 4726.5,-13577.08 4726.5,-13561.08 4726.5,-13561.08"/>
+<polygon fill="black" stroke="black" points="4788.5,-13561.08 4788.5,-13577.08 4788.5,-13577.08 4788.5,-13561.08 4788.5,-13561.08"/>
+</a>
+</g>
+</g>
+<!-- c_rfqline -->
+<g id="node372" class="node">
 <title>c_rfqline</title>
-<g id="a_node371"><a xlink:href="../../tables/c_rfqline.html" xlink:title="c_rfqline" target="_top">
+<g id="a_node372"><a xlink:href="../../tables/c_rfqline.html" xlink:title="c_rfqline" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="14637,-44041.08 14637,-44099.08 14739,-44099.08 14739,-44041.08 14637,-44041.08"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="14637,-44077.08 14637,-44099.08 14739,-44099.08 14739,-44077.08 14637,-44077.08"/>
 <polygon fill="none" stroke="black" points="14637,-44077.08 14637,-44099.08 14739,-44099.08 14739,-44077.08 14637,-44077.08"/>
@@ -26038,30 +26062,6 @@
 <path fill="none" stroke="black" d="M14685.79,-44117.83C14676.47,-44479.46 14613.81,-46775.88 14524,-46889.08 14398.64,-47047.08 14284.2,-46994.08 14082.5,-46994.08 14082.5,-46994.08 14082.5,-46994.08 9028,-46994.08 8797,-46994.08 7124.34,-46750.38 6951,-46903.08 6903.35,-46945.05 6958.07,-46992.82 6918,-47042.08 6849.86,-47125.82 6761.79,-47057.97 6698,-47145.08 6631.78,-47235.5 6741.47,-47313.14 6665,-47395.08 6399.55,-47679.49 6069.18,-47732.06 5792,-47459.08 5706.41,-47374.79 5828.5,-45395.05 5759,-45297.08 5691.88,-45202.46 5582.62,-45300.6 5514,-45207.08 5468.07,-45144.48 5534.69,-44565.17 5481,-44509.08 5440.42,-44466.68 5257.6,-44528.39 5218,-44485.08 5169.2,-44431.71 5200.35,-23728.74 5185,-23658.08 5162.3,-23553.57 5100.64,-23441.8 5067.97,-23387.52"/>
 <polygon fill="black" stroke="black" points="14685.96,-44111.22 14689.77,-44103.32 14686.07,-44107.23 14686.17,-44103.23 14686.17,-44103.23 14686.17,-44103.23 14686.07,-44107.23 14682.57,-44103.13 14685.96,-44111.22 14685.96,-44111.22"/>
 <ellipse fill="none" stroke="black" cx="14685.88" cy="-44114.42" rx="3.2" ry="3.2"/>
-</g>
-<!-- c_revenuerecognition -->
-<g id="node372" class="node">
-<title>c_revenuerecognition</title>
-<g id="a_node372"><a xlink:href="../../tables/c_revenuerecognition.html" xlink:title="c_revenuerecognition" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="4663,-13560.08 4663,-13618.08 4860,-13618.08 4860,-13560.08 4663,-13560.08"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="4663.5,-13596.08 4663.5,-13618.08 4860.5,-13618.08 4860.5,-13596.08 4663.5,-13596.08"/>
-<polygon fill="none" stroke="black" points="4663.5,-13596.08 4663.5,-13618.08 4860.5,-13618.08 4860.5,-13596.08 4663.5,-13596.08"/>
-<text text-anchor="start" x="4668.5" y="-13605.28" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">c_revenuerecognition</text>
-<text text-anchor="start" x="4825.5" y="-13604.28" font-family="Helvetica,sans-Serif" font-size="11.00">[table]</text>
-<polygon fill="none" stroke="black" points="4663.5,-13578.08 4663.5,-13596.08 4860.5,-13596.08 4860.5,-13578.08 4663.5,-13578.08"/>
-<text text-anchor="start" x="4666.5" y="-13584.28" font-family="Helvetica,sans-Serif" font-size="11.00">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="4663.5,-13560.08 4663.5,-13578.08 4860.5,-13578.08 4860.5,-13560.08 4663.5,-13560.08"/>
-<polygon fill="none" stroke="black" points="4663.5,-13560.08 4663.5,-13578.08 4860.5,-13578.08 4860.5,-13560.08 4663.5,-13560.08"/>
-<polygon fill="#ffffff" stroke="transparent" points="4664.5,-13561.08 4664.5,-13577.08 4726.5,-13577.08 4726.5,-13561.08 4664.5,-13561.08"/>
-<text text-anchor="start" x="4666.5" y="-13566.28" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="4726.5,-13561.08 4726.5,-13577.08 4788.5,-13577.08 4788.5,-13561.08 4726.5,-13561.08"/>
-<text text-anchor="start" x="4754" y="-13566.28" font-family="Helvetica,sans-Serif" font-size="11.00"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="4788.5,-13561.08 4788.5,-13577.08 4859.5,-13577.08 4859.5,-13561.08 4788.5,-13561.08"/>
-<text text-anchor="start" x="4841.5" y="-13566.28" font-family="Helvetica,sans-Serif" font-size="11.00">3 &gt;</text>
-<polygon fill="black" stroke="black" points="4726.5,-13561.08 4726.5,-13577.08 4726.5,-13577.08 4726.5,-13561.08 4726.5,-13561.08"/>
-<polygon fill="black" stroke="black" points="4788.5,-13561.08 4788.5,-13577.08 4788.5,-13577.08 4788.5,-13561.08 4788.5,-13561.08"/>
-</a>
-</g>
 </g>
 <!-- c_tax&#45;&gt;lbr_taxname -->
 <g id="edge2110" class="edge">
