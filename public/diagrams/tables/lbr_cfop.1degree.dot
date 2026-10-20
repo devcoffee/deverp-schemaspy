@@ -17,6 +17,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "i_order":"lbr_cfop_id":w -> "lbr_cfop":"lbr_cfop_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_cfopline":"cof_cfop_delivery_id":w -> "lbr_cfop":"lbr_cfop_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_cfopline":"cof_cfop_movement_id":w -> "lbr_cfop":"lbr_cfop_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "lbr_cfopline":"cof_cfopxml_id":w -> "lbr_cfop":"lbr_cfop_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "lbr_cfopline":"lbr_cfop_id":w -> "lbr_cfop":"lbr_cfop_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_movementline":"cof_cfop_movement_id":w -> "lbr_cfop":"lbr_cfop_id.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "m_movementline":"cof_orderline_id":w -> "c_orderline":"c_orderline_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -422,7 +423,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_natopresumida" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="148" HEIGHT="16">cof_natopresumida</TD></TR></TABLE></TD><TD PORT="cof_natopresumida.type" ALIGN="LEFT">varchar[60]</TD></TR>
       <TR><TD PORT="cof_cfopapplication" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="148" HEIGHT="16">cof_cfopapplication</TD></TR></TABLE></TD><TD PORT="cof_cfopapplication.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="cof_estoqueprevisto" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="148" HEIGHT="16">cof_estoqueprevisto</TD></TR></TABLE></TD><TD PORT="cof_estoqueprevisto.type" ALIGN="LEFT">bpchar[1]</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 0</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">622 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">18 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="4" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 0</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">622 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">19 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/lbr_cfop.html"
     target="_top"
@@ -440,8 +441,9 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="cof_legalmessagedelivery_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="208" HEIGHT="16">cof_legalmessagedelivery_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="cof_cfop_movement_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="208" HEIGHT="16">cof_cfop_movement_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="lbr_fiscalgroup_product_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="208" HEIGHT="16">lbr_fiscalgroup_product_id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="cof_cfopxml_id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="208" HEIGHT="16">cof_cfopxml_id</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">173 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 7</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">173 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/lbr_cfopline.html"
     target="_top"

@@ -142,6 +142,7 @@ pa_dashboardcontent_access
 m_freight
 m_discountschemabreak
 m_cost
+lbr_cfopline
 i_payment
 hr_concept_acct
 cof_testequalidade
@@ -179,7 +180,6 @@ m_bomproduct
 m_attributeinstanceline
 lbr_docfiscal_detpag
 lbr_docfiscal_autxml
-lbr_cfopline
 i_pricelist
 gl_category_trl
 cof_pp_recursosconfig

@@ -1091,7 +1091,6 @@ cof_pp_ferramentarest
 cof_pp_recursosconfig
 gl_category_trl
 i_pricelist
-lbr_cfopline
 lbr_docfiscal_autxml
 lbr_docfiscal_detpag
 m_attributeinstanceline
@@ -1129,6 +1128,7 @@ cof_projecaoestoquefiscal
 cof_testequalidade
 hr_concept_acct
 i_payment
+lbr_cfopline
 m_cost
 m_discountschemabreak
 m_freight
