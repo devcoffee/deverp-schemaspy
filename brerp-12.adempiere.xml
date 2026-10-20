@@ -55984,6 +55984,7 @@
             <child catalog="brerp-12" column="lbr_cfop_id" foreignKey="lbrcfop_iorder" implied="false" onDeleteCascade="false" schema="adempiere" table="i_order"/>
             <child catalog="brerp-12" column="cof_cfop_delivery_id" foreignKey="lbrcfoptransp_lbrcfopline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_cfopline"/>
             <child catalog="brerp-12" column="cof_cfop_movement_id" foreignKey="cofcfopmovement_lbrcfopline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_cfopline"/>
+            <child catalog="brerp-12" column="cof_cfopxml_id" foreignKey="cofcfopxml_lbrcfopline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_cfopline"/>
             <child catalog="brerp-12" column="lbr_cfop_id" foreignKey="lbr_cfopline_fk1" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_cfopline"/>
             <child catalog="brerp-12" column="cof_cfop_movement_id" foreignKey="cofcfopmovement_mmovementline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_movementline"/>
             <child catalog="brerp-12" column="lbr_cfop_id" foreignKey="lbrcfop_mmovementline" implied="false" onDeleteCascade="false" schema="adempiere" table="m_movementline"/>
@@ -56056,6 +56057,9 @@
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="25" name="cof_indie" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="26" name="lbr_fiscalgroup_product_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="lbr_fiscalgroup_product_id" foreignKey="lbrfiscalgroupproduct_lbrcfopl" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_fiscalgroup_product"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="27" name="cof_cfopxml_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="lbr_cfop_id" foreignKey="cofcfopxml_lbrcfopline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_cfop"/>
          </column>
          <primaryKey column="lbr_cfopline_id" sequenceNumberInPK="1"/>
          <index name="lbr_cfopline_key" unique="true">

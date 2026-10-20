@@ -193,6 +193,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="lbr_cfopline.cof_cfopxml_id references lbr_cfop.lbr_cfop_id via cofcfopxml_lbrcfopline"><a href='lbr_cfopline.html'>lbr_cfopline</a><span class='relatedKey'>.cof_cfopxml_id</span></td>
+                                                <td class="constraint detail">cofcfopxml_lbrcfopline</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="lbr_cfopline.lbr_cfop_id references lbr_cfop.lbr_cfop_id via lbr_cfopline_fk1"><a href='lbr_cfopline.html'>lbr_cfopline</a><span class='relatedKey'>.lbr_cfop_id</span></td>
                                                 <td class="constraint detail">lbr_cfopline_fk1</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -547,12 +552,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>lbr_cfop_cof_estoqueprevisto_check</td>
-                                    <td>((cof_estoqueprevisto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>lbr_cfop_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>lbr_cfop_cof_estoqueprevisto_check</td>
+                                    <td>((cof_estoqueprevisto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
