@@ -17578,6 +17578,7 @@
          <column autoUpdated="false" defaultValue="null" digits="6" id="130" name="cof_dataproxrevisaocadastral" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="131" name="ide_gcompragov_tpentegov" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="132" name="ide_gcompragov_tpopergov" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="133" name="cof_isexigecontrolelote" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="c_bpartner_id" sequenceNumberInPK="1"/>
          <index name="c_bpartner_pkey" unique="true">
             <column ascending="true" name="c_bpartner_id"/>
@@ -17597,6 +17598,7 @@
          </index>
          <checkConstraint constraint="((cof_bloqueiaviaentrega = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_bpartner_cof_bloqueiaviaentrega_check"/>
          <checkConstraint constraint="((cof_isbillingblocked = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_bpartner_cof_isbillingblocked_check"/>
+         <checkConstraint constraint="((cof_isexigecontrolelote = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_bpartner_cof_isexigecontrolelote_check"/>
          <checkConstraint constraint="((cof_ismultiplainscricao = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_bpartner_cof_ismultiplainscricao_check"/>
          <checkConstraint constraint="((cof_permiteitemsubstituto = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_bpartner_cof_permiteitemsubstituto_check"/>
          <checkConstraint constraint="((is1099vendor = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="c_bpartner_is1099vendor_check"/>
