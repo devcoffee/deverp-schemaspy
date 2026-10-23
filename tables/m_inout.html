@@ -1945,6 +1945,23 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="cof_estimatedtotalweight">cof_estimatedtotalweight</span></td>
+                                    <td>numeric</td>
+                                    <td>0</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>&#39;0&#39;::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -2052,6 +2069,34 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>m_inout_cof_isindustrialization_check</td>
+                                    <td>((cof_isindustrialization &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_inout_generateto_check</td>
+                                    <td>((generateto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_inout_isdropship_check</td>
+                                    <td>((isdropship &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_inout_isalternatereturnaddress_check</td>
+                                    <td>((isalternatereturnaddress &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_inout_cof_emtratamento_check</td>
+                                    <td>((cof_emtratamento &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_inout_processed_check</td>
+                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>m_inout_createfrom_check</td>
+                                    <td>((createfrom &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
                                     <td>m_inout_isprinted_check</td>
                                     <td>((isprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
@@ -2060,40 +2105,12 @@
                                     <td>((issotrx &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_inout_processed_check</td>
-                                    <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_inout_cof_isgeradoporpontoderemessa_check</td>
-                                    <td>((cof_isgeradoporpontoderemessa &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_inout_createfrom_check</td>
-                                    <td>((createfrom &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_inout_generateto_check</td>
-                                    <td>((generateto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_inout_cof_isindustrialization_check</td>
-                                    <td>((cof_isindustrialization &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>m_inout_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>m_inout_isdropship_check</td>
-                                    <td>((isdropship &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_inout_cof_emtratamento_check</td>
-                                    <td>((cof_emtratamento &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>m_inout_isalternatereturnaddress_check</td>
-                                    <td>((isalternatereturnaddress &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>m_inout_cof_isgeradoporpontoderemessa_check</td>
+                                    <td>((cof_isgeradoporpontoderemessa &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
