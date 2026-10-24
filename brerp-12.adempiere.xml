@@ -9818,7 +9818,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isactive_check"/>
          <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isdefault_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_sequence" numRows="2134" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_sequence" numRows="2135" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_sequence_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceaudit" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_audit"/>
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceno" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_no"/>
@@ -30194,6 +30194,8 @@
             <child catalog="brerp-12" column="c_region_id" foreignKey="cregion_iorder" implied="false" onDeleteCascade="false" schema="adempiere" table="i_order"/>
             <child catalog="brerp-12" column="retira_region_id" foreignKey="retiraregion_lbrdocfiscal" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal"/>
             <child catalog="brerp-12" column="pag_ufpag_id" foreignKey="pagufpag_lbrdocfiscaldetpag" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_detpag"/>
+            <child catalog="brerp-12" column="pag_ufpag_id" foreignKey="pagufpag_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_eventonfe"/>
+            <child catalog="brerp-12" column="pag_ufreceb_id" foreignKey="pagufreceb_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_eventonfe"/>
             <child catalog="brerp-12" column="c_region_id" foreignKey="cregion_mfreight" implied="false" onDeleteCascade="false" schema="adempiere" table="m_freight"/>
             <child catalog="brerp-12" column="to_region_id" foreignKey="cregionto_mfreight" implied="false" onDeleteCascade="false" schema="adempiere" table="m_freight"/>
          </column>
@@ -57750,6 +57752,22 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="lbr_nitem_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrnitem_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="pag_card_caut" nullable="true" remarks="" size="20" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="47" name="lbr_indpag" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="48" name="pag_card_tband" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="49" name="pag_cnpjpag" nullable="true" remarks="" size="14" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="50" name="pag_cnpjreceb" nullable="true" remarks="" size="14" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="51" name="pag_dpag" nullable="true" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="52" name="pag_tpag" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="53" name="pag_ufpag_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_region_id" foreignKey="pagufpag_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="c_region"/>
+         </column>
+         <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="54" name="pag_vpag" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="55" name="pag_xpag" nullable="true" remarks="" size="60" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="56" name="pag_ufreceb_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
+            <parent catalog="brerp-12" column="c_region_id" foreignKey="pagufreceb_lbreventonfe" implied="false" onDeleteCascade="false" schema="adempiere" table="c_region"/>
+         </column>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="57" name="pag_cnpjif" nullable="true" remarks="" size="14" type="varchar" typeCode="12"/>
          <primaryKey column="lbr_eventonfe_id" sequenceNumberInPK="1"/>
          <index name="lbr_cce_key" unique="true">
             <column ascending="true" name="lbr_eventonfe_id"/>

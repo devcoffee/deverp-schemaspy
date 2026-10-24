@@ -333,6 +333,16 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="lbr_eventonfe.pag_ufpag_id references c_region.c_region_id via pagufpag_lbreventonfe"><a href='lbr_eventonfe.html'>lbr_eventonfe</a><span class='relatedKey'>.pag_ufpag_id</span></td>
+                                                <td class="constraint detail">pagufpag_lbreventonfe</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="lbr_eventonfe.pag_ufreceb_id references c_region.c_region_id via pagufreceb_lbreventonfe"><a href='lbr_eventonfe.html'>lbr_eventonfe</a><span class='relatedKey'>.pag_ufreceb_id</span></td>
+                                                <td class="constraint detail">pagufreceb_lbreventonfe</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="m_freight.c_region_id references c_region.c_region_id via cregion_mfreight"><a href='m_freight.html'>m_freight</a><span class='relatedKey'>.c_region_id</span></td>
                                                 <td class="constraint detail">cregion_mfreight</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -663,12 +673,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>c_region_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>c_region_isdefault_check</td>
                                     <td>((isdefault &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_region_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>
