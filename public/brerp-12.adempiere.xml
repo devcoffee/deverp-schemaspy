@@ -9864,6 +9864,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="valuemin" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="valuemax" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="30" name="cof_isboletocnab" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="31" name="isallowsequencegaps" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="ad_sequence_id" sequenceNumberInPK="1"/>
          <index name="ad_sequence_pkey" unique="true">
             <column ascending="true" name="ad_sequence_id"/>
@@ -9880,6 +9881,7 @@
          </index>
          <checkConstraint constraint="((cof_isboletocnab = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_sequence_cof_isboletocnab_check"/>
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_sequence_isactive_check"/>
+         <checkConstraint constraint="((isallowsequencegaps = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_sequence_isallowsequencegaps_check"/>
          <checkConstraint constraint="((isaudited = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_sequence_isaudited_check"/>
          <checkConstraint constraint="((isautosequence = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_sequence_isautosequence_check"/>
          <checkConstraint constraint="((isorglevelsequence = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_sequence_isorglevelsequence_check"/>
