@@ -308,6 +308,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="cof_mdfe_ciot.cof_mdfe_id references cof_mdfe.cof_mdfe_id via cofmdfe_cofmdfeciot"><a href='cof_mdfe_ciot.html'>cof_mdfe_ciot</a><span class='relatedKey'>.cof_mdfe_id</span></td>
+                                                <td class="constraint detail">cofmdfe_cofmdfeciot</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_mdfe_condutor.cof_mdfe_id references cof_mdfe.cof_mdfe_id via cofmdfe_cofmdfecondutor"><a href='cof_mdfe_condutor.html'>cof_mdfe_condutor</a><span class='relatedKey'>.cof_mdfe_id</span></td>
                                                 <td class="constraint detail">cofmdfe_cofmdfecondutor</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1304,16 +1309,16 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>cof_mdfe_processing_check</td>
-                                    <td>((processing &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>cof_mdfe_cof_mdfe_isencerradoterceiro_check</td>
                                     <td>((cof_mdfe_isencerradoterceiro &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_mdfe_isactive_check</td>
                                     <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>cof_mdfe_processing_check</td>
+                                    <td>((processing &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>cof_mdfe_processed_check</td>

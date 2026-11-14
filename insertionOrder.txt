@@ -399,8 +399,8 @@ c_commissionline
 cof_pneu_marca
 mp_prognosis
 i_fixedasset
-ad_process_para
 cof_mdfe
+ad_process_para
 hr_concept
 ad_infocolumn
 cof_controleciap
@@ -1031,6 +1031,7 @@ cof_formacaoprecolista
 cof_gruponcmlinha
 cof_labelentry
 cof_labelfield
+cof_mdfe_ciot
 cof_mdfe_infpag_comp
 cof_mdfe_infpag_infprazo
 cof_mdfe_infvpo
