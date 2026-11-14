@@ -80,7 +80,7 @@
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="ion ion-key"></i>
-                            <h3 class="box-title">5359 Foreign Key Constraints</h3>
+                            <h3 class="box-title">5364 Foreign Key Constraints</h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -31676,6 +31676,96 @@
                                             <table border='0' cellspacing='0' cellpadding='0'>
                                                 <tr>
                                                     <td><a href='tables/a_asset.html'>a_asset</a><span>.a_asset_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>adclient_cofmdfeciot</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_mdfe_ciot.html'>cof_mdfe_ciot</a><span>.ad_client_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_client.html'>ad_client</a><span>.ad_client_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>createdby_cofmdfeciot</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_mdfe_ciot.html'>cof_mdfe_ciot</a><span>.createdby</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cofmdfe_cofmdfeciot</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_mdfe_ciot.html'>cof_mdfe_ciot</a><span>.cof_mdfe_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_mdfe.html'>cof_mdfe</a><span>.cof_mdfe_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>updatedby_cofmdfeciot</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_mdfe_ciot.html'>cof_mdfe_ciot</a><span>.updatedby</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>adorg_cofmdfeciot</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_mdfe_ciot.html'>cof_mdfe_ciot</a><span>.ad_org_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_org.html'>ad_org</a><span>.ad_org_id</span></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -98437,6 +98527,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/lbr_nfewebservice.html'>lbr_nfewebservice</a></td>
+                                        <td>lbr_nfewebservice_cof_iscontribexclibscbs_check</td>
+                                        <td>((cof_iscontribexclibscbs &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/lbr_nfewebservice.html'>lbr_nfewebservice</a></td>
                                         <td>lbr_nfewebservice_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -101357,6 +101452,11 @@
                                     </tr>
                                     <tr>
                                         <td><a href='tables/ad_orginfo.html'>ad_orginfo</a></td>
+                                        <td>ad_orginfo_cof_iscontribexclibscbs_check</td>
+                                        <td>((cof_iscontribexclibscbs &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/ad_orginfo.html'>ad_orginfo</a></td>
                                         <td>ad_orginfo_cof_isinformarimprestadornfse_check</td>
                                         <td>((cof_isinformarimprestadornfse &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
@@ -103819,6 +103919,11 @@
                                         <td><a href='tables/a_asset_info_fin.html'>a_asset_info_fin</a></td>
                                         <td>a_asset_info_fin_processed_check</td>
                                         <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_mdfe_ciot.html'>cof_mdfe_ciot</a></td>
+                                        <td>cof_mdfe_ciot_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/m_inventory.html'>m_inventory</a></td>

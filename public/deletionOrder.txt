@@ -240,6 +240,7 @@ cof_orderdeducaomateriais
 cof_mdfe_infvpo
 cof_mdfe_infpag_infprazo
 cof_mdfe_infpag_comp
+cof_mdfe_ciot
 cof_labelfield
 cof_labelentry
 cof_gruponcmlinha
@@ -870,8 +871,8 @@ ad_labelcategory
 cof_controleciap
 ad_infocolumn
 hr_concept
-cof_mdfe
 ad_process_para
+cof_mdfe
 i_fixedasset
 mp_prognosis
 cof_pneu_marca
