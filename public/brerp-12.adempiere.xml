@@ -50747,6 +50747,7 @@
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="333" name="cte_ibsuf_pdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="334" name="cte_ibsmun_pdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="335" name="lbr_tpalczfmcbs" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="336" name="isufemit" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
          <primaryKey column="cte_cte_id" sequenceNumberInPK="1"/>
          <index name="cte_cte_key" unique="true">
             <column ascending="true" name="cte_cte_id"/>
