@@ -503,6 +503,16 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_comunicado.c_bpartner_id references c_bpartner.c_bpartner_id via cbpartner_cofcomunicado"><a href='cof_comunicado.html'>cof_comunicado</a><span class='relatedKey'>.c_bpartner_id</span></td>
+                                                <td class="constraint detail">cbpartner_cofcomunicado</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_comunicadodestino.c_bpartner_id references c_bpartner.c_bpartner_id via cbpartner_cofcomunicadodestino"><a href='cof_comunicadodestino.html'>cof_comunicadodestino</a><span class='relatedKey'>.c_bpartner_id</span></td>
+                                                <td class="constraint detail">cbpartner_cofcomunicadodestino</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_conciliacaocartao.c_bpartner_id references c_bpartner.c_bpartner_id via cbpartner_cofconciliacaocartao"><a href='cof_conciliacaocartao.html'>cof_conciliacaocartao</a><span class='relatedKey'>.c_bpartner_id</span></td>
                                                 <td class="constraint detail">cbpartner_cofconciliacaocartao</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -630,6 +640,11 @@
                                             <tr>
                                                 <td title="cof_parceirosadicionais.c_bpartner_id references c_bpartner.c_bpartner_id via cbpartner_cofparceirosadiciona"><a href='cof_parceirosadicionais.html'>cof_parceirosadicionais</a><span class='relatedKey'>.c_bpartner_id</span></td>
                                                 <td class="constraint detail">cbpartner_cofparceirosadiciona</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_planovisitalinha.c_bpartner_id references c_bpartner.c_bpartner_id via cbpartner_cofplanovisitalinha"><a href='cof_planovisitalinha.html'>cof_planovisitalinha</a><span class='relatedKey'>.c_bpartner_id</span></td>
+                                                <td class="constraint detail">cbpartner_cofplanovisitalinha</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -3486,6 +3501,23 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="cof_fichacadastroem">cof_fichacadastroem</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -3575,80 +3607,80 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>c_bpartner_ismanufacturer_check</td>
-                                    <td>((ismanufacturer &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_cof_isbillingblocked_check</td>
-                                    <td>((cof_isbillingblocked &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_issummary_check</td>
-                                    <td>((issummary &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_istaxexempt_check</td>
-                                    <td>((istaxexempt &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_isonetime_check</td>
-                                    <td>((isonetime &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_ispotaxexempt_check</td>
-                                    <td>((ispotaxexempt &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_cof_bloqueiaviaentrega_check</td>
-                                    <td>((cof_bloqueiaviaentrega &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_is1099vendor_check</td>
-                                    <td>((is1099vendor &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_isdiscountprinted_check</td>
-                                    <td>((isdiscountprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_bpartner_cof_permiteitemsubstituto_check</td>
+                                    <td>((cof_permiteitemsubstituto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_bpartner_issalesrep_check</td>
                                     <td>((issalesrep &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_bpartner_cof_permiteitemsubstituto_check</td>
-                                    <td>((cof_permiteitemsubstituto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_isprospect_check</td>
-                                    <td>((isprospect &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_bpartner_cof_isexigecontrolelote_check</td>
+                                    <td>((cof_isexigecontrolelote &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_bpartner_cof_ismultiplainscricao_check</td>
                                     <td>((cof_ismultiplainscricao &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_bpartner_isemployee_check</td>
-                                    <td>((isemployee &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>c_bpartner_iscustomer_check</td>
                                     <td>((iscustomer &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_cof_isbillingblocked_check</td>
+                                    <td>((cof_isbillingblocked &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_isonetime_check</td>
+                                    <td>((isonetime &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_bpartner_isvendor_check</td>
                                     <td>((isvendor &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_bpartner_cof_isexigecontrolelote_check</td>
-                                    <td>((cof_isexigecontrolelote &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_bpartner_cof_bloqueiaviaentrega_check</td>
+                                    <td>((cof_bloqueiaviaentrega &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_ispotaxexempt_check</td>
+                                    <td>((ispotaxexempt &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_is1099vendor_check</td>
+                                    <td>((is1099vendor &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_bpartner_lbr_hassubstitution_check</td>
                                     <td>((lbr_hassubstitution &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_istaxexempt_check</td>
+                                    <td>((istaxexempt &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_isemployee_check</td>
+                                    <td>((isemployee &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_isdiscountprinted_check</td>
+                                    <td>((isdiscountprinted &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_isprospect_check</td>
+                                    <td>((isprospect &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_issummary_check</td>
+                                    <td>((issummary &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_ismanufacturer_check</td>
+                                    <td>((ismanufacturer &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

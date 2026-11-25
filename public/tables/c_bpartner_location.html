@@ -153,6 +153,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="c_contactactivity.c_bpartner_location_id references c_bpartner_location.c_bpartner_location_id via cbpartnerlocation_ccontactactivity"><a href='c_contactactivity.html'>c_contactactivity</a><span class='relatedKey'>.c_bpartner_location_id</span></td>
+                                                <td class="constraint detail">cbpartnerlocation_ccontactactivity</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="c_dunningrunentry.c_bpartner_location_id references c_bpartner_location.c_bpartner_location_id via cbpartnerlocation_cdunningrune"><a href='c_dunningrunentry.html'>c_dunningrunentry</a><span class='relatedKey'>.c_bpartner_location_id</span></td>
                                                 <td class="constraint detail">cbpartnerlocation_cdunningrune</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -285,6 +290,11 @@
                                             <tr>
                                                 <td title="cof_packinglist_line.c_bpartner_location_id references c_bpartner_location.c_bpartner_location_id via cbpartnerlocation_cofpackingli"><a href='cof_packinglist_line.html'>cof_packinglist_line</a><span class='relatedKey'>.c_bpartner_location_id</span></td>
                                                 <td class="constraint detail">cbpartnerlocation_cofpackingli</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_planovisitalinha.c_bpartner_location_id references c_bpartner_location.c_bpartner_location_id via cbpartnerlocation_cofplanovisitalinha"><a href='cof_planovisitalinha.html'>cof_planovisitalinha</a><span class='relatedKey'>.c_bpartner_location_id</span></td>
+                                                <td class="constraint detail">cbpartnerlocation_cofplanovisitalinha</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -1185,36 +1195,36 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>c_bpartner_location_iscof_automatico_check</td>
-                                    <td>((iscof_automatico &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_location_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_location_isshipto_check</td>
-                                    <td>((isshipto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_location_ispreservecustomname_check</td>
-                                    <td>((ispreservecustomname &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>c_bpartner_location_isbillto_check</td>
-                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_bpartner_location_ispayfrom_check</td>
+                                    <td>((ispayfrom &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_bpartner_location_cof_isenderecocomplementar_check</td>
                                     <td>((cof_isenderecocomplementar &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>c_bpartner_location_ispayfrom_check</td>
-                                    <td>((ispayfrom &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>c_bpartner_location_ispreservecustomname_check</td>
+                                    <td>((ispreservecustomname &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_location_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_location_iscof_automatico_check</td>
+                                    <td>((iscof_automatico &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>c_bpartner_location_isremitto_check</td>
                                     <td>((isremitto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_location_isshipto_check</td>
+                                    <td>((isshipto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>c_bpartner_location_isbillto_check</td>
+                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

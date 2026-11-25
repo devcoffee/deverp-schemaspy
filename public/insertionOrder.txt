@@ -396,6 +396,7 @@ c_bp_shippingacct
 mp_assetmeter
 c_rfq
 c_commissionline
+cof_planovisita
 cof_pneu_marca
 mp_prognosis
 i_fixedasset
@@ -437,6 +438,7 @@ m_demand
 m_promotionline
 ad_replication
 c_bp_edi
+cof_planovisitalinha
 m_inoutconfirm
 ad_userdef_win
 c_recurringgroup
@@ -547,6 +549,7 @@ ad_viewcomponent
 c_commissionamt
 c_invoicebatch
 cof_c_adjustment_code
+cof_comunicado
 cof_pneu_montagem
 m_demandline
 m_distributionlistline
@@ -580,6 +583,7 @@ pp_product_bomline
 a_asset_disposed
 ad_importtemplate
 ad_userdef_theme
+c_contactactivity
 c_recurring
 cof_calcnivelminmax
 cof_fciline
@@ -641,6 +645,7 @@ c_taxpostal
 cm_container_url
 cm_newsitem
 cm_wikitoken
+cof_appdispositivo
 cof_autorizadosxml
 cof_c_previsaoentregafutura
 cof_c_sped_fiscal_cst
@@ -683,6 +688,8 @@ mfa_registereddevice
 mfa_rule
 pa_achievement
 pa_benchmarkdata
+ptl_aparelhoconfiavel
+ptl_otp
 r_requestprocessorlog
 s_resourceunavailable
 sso_principalconfig
@@ -832,6 +839,7 @@ cof_r_requesttypecategory
 cof_r_requesttypegroup
 cof_r_survey_answer_value
 cof_sparewarehouse
+cof_visitafoto
 cte_cobr_dup
 cte_doc_relacionado
 cte_infcarga_infq
@@ -917,6 +925,7 @@ c_taxdeclarationacct
 c_withholding_acct
 cof_c_sped_contribuicoes
 cof_chamadapbx
+cof_comunicadodestino
 cof_creditreferences
 cof_nve_product
 cof_ocorrenciaembdes
@@ -962,7 +971,6 @@ b_offer
 c_bp_employee_acct
 c_bp_relation
 c_charge_acct
-c_contactactivity
 c_dunningrunline
 c_nonbusinessday
 c_paymentallocate
@@ -1260,6 +1268,7 @@ lbr_docprintfield
 lbr_icmsmatrix
 lbr_nfelot
 lbr_nfewebservice
+ptl_acesso
 t_1099extract
 t_alter_column
 t_bankregister
