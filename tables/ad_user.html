@@ -1023,6 +1023,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_appdispositivo.ad_user_id references ad_user.ad_user_id via aduser_cofappdispositivo"><a href='cof_appdispositivo.html'>cof_appdispositivo</a><span class='relatedKey'>.ad_user_id</span></td>
+                                                <td class="constraint detail">aduser_cofappdispositivo</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_apuracaooutra.createdby references ad_user.ad_user_id via createdby_cofapuracaooutra"><a href='cof_apuracaooutra.html'>cof_apuracaooutra</a><span class='relatedKey'>.createdby</span></td>
                                                 <td class="constraint detail">createdby_cofapuracaooutra</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1225,6 +1230,16 @@
                                             <tr>
                                                 <td title="cof_combustivel.updatedby references ad_user.ad_user_id via updatedby_cofcombustivel"><a href='cof_combustivel.html'>cof_combustivel</a><span class='relatedKey'>.updatedby</span></td>
                                                 <td class="constraint detail">updatedby_cofcombustivel</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_comunicado.salesrep_id references ad_user.ad_user_id via salesrep_cofcomunicado"><a href='cof_comunicado.html'>cof_comunicado</a><span class='relatedKey'>.salesrep_id</span></td>
+                                                <td class="constraint detail">salesrep_cofcomunicado</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_comunicadodestino.ad_user_id references ad_user.ad_user_id via aduser_cofcomunicadodestino"><a href='cof_comunicadodestino.html'>cof_comunicadodestino</a><span class='relatedKey'>.ad_user_id</span></td>
+                                                <td class="constraint detail">aduser_cofcomunicadodestino</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -1483,6 +1498,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="cof_label.ptl_conferidapor_id references ad_user.ad_user_id via ptlconferidapor_coflabel"><a href='cof_label.html'>cof_label</a><span class='relatedKey'>.ptl_conferidapor_id</span></td>
+                                                <td class="constraint detail">ptlconferidapor_coflabel</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="cof_linhacalculo.createdby references ad_user.ad_user_id via createdby_coflinhacalculo"><a href='cof_linhacalculo.html'>cof_linhacalculo</a><span class='relatedKey'>.createdby</span></td>
                                                 <td class="constraint detail">createdby_coflinhacalculo</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -1700,6 +1720,11 @@
                                             <tr>
                                                 <td title="cof_paramformacaopreco.updatedby references ad_user.ad_user_id via updatedby_cofparamformacaoprec"><a href='cof_paramformacaopreco.html'>cof_paramformacaopreco</a><span class='relatedKey'>.updatedby</span></td>
                                                 <td class="constraint detail">updatedby_cofparamformacaoprec</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cof_planovisita.salesrep_id references ad_user.ad_user_id via salesrep_cofplanovisita"><a href='cof_planovisita.html'>cof_planovisita</a><span class='relatedKey'>.salesrep_id</span></td>
+                                                <td class="constraint detail">salesrep_cofplanovisita</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -2380,6 +2405,16 @@
                                             <tr>
                                                 <td title="pp_product_planning.planner_id references ad_user.ad_user_id via planner_ppproductplanning"><a href='pp_product_planning.html'>pp_product_planning</a><span class='relatedKey'>.planner_id</span></td>
                                                 <td class="constraint detail">planner_ppproductplanning</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ptl_aparelhoconfiavel.ad_user_id references ad_user.ad_user_id via aduser_ptlaparelhoconfiavel"><a href='ptl_aparelhoconfiavel.html'>ptl_aparelhoconfiavel</a><span class='relatedKey'>.ad_user_id</span></td>
+                                                <td class="constraint detail">aduser_ptlaparelhoconfiavel</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ptl_otp.ad_user_id references ad_user.ad_user_id via aduser_ptlotp"><a href='ptl_otp.html'>ptl_otp</a><span class='relatedKey'>.ad_user_id</span></td>
+                                                <td class="constraint detail">aduser_ptlotp</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -4201,6 +4236,57 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><span id="ptl_isacessoportal">ptl_isacessoportal</span></td>
+                                    <td>bpchar</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>&#39;N&#39;::bpchar</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ptl_perfil">ptl_perfil</span></td>
+                                    <td>varchar</td>
+                                    <td>3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ptl_sessaovalidadesde">ptl_sessaovalidadesde</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -4290,16 +4376,72 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>ad_user_cof_isxmlemail_check</td>
-                                    <td>((cof_isxmlemail &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_user_cte_contato_check</td>
+                                    <td>((cte_contato &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_cof_internaluser_check</td>
+                                    <td>((cof_internaluser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_ptl_isacessoportal_check</td>
+                                    <td>((ptl_isacessoportal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_user_cof_notifypurchase_check</td>
                                     <td>((cof_notifypurchase &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_user_cte_contato_check</td>
-                                    <td>((cte_contato &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    <td>ad_user_cof_isxmlemail_check</td>
+                                    <td>((cof_isxmlemail &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isinpayroll_check</td>
+                                    <td>((isinpayroll &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isbillto_check</td>
+                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_ismenuautoexpand_check</td>
+                                    <td>((ismenuautoexpand &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isnoexpire_check</td>
+                                    <td>((isnoexpire &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_issaleslead_check</td>
+                                    <td>((issaleslead &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_issupportuser_check</td>
+                                    <td>((issupportuser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_lbr_isnfecontact_check</td>
+                                    <td>((lbr_isnfecontact &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isshipto_check</td>
+                                    <td>((isshipto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isaddmailtextautomatically_check</td>
+                                    <td>((isaddmailtextautomatically &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isnopasswordreset_check</td>
+                                    <td>((isnopasswordreset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isvendorlead_check</td>
+                                    <td>((isvendorlead &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                </tr>
+                                <tr>
+                                    <td>ad_user_isactive_check</td>
+                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
                                     <td>ad_user_isexpired_check</td>
@@ -4310,60 +4452,8 @@
                                     <td>((islocked &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 <tr>
-                                    <td>ad_user_isvendorlead_check</td>
-                                    <td>((isvendorlead &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isbillto_check</td>
-                                    <td>((isbillto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_cof_internaluser_check</td>
-                                    <td>((cof_internaluser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_issupportuser_check</td>
-                                    <td>((issupportuser &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
                                     <td>ad_user_cof_wpp_iscontatowhatsapp_check</td>
                                     <td>((cof_wpp_iscontatowhatsapp &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isshipto_check</td>
-                                    <td>((isshipto &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isactive_check</td>
-                                    <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_ismenuautoexpand_check</td>
-                                    <td>((ismenuautoexpand &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isaddmailtextautomatically_check</td>
-                                    <td>((isaddmailtextautomatically &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isnoexpire_check</td>
-                                    <td>((isnoexpire &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isinpayroll_check</td>
-                                    <td>((isinpayroll &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_issaleslead_check</td>
-                                    <td>((issaleslead &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_lbr_isnfecontact_check</td>
-                                    <td>((lbr_isnfecontact &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
-                                </tr>
-                                <tr>
-                                    <td>ad_user_isnopasswordreset_check</td>
-                                    <td>((isnopasswordreset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                 </tr>
                                 </tbody>
                             </table>

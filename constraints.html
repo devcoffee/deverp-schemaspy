@@ -80,7 +80,7 @@
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="ion ion-key"></i>
-                            <h3 class="box-title">5364 Foreign Key Constraints</h3>
+                            <h3 class="box-title">5382 Foreign Key Constraints</h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -2618,6 +2618,42 @@
                                             <table border='0' cellspacing='0' cellpadding='0'>
                                                 <tr>
                                                     <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cbpartnerlocation_ccontactactivity</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_contactactivity.html'>c_contactactivity</a><span>.c_bpartner_location_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bpartner_location.html'>c_bpartner_location</a><span>.c_bpartner_location_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cofplanovisitalinha_ccontactactivity</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_contactactivity.html'>c_contactactivity</a><span>.cof_planovisitalinha_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_planovisitalinha.html'>cof_planovisitalinha</a><span>.cof_planovisitalinha_id</span></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -13592,6 +13628,60 @@
                                         <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
+                                        <td>cbpartner_cofplanovisitalinha</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_planovisitalinha.html'>cof_planovisitalinha</a><span>.c_bpartner_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bpartner.html'>c_bpartner</a><span>.c_bpartner_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cofplanovisita_cofplanovisitalinha</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_planovisitalinha.html'>cof_planovisitalinha</a><span>.cof_planovisita_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_planovisita.html'>cof_planovisita</a><span>.cof_planovisita_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cbpartnerlocation_cofplanovisitalinha</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_planovisitalinha.html'>cof_planovisitalinha</a><span>.c_bpartner_location_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bpartner_location.html'>c_bpartner_location</a><span>.c_bpartner_location_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
                                         <td>adorgonly_cacctschema</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -21116,6 +21206,60 @@
                                         <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
+                                        <td>cbpartner_cofcomunicadodestino</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_comunicadodestino.html'>cof_comunicadodestino</a><span>.c_bpartner_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bpartner.html'>c_bpartner</a><span>.c_bpartner_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>aduser_cofcomunicadodestino</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_comunicadodestino.html'>cof_comunicadodestino</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cofcomunicado_cofcomunicadodestino</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_comunicadodestino.html'>cof_comunicadodestino</a><span>.cof_comunicado_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_comunicado.html'>cof_comunicado</a><span>.cof_comunicado_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
                                         <td>adrule_hrpayrollconcept</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -26660,6 +26804,60 @@
                                         <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
+                                        <td>salesrep_cofcomunicado</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_comunicado.html'>cof_comunicado</a><span>.salesrep_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cbpartner_cofcomunicado</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_comunicado.html'>cof_comunicado</a><span>.c_bpartner_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bpartner.html'>c_bpartner</a><span>.c_bpartner_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cbpgroup_cofcomunicado</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_comunicado.html'>cof_comunicado</a><span>.c_bp_group_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_bp_group.html'>c_bp_group</a><span>.c_bp_group_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
                                         <td>adtree_adtreenodeu1</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -31478,6 +31676,24 @@
                                             <table border='0' cellspacing='0' cellpadding='0'>
                                                 <tr>
                                                     <td><a href='tables/m_lot.html'>m_lot</a><span>.m_lot_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ptlconferidapor_coflabel</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_label.html'>cof_label</a><span>.ptl_conferidapor_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -44930,6 +45146,24 @@
                                         <td><span title='Cascade on delete:&#10;Deletion of parent deletes child'>Cascade on delete</span></td>
                                     </tr>
                                     <tr>
+                                        <td>aduser_ptlaparelhoconfiavel</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ptl_aparelhoconfiavel.html'>ptl_aparelhoconfiavel</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
                                         <td>createdby_testuutrl</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -57618,6 +57852,24 @@
                                             </table>
                                         </td>
                                         <td><span title='Cascade on delete:&#10;Deletion of parent deletes child'>Cascade on delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>aduser_cofappdispositivo</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_appdispositivo.html'>cof_appdispositivo</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
                                         <td>ctecte_cteinfcargainfq</td>
@@ -80372,6 +80624,24 @@
                                         <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
                                     </tr>
                                     <tr>
+                                        <td>aduser_ptlotp</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ptl_otp.html'>ptl_otp</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
                                         <td>cprojectphase_cinvoiceline</td>
                                         <td>
                                             <table border='0' cellspacing='0' cellpadding='0'>
@@ -85730,6 +86000,24 @@
                                             <table border='0' cellspacing='0' cellpadding='0'>
                                                 <tr>
                                                     <td><a href='tables/ad_ctxhelp.html'>ad_ctxhelp</a><span>.ad_ctxhelp_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>salesrep_cofplanovisita</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_planovisita.html'>cof_planovisita</a><span>.salesrep_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_user.html'>ad_user</a><span>.ad_user_id</span></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -92408,6 +92696,42 @@
                                             <table border='0' cellspacing='0' cellpadding='0'>
                                                 <tr>
                                                     <td><a href='tables/m_product.html'>m_product</a><span>.m_product_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>adimage_cofvisitafoto</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_visitafoto.html'>cof_visitafoto</a><span>.ad_image_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/ad_image.html'>ad_image</a><span>.ad_image_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ccontactactivity_cofvisitafoto</td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/cof_visitafoto.html'>cof_visitafoto</a><span>.c_contactactivity_id</span></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table border='0' cellspacing='0' cellpadding='0'>
+                                                <tr>
+                                                    <td><a href='tables/c_contactactivity.html'>c_contactactivity</a><span>.c_contactactivity_id</span></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -100986,6 +101310,11 @@
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
+                                        <td><a href='tables/cof_planovisitalinha.html'>cof_planovisitalinha</a></td>
+                                        <td>cof_planovisitalinha_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
                                         <td><a href='tables/t_mrp_crp.html'>t_mrp_crp</a></td>
                                         <td>t_mrp_crp_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -102231,6 +102560,11 @@
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
+                                        <td><a href='tables/cof_comunicadodestino.html'>cof_comunicadodestino</a></td>
+                                        <td>cof_comunicadodestino_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
                                         <td><a href='tables/hr_payrollconcept.html'>hr_payrollconcept</a></td>
                                         <td>hr_payrollconcept_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -103246,6 +103580,16 @@
                                         <td>((lbr_isowndocument &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
+                                        <td><a href='tables/cof_comunicado.html'>cof_comunicado</a></td>
+                                        <td>cof_comunicado_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_comunicado.html'>cof_comunicado</a></td>
+                                        <td>cof_comunicado_processed_check</td>
+                                        <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
                                         <td><a href='tables/ad_treenodeu1.html'>ad_treenodeu1</a></td>
                                         <td>ad_treenodeu1_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -103869,6 +104213,11 @@
                                         <td><a href='tables/cof_label.html'>cof_label</a></td>
                                         <td>cof_label_isreplacement_check</td>
                                         <td>((isreplacement &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_label.html'>cof_label</a></td>
+                                        <td>cof_label_ptl_isconferida_check</td>
+                                        <td>((ptl_isconferida &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/cof_cte_compl_obsfisco.html'>cof_cte_compl_obsfisco</a></td>
@@ -105741,6 +106090,11 @@
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
+                                        <td><a href='tables/ptl_aparelhoconfiavel.html'>ptl_aparelhoconfiavel</a></td>
+                                        <td>ptl_aparelhoconfiavel_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
                                         <td><a href='tables/testuu_trl.html'>testuu_trl</a></td>
                                         <td>testuu_trl_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -107521,6 +107875,11 @@
                                         <td>((iscollapsedbydefault &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
+                                        <td><a href='tables/ptl_acesso.html'>ptl_acesso</a></td>
+                                        <td>ptl_acesso_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
                                         <td><a href='tables/r_requesttype.html'>r_requesttype</a></td>
                                         <td>r_requesttype_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -107784,6 +108143,11 @@
                                         <td><a href='tables/m_inoutlinema.html'>m_inoutlinema</a></td>
                                         <td>m_inoutlinema_isautogenerated_check</td>
                                         <td>((isautogenerated &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_appdispositivo.html'>cof_appdispositivo</a></td>
+                                        <td>cof_appdispositivo_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/cte_infcarga_infq.html'>cte_infcarga_infq</a></td>
@@ -109214,6 +109578,11 @@
                                         <td><a href='tables/ad_user.html'>ad_user</a></td>
                                         <td>ad_user_lbr_isnfecontact_check</td>
                                         <td>((lbr_isnfecontact &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/ad_user.html'>ad_user</a></td>
+                                        <td>ad_user_ptl_isacessoportal_check</td>
+                                        <td>((ptl_isacessoportal &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
                                         <td><a href='tables/m_product_qualitytest.html'>m_product_qualitytest</a></td>
@@ -111591,6 +111960,11 @@
                                         <td>((processed &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
+                                        <td><a href='tables/ptl_otp.html'>ptl_otp</a></td>
+                                        <td>ptl_otp_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
                                         <td><a href='tables/c_invoiceline.html'>c_invoiceline</a></td>
                                         <td>c_invoiceline_a_createasset_check</td>
                                         <td>((a_createasset &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
@@ -112358,6 +112732,11 @@
                                     <tr>
                                         <td><a href='tables/ad_ctxhelpmsg.html'>ad_ctxhelpmsg</a></td>
                                         <td>ad_ctxhelpmsg_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_planovisita.html'>cof_planovisita</a></td>
+                                        <td>cof_planovisita_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>
@@ -113303,6 +113682,11 @@
                                     <tr>
                                         <td><a href='tables/m_productionplan.html'>m_productionplan</a></td>
                                         <td>m_productionplan_isactive_check</td>
+                                        <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href='tables/cof_visitafoto.html'>cof_visitafoto</a></td>
+                                        <td>cof_visitafoto_isactive_check</td>
                                         <td>((isactive &#61; ANY (ARRAY[&#39;Y&#39;::bpchar, &#39;N&#39;::bpchar])))</td>
                                     </tr>
                                     <tr>

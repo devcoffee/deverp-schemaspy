@@ -456,7 +456,7 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="123" HEIGHT="16"><B>c_contactactivity</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_contactactivity.html"
     target="_top"
@@ -2090,6 +2090,17 @@ digraph "compactRelationshipsDiagram" {
     target="_top"
     tooltip="cof_correcaoestoquek280"
   ];
+  "cof_planovisitalinha" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="145" HEIGHT="16"><B>cof_planovisitalinha</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_planovisitalinha.html"
+    target="_top"
+    tooltip="cof_planovisitalinha"
+  ];
   "t_mrp_crp" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -2579,7 +2590,7 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16"><B>c_bp_group</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">5 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">14 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">5 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">15 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_bp_group.html"
     target="_top"
@@ -2947,6 +2958,17 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/mp_jobstandar.html"
     target="_top"
     tooltip="mp_jobstandar"
+  ];
+  "cof_comunicadodestino" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="171" HEIGHT="16"><B>cof_comunicadodestino</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_comunicadodestino.html"
+    target="_top"
+    tooltip="cof_comunicadodestino"
   ];
   "hr_payrollconcept" [
    label=<
@@ -3641,6 +3663,17 @@ digraph "compactRelationshipsDiagram" {
     target="_top"
     tooltip="c_doctype"
   ];
+  "cof_comunicado" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="116" HEIGHT="16"><B>cof_comunicado</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_comunicado.html"
+    target="_top"
+    tooltip="cof_comunicado"
+  ];
   "ad_treenodeu1" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -4317,7 +4350,7 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="64" HEIGHT="16"><B>cof_label</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 7</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/cof_label.html"
     target="_top"
@@ -5021,7 +5054,7 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="143" HEIGHT="16"><B>c_bpartner_location</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">5 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">67 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">5 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">69 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_bpartner_location.html"
     target="_top"
@@ -6280,6 +6313,17 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/lbr_docfiscal_line_rastro.html"
     target="_top"
     tooltip="lbr_docfiscal_line_rastro"
+  ];
+  "ptl_aparelhoconfiavel" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="157" HEIGHT="16"><B>ptl_aparelhoconfiavel</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/ptl_aparelhoconfiavel.html"
+    target="_top"
+    tooltip="ptl_aparelhoconfiavel"
   ];
   "testuu_trl" [
    label=<
@@ -7909,6 +7953,17 @@ digraph "compactRelationshipsDiagram" {
     target="_top"
     tooltip="ad_fieldgroup"
   ];
+  "ptl_acesso" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="76" HEIGHT="16"><B>ptl_acesso</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/ptl_acesso.html"
+    target="_top"
+    tooltip="ptl_acesso"
+  ];
   "r_requesttype" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -8161,6 +8216,17 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/m_inoutlinema.html"
     target="_top"
     tooltip="m_inoutlinema"
+  ];
+  "cof_appdispositivo" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="136" HEIGHT="16"><B>cof_appdispositivo</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_appdispositivo.html"
+    target="_top"
+    tooltip="cof_appdispositivo"
   ];
   "cte_infcarga_infq" [
    label=<
@@ -9608,7 +9674,7 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="69" HEIGHT="16"><B>ad_image</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">15 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">15 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">27 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_image.html"
     target="_top"
@@ -9619,7 +9685,7 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="56" HEIGHT="16"><B>ad_user</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 19</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">8 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">480 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 19</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">8 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">487 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/ad_user.html"
     target="_top"
@@ -11467,7 +11533,7 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="78" HEIGHT="16"><B>c_bpartner</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 27</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">4 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">193 &gt;</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 27</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">4 rows</TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">196 &gt;</TD></TR></TABLE></TD></TR>
     </TABLE>>
     URL="../../tables/c_bpartner.html"
     target="_top"
@@ -11725,6 +11791,17 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/i_hr_movement.html"
     target="_top"
     tooltip="i_hr_movement"
+  ];
+  "ptl_otp" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="50" HEIGHT="16"><B>ptl_otp</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/ptl_otp.html"
+    target="_top"
+    tooltip="ptl_otp"
   ];
   "c_invoiceline" [
    label=<
@@ -12418,6 +12495,17 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/ad_ctxhelpmsg.html"
     target="_top"
     tooltip="ad_ctxhelpmsg"
+  ];
+  "cof_planovisita" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16"><B>cof_planovisita</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_planovisita.html"
+    target="_top"
+    tooltip="cof_planovisita"
   ];
   "m_shipperlabels" [
    label=<
@@ -13398,6 +13486,17 @@ digraph "compactRelationshipsDiagram" {
     target="_top"
     tooltip="m_productionplan"
   ];
+  "cof_visitafoto" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="98" HEIGHT="16"><B>cof_visitafoto</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" CELLPADDING="0" BGCOLOR="#ffffff" COLSPAN="3" ><TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><VR/><TD ALIGN="CENTER" BGCOLOR="#ffffff">  </TD><VR/><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR></TABLE></TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_visitafoto.html"
+    target="_top"
+    tooltip="cof_visitafoto"
+  ];
   "c_servicelevelline" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -14176,6 +14275,16 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/cof_v_positividaderepresentante.html"
     target="_top"
     tooltip="cof_v_positividaderepresentante"
+  ];
+  "cof_rv_grupoproduto" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="151" HEIGHT="16"><B>cof_rv_grupoproduto</B></TD><TD ALIGN="RIGHT">[view]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_rv_grupoproduto.html"
+    target="_top"
+    tooltip="cof_rv_grupoproduto"
   ];
   "cof_rv_titulos" [
    label=<
@@ -14987,6 +15096,16 @@ digraph "compactRelationshipsDiagram" {
     target="_top"
     tooltip="ad_tab_vt"
   ];
+  "cof_rv_carteiracliente" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="157" HEIGHT="16"><B>cof_rv_carteiracliente</B></TD><TD ALIGN="RIGHT">[view]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_rv_carteiracliente.html"
+    target="_top"
+    tooltip="cof_rv_carteiracliente"
+  ];
   "pp_order_workflow_header_v" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -15006,6 +15125,16 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/c_order_linetax_v.html"
     target="_top"
     tooltip="c_order_linetax_v"
+  ];
+  "cof_rv_clienteproduto" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="158" HEIGHT="16"><B>cof_rv_clienteproduto</B></TD><TD ALIGN="RIGHT">[view]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_rv_clienteproduto.html"
+    target="_top"
+    tooltip="cof_rv_clienteproduto"
   ];
   "cof_c_invoice_candidate_v" [
    label=<
@@ -16206,6 +16335,16 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/m_storage.html"
     target="_top"
     tooltip="m_storage"
+  ];
+  "cof_rv_coberturacarteira" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="179" HEIGHT="16"><B>cof_rv_coberturacarteira</B></TD><TD ALIGN="RIGHT">[view]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+    </TABLE>>
+    URL="../../tables/cof_rv_coberturacarteira.html"
+    target="_top"
+    tooltip="cof_rv_coberturacarteira"
   ];
   "cof_rv_docfiscal" [
    label=<
@@ -17895,7 +18034,9 @@ digraph "compactRelationshipsDiagram" {
   "c_commissionrun":"c_invoice_id":w -> "c_invoice":"c_invoice_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_contactactivity":"ad_user_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_contactactivity":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_contactactivity":"c_bpartner_location_id":w -> "c_bpartner_location":"c_bpartner_location_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_contactactivity":"c_opportunity_id":w -> "c_opportunity":"c_opportunity_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "c_contactactivity":"cof_planovisitalinha_id":w -> "cof_planovisitalinha":"cof_planovisitalinha_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_contactactivity":"salesrep_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_conversion_rate":"ad_client_id":w -> "ad_client":"ad_client_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "c_conversion_rate":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -18685,6 +18826,7 @@ digraph "compactRelationshipsDiagram" {
   "cof_apontamentotempoordemproducao":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_apontamentotempoordemproducao":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_apontamentotempoordemproducao":"cof_pp_ocorrenciaprod_id":w -> "cof_pp_ocorrenciaprod":"cof_pp_ocorrenciaprod_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_appdispositivo":"ad_user_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_apuracaooutra":"account_id":w -> "c_elementvalue":"c_elementvalue_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_apuracaooutra":"ad_client_id":w -> "ad_client":"ad_client_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_apuracaooutra":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -18924,6 +19066,12 @@ digraph "compactRelationshipsDiagram" {
   "cof_combustivel":"createdby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_combustivel":"m_product_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_combustivel":"updatedby":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_comunicado":"c_bp_group_id":w -> "c_bp_group":"c_bp_group_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_comunicado":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_comunicado":"salesrep_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_comunicadodestino":"ad_user_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_comunicadodestino":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_comunicadodestino":"cof_comunicado_id":w -> "cof_comunicado":"cof_comunicado_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"c_activity_id":w -> "c_activity":"c_activity_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"c_bankaccount_id":w -> "c_bankaccount":"c_bankaccount_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_conciliacaocartao":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -19211,6 +19359,7 @@ digraph "compactRelationshipsDiagram" {
   "cof_label":"m_locator_id":w -> "m_locator":"m_locator_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_label":"m_lot_id":w -> "m_lot":"m_lot_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_label":"m_product_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_label":"ptl_conferidapor_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_labelentry":"ad_table_id":w -> "ad_table":"ad_table_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_labelentry":"cof_label_id":w -> "cof_label":"cof_label_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_labelentry":"cof_labelconfig_id":w -> "cof_labelconfig":"cof_labelconfig_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -19477,6 +19626,10 @@ digraph "compactRelationshipsDiagram" {
   "cof_pesagem":"cof_equipleitura_id":w -> "cof_equipleitura":"cof_equipleitura_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pesagem":"cof_equipments_id":w -> "cof_equipments":"cof_equipments_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pesagem":"cof_pesagempai_id":w -> "cof_pesagem":"cof_pesagem_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_planovisita":"salesrep_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_planovisitalinha":"c_bpartner_id":w -> "c_bpartner":"c_bpartner_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_planovisitalinha":"c_bpartner_location_id":w -> "c_bpartner_location":"c_bpartner_location_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_planovisitalinha":"cof_planovisita_id":w -> "cof_planovisita":"cof_planovisita_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pmp_apontamento_producao_manual":"cof_pp_planomestreprod_id":w -> "cof_pp_planomestreprod":"cof_pp_planomestreprod_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pmp_apontamento_producao_manual":"m_product_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_pmp_apontamento_producao_manual":"m_production_id":w -> "m_production":"m_production_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -19711,6 +19864,8 @@ digraph "compactRelationshipsDiagram" {
   "cof_trxestoqueprevisto":"lbr_docfiscal_line_id":w -> "lbr_docfiscal_line":"lbr_docfiscal_line_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_trxestoqueprevisto":"m_product_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_trxestoqueprevisto":"m_productionline_id":w -> "m_productionline":"m_productionline_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_visitafoto":"ad_image_id":w -> "ad_image":"ad_image_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cof_visitafoto":"c_contactactivity_id":w -> "c_contactactivity":"c_contactactivity_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_webhookevent":"ad_client_id":w -> "ad_client":"ad_client_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_webhookevent":"ad_org_id":w -> "ad_org":"ad_org_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "cof_webhookevent":"cof_wpp_configwhatsapp_id":w -> "cof_wpp_configwhatsapp":"cof_wpp_configwhatsapp_id":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -21437,6 +21592,8 @@ digraph "compactRelationshipsDiagram" {
   "pp_wf_node_product":"ad_wf_node_id":w -> "ad_wf_node":"ad_wf_node_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "pp_wf_node_product":"entitytype":w -> "ad_entitytype":"entitytype":e [arrowhead=none dir=back arrowtail=crowodot];
   "pp_wf_node_product":"m_product_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "ptl_aparelhoconfiavel":"ad_user_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "ptl_otp":"ad_user_id":w -> "ad_user":"ad_user_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "qm_specification":"ad_workflow_id":w -> "ad_workflow":"ad_workflow_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "qm_specification":"m_attributeset_id":w -> "m_attributeset":"m_attributeset_id":e [arrowhead=none dir=back arrowtail=crowodot];
   "qm_specification":"m_product_id":w -> "m_product":"m_product_id":e [arrowhead=none dir=back arrowtail=crowodot];
