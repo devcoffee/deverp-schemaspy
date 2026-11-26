@@ -9824,7 +9824,7 @@
          <checkConstraint constraint="((isactive = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isactive_check"/>
          <checkConstraint constraint="((isdefault = ANY (ARRAY['Y'::bpchar, 'N'::bpchar])))" name="ad_searchdefinition_isdefault_check"/>
       </table>
-      <table catalog="brerp-12" name="ad_sequence" numRows="2136" remarks="" schema="adempiere" type="TABLE">
+      <table catalog="brerp-12" name="ad_sequence" numRows="2145" remarks="" schema="adempiere" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ad_sequence_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceaudit" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_audit"/>
             <child catalog="brerp-12" column="ad_sequence_id" foreignKey="ad_sequence_sequenceno" implied="false" onDeleteCascade="true" schema="adempiere" table="ad_sequence_no"/>
@@ -14924,8 +14924,8 @@
             <parent catalog="brerp-12" column="b_topic_id" foreignKey="btopic_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_topic"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbid" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="11" name="iswillingtocommit" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="b_buyerfunds_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
@@ -15010,8 +15010,8 @@
          <column autoUpdated="false" defaultValue="now()" digits="6" id="6" name="updated" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="updatedby" nullable="false" remarks="" size="10" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="ad_user_id" nullable="false" remarks="" size="10" type="numeric" typeCode="2">
-            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
             <parent catalog="brerp-12" column="ad_user_id" foreignKey="aduser_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="ad_user"/>
+            <parent catalog="brerp-12" column="ad_user_id" foreignKey="bbuyer_bbuyerfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="b_buyer"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="c_order_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="c_order_id" foreignKey="corder_bbuyersfunds" implied="false" onDeleteCascade="false" schema="adempiere" table="c_order"/>
@@ -57038,6 +57038,12 @@
             <parent catalog="brerp-12" column="cof_codigooperacao_id" foreignKey="cofcodigooperacao_lbrdocfiscal" implied="false" onDeleteCascade="false" schema="adempiere" table="cof_codigooperacao"/>
          </column>
          <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="300" name="lbr_suframa" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="301" name="total_mono_vcbsmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="302" name="total_mono_vcbsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="303" name="total_mono_vcbsmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="304" name="total_mono_vibsmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="305" name="total_mono_vibsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="306" name="total_mono_vibsmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="lbr_docfiscal_id" sequenceNumberInPK="1"/>
          <index name="lbr_docfiscal_key" unique="true">
             <column ascending="true" name="lbr_docfiscal_id"/>
@@ -57578,6 +57584,47 @@
          <column autoUpdated="false" defaultValue="NULL::numeric" digits="0" id="292" name="lbr_docfiscal_line_ref_origem_id" nullable="true" remarks="" size="10" type="numeric" typeCode="2">
             <parent catalog="brerp-12" column="lbr_docfiscal_line_id" foreignKey="lbrdocfiscallinereforigem_lbrdocfiscalline" implied="false" onDeleteCascade="false" schema="adempiere" table="lbr_docfiscal_line"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="293" name="imposto_ibsmonoadrem_qbcmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="294" name="imposto_ibsmonoadrem_adremibs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="295" name="imposto_ibsmonoadrem_vibsmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="296" name="imposto_ibsmonoadrem_qbcmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="297" name="imposto_ibsmonoadrem_adremibsreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="298" name="imposto_ibsmonoadrem_vibsmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="299" name="imposto_ibsmonoadrem_vibsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="300" name="imposto_ibsmonoadrem_qbcbiocomb" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="301" name="imposto_ibsmonoadrem_vibsdiferenca" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="302" name="imposto_ibsmonoadvalorem_vbcmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="303" name="imposto_ibsmonoadvalorem_paliqmonouf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="304" name="imposto_ibsmonoadvalorem_vibsmonouf" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="305" name="imposto_ibsmonoadvalorem_paliqmonomun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="306" name="imposto_ibsmonoadvalorem_vibsmonomun" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="307" name="imposto_ibsmonoadvalorem_vibsmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="308" name="imposto_ibsmonoadvalorem_vbcmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="309" name="imposto_ibsmonoadvalorem_paliqmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="310" name="imposto_ibsmonoadvalorem_vibsmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="311" name="imposto_ibsmonoadvalorem_vibsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="312" name="imposto_ibsmonoadvalorem_qbcbiocomb" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="313" name="imposto_ibsmonoadvalorem_vibsdiferenca" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="314" name="imposto_cbsmonoadrem_qbcmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="315" name="imposto_cbsmonoadrem_adremcbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="316" name="imposto_cbsmonoadrem_vcbsmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="317" name="imposto_cbsmonoadrem_qbcmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="318" name="imposto_cbsmonoadrem_adremcbsreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="319" name="imposto_cbsmonoadrem_vcbsmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="320" name="imposto_cbsmonoadrem_vcbsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="321" name="imposto_cbsmonoadrem_qbcbiocomb" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="322" name="imposto_cbsmonoadrem_vcbsdiferenca" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="323" name="imposto_cbsmonoadvalorem_vbcmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="324" name="imposto_cbsmonoadvalorem_paliqmonocbs" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="325" name="imposto_cbsmonoadvalorem_vcbsmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="326" name="imposto_cbsmonoadvalorem_vbcmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="327" name="imposto_cbsmonoadvalorem_paliqmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="328" name="imposto_cbsmonoadvalorem_vcbsmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="329" name="imposto_cbsmonoadvalorem_qbcbiocomb" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="330" name="imposto_ibscbsmono_vtotibsmonoitem" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="331" name="imposto_cbsmonoadvalorem_vcbsmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="332" name="imposto_cbsmonoadvalorem_vcbsdiferenca" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="333" name="imposto_ibscbsmono_vtotcbsmonoitem" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="lbr_docfiscal_line_id" sequenceNumberInPK="1"/>
          <index name="lbr_docfiscal_line_key" unique="true">
             <column ascending="true" name="lbr_docfiscal_line_id"/>
@@ -58745,6 +58792,20 @@
          <column autoUpdated="false" defaultValue="'0'::numeric" digits="0" id="66" name="cof_percentualdevtrib" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="67" name="lbr_tpalczfmcbs" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'Y'::bpchar" digits="0" id="68" name="cof_isdeduzirmargem" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="69" name="cof_modalidademono" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="cof_qbcmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="cof_adremmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="cof_adremmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="cof_paliqmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="cof_qbcmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="cof_qbcbiocomb" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="cof_paliqmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="cof_vbcmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="cof_vmono" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="cof_vbcmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="80" name="cof_vmonoreten" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="cof_vmonoret" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="cof_vdiferenca" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <primaryKey column="lbr_taxline_id" sequenceNumberInPK="1"/>
          <index name="lbr_taxline_key" unique="true">
             <column ascending="true" name="lbr_taxline_id"/>
