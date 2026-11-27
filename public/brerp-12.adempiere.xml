@@ -21889,6 +21889,7 @@
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="134" name="cof_isemitentecomodestinatario" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="135" name="cof_isoperacaousoconsumopessoal" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
          <column autoUpdated="false" defaultValue="'N'::bpchar" digits="0" id="136" name="cof_isprestacaoservicopresencial" nullable="false" remarks="" size="1" type="bpchar" typeCode="1"/>
+         <column autoUpdated="false" defaultValue="NULL::bpchar" digits="0" id="137" name="cof_proratediscount" nullable="true" remarks="" size="1" type="bpchar" typeCode="1"/>
          <primaryKey column="c_invoice_id" sequenceNumberInPK="1"/>
          <index name="c_invoice_pkey" unique="true">
             <column ascending="true" name="c_invoice_id"/>
